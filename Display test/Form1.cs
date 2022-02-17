@@ -73,6 +73,7 @@ namespace Display_test
 
         private void webBrowser2_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+            //new comment
 
         }
 
