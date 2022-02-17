@@ -164,6 +164,9 @@ namespace Display_test
             this.ClientSize = new System.Drawing.Size(1484, 806);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.webBrowser2);
             this.Name = "Form1";
             this.Text = "Form1";
