@@ -49,9 +49,9 @@ namespace Display_test
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button1.Location = new System.Drawing.Point(993, 237);
+            this.button1.Location = new System.Drawing.Point(3, 226);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(488, 409);
+            this.button1.Size = new System.Drawing.Size(514, 390);
             this.button1.TabIndex = 0;
             this.button1.Text = "Programs";
             this.button1.UseVisualStyleBackColor = false;
@@ -66,10 +66,10 @@ namespace Display_test
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button2.Location = new System.Drawing.Point(2, 236);
+            this.button2.Location = new System.Drawing.Point(522, 225);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(494, 411);
+            this.button2.Size = new System.Drawing.Size(510, 392);
             this.button2.TabIndex = 1;
             this.button2.Text = "Partners";
             this.button2.UseVisualStyleBackColor = false;
@@ -84,10 +84,10 @@ namespace Display_test
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button3.Location = new System.Drawing.Point(500, 236);
+            this.button3.Location = new System.Drawing.Point(1036, 225);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(488, 411);
+            this.button3.Size = new System.Drawing.Size(512, 392);
             this.button3.TabIndex = 2;
             this.button3.Text = "History";
             this.button3.UseVisualStyleBackColor = false;
@@ -99,12 +99,12 @@ namespace Display_test
             this.button4.AutoSize = true;
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button4.Location = new System.Drawing.Point(1379, 740);
+            this.button4.Location = new System.Drawing.Point(1446, 702);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.MaximumSize = new System.Drawing.Size(100, 100);
             this.button4.MinimumSize = new System.Drawing.Size(10, 10);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 44);
+            this.button4.Size = new System.Drawing.Size(74, 43);
             this.button4.TabIndex = 3;
             this.button4.Text = "Back";
             this.button4.UseVisualStyleBackColor = false;
@@ -117,7 +117,7 @@ namespace Display_test
             this.webBrowser2.Margin = new System.Windows.Forms.Padding(2);
             this.webBrowser2.MinimumSize = new System.Drawing.Size(10, 10);
             this.webBrowser2.Name = "webBrowser2";
-            this.webBrowser2.Size = new System.Drawing.Size(1484, 806);
+            this.webBrowser2.Size = new System.Drawing.Size(1550, 771);
             this.webBrowser2.TabIndex = 4;
             this.webBrowser2.Url = new System.Uri("https://www.uakron.edu/cba/fisher/", System.UriKind.Absolute);
             this.webBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser2_DocumentCompleted);
@@ -127,7 +127,7 @@ namespace Display_test
             this.pictureBox1.Image = global::Display_test.Properties.Resources.UAWordmark_gold;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(492, 228);
+            this.pictureBox1.Size = new System.Drawing.Size(502, 217);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -139,10 +139,10 @@ namespace Display_test
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.60161F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.1992F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.1992F));
-            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -150,7 +150,7 @@ namespace Display_test
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.03226F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.48883F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.47891F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1484, 806);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1550, 771);
             this.tableLayoutPanel1.TabIndex = 6;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -161,12 +161,9 @@ namespace Display_test
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.ClientSize = new System.Drawing.Size(1484, 806);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1550, 771);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.webBrowser2);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -186,6 +183,7 @@ namespace Display_test
         private System.Windows.Forms.WebBrowser webBrowser2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+
     }
 }
 
