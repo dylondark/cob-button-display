@@ -7,22 +7,22 @@ using System.Windows.Forms;
 
 namespace Display_test
 {
+    public enum CurrentPage {  HomePage, FirstLevelWebpage, SecondLevelButtonsPage }
     public partial class Form1 : Form
     {
         
-        Cursor cursor = new Cursor(Cursor.Current.Handle);
-        InActivityWindow inActivityWindow;
+        Form2 secondLevelButtonsWindow;
+        private CurrentPage currentPage;
+
         private Timer timer;
-        private bool isShowingInactivityModal = false;
-        private int inactivityCheckDuration = 2000;//milliseconds
+        private int inactivityCheckDuration = 60000;//milliseconds
 
         public Form1()
         {
-          
+            currentPage = CurrentPage.HomePage;
             timer = new Timer();
             timer.Interval = inactivityCheckDuration;
             timer.Tick += new System.EventHandler(onTimerTick);
-            inActivityWindow = new InActivityWindow();
 
             InitializeComponent();
             webBrowser2.Hide();
@@ -67,8 +67,16 @@ namespace Display_test
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form2 frm = new Form2();
-            frm.Show();
+            currentPage = CurrentPage.SecondLevelButtonsPage;
+            secondLevelButtonsWindow = new Form2();
+            secondLevelButtonsWindow.Show();
+            secondLevelButtonsWindow.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
+            timer.Start();
+        }
+
+       void  onSecondLevelFormClosed(object obj, EventArgs args)
+        {
+             timer.Stop();
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -83,6 +91,7 @@ namespace Display_test
 
         void showWebPage(String url)
         {
+            currentPage = CurrentPage.FirstLevelWebpage;
             webBrowser2.Navigate(url);
             button1.Hide();
             button2.Hide();
@@ -111,6 +120,7 @@ namespace Display_test
             pictureBox1.Show();
             tableLayoutPanel1.Show();
             pictureBox3.Show();
+            currentPage = CurrentPage.HomePage;
         }
 
         void onTimerTick(object sender, EventArgs args)
@@ -121,16 +131,31 @@ namespace Display_test
         void navigateBackAfterInacitivity()
         {
             timer.Stop();
+            DialogResult result = DialogResult.None;
+            InActivityWindow inActivityWindow;
+            if (currentPage == CurrentPage.FirstLevelWebpage)
+            {
+               inActivityWindow = new InActivityWindow(closeWebpage);
+               result = inActivityWindow.ShowDialog();
 
-            DialogResult result = inActivityWindow.ShowDialog();
-            if (result == DialogResult.Yes)
+            } else if(currentPage == CurrentPage.SecondLevelButtonsPage && secondLevelButtonsWindow != null)
+            {
+                inActivityWindow = new InActivityWindow(() => {
+                    secondLevelButtonsWindow.Close();
+                    timer.Stop();
+                });
+                result = inActivityWindow.ShowDialog();
+            }
+
+            if (result  == DialogResult.Yes)
             {
                 timer.Start();
             }
-            else
-            {
-                closeWebpage();
-            }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

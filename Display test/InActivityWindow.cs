@@ -1,24 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Display_test
 {
+    public delegate void OnInactivityDetected();
     public partial class InActivityWindow : Form
     {
         Timer timeChecker;
-        const int timerInterval = 5000; 
-        public InActivityWindow()
+
+        const int timerInterval = 6000;
+        OnInactivityDetected onInactivity;
+
+        public InActivityWindow(OnInactivityDetected onInactivityDetected)
         {
             InitializeComponent();
             this.Shown += new EventHandler(onFormShown);
             this.FormClosed += new FormClosedEventHandler(onFormClosed);
+            this.onInactivity = onInactivityDetected;
         }
 
         void onFormShown(object obj, EventArgs args)
@@ -45,9 +43,18 @@ namespace Display_test
             this.DialogResult = DialogResult.Cancel;
             timeChecker.Stop();
             this.Close();
+            if (onInactivity != null)
+            {
+                this.onInactivity();
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InActivityWindow_Load(object sender, EventArgs e)
         {
 
         }

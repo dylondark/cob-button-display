@@ -69,6 +69,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InActivityWindow";
             this.Text = "Inactivity";
+            this.Load += new System.EventHandler(this.InActivityWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -85,5 +85,10 @@ namespace Display_test
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
