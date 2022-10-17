@@ -26,16 +26,10 @@ namespace Display_test
 
             InitializeComponent();
             webBrowser2.Hide();
-            backButton.Hide();
+           // backButton.Hide();
             webBrowser2.ScriptErrorsSuppressed = true;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-           
-            
-            //this.ControlBox = false;
-            //FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            //Form2 frm = new Form2();
-
         }
 
 
@@ -92,29 +86,20 @@ namespace Display_test
         void showWebPage(String url)
         {
             currentPage = CurrentPage.FirstLevelWebpage;
-            webBrowser2.Navigate(url);
-            button1.Hide();
-            button2.Hide();
-            button3.Hide();
-            button5.Hide();
-            button6.Hide();
-            button7.Hide();
-            webBrowser2.Show();
-            backButton.Show();
-            pictureBox1.Hide();
-            tableLayoutPanel1.Hide();
-            pictureBox3.Hide();
-            timer.Start();
+           backButton.Show();
+           webBrowser2.Navigate(url);
+           
+           webBrowser2.Show();
+           webBrowser2.BringToFront();
+           //pictureBox1.Hide();
+           tableLayoutPanel1.Hide();
+          // pictureBox3.Hide();
+
+           timer.Start();
         }
 
         void closeWebpage()
         {
-            button1.Show();
-            button2.Show();
-            button3.Show();
-            button5.Show();
-            button6.Show();
-            button7.Show();
             webBrowser2.Hide();
             backButton.Hide();
             pictureBox1.Show();
@@ -154,6 +139,16 @@ namespace Display_test
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backButton_Click_1(object sender, EventArgs e)
         {
 
         }
