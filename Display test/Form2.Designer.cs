@@ -55,11 +55,10 @@ namespace Display_test
             this.backButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.backButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(571, 305);
-            this.backButton.MaximumSize = new System.Drawing.Size(400, 200);
-            this.backButton.MinimumSize = new System.Drawing.Size(100, 50);
+            this.backButton.Location = new System.Drawing.Point(548, 320);
+            this.backButton.MinimumSize = new System.Drawing.Size(400, 200);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(280, 75);
+            this.backButton.Size = new System.Drawing.Size(400, 200);
             this.backButton.TabIndex = 3;
             this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = false;
@@ -77,7 +76,6 @@ namespace Display_test
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.backButton, 2, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -151,6 +149,7 @@ namespace Display_test
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(854, 383);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.webBrowser1);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);

@@ -24,9 +24,10 @@ namespace Display_test
             timer.Interval = inactivityCheckDuration;
             timer.Tick += new System.EventHandler(onTimerTick);
 
+            createBackButton();
             InitializeComponent();
             webBrowser2.Hide();
-           // backButton.Hide();
+            backButton.Hide();
             webBrowser2.ScriptErrorsSuppressed = true;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -87,13 +88,14 @@ namespace Display_test
         {
             currentPage = CurrentPage.FirstLevelWebpage;
            backButton.Show();
+            backButton.BringToFront();
+            backButton.BringToFront();
            webBrowser2.Navigate(url);
            
            webBrowser2.Show();
-           webBrowser2.BringToFront();
-           //pictureBox1.Hide();
+           pictureBox1.Hide();
            tableLayoutPanel1.Hide();
-          // pictureBox3.Hide();
+            pictureBox3.Hide();
 
            timer.Start();
         }
