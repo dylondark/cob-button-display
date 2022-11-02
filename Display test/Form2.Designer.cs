@@ -52,14 +52,14 @@ namespace Display_test
             // 
             // backButton
             // 
-            this.backButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.backButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(548, 320);
+            this.backButton.Location = new System.Drawing.Point(448, 180);
             this.backButton.MinimumSize = new System.Drawing.Size(400, 200);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(400, 200);
-            this.backButton.TabIndex = 3;
+            this.backButton.TabIndex = 0;
             this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.button4_Click);
@@ -80,53 +80,59 @@ namespace Display_test
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.093995F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.75718F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.82606F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.36031F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.74673F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.15405F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(854, 383);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackgroundImage = global::Display_test.Properties.Resources._1;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 34);
+            this.button1.Location = new System.Drawing.Point(3, 57);
             this.button1.MaximumSize = new System.Drawing.Size(900, 700);
             this.button1.MinimumSize = new System.Drawing.Size(225, 175);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(278, 265);
+            this.button1.Size = new System.Drawing.Size(278, 218);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackgroundImage = global::Display_test.Properties.Resources._2;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(287, 34);
+            this.button2.Location = new System.Drawing.Point(287, 57);
             this.button2.MaximumSize = new System.Drawing.Size(900, 700);
             this.button2.MinimumSize = new System.Drawing.Size(225, 175);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 265);
+            this.button2.Size = new System.Drawing.Size(278, 218);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackgroundImage = global::Display_test.Properties.Resources._3;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(571, 34);
+            this.button3.Location = new System.Drawing.Point(571, 57);
             this.button3.MaximumSize = new System.Drawing.Size(900, 700);
             this.button3.MinimumSize = new System.Drawing.Size(225, 175);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(280, 265);
+            this.button3.Size = new System.Drawing.Size(280, 218);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -136,7 +142,7 @@ namespace Display_test
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Display_test.Properties.Resources.re_sized;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 305);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 281);
             this.pictureBox1.MinimumSize = new System.Drawing.Size(500, 100);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(500, 100);

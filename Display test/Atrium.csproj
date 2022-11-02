@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>E:\Attrium Version 2\</PublishUrl>
+    <PublishUrl>C:\Users\sa_ma368\Desktop\projects\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationRevision>22</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -207,9 +207,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\backgroundFisher %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backgroundFisher %283%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Black and white history1.png" />
