@@ -69,7 +69,7 @@ namespace Display_test
             this.tableLayoutPanel1.BackgroundImage = global::Display_test.Properties.Resources.Untitled_design__1_;
             this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 1);
@@ -80,9 +80,9 @@ namespace Display_test
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.36031F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.74673F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.15405F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(854, 383);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -94,11 +94,11 @@ namespace Display_test
             this.button1.BackgroundImage = global::Display_test.Properties.Resources._1;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 57);
+            this.button1.Location = new System.Drawing.Point(3, 98);
             this.button1.MaximumSize = new System.Drawing.Size(900, 700);
             this.button1.MinimumSize = new System.Drawing.Size(225, 175);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(278, 218);
+            this.button1.Size = new System.Drawing.Size(278, 185);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -111,11 +111,11 @@ namespace Display_test
             this.button2.BackgroundImage = global::Display_test.Properties.Resources._2;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(287, 57);
+            this.button2.Location = new System.Drawing.Point(287, 98);
             this.button2.MaximumSize = new System.Drawing.Size(900, 700);
             this.button2.MinimumSize = new System.Drawing.Size(225, 175);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 218);
+            this.button2.Size = new System.Drawing.Size(278, 185);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -128,21 +128,20 @@ namespace Display_test
             this.button3.BackgroundImage = global::Display_test.Properties.Resources._3;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(571, 57);
+            this.button3.Location = new System.Drawing.Point(571, 98);
             this.button3.MaximumSize = new System.Drawing.Size(900, 700);
             this.button3.MinimumSize = new System.Drawing.Size(225, 175);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(280, 218);
+            this.button3.Size = new System.Drawing.Size(280, 185);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Display_test.Properties.Resources.re_sized;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 281);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 289);
             this.pictureBox1.MinimumSize = new System.Drawing.Size(500, 100);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(500, 100);
