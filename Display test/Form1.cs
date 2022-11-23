@@ -29,16 +29,18 @@ namespace Display_test
             webBrowser2.Hide();
             backButton.Hide();
             webBrowser2.ScriptErrorsSuppressed = true;
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
         }
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            showWebPage("https://www.uakron.edu/cba/news-and-events/");
-            this.ControlBox = false;
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            DirectionsForm directionsForm = new DirectionsForm();
+            directionsForm.ShowDialog();
+           // showWebPage("https://www.uakron.edu/cba/news-and-events/");
+           // this.ControlBox = false;
+           // FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
         private void button2_Click(object sender, EventArgs e)
