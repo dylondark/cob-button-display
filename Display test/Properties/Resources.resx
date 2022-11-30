@@ -316,4 +316,10 @@
   <data name="CBA_First_Floor_Plan_North_Side1024_1_rotated" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CBA First Floor Plan North Side1024_1_rotated.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Directions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Directions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Directions__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Directions (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
