@@ -170,5 +170,28 @@ namespace Display_test
         {
 
         }
+
+        private void gridbuttonResize(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            int colW = b.Size.Width + b.Margin.Horizontal;
+            int imgWidthScaled = b.Size.Height * b.BackgroundImage.Width / b.BackgroundImage.Height;
+            var marg = b.Margin;
+            int hMarg = colW - imgWidthScaled;
+            marg.Left = hMarg / 2;
+            marg.Right = hMarg / 2;
+            b.Margin = marg;
+        }
+
+        private void pictureBox3_Resize(object sender, EventArgs e)
+        {
+            int colW = pictureBox3.Size.Width + pictureBox3.Margin.Horizontal;
+            int imgWidthScaled = pictureBox3.Size.Height * pictureBox3.BackgroundImage.Width / pictureBox3.BackgroundImage.Height;
+            var marg = pictureBox3.Margin;
+            int hMarg = colW - imgWidthScaled;
+            marg.Left = hMarg - 10;
+            marg.Right = 10;
+            pictureBox3.Margin = marg;
+        }
     }
 }
