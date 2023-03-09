@@ -1,7 +1,5 @@
 ﻿using System;
-
-using System.Drawing;
-
+using System.Security.Permissions;
 using System.Windows.Forms;
 
 
@@ -12,6 +10,7 @@ namespace Display_test
     }
     public partial class Form1 : Form
     {
+
         
         Form2 secondLevelButtonsWindow;
         private CurrentPage currentPage;
@@ -19,6 +18,8 @@ namespace Display_test
 
         private Timer timer;
         private int inactivityCheckDuration = 60000;//milliseconds
+        private const int WM_TOUCH = 0x246;
+        private const int WM_TOUCHUPDATE = 0x245;
 
         public Form1()
         {
@@ -34,7 +35,25 @@ namespace Display_test
             backButton.Hide();
             webBrowser2.ScriptErrorsSuppressed = true;
             FormBorderStyle = FormBorderStyle.None;
+            
             this.WindowState = FormWindowState.Maximized;
+        }
+
+        [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
+        protected override void WndProc(ref Message m)
+        {
+            base.WndProc(ref m);
+            switch (m.Msg)
+            {
+                case WM_TOUCH:
+                case WM_TOUCHUPDATE:
+                    System.Diagnostics.Debug.WriteLine("Gesture seen");
+                    timer.Stop();
+                    timer.Start();
+                    break;
+                default:
+                    break;
+            }
         }
 
 
@@ -128,7 +147,7 @@ namespace Display_test
 
         void onTimerTick(object sender, EventArgs args)
         {
-           navigateBackAfterInacitivity();
+            navigateBackAfterInacitivity();
         }
 
         void navigateBackAfterInacitivity()
