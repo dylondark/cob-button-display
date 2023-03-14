@@ -69,19 +69,21 @@ namespace Display_test
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel1.BackgroundImage = global::Display_test.Properties.Resources.Untitled_design__1_;
             this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button6, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 2, 1);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.Controls.Add(this.button2, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button3, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.button6, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button5, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button7, 3, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -105,10 +107,10 @@ namespace Display_test
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button2.Location = new System.Drawing.Point(413, 410);
+            this.button2.Location = new System.Drawing.Point(481, 383);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(544, 228);
+            this.button2.Size = new System.Drawing.Size(407, 258);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -122,13 +124,13 @@ namespace Display_test
             this.button1.AutoSize = true;
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.button1.BackgroundImage = global::Display_test.Properties.Resources.Directions__2_;
+            this.button1.BackgroundImage = global::Display_test.Properties.Resources.Directions;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button1.Location = new System.Drawing.Point(3, 411);
+            this.button1.Location = new System.Drawing.Point(71, 384);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(405, 226);
+            this.button1.Size = new System.Drawing.Size(405, 256);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -139,7 +141,7 @@ namespace Display_test
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 651);
+            this.pictureBox1.Location = new System.Drawing.Point(101, 652);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 3, 100, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(247, 87);
@@ -153,13 +155,16 @@ namespace Display_test
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label1.Image = global::Display_test.Properties.Resources.Top_Text3;
-            this.label1.Location = new System.Drawing.Point(414, 0);
-            this.label1.MaximumSize = new System.Drawing.Size(800, 300);
+            this.label1.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(482, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(542, 152);
+            this.label1.Size = new System.Drawing.Size(405, 119);
             this.label1.TabIndex = 12;
+            this.label1.Text = "Welcome to the College of Business\r\nTouch Screen to Interact";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Resize += new System.EventHandler(this.label1_Resize);
             // 
             // button3
             // 
@@ -171,10 +176,10 @@ namespace Display_test
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button3.Location = new System.Drawing.Point(961, 410);
+            this.button3.Location = new System.Drawing.Point(892, 383);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(407, 228);
+            this.button3.Size = new System.Drawing.Size(407, 258);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -182,16 +187,16 @@ namespace Display_test
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::Display_test.Properties.Resources.CBALogo2;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(962, 643);
-            this.pictureBox3.MaximumSize = new System.Drawing.Size(626, 192);
+            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(1033, 646);
+            this.pictureBox3.MaximumSize = new System.Drawing.Size(900, 287);
             this.pictureBox3.MinimumSize = new System.Drawing.Size(157, 48);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(405, 103);
+            this.pictureBox3.Size = new System.Drawing.Size(334, 100);
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Resize += new System.EventHandler(this.pictureBox3_Resize);
@@ -208,10 +213,10 @@ namespace Display_test
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button6.Location = new System.Drawing.Point(413, 154);
+            this.button6.Location = new System.Drawing.Point(481, 121);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(544, 252);
+            this.button6.Size = new System.Drawing.Size(407, 258);
             this.button6.TabIndex = 9;
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -229,11 +234,11 @@ namespace Display_test
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button5.Location = new System.Drawing.Point(3, 155);
+            this.button5.Location = new System.Drawing.Point(71, 122);
             this.button5.MaximumSize = new System.Drawing.Size(1300, 1250);
             this.button5.MinimumSize = new System.Drawing.Size(325, 200);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(405, 250);
+            this.button5.Size = new System.Drawing.Size(405, 256);
             this.button5.TabIndex = 8;
             this.button5.Text = "\r\n";
             this.button5.UseVisualStyleBackColor = false;
@@ -252,10 +257,10 @@ namespace Display_test
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button7.Location = new System.Drawing.Point(961, 154);
+            this.button7.Location = new System.Drawing.Point(892, 121);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(407, 252);
+            this.button7.Size = new System.Drawing.Size(407, 258);
             this.button7.TabIndex = 10;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);

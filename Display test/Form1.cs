@@ -1,7 +1,8 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
-
+using System.Linq;
 using System.Windows.Forms;
 
 
@@ -192,6 +193,18 @@ namespace Display_test
             marg.Left = hMarg - 10;
             marg.Right = 10;
             pictureBox3.Margin = marg;
+        }
+
+        private void label1_Resize(object sender, EventArgs e)
+        {
+            Font font = label1.Font;
+            int fontW = TextRenderer.MeasureText(label1.Text, font).Width,
+                w = label1.Width,
+                target = w * 9 / 10;
+            if (fontW < target || fontW > w)
+            {
+                label1.Font = new Font(font.FontFamily, font.Size * target / fontW, font.Style, font.Unit);
+            }
         }
     }
 }
