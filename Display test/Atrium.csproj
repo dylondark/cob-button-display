@@ -154,7 +154,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Display test_TemporaryKey.pfx" />
     <None Include="packages.config" />
@@ -163,11 +162,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -377,15 +371,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\good_year_map.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CBA First Floor Plan North Side1024_1_rotated.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CBA First Floor Plan North Side1024_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\afc75c31b7b923e88ce28b34d4a25c20--rpg-map-dungeon-maps.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

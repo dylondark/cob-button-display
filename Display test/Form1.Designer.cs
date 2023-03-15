@@ -321,13 +321,6 @@ namespace Display_test
 
         }
 
-        void createMap()
-        {
-            this.directionsForm = new DirectionsForm();
-            directionsForm.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
-
-        }
-
         private CefSharp.WinForms.ChromiumWebBrowser webBrowser2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button backButton;

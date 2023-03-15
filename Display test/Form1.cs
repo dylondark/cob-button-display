@@ -8,15 +8,12 @@ using System.Windows.Forms;
 
 namespace Display_test
 {
-    public enum CurrentPage {  HomePage, FirstLevelWebpage, SecondLevelButtonsPage,
-        Directions
-    }
+    public enum CurrentPage {  HomePage, FirstLevelWebpage, SecondLevelButtonsPage }
     public partial class Form1 : Form
     {
         
         Form2 secondLevelButtonsWindow;
         private CurrentPage currentPage;
-        DirectionsForm directionsForm;
 
         private Timer timer;
         private int inactivityCheckDuration = 60000;//milliseconds
@@ -29,7 +26,6 @@ namespace Display_test
             timer.Tick += new System.EventHandler(onTimerTick);
 
             createBackButton();
-            createMap();
             InitializeComponent();
             webBrowser2.Hide();
             backButton.Hide();
@@ -41,14 +37,11 @@ namespace Display_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            currentPage = CurrentPage.Directions;
-            directionsForm = new DirectionsForm();
-            directionsForm.Show();
-            timer.Start();
-
-            // showWebPage("https://www.uakron.edu/cba/news-and-events/");
-            // this.ControlBox = false;
-            // FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            DirectionsForm directionsForm = new DirectionsForm();
+            directionsForm.ShowDialog();
+           // showWebPage("https://www.uakron.edu/cba/news-and-events/");
+           // this.ControlBox = false;
+           // FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -86,7 +79,7 @@ namespace Display_test
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            closeCurrentPage();
+            closeWebpage();
         }
 
         private void webBrowser2_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -110,21 +103,14 @@ namespace Display_test
            timer.Start();
         }
 
-        void closeCurrentPage()
+        void closeWebpage()
         {
-            if (currentPage != CurrentPage.Directions)
-            {
-                webBrowser2.Hide();
-                backButton.Hide();
-                pictureBox1.Show();
-                tableLayoutPanel1.Show();
-                pictureBox3.Show();
-                currentPage = CurrentPage.HomePage;
-            }
-            else
-            {
-                directionsForm.Hide();
-            }
+            webBrowser2.Hide();
+            backButton.Hide();
+            pictureBox1.Show();
+            tableLayoutPanel1.Show();
+            pictureBox3.Show();
+            currentPage = CurrentPage.HomePage;
         }
 
         void onTimerTick(object sender, EventArgs args)
@@ -139,7 +125,7 @@ namespace Display_test
             InActivityWindow inActivityWindow;
             if (currentPage == CurrentPage.FirstLevelWebpage)
             {
-               inActivityWindow = new InActivityWindow(closeCurrentPage);
+               inActivityWindow = new InActivityWindow(closeWebpage);
                result = inActivityWindow.ShowDialog();
 
             } else if(currentPage == CurrentPage.SecondLevelButtonsPage && secondLevelButtonsWindow != null)
