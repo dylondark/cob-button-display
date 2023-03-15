@@ -31,7 +31,7 @@ namespace Display_test
         /// </summary>
         private void InitializeComponent()
         {
-            this.webBrowser2 = new System.Windows.Forms.WebBrowser();
+            this.webBrowser2 = new CefSharp.WinForms.ChromiumWebBrowser();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -58,8 +58,6 @@ namespace Display_test
             this.webBrowser2.Name = "webBrowser2";
             this.webBrowser2.Size = new System.Drawing.Size(1370, 749);
             this.webBrowser2.TabIndex = 4;
-            this.webBrowser2.Url = new System.Uri("https://www.uakron.edu/cba/fisher/", System.UriKind.Absolute);
-            this.webBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser2_DocumentCompleted);
             // 
             // tableLayoutPanel1
             // 
@@ -330,7 +328,7 @@ namespace Display_test
 
         }
 
-        private System.Windows.Forms.WebBrowser webBrowser2;
+        private CefSharp.WinForms.ChromiumWebBrowser webBrowser2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button button3;
