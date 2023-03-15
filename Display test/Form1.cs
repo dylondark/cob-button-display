@@ -37,11 +37,9 @@ namespace Display_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DirectionsForm directionsForm = new DirectionsForm();
-            directionsForm.ShowDialog();
-           // showWebPage("https://www.uakron.edu/cba/news-and-events/");
-           // this.ControlBox = false;
-           // FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            showWebPage("https://www.uakron.edu/cba/news-and-events/");
+            this.ControlBox = false;
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
         private void button2_Click(object sender, EventArgs e)
