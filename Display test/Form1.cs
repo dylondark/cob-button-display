@@ -33,7 +33,7 @@ namespace Display_test
             InitializeComponent();
             webBrowser2.Hide();
             backButton.Hide();
-            webBrowser2.ScriptErrorsSuppressed = true;
+
             FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
         }
@@ -53,7 +53,7 @@ namespace Display_test
 
         private void button2_Click(object sender, EventArgs e)
         {
-           showWebPage("https://www.uakron.edu/cba/outcomes/");    
+            showWebPage("https://www.uakron.edu/cba/outcomes/");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -100,7 +100,7 @@ namespace Display_test
            backButton.Show();
             backButton.BringToFront();
             backButton.BringToFront();
-           webBrowser2.Navigate(url);
+           webBrowser2.Load(url);
            
            webBrowser2.Show();
            pictureBox1.Hide();
