@@ -53,8 +53,7 @@ namespace Display_test
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //showWebPage("https://www.uakron.edu/cba/outcomes/");
-            showWebPage("https://www.whatismybrowser.com");
+            showWebPage("https://www.uakron.edu/cba/outcomes/");
         }
 
         private void button3_Click(object sender, EventArgs e)
