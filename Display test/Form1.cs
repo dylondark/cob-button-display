@@ -1,7 +1,8 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
-
+using System.Linq;
 using System.Windows.Forms;
 
 
@@ -169,6 +170,41 @@ namespace Display_test
         private void backButton_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridbuttonResize(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            int colW = b.Size.Width + b.Margin.Horizontal;
+            int imgWidthScaled = b.Size.Height * b.BackgroundImage.Width / b.BackgroundImage.Height;
+            var marg = b.Margin;
+            int hMarg = colW - imgWidthScaled;
+            marg.Left = hMarg / 2;
+            marg.Right = hMarg / 2;
+            b.Margin = marg;
+        }
+
+        private void pictureBox3_Resize(object sender, EventArgs e)
+        {
+            int colW = pictureBox3.Size.Width + pictureBox3.Margin.Horizontal;
+            int imgWidthScaled = pictureBox3.Size.Height * pictureBox3.BackgroundImage.Width / pictureBox3.BackgroundImage.Height;
+            var marg = pictureBox3.Margin;
+            int hMarg = colW - imgWidthScaled;
+            marg.Left = hMarg - 10;
+            marg.Right = 10;
+            pictureBox3.Margin = marg;
+        }
+
+        private void label1_Resize(object sender, EventArgs e)
+        {
+            Font font = label1.Font;
+            int fontW = TextRenderer.MeasureText(label1.Text, font).Width,
+                w = label1.Width,
+                target = w * 9 / 10;
+            if (fontW < target || fontW > w)
+            {
+                label1.Font = new Font(font.FontFamily, font.Size * target / fontW, font.Style, font.Unit);
+            }
         }
     }
 }
