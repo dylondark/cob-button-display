@@ -133,16 +133,6 @@ namespace Display_test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap afc75c31b7b923e88ce28b34d4a25c20__rpg_map_dungeon_maps {
-            get {
-                object obj = ResourceManager.GetObject("afc75c31b7b923e88ce28b34d4a25c20__rpg_map_dungeon_maps", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Back {
             get {
                 object obj = ResourceManager.GetObject("Back", resourceCulture);
@@ -243,26 +233,6 @@ namespace Display_test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CBA_First_Floor_Plan_North_Side1024_1 {
-            get {
-                object obj = ResourceManager.GetObject("CBA_First_Floor_Plan_North_Side1024_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CBA_First_Floor_Plan_North_Side1024_1_rotated {
-            get {
-                object obj = ResourceManager.GetObject("CBA_First_Floor_Plan_North_Side1024_1_rotated", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap CBALogo {
             get {
                 object obj = ResourceManager.GetObject("CBALogo", resourceCulture);
@@ -276,26 +246,6 @@ namespace Display_test.Properties {
         internal static System.Drawing.Bitmap CBALogo2 {
             get {
                 object obj = ResourceManager.GetObject("CBALogo2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Directions {
-            get {
-                object obj = ResourceManager.GetObject("Directions", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Directions__2_ {
-            get {
-                object obj = ResourceManager.GetObject("Directions__2_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,26 +326,6 @@ namespace Display_test.Properties {
         internal static System.Drawing.Bitmap Fisherlogo1 {
             get {
                 object obj = ResourceManager.GetObject("Fisherlogo1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap good_year_map {
-            get {
-                object obj = ResourceManager.GetObject("good_year_map", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap good_year_map1 {
-            get {
-                object obj = ResourceManager.GetObject("good_year_map1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

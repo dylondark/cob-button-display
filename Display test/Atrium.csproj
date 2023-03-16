@@ -16,8 +16,8 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\sa_ma368\Desktop\projects\compiled\</PublishUrl>
-    <Install>false</Install>
+    <PublishUrl>C:\Users\sa_ma368\Desktop\projects\</PublishUrl>
+    <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
@@ -26,8 +26,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>29</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -100,23 +100,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="mapItems\DirectionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="mapItems\DirectionsForm.Designer.cs">
-      <DependentUpon>DirectionsForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mapItems\MapPrototype1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="mapItems\MapPrototype1.Designer.cs">
-      <DependentUpon>MapPrototype1.cs</DependentUpon>
     </Compile>
     <Compile Include="InActivityWindow.cs">
       <SubType>Form</SubType>
@@ -124,19 +112,10 @@
     <Compile Include="InActivityWindow.Designer.cs">
       <DependentUpon>InActivityWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="MapVariation1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MapVariation1.Designer.cs">
-      <DependentUpon>MapVariation1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mapItems\DirectionsForm.resx">
-      <DependentUpon>DirectionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -144,17 +123,16 @@
     <EmbeddedResource Include="InActivityWindow.resx">
       <DependentUpon>InActivityWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mapItems\MapPrototype1.resx">
-      <DependentUpon>MapPrototype1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MapVariation1.resx">
-      <DependentUpon>MapVariation1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <None Include="Display test_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
@@ -162,11 +140,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -370,27 +343,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Graduate3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\classRoomsMap.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\good_year_map.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CBA First Floor Plan North Side1024_1_rotated.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CBA First Floor Plan North Side1024_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\afc75c31b7b923e88ce28b34d4a25c20--rpg-map-dungeon-maps.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Directions.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Directions %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
