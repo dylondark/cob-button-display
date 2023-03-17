@@ -73,24 +73,6 @@ namespace Display_test
         {
            showWebPage("https://www.uakron.edu/cba/executive/");
         }
-        private void button6_Click(object sender, EventArgs e)
-        {
-            showWebPage("https://uakron.edu/cba/undergraduate/majors/");
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            showWebPage("https://www.uakron.edu/cba/graduate/");
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            currentPage = CurrentPage.SecondLevelButtonsPage;
-            secondLevelButtonsWindow = new Form2();
-            secondLevelButtonsWindow.Show();
-            secondLevelButtonsWindow.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
-            timer.Start();
-        }
 
        void  onSecondLevelFormClosed(object obj, EventArgs args)
         {
@@ -182,11 +164,19 @@ namespace Display_test
         {
             Button b = (Button)sender;
             int colW = b.Size.Width + b.Margin.Horizontal;
-            int imgWidthScaled = b.Size.Height * b.BackgroundImage.Width / b.BackgroundImage.Height;
+            int imgWidthScaled = (b.Size.Height - 16) * b.BackgroundImage.Width / b.BackgroundImage.Height;
             var marg = b.Margin;
             int hMarg = colW - imgWidthScaled;
-            marg.Left = hMarg / 2;
-            marg.Right = hMarg / 2;
+            if(hMarg <= 32)
+            {
+                marg.All = 16;
+            } else
+            {
+                marg.Top = 16;
+                marg.Bottom = 16;
+                marg.Left = hMarg / 2;
+                marg.Right = hMarg / 2;
+            }
             b.Margin = marg;
         }
 
