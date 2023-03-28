@@ -70,6 +70,7 @@
             this.Name = "InActivityWindow";
             this.Text = "Inactivity";
             this.Load += new System.EventHandler(this.InActivityWindow_Load);
+            this.Click += new System.EventHandler(this.InActivityWindow_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
