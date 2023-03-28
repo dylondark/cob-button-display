@@ -59,7 +59,7 @@ namespace Display_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            showWebPage("https://www.uakron.edu/cba/news-and-events/");
+            showWebPage("https://www.uakron.edu/cba/centers-and-institutes/");
             this.ControlBox = false;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
