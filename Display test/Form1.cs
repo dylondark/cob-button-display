@@ -35,7 +35,7 @@ namespace Display_test
             currentPage = CurrentPage.HomePage;
             timerRef = new Timer();
             timerRef.Interval = inactivityCheckDuration;
-            timerRef.Tick += onTimerTick;
+            timerRef.Tick += new EventHandler(onTimerTick);
             inActivityWindow = new InActivityWindow(closeWebpage, timerRef, DebugIfAble);
 
             createBackButton();
@@ -58,25 +58,32 @@ namespace Display_test
             if (!debugEnabled) return;
             Debug.WriteLine(msg);
             Debugs.Add(msg);
-            labelDebug.Text = string.Join(Environment.NewLine, Debugs);
-            labelDebug.BringToFront();
-            labelDebug.Show();
-            labelDebug.BringToFront();
+            Invoke(new Action(() =>
+            {
+                labelDebug.Text = string.Join(Environment.NewLine, Debugs.Distinct());
+                labelDebug.BringToFront();
+                labelDebug.Show();
+            }));
             await Task.Delay(6000);
             Debugs.Remove(msg);
-            if(Debugs.Count == 0)
+            Invoke(new Action(() =>
             {
-                labelDebug.Hide();
-                labelDebug.Text = "";
-            } else
-            {
-                labelDebug.Text = string.Join(Environment.NewLine, Debugs);
-            }
+                if (Debugs.Count == 0)
+                {
+                    labelDebug.Hide();
+                    labelDebug.Text = "";
+                }
+                else
+                {
+                    labelDebug.Text = string.Join(Environment.NewLine, Debugs.Distinct());
+                }
+            }));
         }
 
         private async Task DebugDisable()
         {
             debugEnabled = false;
+            Debugs.Clear();
             Debug.WriteLine("WinForm Debug Disabled");
             labelDebug.BackColor = Color.LightCoral;
             labelDebug.Text = "OFF";
@@ -85,15 +92,17 @@ namespace Display_test
             await Task.Delay(6000);
             labelDebug.Hide();
             labelDebug.Text = "";
-            labelDebug.BackColor = Color.PaleVioletRed;
+            labelDebug.BackColor = Color.PaleGoldenrod;
         }
         private async Task DebugEnable()
         {
+#if DEBUG
             Debug.WriteLine("WinForm Debug Enabled");
             debugEnabled = true;
             labelDebug.BackColor = Color.LightSeaGreen;
             await DebugIfAble("EN");
-            labelDebug.BackColor = Color.PaleVioletRed;
+            labelDebug.BackColor = Color.PaleGoldenrod;
+#endif
         }
 
         [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
@@ -104,8 +113,7 @@ namespace Display_test
             {
                 case WM_TOUCH:
                 case WM_TOUCHUPDATE:
-                    inActivityWindow.activityDetected();
-                    DebugIfAble("WMSG");
+                    inActivityWindow.activityDetected("WMSG");
                     break;
                 default:
                     break;
@@ -142,7 +150,7 @@ namespace Display_test
         private void button5_Click(object sender, EventArgs e)
         {
             currentPage = CurrentPage.SecondLevelButtonsPage;
-            secondLevelButtonsWindow = new Form2();
+            secondLevelButtonsWindow = new Form2(this);
             secondLevelButtonsWindow.Show();
             secondLevelButtonsWindow.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
             inActivityWindow.startTimer();
@@ -161,14 +169,14 @@ namespace Display_test
         void showWebPage(String url)
         {
             currentPage = CurrentPage.FirstLevelWebpage;
-           backButton.Show();
+            backButton.Show();
             backButton.BringToFront();
             backButton.BringToFront();
-           webBrowser2.Load(url);
-           
-           webBrowser2.Show();
-           pictureBox1.Hide();
-           tableLayoutPanel1.Hide();
+            webBrowser2.Load(url);
+
+            webBrowser2.Show();
+            pictureBox1.Hide();
+            tableLayoutPanel1.Hide();
             pictureBox3.Hide();
 
             inActivityWindow.startTimer();
@@ -214,14 +222,14 @@ namespace Display_test
 
             protected override void OnAudioStreamStopped(IWebBrowser chromiumWebBrowser, IBrowser browser)
             {
-                inActivityWindow.activityDetected(); // media stopped, start timing for inactivity again.
+                inActivityWindow.activityDetected("AUD STP"); // media stopped, start timing for inactivity again.
                 if (handle != null)
                     handle.OnAudioStreamStopped(chromiumWebBrowser, browser);
             }
 
             protected override void OnAudioStreamError(IWebBrowser chromiumWebBrowser, IBrowser browser, string errorMessage)
             {
-                inActivityWindow.activityDetected(); // media stopped, start timing for inactivity again.
+                inActivityWindow.activityDetected("AUD ERR"); // media stopped, start timing for inactivity again.
                 if (handle != null)
                     handle.OnAudioStreamError(chromiumWebBrowser, browser, errorMessage);
             }
@@ -234,11 +242,11 @@ namespace Display_test
             if (currentPage == CurrentPage.FirstLevelWebpage)
             {
                 inActivityWindow = new InActivityWindow(closeWebpage, timerRef, DebugIfAble);
-                result = inActivityWindow.ShowDialog();
+                result = inActivityWindow.ShowDialog(this);
             } else if(currentPage == CurrentPage.SecondLevelButtonsPage && secondLevelButtonsWindow != null)
             {
                 inActivityWindow = new InActivityWindow(secondLevelBack, timerRef, DebugIfAble);
-                result = inActivityWindow.ShowDialog();
+                result = inActivityWindow.ShowDialog(secondLevelButtonsWindow);
             }
 
             if (result  == DialogResult.Yes)
@@ -246,22 +254,41 @@ namespace Display_test
                 inActivityWindow.startTimer();
             }
         }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void activity_event(object sender, EventArgs e)
         {
-
+            inActivityWindow.activityDetected("EVNT");
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        private const string script = @"if(typeof WINFORMS_SCR_LOADED === 'undefined') { document.addEventListener(""click"", function(e) { console.log(""WINFORMS CLICK ACTIVITY""); }); document.addEventListener(""scroll"", function(e) { console.log(""WINFORMS SCROLL ACTIVITY""); }); WINFORMS_SCR_LOADED = true; }";
         private void webBrowser2_FrameLoadEnd(object sender, FrameLoadEndEventArgs e)
         {
             if(!(webBrowser2.AudioHandler is InactivityAudioHandler))
             {
                 webBrowser2.AudioHandler = new InactivityAudioHandler(inActivityWindow, webBrowser2.AudioHandler);
+            }
+        }
+
+        private void webBrowser2_LoadingStateChanged(object sender, LoadingStateChangedEventArgs e)
+        {
+            if(!e.IsLoading)
+            {
+                e.Browser.ExecuteScriptAsync(script);
+            }
+        }
+
+        private void webBrowser2_ConsoleMessage(object sender, ConsoleMessageEventArgs e)
+        {
+            if (e.Message.Equals("WINFORMS CLICK ACTIVITY"))
+            {
+                Invoke(new Action(() =>
+                {
+                    inActivityWindow.activityDetected("JS CLK");
+                }));
+            } else if (e.Message.Equals("WINFORMS SCROLL ACTIVITY"))
+            {
+                Invoke(new Action(() =>
+                {
+                    inActivityWindow.activityDetected("JS SCR");
+                }));
             }
         }
 
@@ -319,6 +346,38 @@ namespace Display_test
                 if (debugEnabled) DebugDisable();
                 else DebugEnable();
             }
+        }
+
+        private void activity_event(object sender, ScrollEventArgs e)
+        {
+            inActivityWindow.activityDetected("EVNT SCR");
+        }
+
+        private void activity_event(object sender, MouseEventArgs e)
+        {
+            inActivityWindow.activityDetected("EVNT MOU");
+        }
+
+        private void activity_event(object sender, AddressChangedEventArgs e)
+        {
+            Invoke(new Action(() =>
+            {
+                inActivityWindow.activityDetected("URL CHNG");
+            }));
+        }
+
+        public void form2Activity()
+        {
+            Invoke(new Action(() =>
+            {
+                inActivityWindow.activityDetected("FORM2");
+            }));
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 't')
+                DebugIfAble("TM " + timerRef.Enabled + timerRef.ToString());
         }
     }
 }

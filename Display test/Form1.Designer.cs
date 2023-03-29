@@ -60,7 +60,11 @@ namespace Display_test
             this.webBrowser2.Name = "webBrowser2";
             this.webBrowser2.Size = new System.Drawing.Size(1370, 749);
             this.webBrowser2.TabIndex = 4;
+            this.webBrowser2.AddressChanged += new System.EventHandler<CefSharp.AddressChangedEventArgs>(this.activity_event);
             this.webBrowser2.FrameLoadEnd += new System.EventHandler<CefSharp.FrameLoadEndEventArgs>(this.webBrowser2_FrameLoadEnd);
+            this.webBrowser2.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.webBrowser2_LoadingStateChanged);
+            this.webBrowser2.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser2_ConsoleMessage);
+            this.webBrowser2.Click += new System.EventHandler(this.activity_event);
             // 
             // tableLayoutPanel1
             // 
@@ -163,7 +167,7 @@ namespace Display_test
             this.label1.TabIndex = 12;
             this.label1.Text = "Welcome to the College of Business\r\nTouch Screen to Interact";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.activity_event);
             this.label1.Resize += new System.EventHandler(this.label1_Resize);
             // 
             // button3
@@ -308,6 +312,14 @@ namespace Display_test
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.activity_event);
+            this.Scroll += new System.Windows.Forms.ScrollEventHandler(this.activity_event);
+            this.Click += new System.EventHandler(this.activity_event);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.activity_event);
+            this.MouseHover += new System.EventHandler(this.activity_event);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.activity_event);
+            this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

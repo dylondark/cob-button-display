@@ -9,7 +9,7 @@ namespace Display_test
     {
         Timer timeChecker;
 
-        const int timerInterval = 6000;
+        const int timerInterval = 10000;
         public OnInactivityDetected onInactivity;
         public Func<string, Task> WriteDebug;
         Timer activityTimer;
@@ -26,11 +26,12 @@ namespace Display_test
             this.FormClosed += new FormClosedEventHandler(onFormClosed);
             this.onInactivity = onInactivityDetected;
             this.WriteDebug = writeDebug;
+            this.CenterToParent();
         }
 
-        public void activityDetected()
+        public void activityDetected(string m = "")
         {
-            WriteDebug("AC DT");
+            WriteDebug("ACTDET " + m);
             activityTimer.Stop();
             activityTimer.Start();
             if(timeChecker.Enabled)
@@ -56,6 +57,7 @@ namespace Display_test
         {
             timeChecker.Stop();
             timeChecker.Start();
+            this.CenterToParent();
         }
 
         void onFormClosed(object obj, EventArgs args)
@@ -65,7 +67,7 @@ namespace Display_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WriteDebug("B1C");
+            WriteDebug("BTN CLICK");
             this.DialogResult = DialogResult.Yes;
             this.Close();
         }
@@ -84,7 +86,7 @@ namespace Display_test
 
         private void label1_Click(object sender, EventArgs e)
         {
-            WriteDebug("L1C");
+            WriteDebug("LBL CLICK");
             this.DialogResult = DialogResult.Yes;
             this.Close();
         }
@@ -93,12 +95,18 @@ namespace Display_test
         {
 
         }
-
-        // TODO mouse move
         
         private void InActivityWindow_Click(object sender, EventArgs e)
         {
-            WriteDebug("IAWC");
+            WriteDebug("IAW CLICK");
+            // If they click the window at all (even if they miss the button), they're not inactive.
+            this.DialogResult = DialogResult.Yes;
+            this.Close();
+        }
+
+        private void InActivityWindow_Leave(object sender, EventArgs e)
+        {
+            WriteDebug("IAW FOCLV");
             // If they click the window at all (even if they miss the button), they're not inactive.
             this.DialogResult = DialogResult.Yes;
             this.Close();
