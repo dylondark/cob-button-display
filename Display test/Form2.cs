@@ -15,7 +15,7 @@ namespace Display_test
         public Form2()
         {
             InitializeComponent();
-            webBrowser1.Navigate("https://www.uakron.edu/search/search.dot?searchText=&collection=l2");
+            webBrowser1.Load("https://www.uakron.edu/search/search.dot?searchText=&collection=l2");
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
         }
@@ -56,7 +56,7 @@ namespace Display_test
                 return;
             }
 
-            webBrowser1.Navigate(url);
+            webBrowser1.Load(url);
             button1.Hide();
             button2.Hide();
             button3.Hide();

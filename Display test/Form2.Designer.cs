@@ -29,7 +29,7 @@ namespace Display_test
         /// </summary>
         private void InitializeComponent()
         {
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.webBrowser1 = new CefSharp.WinForms.ChromiumWebBrowser();
             this.backButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,7 +46,6 @@ namespace Display_test
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.ScriptErrorsSuppressed = true;
             this.webBrowser1.Size = new System.Drawing.Size(854, 383);
             this.webBrowser1.TabIndex = 0;
             // 
@@ -167,8 +166,7 @@ namespace Display_test
         }
 
         #endregion
-
-        private System.Windows.Forms.WebBrowser webBrowser1;
+        private CefSharp.WinForms.ChromiumWebBrowser webBrowser1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
