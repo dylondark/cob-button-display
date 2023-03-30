@@ -42,6 +42,7 @@ namespace Display_test
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.labelDebug = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,6 +52,7 @@ namespace Display_test
             // 
             // webBrowser2
             // 
+            this.webBrowser2.ActivateBrowserOnCreation = false;
             this.webBrowser2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser2.Location = new System.Drawing.Point(0, 0);
             this.webBrowser2.Margin = new System.Windows.Forms.Padding(2);
@@ -58,6 +60,11 @@ namespace Display_test
             this.webBrowser2.Name = "webBrowser2";
             this.webBrowser2.Size = new System.Drawing.Size(1370, 749);
             this.webBrowser2.TabIndex = 4;
+            this.webBrowser2.AddressChanged += new System.EventHandler<CefSharp.AddressChangedEventArgs>(this.activity_event);
+            this.webBrowser2.FrameLoadEnd += new System.EventHandler<CefSharp.FrameLoadEndEventArgs>(this.webBrowser2_FrameLoadEnd);
+            this.webBrowser2.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.webBrowser2_LoadingStateChanged);
+            this.webBrowser2.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser2_ConsoleMessage);
+            this.webBrowser2.Click += new System.EventHandler(this.activity_event);
             // 
             // tableLayoutPanel1
             // 
@@ -91,7 +98,6 @@ namespace Display_test
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 749);
             this.tableLayoutPanel1.TabIndex = 6;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // button2
             // 
@@ -161,7 +167,7 @@ namespace Display_test
             this.label1.TabIndex = 12;
             this.label1.Text = "Welcome to the College of Business\r\nTouch Screen to Interact";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.activity_event);
             this.label1.Resize += new System.EventHandler(this.label1_Resize);
             // 
             // button3
@@ -197,6 +203,8 @@ namespace Display_test
             this.pictureBox3.Size = new System.Drawing.Size(334, 100);
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox3.DoubleClick += new System.EventHandler(this.pictureBox3_Click);
             this.pictureBox3.Resize += new System.EventHandler(this.pictureBox3_Resize);
             // 
             // button6
@@ -264,6 +272,21 @@ namespace Display_test
             this.button7.Click += new System.EventHandler(this.button7_Click);
             this.button7.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
+            // labelDebug
+            // 
+            this.labelDebug.AutoSize = true;
+            this.labelDebug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.labelDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.labelDebug.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelDebug.Location = new System.Drawing.Point(8, 8);
+            this.labelDebug.Margin = new System.Windows.Forms.Padding(8);
+            this.labelDebug.Name = "labelDebug";
+            this.labelDebug.Padding = new System.Windows.Forms.Padding(1);
+            this.labelDebug.Size = new System.Drawing.Size(65, 24);
+            this.labelDebug.TabIndex = 13;
+            this.labelDebug.Text = "Debug";
+            this.labelDebug.Visible = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -281,6 +304,7 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.labelDebug);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.webBrowser2);
             this.Controls.Add(this.pictureBox2);
@@ -288,12 +312,21 @@ namespace Display_test
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.activity_event);
+            this.Scroll += new System.Windows.Forms.ScrollEventHandler(this.activity_event);
+            this.Click += new System.EventHandler(this.activity_event);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.activity_event);
+            this.MouseHover += new System.EventHandler(this.activity_event);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.activity_event);
+            this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -334,6 +367,7 @@ namespace Display_test
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Label labelDebug;
     }
 }
 

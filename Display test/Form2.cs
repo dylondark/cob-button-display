@@ -12,10 +12,14 @@ namespace Display_test
 {
     public partial class Form2 : Form
     {
-        public Form2()
+
+        private Form1 form1;
+        public Form2(Form1 form1)
         {
             InitializeComponent();
             webBrowser1.Load("https://www.uakron.edu/search/search.dot?searchText=&collection=l2");
+            this.form1 = form1;
+            webBrowser1.Navigate("https://www.uakron.edu/search/search.dot?searchText=&collection=l2");
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
         }
@@ -55,6 +59,7 @@ namespace Display_test
                 Console.WriteLine("invalid url");
                 return;
             }
+            form1.form2Activity();
 
             webBrowser1.Load(url);
             button1.Hide();
@@ -75,6 +80,16 @@ namespace Display_test
             webBrowser1.Hide();
             pictureBox1.Show();
             tableLayoutPanel1.Show();
+        }
+
+        private void activity_event(object sender, EventArgs e)
+        {
+            form1.form2Activity();
+        }
+
+        private void activity_event(object sender, MouseEventArgs e)
+        {
+            form1.form2Activity();
         }
     }
 }

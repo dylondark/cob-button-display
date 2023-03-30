@@ -62,6 +62,7 @@ namespace Display_test
             this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.button4_Click);
+            this.backButton.MouseMove += new System.Windows.Forms.MouseEventHandler(this.activity_event);
             // 
             // tableLayoutPanel1
             // 
@@ -84,6 +85,7 @@ namespace Display_test
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(854, 383);
             this.tableLayoutPanel1.TabIndex = 1;
+            this.tableLayoutPanel1.Click += new System.EventHandler(this.activity_event);
             // 
             // button1
             // 
@@ -159,6 +161,7 @@ namespace Display_test
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Click += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -1,9 +1,12 @@
-﻿using System;
+﻿using CefSharp;
+using CefSharp.Handler;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Security.Permissions;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -17,26 +20,89 @@ namespace Display_test
         Form2 secondLevelButtonsWindow;
         private CurrentPage currentPage;
 
-        private Timer timer;
         private int inactivityCheckDuration = 60000;//milliseconds
+        // keep the same inactivity window, reshowing it when needed.
+        // This way when normal activity is detected after its shown, they dont need to still click Yes we can force it.
+        private InActivityWindow inActivityWindow; 
         private const int WM_TOUCH = 0x246;
         private const int WM_TOUCHUPDATE = 0x245;
+        private bool debugEnabled = false;
+
+        private Timer timerRef;
 
         public Form1()
         {
             currentPage = CurrentPage.HomePage;
-            timer = new Timer();
-            timer.Interval = inactivityCheckDuration;
-            timer.Tick += new System.EventHandler(onTimerTick);
+            timerRef = new Timer();
+            timerRef.Interval = inactivityCheckDuration;
+            timerRef.Tick += new EventHandler(onTimerTick);
+            inActivityWindow = new InActivityWindow(closeWebpage, timerRef, DebugIfAble);
 
             createBackButton();
             InitializeComponent();
             webBrowser2.Hide();
             backButton.Hide();
+            labelDebug.Hide();
+
+            labelDebug.Text = "";
 
             FormBorderStyle = FormBorderStyle.None;
             
             this.WindowState = FormWindowState.Maximized;
+        }
+
+        private List<string> Debugs = new List<string>();
+
+        private async Task DebugIfAble(string msg)
+        {
+            if (!debugEnabled) return;
+            Debug.WriteLine(msg);
+            Debugs.Add(msg);
+            Invoke(new Action(() =>
+            {
+                labelDebug.Text = string.Join(Environment.NewLine, Debugs.Distinct());
+                labelDebug.BringToFront();
+                labelDebug.Show();
+            }));
+            await Task.Delay(6000);
+            Debugs.Remove(msg);
+            Invoke(new Action(() =>
+            {
+                if (Debugs.Count == 0)
+                {
+                    labelDebug.Hide();
+                    labelDebug.Text = "";
+                }
+                else
+                {
+                    labelDebug.Text = string.Join(Environment.NewLine, Debugs.Distinct());
+                }
+            }));
+        }
+
+        private async Task DebugDisable()
+        {
+            debugEnabled = false;
+            Debugs.Clear();
+            Debug.WriteLine("WinForm Debug Disabled");
+            labelDebug.BackColor = Color.LightCoral;
+            labelDebug.Text = "OFF";
+            labelDebug.BringToFront();
+            labelDebug.Show();
+            await Task.Delay(6000);
+            labelDebug.Hide();
+            labelDebug.Text = "";
+            labelDebug.BackColor = Color.PaleGoldenrod;
+        }
+        private async Task DebugEnable()
+        {
+#if DEBUG
+            Debug.WriteLine("WinForm Debug Enabled");
+            debugEnabled = true;
+            labelDebug.BackColor = Color.LightSeaGreen;
+            await DebugIfAble("EN");
+            labelDebug.BackColor = Color.PaleGoldenrod;
+#endif
         }
 
         [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
@@ -47,9 +113,7 @@ namespace Display_test
             {
                 case WM_TOUCH:
                 case WM_TOUCHUPDATE:
-                    System.Diagnostics.Debug.WriteLine("Gesture seen");
-                    timer.Stop();
-                    timer.Start();
+                    inActivityWindow.activityDetected("WMSG");
                     break;
                 default:
                     break;
@@ -86,15 +150,15 @@ namespace Display_test
         private void button5_Click(object sender, EventArgs e)
         {
             currentPage = CurrentPage.SecondLevelButtonsPage;
-            secondLevelButtonsWindow = new Form2();
+            secondLevelButtonsWindow = new Form2(this);
             secondLevelButtonsWindow.Show();
             secondLevelButtonsWindow.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
-            timer.Start();
+            inActivityWindow.startTimer();
         }
 
        void  onSecondLevelFormClosed(object obj, EventArgs args)
         {
-             timer.Stop();
+            inActivityWindow.stopTimer();
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -102,25 +166,20 @@ namespace Display_test
             closeWebpage();
         }
 
-        private void webBrowser2_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-            //new comment
-        }
-
         void showWebPage(String url)
         {
             currentPage = CurrentPage.FirstLevelWebpage;
-           backButton.Show();
+            backButton.Show();
             backButton.BringToFront();
             backButton.BringToFront();
-           webBrowser2.Load(url);
-           
-           webBrowser2.Show();
-           pictureBox1.Hide();
-           tableLayoutPanel1.Hide();
+            webBrowser2.Load(url);
+
+            webBrowser2.Show();
+            pictureBox1.Hide();
+            tableLayoutPanel1.Hide();
             pictureBox3.Hide();
 
-           timer.Start();
+            inActivityWindow.startTimer();
         }
 
         void closeWebpage()
@@ -133,49 +192,104 @@ namespace Display_test
             currentPage = CurrentPage.HomePage;
         }
 
+        void secondLevelBack()
+        {
+            secondLevelButtonsWindow.Close();
+            inActivityWindow.stopTimer();
+        }
+
         void onTimerTick(object sender, EventArgs args)
         {
             navigateBackAfterInacitivity();
         }
 
+        class InactivityAudioHandler : AudioHandler
+        {
+            private InActivityWindow inActivityWindow;
+            private IAudioHandler handle;
+            public InactivityAudioHandler(InActivityWindow inActivityWindow, IAudioHandler handle)
+            {
+                this.inActivityWindow = inActivityWindow;
+                this.handle = handle;
+            }
+
+            protected override void OnAudioStreamStarted(CefSharp.IWebBrowser chromiumWebBrowser, CefSharp.IBrowser browser, CefSharp.Structs.AudioParameters parameters, int channels)
+            {
+                inActivityWindow.stopTimer(); // inactivity shouldn't be detected when media is playing.
+                if (handle != null)
+                    handle.OnAudioStreamStarted(chromiumWebBrowser, browser, parameters, channels);
+            }
+
+            protected override void OnAudioStreamStopped(IWebBrowser chromiumWebBrowser, IBrowser browser)
+            {
+                inActivityWindow.activityDetected("AUD STP"); // media stopped, start timing for inactivity again.
+                if (handle != null)
+                    handle.OnAudioStreamStopped(chromiumWebBrowser, browser);
+            }
+
+            protected override void OnAudioStreamError(IWebBrowser chromiumWebBrowser, IBrowser browser, string errorMessage)
+            {
+                inActivityWindow.activityDetected("AUD ERR"); // media stopped, start timing for inactivity again.
+                if (handle != null)
+                    handle.OnAudioStreamError(chromiumWebBrowser, browser, errorMessage);
+            }
+        }
+
         void navigateBackAfterInacitivity()
         {
-            timer.Stop();
+            inActivityWindow.stopTimer();
             DialogResult result = DialogResult.None;
-            InActivityWindow inActivityWindow;
             if (currentPage == CurrentPage.FirstLevelWebpage)
             {
-               inActivityWindow = new InActivityWindow(closeWebpage);
-               result = inActivityWindow.ShowDialog();
-
+                inActivityWindow = new InActivityWindow(closeWebpage, timerRef, DebugIfAble);
+                result = inActivityWindow.ShowDialog(this);
             } else if(currentPage == CurrentPage.SecondLevelButtonsPage && secondLevelButtonsWindow != null)
             {
-                inActivityWindow = new InActivityWindow(() => {
-                    secondLevelButtonsWindow.Close();
-                    timer.Stop();
-                });
-                result = inActivityWindow.ShowDialog();
+                inActivityWindow = new InActivityWindow(secondLevelBack, timerRef, DebugIfAble);
+                result = inActivityWindow.ShowDialog(secondLevelButtonsWindow);
             }
 
             if (result  == DialogResult.Yes)
             {
-                timer.Start();
+                inActivityWindow.startTimer();
+            }
+        }
+        private void activity_event(object sender, EventArgs e)
+        {
+            inActivityWindow.activityDetected("EVNT");
+        }
+        private const string script = @"if(typeof WINFORMS_SCR_LOADED === 'undefined') { document.addEventListener(""click"", function(e) { console.log(""WINFORMS CLICK ACTIVITY""); }); document.addEventListener(""scroll"", function(e) { console.log(""WINFORMS SCROLL ACTIVITY""); }); WINFORMS_SCR_LOADED = true; }";
+        private void webBrowser2_FrameLoadEnd(object sender, FrameLoadEndEventArgs e)
+        {
+            if(!(webBrowser2.AudioHandler is InactivityAudioHandler))
+            {
+                webBrowser2.AudioHandler = new InactivityAudioHandler(inActivityWindow, webBrowser2.AudioHandler);
             }
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void webBrowser2_LoadingStateChanged(object sender, LoadingStateChangedEventArgs e)
         {
-
+            if(!e.IsLoading)
+            {
+                e.Browser.ExecuteScriptAsync(script);
+            }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void webBrowser2_ConsoleMessage(object sender, ConsoleMessageEventArgs e)
         {
-
-        }
-
-        private void backButton_Click_1(object sender, EventArgs e)
-        {
-
+            if (e.Message.Equals("WINFORMS CLICK ACTIVITY"))
+            {
+                Invoke(new Action(() =>
+                {
+                    inActivityWindow.activityDetected("JS CLK");
+                }));
+            } else if (e.Message.Equals("WINFORMS SCROLL ACTIVITY"))
+            {
+                Invoke(new Action(() =>
+                {
+                    inActivityWindow.activityDetected("JS SCR");
+                }));
+            }
         }
 
         private void gridbuttonResize(object sender, EventArgs e)
@@ -211,6 +325,59 @@ namespace Display_test
             {
                 label1.Font = new Font(font.FontFamily, font.Size * target / fontW, font.Style, font.Unit);
             }
+        }
+
+        // Tap the logo 5 times quickly (within 3 secs) to toggle debugging.
+        // In order to fully disable debugging (for publishing), either
+        // return at the top of this method or make DebugEnable return at the top
+        // However that shouldn't be necessary anyway, debugging is just a small textbox in the bottom right corner with error codes.
+        int clicks = 0;
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (clicks == 0)
+                Task.Run(async () => {
+                    await Task.Delay(3000);
+                    if (clicks < 5) clicks = 0;
+                });
+            clicks++;
+            if(clicks >= 5)
+            {
+                clicks = 0;
+                if (debugEnabled) DebugDisable();
+                else DebugEnable();
+            }
+        }
+
+        private void activity_event(object sender, ScrollEventArgs e)
+        {
+            inActivityWindow.activityDetected("EVNT SCR");
+        }
+
+        private void activity_event(object sender, MouseEventArgs e)
+        {
+            inActivityWindow.activityDetected("EVNT MOU");
+        }
+
+        private void activity_event(object sender, AddressChangedEventArgs e)
+        {
+            Invoke(new Action(() =>
+            {
+                inActivityWindow.activityDetected("URL CHNG");
+            }));
+        }
+
+        public void form2Activity()
+        {
+            Invoke(new Action(() =>
+            {
+                inActivityWindow.activityDetected("FORM2");
+            }));
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 't')
+                DebugIfAble("TM " + timerRef.Enabled + timerRef.ToString());
         }
     }
 }
