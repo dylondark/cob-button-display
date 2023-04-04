@@ -39,6 +39,7 @@ namespace Display_test
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.labelDebug = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -200,6 +201,22 @@ namespace Display_test
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             this.pictureBox3.DoubleClick += new System.EventHandler(this.pictureBox3_Click);
             this.pictureBox3.Resize += new System.EventHandler(this.pictureBox3_Resize);
+            // 
+            // 
+            // labelDebug
+            // 
+            this.labelDebug.AutoSize = true;
+            this.labelDebug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.labelDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.labelDebug.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelDebug.Location = new System.Drawing.Point(8, 8);
+            this.labelDebug.Margin = new System.Windows.Forms.Padding(8);
+            this.labelDebug.Name = "labelDebug";
+            this.labelDebug.Padding = new System.Windows.Forms.Padding(1);
+            this.labelDebug.Size = new System.Drawing.Size(65, 24);
+            this.labelDebug.TabIndex = 13;
+            this.labelDebug.Text = "Debug";
+            this.labelDebug.Visible = false;
             // 
             // pictureBox2
             // 
