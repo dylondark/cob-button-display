@@ -90,5 +90,15 @@ namespace Display_test
         {
             form1.form2Activity();
         }
+
+        private void webBrowser1_LoadingStateChanged(object sender, CefSharp.LoadingStateChangedEventArgs e)
+        {
+            form1.webBrowser2_LoadingStateChanged(sender, e);
+        }
+
+        private void webBrowser1_ConsoleMessage(object sender, CefSharp.ConsoleMessageEventArgs e)
+        {
+            form1.webBrowser2_ConsoleMessage(sender, e);
+        }
     }
 }

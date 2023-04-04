@@ -42,12 +42,15 @@ namespace Display_test
             // 
             // webBrowser1
             // 
+            this.webBrowser1.ActivateBrowserOnCreation = false;
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(854, 383);
             this.webBrowser1.TabIndex = 0;
+            this.webBrowser1.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.webBrowser1_LoadingStateChanged);
+            this.webBrowser1.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser1_ConsoleMessage);
             // 
             // backButton
             // 

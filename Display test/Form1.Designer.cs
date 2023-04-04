@@ -61,7 +61,6 @@ namespace Display_test
             this.webBrowser2.Size = new System.Drawing.Size(1370, 749);
             this.webBrowser2.TabIndex = 4;
             this.webBrowser2.AddressChanged += new System.EventHandler<CefSharp.AddressChangedEventArgs>(this.activity_event);
-            this.webBrowser2.FrameLoadEnd += new System.EventHandler<CefSharp.FrameLoadEndEventArgs>(this.webBrowser2_FrameLoadEnd);
             this.webBrowser2.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.webBrowser2_LoadingStateChanged);
             this.webBrowser2.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser2_ConsoleMessage);
             this.webBrowser2.Click += new System.EventHandler(this.activity_event);

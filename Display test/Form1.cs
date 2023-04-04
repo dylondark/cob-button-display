@@ -1,11 +1,11 @@
 ﻿using CefSharp;
 using CefSharp.Handler;
+using CefSharp.WinForms;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using System.Security.Permissions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -105,22 +105,6 @@ namespace Display_test
 #endif
         }
 
-        [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
-        protected override void WndProc(ref Message m)
-        {
-            base.WndProc(ref m);
-            switch (m.Msg)
-            {
-                case WM_TOUCH:
-                case WM_TOUCHUPDATE:
-                    inActivityWindow.activityDetected("WMSG");
-                    break;
-                default:
-                    break;
-            }
-        }
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             showWebPage("https://www.uakron.edu/cba/centers-and-institutes/");
@@ -151,6 +135,8 @@ namespace Display_test
         {
             currentPage = CurrentPage.SecondLevelButtonsPage;
             secondLevelButtonsWindow = new Form2(this);
+            this.Controls.Remove(labelDebug);
+            secondLevelButtonsWindow.Controls.Add(labelDebug);
             secondLevelButtonsWindow.Show();
             secondLevelButtonsWindow.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
             inActivityWindow.startTimer();
@@ -158,6 +144,8 @@ namespace Display_test
 
        void  onSecondLevelFormClosed(object obj, EventArgs args)
         {
+            secondLevelButtonsWindow.Controls.Remove(labelDebug);
+            this.Controls.Add(labelDebug);
             inActivityWindow.stopTimer();
         }
 
@@ -203,38 +191,6 @@ namespace Display_test
             navigateBackAfterInacitivity();
         }
 
-        class InactivityAudioHandler : AudioHandler
-        {
-            private InActivityWindow inActivityWindow;
-            private IAudioHandler handle;
-            public InactivityAudioHandler(InActivityWindow inActivityWindow, IAudioHandler handle)
-            {
-                this.inActivityWindow = inActivityWindow;
-                this.handle = handle;
-            }
-
-            protected override void OnAudioStreamStarted(CefSharp.IWebBrowser chromiumWebBrowser, CefSharp.IBrowser browser, CefSharp.Structs.AudioParameters parameters, int channels)
-            {
-                inActivityWindow.stopTimer(); // inactivity shouldn't be detected when media is playing.
-                if (handle != null)
-                    handle.OnAudioStreamStarted(chromiumWebBrowser, browser, parameters, channels);
-            }
-
-            protected override void OnAudioStreamStopped(IWebBrowser chromiumWebBrowser, IBrowser browser)
-            {
-                inActivityWindow.activityDetected("AUD STP"); // media stopped, start timing for inactivity again.
-                if (handle != null)
-                    handle.OnAudioStreamStopped(chromiumWebBrowser, browser);
-            }
-
-            protected override void OnAudioStreamError(IWebBrowser chromiumWebBrowser, IBrowser browser, string errorMessage)
-            {
-                inActivityWindow.activityDetected("AUD ERR"); // media stopped, start timing for inactivity again.
-                if (handle != null)
-                    handle.OnAudioStreamError(chromiumWebBrowser, browser, errorMessage);
-            }
-        }
-
         void navigateBackAfterInacitivity()
         {
             inActivityWindow.stopTimer();
@@ -259,15 +215,8 @@ namespace Display_test
             inActivityWindow.activityDetected("EVNT");
         }
         private const string script = @"if(typeof WINFORMS_SCR_LOADED === 'undefined') { document.addEventListener(""click"", function(e) { console.log(""WINFORMS CLICK ACTIVITY""); }); document.addEventListener(""scroll"", function(e) { console.log(""WINFORMS SCROLL ACTIVITY""); }); WINFORMS_SCR_LOADED = true; }";
-        private void webBrowser2_FrameLoadEnd(object sender, FrameLoadEndEventArgs e)
-        {
-            if(!(webBrowser2.AudioHandler is InactivityAudioHandler))
-            {
-                webBrowser2.AudioHandler = new InactivityAudioHandler(inActivityWindow, webBrowser2.AudioHandler);
-            }
-        }
 
-        private void webBrowser2_LoadingStateChanged(object sender, LoadingStateChangedEventArgs e)
+        public void webBrowser2_LoadingStateChanged(object sender, LoadingStateChangedEventArgs e)
         {
             if(!e.IsLoading)
             {
@@ -275,7 +224,7 @@ namespace Display_test
             }
         }
 
-        private void webBrowser2_ConsoleMessage(object sender, ConsoleMessageEventArgs e)
+        public void webBrowser2_ConsoleMessage(object sender, ConsoleMessageEventArgs e)
         {
             if (e.Message.Equals("WINFORMS CLICK ACTIVITY"))
             {
@@ -328,9 +277,6 @@ namespace Display_test
         }
 
         // Tap the logo 5 times quickly (within 3 secs) to toggle debugging.
-        // In order to fully disable debugging (for publishing), either
-        // return at the top of this method or make DebugEnable return at the top
-        // However that shouldn't be necessary anyway, debugging is just a small textbox in the bottom right corner with error codes.
         int clicks = 0;
         private void pictureBox3_Click(object sender, EventArgs e)
         {
