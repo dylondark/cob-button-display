@@ -107,14 +107,14 @@ namespace Display_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            showWebPage("https://www.uakron.edu/cba/centers-and-institutes/");
+            showWebPage("https://www.uakron.edu/cba/departments/marketing/alumni-stories");
             this.ControlBox = false;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            showWebPage("https://www.uakron.edu/cba/outcomes/");
+            showWebPage("https://www.uakron.edu/cba/outcomes/experiential-learning");
         }
 
         private void button3_Click(object sender, EventArgs e)
