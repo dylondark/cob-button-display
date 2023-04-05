@@ -1,6 +1,7 @@
 ﻿using CefSharp;
 using CefSharp.Handler;
 using CefSharp.WinForms;
+using Display_test;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -49,6 +50,9 @@ namespace Display_test
             FormBorderStyle = FormBorderStyle.None;
             
             this.WindowState = FormWindowState.Maximized;
+
+            // init lifespanhandler for redirection of new tab requests back to the original browser
+            webBrowser2.LifeSpanHandler = new ChromiumLifeSpanHandler();
         }
 
         private List<string> Debugs = new List<string>();

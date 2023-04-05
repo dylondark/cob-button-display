@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CefSharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,9 @@ namespace Display_test
             this.form1 = form1;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+
+            // init lifespanhandler for redirection of new tab requests back to the original browser
+            webBrowser1.LifeSpanHandler = new ChromiumLifeSpanHandler();
         }
 
         private void button1_Click(object sender, EventArgs e)
