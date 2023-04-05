@@ -41,18 +41,18 @@ namespace Display_test
 
             createBackButton();
             InitializeComponent();
-            webBrowser2.Hide();
+            webBrowser.Hide();
             backButton.Hide();
-            labelDebug.Hide();
+            lblDebug.Hide();
 
-            labelDebug.Text = "";
+            lblDebug.Text = "";
 
             FormBorderStyle = FormBorderStyle.None;
             
             this.WindowState = FormWindowState.Maximized;
 
             // init lifespanhandler for redirection of new tab requests back to the original browser
-            webBrowser2.LifeSpanHandler = new ChromiumLifeSpanHandler();
+            webBrowser.LifeSpanHandler = new ChromiumLifeSpanHandler();
         }
 
         private List<string> Debugs = new List<string>();
@@ -64,9 +64,9 @@ namespace Display_test
             Debugs.Add(msg);
             Invoke(new Action(() =>
             {
-                labelDebug.Text = string.Join(Environment.NewLine, Debugs.Distinct());
-                labelDebug.BringToFront();
-                labelDebug.Show();
+                lblDebug.Text = string.Join(Environment.NewLine, Debugs.Distinct());
+                lblDebug.BringToFront();
+                lblDebug.Show();
             }));
             await Task.Delay(6000);
             Debugs.Remove(msg);
@@ -74,12 +74,12 @@ namespace Display_test
             {
                 if (Debugs.Count == 0)
                 {
-                    labelDebug.Hide();
-                    labelDebug.Text = "";
+                    lblDebug.Hide();
+                    lblDebug.Text = "";
                 }
                 else
                 {
-                    labelDebug.Text = string.Join(Environment.NewLine, Debugs.Distinct());
+                    lblDebug.Text = string.Join(Environment.NewLine, Debugs.Distinct());
                 }
             }));
         }
@@ -89,23 +89,23 @@ namespace Display_test
             debugEnabled = false;
             Debugs.Clear();
             Debug.WriteLine("WinForm Debug Disabled");
-            labelDebug.BackColor = Color.LightCoral;
-            labelDebug.Text = "OFF";
-            labelDebug.BringToFront();
-            labelDebug.Show();
+            lblDebug.BackColor = Color.LightCoral;
+            lblDebug.Text = "OFF";
+            lblDebug.BringToFront();
+            lblDebug.Show();
             await Task.Delay(6000);
-            labelDebug.Hide();
-            labelDebug.Text = "";
-            labelDebug.BackColor = Color.PaleGoldenrod;
+            lblDebug.Hide();
+            lblDebug.Text = "";
+            lblDebug.BackColor = Color.PaleGoldenrod;
         }
         private async Task DebugEnable()
         {
 #if DEBUG
             Debug.WriteLine("WinForm Debug Enabled");
             debugEnabled = true;
-            labelDebug.BackColor = Color.LightSeaGreen;
+            lblDebug.BackColor = Color.LightSeaGreen;
             await DebugIfAble("EN");
-            labelDebug.BackColor = Color.PaleGoldenrod;
+            lblDebug.BackColor = Color.PaleGoldenrod;
 #endif
         }
 
@@ -139,8 +139,8 @@ namespace Display_test
         {
             currentPage = CurrentPage.SecondLevelButtonsPage;
             secondLevelButtonsWindow = new Form2(this);
-            this.Controls.Remove(labelDebug);
-            secondLevelButtonsWindow.Controls.Add(labelDebug);
+            this.Controls.Remove(lblDebug);
+            secondLevelButtonsWindow.Controls.Add(lblDebug);
             secondLevelButtonsWindow.Show();
             secondLevelButtonsWindow.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
             inActivityWindow.startTimer();
@@ -148,8 +148,8 @@ namespace Display_test
 
        void  onSecondLevelFormClosed(object obj, EventArgs args)
         {
-            secondLevelButtonsWindow.Controls.Remove(labelDebug);
-            this.Controls.Add(labelDebug);
+            secondLevelButtonsWindow.Controls.Remove(lblDebug);
+            this.Controls.Add(lblDebug);
             inActivityWindow.stopTimer();
         }
 
@@ -164,23 +164,21 @@ namespace Display_test
             backButton.Show();
             backButton.BringToFront();
             backButton.BringToFront();
-            webBrowser2.Load(url);
+            webBrowser.Load(url);
 
-            webBrowser2.Show();
-            pictureBox1.Hide();
+            webBrowser.Show();
             tableLayoutPanel1.Hide();
-            pictureBox3.Hide();
+            picCOB.Hide();
 
             inActivityWindow.startTimer();
         }
 
         void closeWebpage()
         {
-            webBrowser2.Hide();
+            webBrowser.Hide();
             backButton.Hide();
-            pictureBox1.Show();
             tableLayoutPanel1.Show();
-            pictureBox3.Show();
+            picCOB.Show();
             currentPage = CurrentPage.HomePage;
         }
 
@@ -259,24 +257,24 @@ namespace Display_test
 
         private void pictureBox3_Resize(object sender, EventArgs e)
         {
-            int colW = pictureBox3.Size.Width + pictureBox3.Margin.Horizontal;
-            int imgWidthScaled = pictureBox3.Size.Height * pictureBox3.BackgroundImage.Width / pictureBox3.BackgroundImage.Height;
-            var marg = pictureBox3.Margin;
+            int colW = picCOB.Size.Width + picCOB.Margin.Horizontal;
+            int imgWidthScaled = picCOB.Size.Height * picCOB.BackgroundImage.Width / picCOB.BackgroundImage.Height;
+            var marg = picCOB.Margin;
             int hMarg = colW - imgWidthScaled;
             marg.Left = hMarg - 10;
             marg.Right = 10;
-            pictureBox3.Margin = marg;
+            picCOB.Margin = marg;
         }
 
         private void label1_Resize(object sender, EventArgs e)
         {
-            Font font = label1.Font;
-            int fontW = TextRenderer.MeasureText(label1.Text, font).Width,
-                w = label1.Width,
+            Font font = lblWelcome.Font;
+            int fontW = TextRenderer.MeasureText(lblWelcome.Text, font).Width,
+                w = lblWelcome.Width,
                 target = w * 9 / 10;
             if (fontW < target || fontW > w)
             {
-                label1.Font = new Font(font.FontFamily, font.Size * target / fontW, font.Style, font.Unit);
+                lblWelcome.Font = new Font(font.FontFamily, font.Size * target / fontW, font.Style, font.Unit);
             }
         }
 

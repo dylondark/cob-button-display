@@ -30,14 +30,14 @@ namespace Display_test
         private void InitializeComponent()
         {
             this.webBrowser1 = new CefSharp.WinForms.ChromiumWebBrowser();
-            this.backButton = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnStaff = new System.Windows.Forms.Button();
+            this.btnFaculty = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.picCOB = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -52,20 +52,20 @@ namespace Display_test
             this.webBrowser1.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.webBrowser1_LoadingStateChanged);
             this.webBrowser1.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser1_ConsoleMessage);
             // 
-            // backButton
+            // btnBack
             // 
-            this.backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.backButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(448, 180);
-            this.backButton.MinimumSize = new System.Drawing.Size(400, 200);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(400, 200);
-            this.backButton.TabIndex = 0;
-            this.backButton.Text = "Back";
-            this.backButton.UseVisualStyleBackColor = false;
-            this.backButton.Click += new System.EventHandler(this.button4_Click);
-            this.backButton.MouseMove += new System.Windows.Forms.MouseEventHandler(this.activity_event);
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(448, 180);
+            this.btnBack.MinimumSize = new System.Drawing.Size(400, 200);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(400, 200);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.button4_Click);
+            this.btnBack.MouseMove += new System.Windows.Forms.MouseEventHandler(this.activity_event);
             // 
             // tableLayoutPanel1
             // 
@@ -75,10 +75,10 @@ namespace Display_test
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnStaff, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnFaculty, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnSearch, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.picCOB, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -90,67 +90,69 @@ namespace Display_test
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.Click += new System.EventHandler(this.activity_event);
             // 
-            // button1
+            // btnStaff
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackgroundImage = global::Display_test.Properties.Resources._1;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 98);
-            this.button1.MaximumSize = new System.Drawing.Size(900, 700);
-            this.button1.MinimumSize = new System.Drawing.Size(225, 175);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(278, 185);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnStaff.BackgroundImage = global::Display_test.Properties.Resources._1;
+            this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaff.Location = new System.Drawing.Point(3, 98);
+            this.btnStaff.MaximumSize = new System.Drawing.Size(900, 700);
+            this.btnStaff.MinimumSize = new System.Drawing.Size(225, 175);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Size = new System.Drawing.Size(278, 185);
+            this.btnStaff.TabIndex = 0;
+            this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnFaculty
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnFaculty.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackgroundImage = global::Display_test.Properties.Resources._2;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(287, 98);
-            this.button2.MaximumSize = new System.Drawing.Size(900, 700);
-            this.button2.MinimumSize = new System.Drawing.Size(225, 175);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 185);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnFaculty.BackgroundImage = global::Display_test.Properties.Resources._2;
+            this.btnFaculty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFaculty.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFaculty.Location = new System.Drawing.Point(287, 98);
+            this.btnFaculty.MaximumSize = new System.Drawing.Size(900, 700);
+            this.btnFaculty.MinimumSize = new System.Drawing.Size(225, 175);
+            this.btnFaculty.Name = "btnFaculty";
+            this.btnFaculty.Size = new System.Drawing.Size(278, 185);
+            this.btnFaculty.TabIndex = 1;
+            this.btnFaculty.UseVisualStyleBackColor = true;
+            this.btnFaculty.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnSearch
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackgroundImage = global::Display_test.Properties.Resources._3;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(571, 98);
-            this.button3.MaximumSize = new System.Drawing.Size(900, 700);
-            this.button3.MinimumSize = new System.Drawing.Size(225, 175);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(280, 185);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnSearch.BackgroundImage = global::Display_test.Properties.Resources._3;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(571, 98);
+            this.btnSearch.MaximumSize = new System.Drawing.Size(900, 700);
+            this.btnSearch.MinimumSize = new System.Drawing.Size(225, 175);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(280, 185);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.button3_Click);
             // 
-            // pictureBox1
+            // picCOB
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Display_test.Properties.Resources.re_sized;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 289);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(500, 100);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(500, 100);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.picCOB.BackColor = System.Drawing.Color.Transparent;
+            this.picCOB.BackgroundImage = global::Display_test.Properties.Resources.re_sized;
+            this.picCOB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picCOB.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.picCOB.Location = new System.Drawing.Point(3, 289);
+            this.picCOB.MinimumSize = new System.Drawing.Size(500, 200);
+            this.picCOB.Name = "picCOB";
+            this.picCOB.Size = new System.Drawing.Size(500, 200);
+            this.picCOB.TabIndex = 4;
+            this.picCOB.TabStop = false;
             // 
             // Form2
             // 
@@ -158,7 +160,7 @@ namespace Display_test
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(854, 383);
-            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.webBrowser1);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
@@ -166,7 +168,7 @@ namespace Display_test
             this.Text = "Form2";
             this.Click += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -174,10 +176,10 @@ namespace Display_test
         #endregion
         private CefSharp.WinForms.ChromiumWebBrowser webBrowser1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button backButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnStaff;
+        private System.Windows.Forms.Button btnFaculty;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.PictureBox picCOB;
     }
 }

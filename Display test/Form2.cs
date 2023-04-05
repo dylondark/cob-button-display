@@ -65,23 +65,23 @@ namespace Display_test
             form1.form2Activity();
 
             webBrowser1.Load(url);
-            button1.Hide();
-            button2.Hide();
-            button3.Hide();
+            btnStaff.Hide();
+            btnFaculty.Hide();
+            btnSearch.Hide();
             webBrowser1.Show();
-            pictureBox1.Hide();
+            picCOB.Hide();
             tableLayoutPanel1.Hide();
             this.ControlBox = false;
         }
 
         void closeWebPage()
         {
-            button1.Show();
-            button2.Show();
-            button3.Show();
+            btnStaff.Show();
+            btnFaculty.Show();
+            btnSearch.Show();
 
             webBrowser1.Hide();
-            pictureBox1.Show();
+            picCOB.Show();
             tableLayoutPanel1.Show();
         }
 
