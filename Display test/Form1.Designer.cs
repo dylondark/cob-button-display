@@ -31,18 +31,23 @@ namespace Display_test
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.webBrowser = new CefSharp.WinForms.ChromiumWebBrowser();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnProfDev = new System.Windows.Forms.Button();
             this.btnNews = new System.Windows.Forms.Button();
-            this.lblWelcome = new System.Windows.Forms.Label();
             this.btnExecEd = new System.Windows.Forms.Button();
-            this.picCOB = new System.Windows.Forms.PictureBox();
             this.btnUndergrad = new System.Windows.Forms.Button();
             this.btnDirectory = new System.Windows.Forms.Button();
             this.btnGrad = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picCOB = new System.Windows.Forms.PictureBox();
             this.lblDebug = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,19 +82,19 @@ namespace Display_test
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.Controls.Add(this.btnProfDev, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnNews, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblWelcome, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnExecEd, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.picCOB, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnUndergrad, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnDirectory, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnGrad, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.picCOB, 2, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 749);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
@@ -105,7 +110,7 @@ namespace Display_test
             this.btnProfDev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnProfDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfDev.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnProfDev.Location = new System.Drawing.Point(481, 383);
+            this.btnProfDev.Location = new System.Drawing.Point(481, 338);
             this.btnProfDev.Margin = new System.Windows.Forms.Padding(2);
             this.btnProfDev.Name = "btnProfDev";
             this.btnProfDev.Size = new System.Drawing.Size(407, 258);
@@ -126,31 +131,13 @@ namespace Display_test
             this.btnNews.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnNews.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNews.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnNews.Location = new System.Drawing.Point(71, 384);
+            this.btnNews.Location = new System.Drawing.Point(71, 339);
             this.btnNews.Name = "btnNews";
             this.btnNews.Size = new System.Drawing.Size(405, 256);
             this.btnNews.TabIndex = 0;
             this.btnNews.UseVisualStyleBackColor = false;
             this.btnNews.Click += new System.EventHandler(this.button1_Click);
             this.btnNews.Resize += new System.EventHandler(this.gridbuttonResize);
-            // 
-            // lblWelcome
-            // 
-            this.lblWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lblWelcome.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblWelcome.Location = new System.Drawing.Point(482, 0);
-            this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(405, 119);
-            this.lblWelcome.TabIndex = 12;
-            this.lblWelcome.Text = "Welcome to the College of Business\r\nTouch Screen to Interact";
-            this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblWelcome.Click += new System.EventHandler(this.activity_event);
-            this.lblWelcome.Resize += new System.EventHandler(this.label1_Resize);
             // 
             // btnExecEd
             // 
@@ -162,7 +149,7 @@ namespace Display_test
             this.btnExecEd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnExecEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExecEd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnExecEd.Location = new System.Drawing.Point(892, 383);
+            this.btnExecEd.Location = new System.Drawing.Point(892, 338);
             this.btnExecEd.Margin = new System.Windows.Forms.Padding(2);
             this.btnExecEd.Name = "btnExecEd";
             this.btnExecEd.Size = new System.Drawing.Size(407, 258);
@@ -170,24 +157,6 @@ namespace Display_test
             this.btnExecEd.UseVisualStyleBackColor = false;
             this.btnExecEd.Click += new System.EventHandler(this.button3_Click);
             this.btnExecEd.Resize += new System.EventHandler(this.gridbuttonResize);
-            // 
-            // picCOB
-            // 
-            this.picCOB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.picCOB.BackColor = System.Drawing.Color.Transparent;
-            this.picCOB.BackgroundImage = global::Display_test.Properties.Resources.CBALogo2;
-            this.picCOB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tableLayoutPanel1.SetColumnSpan(this.picCOB, 2);
-            this.picCOB.Location = new System.Drawing.Point(1033, 646);
-            this.picCOB.MaximumSize = new System.Drawing.Size(900, 287);
-            this.picCOB.MinimumSize = new System.Drawing.Size(157, 48);
-            this.picCOB.Name = "picCOB";
-            this.picCOB.Size = new System.Drawing.Size(334, 100);
-            this.picCOB.TabIndex = 6;
-            this.picCOB.TabStop = false;
-            this.picCOB.Click += new System.EventHandler(this.pictureBox3_Click);
-            this.picCOB.DoubleClick += new System.EventHandler(this.pictureBox3_Click);
-            this.picCOB.Resize += new System.EventHandler(this.pictureBox3_Resize);
             // 
             // btnUndergrad
             // 
@@ -201,7 +170,7 @@ namespace Display_test
             this.btnUndergrad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUndergrad.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUndergrad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnUndergrad.Location = new System.Drawing.Point(481, 121);
+            this.btnUndergrad.Location = new System.Drawing.Point(481, 76);
             this.btnUndergrad.Margin = new System.Windows.Forms.Padding(2);
             this.btnUndergrad.Name = "btnUndergrad";
             this.btnUndergrad.Size = new System.Drawing.Size(407, 258);
@@ -222,7 +191,7 @@ namespace Display_test
             this.btnDirectory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDirectory.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDirectory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnDirectory.Location = new System.Drawing.Point(71, 122);
+            this.btnDirectory.Location = new System.Drawing.Point(71, 77);
             this.btnDirectory.MaximumSize = new System.Drawing.Size(1300, 1250);
             this.btnDirectory.MinimumSize = new System.Drawing.Size(325, 200);
             this.btnDirectory.Name = "btnDirectory";
@@ -245,7 +214,7 @@ namespace Display_test
             this.btnGrad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGrad.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnGrad.Location = new System.Drawing.Point(892, 121);
+            this.btnGrad.Location = new System.Drawing.Point(892, 76);
             this.btnGrad.Margin = new System.Windows.Forms.Padding(2);
             this.btnGrad.Name = "btnGrad";
             this.btnGrad.Size = new System.Drawing.Size(407, 258);
@@ -253,6 +222,67 @@ namespace Display_test
             this.btnGrad.UseVisualStyleBackColor = false;
             this.btnGrad.Click += new System.EventHandler(this.button7_Click);
             this.btnGrad.Resize += new System.EventHandler(this.gridbuttonResize);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel2.Controls.Add(this.lblWelcome, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(482, 601);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(405, 145);
+            this.tableLayoutPanel2.TabIndex = 15;
+            // 
+            // lblWelcome
+            // 
+            this.lblWelcome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblWelcome.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblWelcome.Location = new System.Drawing.Point(3, 0);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(237, 145);
+            this.lblWelcome.TabIndex = 14;
+            this.lblWelcome.Text = "Touch Screen to Interact";
+            this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(253, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(142, 125);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picCOB
+            // 
+            this.picCOB.BackColor = System.Drawing.Color.Transparent;
+            this.picCOB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.picCOB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picCOB.Image = global::Display_test.Properties.Resources.re_sized;
+            this.picCOB.Location = new System.Drawing.Point(482, 3);
+            this.picCOB.MaximumSize = new System.Drawing.Size(900, 287);
+            this.picCOB.MinimumSize = new System.Drawing.Size(157, 48);
+            this.picCOB.Name = "picCOB";
+            this.picCOB.Size = new System.Drawing.Size(405, 68);
+            this.picCOB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCOB.TabIndex = 6;
+            this.picCOB.TabStop = false;
+            this.picCOB.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.picCOB.DoubleClick += new System.EventHandler(this.pictureBox3_Click);
             // 
             // lblDebug
             // 
@@ -294,6 +324,9 @@ namespace Display_test
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -328,7 +361,6 @@ namespace Display_test
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button btnExecEd;
         private System.Windows.Forms.Button btnGrad;
-        private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Button btnUndergrad;
         private System.Windows.Forms.Button btnDirectory;
         private System.Windows.Forms.Button btnNews;
@@ -336,6 +368,9 @@ namespace Display_test
         private System.Windows.Forms.PictureBox picCOB;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Label lblDebug;
+        private TableLayoutPanel tableLayoutPanel2;
+        private Label lblWelcome;
+        private PictureBox pictureBox1;
     }
 }
 
