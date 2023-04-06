@@ -25,6 +25,8 @@ namespace Display_test
 
             // init lifespanhandler for redirection of new tab requests back to the original browser
             webBrowser1.LifeSpanHandler = new ChromiumLifeSpanHandler();
+
+            picCOB.Left = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
