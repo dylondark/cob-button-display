@@ -53,6 +53,7 @@ namespace Display_test
                 closeWebPage();
             } else
             {
+                form1.writeStat(0, "lvl2-back");
                 this.Close();
             }
             

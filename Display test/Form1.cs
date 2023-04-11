@@ -219,7 +219,7 @@ namespace Display_test
 
        void  onSecondLevelFormClosed(object obj, EventArgs args)
         {
-            writeStat(0);
+            writeStat(0, "lvl2-ev");
             secondLevelButtonsWindow.Controls.Remove(lblDebug);
             this.Controls.Add(lblDebug);
             inActivityWindow.stopTimer();
@@ -245,9 +245,9 @@ namespace Display_test
             inActivityWindow.startTimer();
         }
 
-        void closeWebpage()
+        void closeWebpage(bool auto = false)
         {
-            writeStat(0);
+            writeStat(0, auto ? "auto" : "back");
             webBrowser.Hide();
             backButton.Hide();
             tableLayoutPanel1.Show();
@@ -255,8 +255,14 @@ namespace Display_test
             currentPage = CurrentPage.HomePage;
         }
 
+        void closeWebpageAuto()
+        {
+            closeWebpage(true);
+        }
+
         void secondLevelBack()
         {
+            writeStat(0, "lvl2-auto");
             secondLevelButtonsWindow.Close();
             inActivityWindow.stopTimer();
         }
@@ -272,7 +278,7 @@ namespace Display_test
             DialogResult result = DialogResult.None;
             if (currentPage == CurrentPage.FirstLevelWebpage)
             {
-                inActivityWindow = new InActivityWindow(closeWebpage, timerRef, DebugIfAble);
+                inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
                 result = inActivityWindow.ShowDialog(this);
             } else if(currentPage == CurrentPage.SecondLevelButtonsPage && secondLevelButtonsWindow != null)
             {
