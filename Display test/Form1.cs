@@ -1,4 +1,6 @@
 ﻿using CefSharp;
+using CefSharp.DevTools.DOM;
+using CefSharp.DevTools.Runtime;
 using CefSharp.Handler;
 using CefSharp.WinForms;
 using Display_test;
@@ -6,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,6 +33,8 @@ namespace Display_test
         private bool debugEnabled = false;
 
         private Timer timerRef;
+        private string statsFile;
+        private object statsLock = new object();
 
         public Form1()
         {
@@ -38,6 +43,8 @@ namespace Display_test
             timerRef.Interval = inactivityCheckDuration;
             timerRef.Tick += new EventHandler(onTimerTick);
             inActivityWindow = new InActivityWindow(closeWebpage, timerRef, DebugIfAble);
+
+            setupStats();
 
             createBackButton();
             InitializeComponent();
@@ -53,6 +60,62 @@ namespace Display_test
 
             // init lifespanhandler for redirection of new tab requests back to the original browser
             webBrowser.LifeSpanHandler = new ChromiumLifeSpanHandler();
+        }
+
+        /*
+         * Stat Codes:
+         * 0: close page
+         * 1-6: Form1 Buttons (topleft origin)
+         * 7-8: Debug on, off
+         * 9-11: Form2 Buttons
+         * 12: form1 URL change
+         * 13: form2 URL change
+         * 14: second level back
+         * 20: program start
+         */
+        private void setupStats()
+        {
+            string targetDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Documents", "displaytest_output");
+            Directory.CreateDirectory(targetDir);
+            statsFile = Path.Combine(targetDir, "data.csv");
+            lock (statsLock)
+            {
+                if (File.Exists(statsFile))
+                {
+                    if (new FileInfo(statsFile).Length > 1000000000L)
+                    {
+                        statsFile = null;
+                        return;
+                    }
+                }
+                else
+                {
+                    File.WriteAllText(statsFile, "UTC Timestamp,Action Code,Details" + Environment.NewLine);
+                }
+                File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), "20", Environment.NewLine));
+            }
+        }
+
+        public void writeStat(int code)
+        {
+            Task.Run(() =>
+            {
+                lock (statsLock)
+                {
+                    File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), code, Environment.NewLine));
+                }
+            });
+        }
+
+        public void writeStat(int code, string str)
+        {
+            Task.Run(() =>
+            {
+                lock (statsLock)
+                {
+                    File.AppendAllText(statsFile, string.Format("{0},{1},{2}{3}", DateTimeOffset.UtcNow.ToString("s"), code, str, Environment.NewLine));
+                }
+            });
         }
 
         private List<string> Debugs = new List<string>();
@@ -86,6 +149,7 @@ namespace Display_test
 
         private async Task DebugDisable()
         {
+            writeStat(8);
             debugEnabled = false;
             Debugs.Clear();
             Debug.WriteLine("WinForm Debug Disabled");
@@ -100,6 +164,7 @@ namespace Display_test
         }
         private async Task DebugEnable()
         {
+            writeStat(7);
 #if DEBUG
             Debug.WriteLine("WinForm Debug Enabled");
             debugEnabled = true;
@@ -111,6 +176,7 @@ namespace Display_test
 
         private void button1_Click(object sender, EventArgs e)
         {
+            writeStat(4);
             showWebPage("https://www.uakron.edu/cba/centers-and-institutes/");
             this.ControlBox = false;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -118,25 +184,30 @@ namespace Display_test
 
         private void button2_Click(object sender, EventArgs e)
         {
+            writeStat(5);
             showWebPage("https://www.uakron.edu/cba/outcomes/");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-           showWebPage("https://www.uakron.edu/cba/executive/");
+            writeStat(6);
+            showWebPage("https://www.uakron.edu/cba/executive/");
         }
         private void button6_Click(object sender, EventArgs e)
         {
+            writeStat(2);
             showWebPage("https://uakron.edu/cba/undergraduate/majors/");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            writeStat(3);
             showWebPage("https://www.uakron.edu/cba/graduate/");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            writeStat(1);
             currentPage = CurrentPage.SecondLevelButtonsPage;
             secondLevelButtonsWindow = new Form2(this);
             this.Controls.Remove(lblDebug);
@@ -148,6 +219,7 @@ namespace Display_test
 
        void  onSecondLevelFormClosed(object obj, EventArgs args)
         {
+            writeStat(0, "lvl2-ev");
             secondLevelButtonsWindow.Controls.Remove(lblDebug);
             this.Controls.Add(lblDebug);
             inActivityWindow.stopTimer();
@@ -173,8 +245,9 @@ namespace Display_test
             inActivityWindow.startTimer();
         }
 
-        void closeWebpage()
+        void closeWebpage(bool auto = false)
         {
+            writeStat(0, auto ? "auto" : "back");
             webBrowser.Hide();
             backButton.Hide();
             tableLayoutPanel1.Show();
@@ -182,8 +255,14 @@ namespace Display_test
             currentPage = CurrentPage.HomePage;
         }
 
+        void closeWebpageAuto()
+        {
+            closeWebpage(true);
+        }
+
         void secondLevelBack()
         {
+            writeStat(0, "lvl2-auto");
             secondLevelButtonsWindow.Close();
             inActivityWindow.stopTimer();
         }
@@ -199,7 +278,7 @@ namespace Display_test
             DialogResult result = DialogResult.None;
             if (currentPage == CurrentPage.FirstLevelWebpage)
             {
-                inActivityWindow = new InActivityWindow(closeWebpage, timerRef, DebugIfAble);
+                inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
                 result = inActivityWindow.ShowDialog(this);
             } else if(currentPage == CurrentPage.SecondLevelButtonsPage && secondLevelButtonsWindow != null)
             {
@@ -310,6 +389,7 @@ namespace Display_test
         {
             Invoke(new Action(() =>
             {
+                writeStat(12, e.Address);
                 inActivityWindow.activityDetected("URL CHNG");
             }));
         }
