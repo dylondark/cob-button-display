@@ -42,7 +42,7 @@ namespace Display_test
             timerRef = new Timer();
             timerRef.Interval = inactivityCheckDuration;
             timerRef.Tick += new EventHandler(onTimerTick);
-            inActivityWindow = new InActivityWindow(closeWebpage, timerRef, DebugIfAble);
+            inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
 
             setupStats();
 
