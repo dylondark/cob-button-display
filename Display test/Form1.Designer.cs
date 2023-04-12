@@ -127,7 +127,7 @@ namespace Display_test
             this.btnNews.AutoSize = true;
             this.btnNews.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnNews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnNews.BackgroundImage = global::Display_test.Properties.Resources.News_and_Events2;
+            this.btnNews.BackgroundImage = global::Display_test.Properties.Resources.centers_and_institutes;
             this.btnNews.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnNews.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNews.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
@@ -259,10 +259,10 @@ namespace Display_test
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(253, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.pictureBox1.Location = new System.Drawing.Point(263, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 125);
+            this.pictureBox1.Size = new System.Drawing.Size(122, 105);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
