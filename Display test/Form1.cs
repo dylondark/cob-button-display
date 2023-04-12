@@ -40,7 +40,7 @@ namespace Display_test
 
             createBackButton();
             InitializeComponent();
-            webBrowser2.Hide();
+            chromium.Hide();
             backButton.Hide();
             labelDebug.Hide();
 
@@ -140,23 +140,23 @@ namespace Display_test
             backButton.Show();
             backButton.BringToFront();
             backButton.BringToFront();
-            webBrowser2.Load(url);
+            chromium.Load(url);
 
-            webBrowser2.Show();
+            chromium.Show();
             pictureBox1.Hide();
             tableLayoutPanel1.Hide();
-            pictureBox3.Hide();
+            picLogo.Hide();
 
             inActivityWindow.startTimer();
         }
 
         void closeWebpage()
         {
-            webBrowser2.Hide();
+            chromium.Hide();
             backButton.Hide();
             pictureBox1.Show();
             tableLayoutPanel1.Show();
-            pictureBox3.Show();
+            picLogo.Show();
             currentPage = CurrentPage.HomePage;
         }
 
@@ -243,13 +243,13 @@ namespace Display_test
 
         private void pictureBox3_Resize(object sender, EventArgs e)
         {
-            int colW = pictureBox3.Size.Width + pictureBox3.Margin.Horizontal;
-            int imgWidthScaled = pictureBox3.Size.Height * pictureBox3.BackgroundImage.Width / pictureBox3.BackgroundImage.Height;
-            var marg = pictureBox3.Margin;
+            int colW = picLogo.Size.Width + picLogo.Margin.Horizontal;
+            int imgWidthScaled = picLogo.Size.Height * picLogo.BackgroundImage.Width / picLogo.BackgroundImage.Height;
+            var marg = picLogo.Margin;
             int hMarg = colW - imgWidthScaled;
             marg.Left = hMarg - 10;
             marg.Right = 10;
-            pictureBox3.Margin = marg;
+            picLogo.Margin = marg;
         }
 
         private void label1_Resize(object sender, EventArgs e)
