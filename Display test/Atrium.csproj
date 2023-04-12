@@ -345,6 +345,15 @@
   <ItemGroup>
     <None Include="Resources\Graduate3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alumni spotlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experience business.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social media.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

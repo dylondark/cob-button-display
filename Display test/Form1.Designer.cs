@@ -32,6 +32,7 @@ namespace Display_test
         private void InitializeComponent()
         {
             this.webBrowser2 = new CefSharp.WinForms.ChromiumWebBrowser();
+            this.labelDebug = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@ namespace Display_test
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.labelDebug = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +61,21 @@ namespace Display_test
             this.webBrowser2.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.webBrowser2_LoadingStateChanged);
             this.webBrowser2.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser2_ConsoleMessage);
             this.webBrowser2.Click += new System.EventHandler(this.activity_event);
+            // 
+            // labelDebug
+            // 
+            this.labelDebug.AutoSize = true;
+            this.labelDebug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.labelDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.labelDebug.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelDebug.Location = new System.Drawing.Point(8, 8);
+            this.labelDebug.Margin = new System.Windows.Forms.Padding(8);
+            this.labelDebug.Name = "labelDebug";
+            this.labelDebug.Padding = new System.Windows.Forms.Padding(1);
+            this.labelDebug.Size = new System.Drawing.Size(65, 24);
+            this.labelDebug.TabIndex = 13;
+            this.labelDebug.Text = "Debug";
+            this.labelDebug.Visible = false;
             // 
             // tableLayoutPanel1
             // 
@@ -102,7 +117,7 @@ namespace Display_test
             this.button2.AutoSize = true;
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.button2.BackgroundImage = global::Display_test.Properties.Resources.PD_Picture;
+            this.button2.BackgroundImage = global::Display_test.Properties.Resources.experience_business;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
@@ -123,7 +138,7 @@ namespace Display_test
             this.button1.AutoSize = true;
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.button1.BackgroundImage = global::Display_test.Properties.Resources.News_and_Events2;
+            this.button1.BackgroundImage = global::Display_test.Properties.Resources.alumni_spotlight;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
@@ -170,7 +185,7 @@ namespace Display_test
             this.button3.AutoSize = true;
             this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.button3.BackgroundImage = global::Display_test.Properties.Resources.Executive_Education;
+            this.button3.BackgroundImage = global::Display_test.Properties.Resources.social_media;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -201,21 +216,6 @@ namespace Display_test
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             this.pictureBox3.DoubleClick += new System.EventHandler(this.pictureBox3_Click);
             this.pictureBox3.Resize += new System.EventHandler(this.pictureBox3_Resize);
-            // 
-            // labelDebug
-            // 
-            this.labelDebug.AutoSize = true;
-            this.labelDebug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labelDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.labelDebug.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelDebug.Location = new System.Drawing.Point(8, 8);
-            this.labelDebug.Margin = new System.Windows.Forms.Padding(8);
-            this.labelDebug.Name = "labelDebug";
-            this.labelDebug.Padding = new System.Windows.Forms.Padding(1);
-            this.labelDebug.Size = new System.Drawing.Size(65, 24);
-            this.labelDebug.TabIndex = 13;
-            this.labelDebug.Text = "Debug";
-            this.labelDebug.Visible = false;
             // 
             // pictureBox2
             // 
