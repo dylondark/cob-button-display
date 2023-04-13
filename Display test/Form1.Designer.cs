@@ -77,21 +77,22 @@ namespace Display_test
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel1.Controls.Add(this.btnExpBusiness, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnAlumni, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.lblWelcome, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnSocialMedia, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.picLogo, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnSocialMedia, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnAlumni, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.picLogo, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnExpBusiness, 2, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 749);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
@@ -107,7 +108,7 @@ namespace Display_test
             this.btnExpBusiness.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnExpBusiness.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpBusiness.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnExpBusiness.Location = new System.Drawing.Point(498, 230);
+            this.btnExpBusiness.Location = new System.Drawing.Point(498, 302);
             this.btnExpBusiness.Margin = new System.Windows.Forms.Padding(2);
             this.btnExpBusiness.Name = "btnExpBusiness";
             this.btnExpBusiness.Size = new System.Drawing.Size(374, 287);
@@ -128,7 +129,7 @@ namespace Display_test
             this.btnAlumni.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAlumni.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlumni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAlumni.Location = new System.Drawing.Point(121, 231);
+            this.btnAlumni.Location = new System.Drawing.Point(121, 303);
             this.btnAlumni.Name = "btnAlumni";
             this.btnAlumni.Size = new System.Drawing.Size(372, 285);
             this.btnAlumni.TabIndex = 0;
@@ -141,10 +142,10 @@ namespace Display_test
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(135, 643);
+            this.pictureBox1.Location = new System.Drawing.Point(135, 594);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 3, 100, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 87);
+            this.pictureBox1.Size = new System.Drawing.Size(247, 66);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -156,7 +157,7 @@ namespace Display_test
             this.lblWelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblWelcome.Location = new System.Drawing.Point(499, 10);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(368, 116);
+            this.lblWelcome.Size = new System.Drawing.Size(368, 131);
             this.lblWelcome.TabIndex = 12;
             this.lblWelcome.Text = "Welcome to the College of Business\r\nTouch Screen to Interact";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -173,7 +174,7 @@ namespace Display_test
             this.btnSocialMedia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSocialMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSocialMedia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnSocialMedia.Location = new System.Drawing.Point(876, 230);
+            this.btnSocialMedia.Location = new System.Drawing.Point(876, 302);
             this.btnSocialMedia.Margin = new System.Windows.Forms.Padding(2);
             this.btnSocialMedia.Name = "btnSocialMedia";
             this.btnSocialMedia.Size = new System.Drawing.Size(374, 287);
@@ -189,7 +190,7 @@ namespace Display_test
             this.picLogo.BackgroundImage = global::Display_test.Properties.Resources.CBALogo2;
             this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tableLayoutPanel1.SetColumnSpan(this.picLogo, 2);
-            this.picLogo.Location = new System.Drawing.Point(1023, 638);
+            this.picLogo.Location = new System.Drawing.Point(1023, 40);
             this.picLogo.MaximumSize = new System.Drawing.Size(900, 287);
             this.picLogo.MinimumSize = new System.Drawing.Size(157, 48);
             this.picLogo.Name = "picLogo";
