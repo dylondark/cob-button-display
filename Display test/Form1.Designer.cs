@@ -42,6 +42,7 @@ namespace Display_test
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -150,7 +151,7 @@ namespace Display_test
             this.btnAlumni.Click += new System.EventHandler(this.button1_Click);
             this.btnAlumni.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
-            // pictureBox1
+            // btnExecEd
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -162,9 +163,9 @@ namespace Display_test
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // btnUndergrad
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnUndergrad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
@@ -217,14 +218,20 @@ namespace Display_test
             this.picLogo.DoubleClick += new System.EventHandler(this.pictureBox3_Click);
             this.picLogo.Resize += new System.EventHandler(this.pictureBox3_Resize);
             // 
-            // pictureBox2
+            // lblDebug
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 203);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1558, 433);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
+            this.lblDebug.AutoSize = true;
+            this.lblDebug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblDebug.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblDebug.Location = new System.Drawing.Point(8, 8);
+            this.lblDebug.Margin = new System.Windows.Forms.Padding(8);
+            this.lblDebug.Name = "lblDebug";
+            this.lblDebug.Padding = new System.Windows.Forms.Padding(1);
+            this.lblDebug.Size = new System.Drawing.Size(65, 24);
+            this.lblDebug.TabIndex = 13;
+            this.lblDebug.Text = "Debug";
+            this.lblDebug.Visible = false;
             // 
             // Form1
             // 
@@ -234,7 +241,7 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.labelDebug);
+            this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.chromium);
             this.Controls.Add(this.pictureBox2);
@@ -252,6 +259,8 @@ namespace Display_test
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -294,7 +303,10 @@ namespace Display_test
         private System.Windows.Forms.Button btnExpBusiness;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Label labelDebug;
+        private Label lblDebug;
+        private TableLayoutPanel tableLayoutPanel2;
+        private Label lblWelcome;
+        private PictureBox pictureBox1;
     }
 }
 
