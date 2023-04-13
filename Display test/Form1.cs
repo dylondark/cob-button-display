@@ -48,7 +48,6 @@ namespace Display_test
 
             createBackButton();
             InitializeComponent();
-            webBrowser.Hide();
             chromium.Hide();
             backButton.Hide();
             lblDebug.Hide();
@@ -60,7 +59,6 @@ namespace Display_test
             this.WindowState = FormWindowState.Maximized;
 
             // init lifespanhandler for redirection of new tab requests back to the original browser
-            webBrowser.LifeSpanHandler = new ChromiumLifeSpanHandler();
         }
 
         /*

@@ -32,17 +32,17 @@ namespace Display_test
         private void InitializeComponent()
         {
             this.chromium = new CefSharp.WinForms.ChromiumWebBrowser();
-            this.labelDebug = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnExpBusiness = new System.Windows.Forms.Button();
             this.btnAlumni = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
             this.btnSocialMedia = new System.Windows.Forms.Button();
             this.picLogo = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblDebug = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -63,21 +63,6 @@ namespace Display_test
             this.chromium.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser2_ConsoleMessage);
             this.chromium.Click += new System.EventHandler(this.activity_event);
             // 
-            // labelDebug
-            // 
-            this.labelDebug.AutoSize = true;
-            this.labelDebug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labelDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.labelDebug.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelDebug.Location = new System.Drawing.Point(8, 8);
-            this.labelDebug.Margin = new System.Windows.Forms.Padding(8);
-            this.labelDebug.Name = "labelDebug";
-            this.labelDebug.Padding = new System.Windows.Forms.Padding(1);
-            this.labelDebug.Size = new System.Drawing.Size(65, 24);
-            this.labelDebug.TabIndex = 13;
-            this.labelDebug.Text = "Debug";
-            this.labelDebug.Visible = false;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -95,7 +80,7 @@ namespace Display_test
             this.tableLayoutPanel1.Controls.Add(this.btnExpBusiness, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnAlumni, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblWelcome, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnSocialMedia, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.picLogo, 3, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -151,7 +136,7 @@ namespace Display_test
             this.btnAlumni.Click += new System.EventHandler(this.button1_Click);
             this.btnAlumni.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
-            // btnExecEd
+            // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -163,23 +148,20 @@ namespace Display_test
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // btnUndergrad
+            // lblWelcome
             // 
-            this.btnUndergrad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(499, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 116);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Welcome to the College of Business\r\nTouch Screen to Interact";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.activity_event);
-            this.label1.Resize += new System.EventHandler(this.label1_Resize);
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblWelcome.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblWelcome.Location = new System.Drawing.Point(499, 10);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(368, 116);
+            this.lblWelcome.TabIndex = 12;
+            this.lblWelcome.Text = "Welcome to the College of Business\r\nTouch Screen to Interact";
+            this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWelcome.Click += new System.EventHandler(this.activity_event);
+            this.lblWelcome.Resize += new System.EventHandler(this.label1_Resize);
             // 
             // btnSocialMedia
             // 
@@ -217,6 +199,21 @@ namespace Display_test
             this.picLogo.Click += new System.EventHandler(this.pictureBox3_Click);
             this.picLogo.DoubleClick += new System.EventHandler(this.pictureBox3_Click);
             this.picLogo.Resize += new System.EventHandler(this.pictureBox3_Resize);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
             // 
             // lblDebug
             // 
@@ -259,8 +256,6 @@ namespace Display_test
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -297,7 +292,7 @@ namespace Display_test
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button btnSocialMedia;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAlumni;
         private System.Windows.Forms.Button btnExpBusiness;
@@ -305,8 +300,7 @@ namespace Display_test
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Label lblDebug;
         private TableLayoutPanel tableLayoutPanel2;
-        private Label lblWelcome;
-        private PictureBox pictureBox1;
+        //private PictureBox pictureBox1;
     }
 }
 
