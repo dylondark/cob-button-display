@@ -202,6 +202,9 @@
   <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Programs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Programs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="backgroundFisherWashOutMore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundFisherWashOutMore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -235,14 +238,14 @@
   <data name="UAWordmark_gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UAWordmark_gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="History3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\History3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="experience business" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\experience business.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Executive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Executive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Partners" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Partners.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="History3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\History3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="re-sized" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\re-sized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,6 +283,12 @@
   <data name="Fisher" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fisher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Partners" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Partners.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled design (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled design (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Directory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Directory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -298,13 +307,13 @@
   <data name="Programs2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Programs2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="alumni spotlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alumni spotlight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="backgroundFisher (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundFisher (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled design (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled design (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="centers and institutes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\centers and institutes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="social media" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\social media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

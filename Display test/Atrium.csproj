@@ -347,10 +347,13 @@
     <None Include="Resources\Graduate3.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\touch.png" />
+    <None Include="Resources\alumni spotlight.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\centers and institutes.png" />
+    <None Include="Resources\experience business.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social media.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

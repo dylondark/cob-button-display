@@ -49,6 +49,7 @@ namespace Display_test
             createBackButton();
             InitializeComponent();
             webBrowser.Hide();
+            chromium.Hide();
             backButton.Hide();
             lblDebug.Hide();
 
@@ -177,7 +178,7 @@ namespace Display_test
         private void button1_Click(object sender, EventArgs e)
         {
             writeStat(4);
-            showWebPage("https://www.uakron.edu/cba/centers-and-institutes/");
+            showWebPage("https://www.uakron.edu/cba/departments/marketing/alumni-stories");
             this.ControlBox = false;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
@@ -185,36 +186,13 @@ namespace Display_test
         private void button2_Click(object sender, EventArgs e)
         {
             writeStat(5);
-            showWebPage("https://www.uakron.edu/cba/outcomes/");
+            showWebPage("https://www.uakron.edu/cba/outcomes/experiential-learning");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             writeStat(6);
             showWebPage("https://www.uakron.edu/cba/executive/");
-        }
-        private void button6_Click(object sender, EventArgs e)
-        {
-            writeStat(2);
-            showWebPage("https://uakron.edu/cba/undergraduate/majors/");
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            writeStat(3);
-            showWebPage("https://www.uakron.edu/cba/graduate/");
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            writeStat(1);
-            currentPage = CurrentPage.SecondLevelButtonsPage;
-            secondLevelButtonsWindow = new Form2(this);
-            this.Controls.Remove(lblDebug);
-            secondLevelButtonsWindow.Controls.Add(lblDebug);
-            secondLevelButtonsWindow.Show();
-            secondLevelButtonsWindow.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
-            inActivityWindow.startTimer();
         }
 
        void  onSecondLevelFormClosed(object obj, EventArgs args)
@@ -236,11 +214,11 @@ namespace Display_test
             backButton.Show();
             backButton.BringToFront();
             backButton.BringToFront();
-            webBrowser.Load(url);
-
-            webBrowser.Show();
+            chromium.Load(url);
+            chromium.Show();
+            pictureBox1.Hide();
             tableLayoutPanel1.Hide();
-            picCOB.Hide();
+            picLogo.Hide();
 
             inActivityWindow.startTimer();
         }
@@ -248,10 +226,10 @@ namespace Display_test
         void closeWebpage(bool auto = false)
         {
             writeStat(0, auto ? "auto" : "back");
-            webBrowser.Hide();
+            chromium.Hide();
             backButton.Hide();
             tableLayoutPanel1.Show();
-            picCOB.Show();
+            picLogo.Show();
             currentPage = CurrentPage.HomePage;
         }
 
@@ -326,23 +304,31 @@ namespace Display_test
         {
             Button b = (Button)sender;
             int colW = b.Size.Width + b.Margin.Horizontal;
-            int imgWidthScaled = b.Size.Height * b.BackgroundImage.Width / b.BackgroundImage.Height;
+            int imgWidthScaled = (b.Size.Height - 16) * b.BackgroundImage.Width / b.BackgroundImage.Height;
             var marg = b.Margin;
             int hMarg = colW - imgWidthScaled;
-            marg.Left = hMarg / 2;
-            marg.Right = hMarg / 2;
+            if(hMarg <= 32)
+            {
+                marg.All = 16;
+            } else
+            {
+                marg.Top = 16;
+                marg.Bottom = 16;
+                marg.Left = hMarg / 2;
+                marg.Right = hMarg / 2;
+            }
             b.Margin = marg;
         }
 
         private void pictureBox3_Resize(object sender, EventArgs e)
         {
-            int colW = picCOB.Size.Width + picCOB.Margin.Horizontal;
-            int imgWidthScaled = picCOB.Size.Height * picCOB.BackgroundImage.Width / picCOB.BackgroundImage.Height;
-            var marg = picCOB.Margin;
+            int colW = picLogo.Size.Width + picLogo.Margin.Horizontal;
+            int imgWidthScaled = picLogo.Size.Height * picLogo.BackgroundImage.Width / picLogo.BackgroundImage.Height;
+            var marg = picLogo.Margin;
             int hMarg = colW - imgWidthScaled;
             marg.Left = hMarg - 10;
             marg.Right = 10;
-            picCOB.Margin = marg;
+            picLogo.Margin = marg;
         }
 
         private void label1_Resize(object sender, EventArgs e)
@@ -374,7 +360,6 @@ namespace Display_test
                 else DebugEnable();
             }
         }
-
         private void activity_event(object sender, ScrollEventArgs e)
         {
             inActivityWindow.activityDetected("EVNT SCR");
