@@ -393,6 +393,7 @@ namespace Display_test
             this.btnAlumni.Size = new System.Drawing.Size(379, 295);
             this.btnAlumni.TabIndex = 1;
             this.btnAlumni.UseVisualStyleBackColor = false;
+            this.btnAlumni.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -422,6 +423,7 @@ namespace Display_test
             this.btnExpBusiness.Size = new System.Drawing.Size(379, 295);
             this.btnExpBusiness.TabIndex = 2;
             this.btnExpBusiness.UseVisualStyleBackColor = false;
+            this.btnExpBusiness.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
@@ -451,6 +453,7 @@ namespace Display_test
             this.btnSocialMedia.Size = new System.Drawing.Size(379, 295);
             this.btnSocialMedia.TabIndex = 3;
             this.btnSocialMedia.UseVisualStyleBackColor = false;
+            this.btnSocialMedia.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
