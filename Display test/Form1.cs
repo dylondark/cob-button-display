@@ -229,6 +229,7 @@ namespace Display_test
             tableLayoutPanel1.Show();
             picLogo.Show();
             currentPage = CurrentPage.HomePage;
+            pictureBox1.Show();
         }
 
         void closeWebpageAuto()
