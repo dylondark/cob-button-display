@@ -61,6 +61,21 @@ namespace Display_test
             // init lifespanhandler for redirection of new tab requests back to the original browser
         }
 
+        // automatically scale certain ui elements like text and margin size based on screen resolution
+        private void autoScale(object sender, EventArgs e)
+        {
+            const int scaleFactor = 48; // based on the desired font size for the welcome text on a 4k display, everything else will scale accordingly with this
+            float resFactor = Convert.ToSingle(this.Width) / 3840f;
+
+            lblWelcome.Font = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold);
+            pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
+
+            Padding buttonMargin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
+            bgAlumni.Padding = buttonMargin;
+            bgExpBusiness.Padding = buttonMargin;
+            bgSocialMedia.Padding = buttonMargin;
+        }
+
         /*
          * Stat Codes:
          * 0: close page
