@@ -49,7 +49,6 @@ namespace Display_test
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblWelcome = new System.Windows.Forms.Label();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.bg1 = new System.Windows.Forms.Label();
             this.bgAlumni = new System.Windows.Forms.Panel();
             this.btnAlumni = new System.Windows.Forms.Button();
@@ -58,14 +57,19 @@ namespace Display_test
             this.bgSocialMedia = new System.Windows.Forms.Panel();
             this.btnSocialMedia = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.bgAlumni.SuspendLayout();
             this.bgExpBusiness.SuspendLayout();
             this.bgSocialMedia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // chromium
@@ -119,6 +123,9 @@ namespace Display_test
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.bg5, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.bg3, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.bg4, 3, 3);
@@ -131,7 +138,6 @@ namespace Display_test
             this.tableLayoutPanel1.Controls.Add(this.bg10, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.bg2, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.picLogo, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.bg1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.bgAlumni, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.bgExpBusiness, 2, 4);
@@ -284,17 +290,20 @@ namespace Display_test
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel3.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.lblWelcome, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(495, 40);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(492, 37);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(377, 151);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(383, 157);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // pictureBox1
@@ -303,10 +312,10 @@ namespace Display_test
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::Display_test.Properties.Resources.touch;
-            this.pictureBox1.Location = new System.Drawing.Point(246, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(249, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(111, 111);
+            this.pictureBox1.Size = new System.Drawing.Size(114, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -314,36 +323,17 @@ namespace Display_test
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
+            this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
             this.lblWelcome.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lblWelcome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblWelcome.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblWelcome.ForeColor = System.Drawing.Color.Black;
             this.lblWelcome.Location = new System.Drawing.Point(3, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(220, 151);
+            this.lblWelcome.Size = new System.Drawing.Size(223, 157);
             this.lblWelcome.TabIndex = 13;
             this.lblWelcome.Text = "Welcome to Business Marketing\r\nTouch Screen to Interact\r\n";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picLogo.BackgroundImage = global::Display_test.Properties.Resources.CBALogo2;
-            this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tableLayoutPanel1.SetColumnSpan(this.picLogo, 2);
-            this.picLogo.Location = new System.Drawing.Point(1016, 40);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
-            this.picLogo.MaximumSize = new System.Drawing.Size(900, 287);
-            this.picLogo.MinimumSize = new System.Drawing.Size(157, 48);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(334, 151);
-            this.picLogo.TabIndex = 6;
-            this.picLogo.TabStop = false;
-            this.picLogo.Click += new System.EventHandler(this.pictureBox3_Click);
-            this.picLogo.DoubleClick += new System.EventHandler(this.pictureBox3_Click);
-            this.picLogo.Resize += new System.EventHandler(this.pictureBox3_Resize);
             // 
             // bg1
             // 
@@ -455,6 +445,60 @@ namespace Display_test
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.label1.Location = new System.Drawing.Point(0, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 157);
+            this.label1.TabIndex = 23;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.label2.Location = new System.Drawing.Point(109, 37);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(383, 157);
+            this.label2.TabIndex = 24;
+            // 
+            // picLogo
+            // 
+            this.picLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picLogo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picLogo.Image = global::Display_test.Properties.Resources.CBALogo2;
+            this.picLogo.Location = new System.Drawing.Point(159, 2);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
+            this.picLogo.MaximumSize = new System.Drawing.Size(900, 287);
+            this.picLogo.MinimumSize = new System.Drawing.Size(157, 48);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(334, 153);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 25;
+            this.picLogo.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
+            this.panel1.Controls.Add(this.picLogo);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(875, 37);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(2);
+            this.panel1.Size = new System.Drawing.Size(495, 157);
+            this.panel1.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,7 +530,6 @@ namespace Display_test
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.bgAlumni.ResumeLayout(false);
             this.bgAlumni.PerformLayout();
             this.bgExpBusiness.ResumeLayout(false);
@@ -494,6 +537,8 @@ namespace Display_test
             this.bgSocialMedia.ResumeLayout(false);
             this.bgSocialMedia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -527,7 +572,6 @@ namespace Display_test
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Label lblDebug;
         private TableLayoutPanel tableLayoutPanel2;
@@ -551,6 +595,10 @@ namespace Display_test
         private Button btnExpBusiness;
         private Panel bgSocialMedia;
         private Button btnSocialMedia;
+        private Label label2;
+        private Label label1;
+        private Panel panel1;
+        private PictureBox picLogo;
         //private PictureBox pictureBox1;
     }
 }
