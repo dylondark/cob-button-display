@@ -35,37 +35,37 @@ namespace Display_test
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblDebug = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.bg5 = new System.Windows.Forms.Label();
+            this.bg3 = new System.Windows.Forms.Label();
+            this.bg4 = new System.Windows.Forms.Label();
+            this.bg6 = new System.Windows.Forms.Label();
+            this.bg12 = new System.Windows.Forms.Label();
+            this.bg11 = new System.Windows.Forms.Label();
+            this.bg8 = new System.Windows.Forms.Label();
+            this.bg9 = new System.Windows.Forms.Label();
+            this.bg7 = new System.Windows.Forms.Label();
+            this.bg10 = new System.Windows.Forms.Label();
+            this.bg2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.bg1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.bgAlumni = new System.Windows.Forms.Panel();
             this.btnAlumni = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.bgExpBusiness = new System.Windows.Forms.Panel();
             this.btnExpBusiness = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.bgSocialMedia = new System.Windows.Forms.Panel();
             this.btnSocialMedia = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.bgAlumni.SuspendLayout();
+            this.bgExpBusiness.SuspendLayout();
+            this.bgSocialMedia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // chromium
@@ -119,23 +119,23 @@ namespace Display_test
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel1.Controls.Add(this.label11, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 4, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.bg5, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.bg3, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.bg4, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.bg6, 4, 4);
+            this.tableLayoutPanel1.Controls.Add(this.bg12, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.bg11, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.bg8, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.bg9, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.bg7, 4, 5);
+            this.tableLayoutPanel1.Controls.Add(this.bg10, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.bg2, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.picLogo, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.bg1, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.bgAlumni, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.bgExpBusiness, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.bgSocialMedia, 3, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -149,6 +149,138 @@ namespace Display_test
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 749);
             this.tableLayoutPanel1.TabIndex = 6;
+            // 
+            // bg5
+            // 
+            this.bg5.AutoSize = true;
+            this.bg5.BackColor = System.Drawing.Color.Transparent;
+            this.bg5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg5.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg5.Location = new System.Drawing.Point(1258, 313);
+            this.bg5.Margin = new System.Windows.Forms.Padding(0);
+            this.bg5.Name = "bg5";
+            this.bg5.Size = new System.Drawing.Size(112, 37);
+            this.bg5.TabIndex = 19;
+            // 
+            // bg3
+            // 
+            this.bg3.AutoSize = true;
+            this.bg3.BackColor = System.Drawing.Color.Transparent;
+            this.bg3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg3.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg3.Location = new System.Drawing.Point(492, 313);
+            this.bg3.Margin = new System.Windows.Forms.Padding(0);
+            this.bg3.Name = "bg3";
+            this.bg3.Size = new System.Drawing.Size(383, 37);
+            this.bg3.TabIndex = 18;
+            // 
+            // bg4
+            // 
+            this.bg4.AutoSize = true;
+            this.bg4.BackColor = System.Drawing.Color.Transparent;
+            this.bg4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg4.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg4.Location = new System.Drawing.Point(875, 313);
+            this.bg4.Margin = new System.Windows.Forms.Padding(0);
+            this.bg4.Name = "bg4";
+            this.bg4.Size = new System.Drawing.Size(383, 37);
+            this.bg4.TabIndex = 17;
+            // 
+            // bg6
+            // 
+            this.bg6.AutoSize = true;
+            this.bg6.BackColor = System.Drawing.Color.Transparent;
+            this.bg6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg6.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg6.Location = new System.Drawing.Point(1258, 350);
+            this.bg6.Margin = new System.Windows.Forms.Padding(0);
+            this.bg6.Name = "bg6";
+            this.bg6.Size = new System.Drawing.Size(112, 299);
+            this.bg6.TabIndex = 16;
+            // 
+            // bg12
+            // 
+            this.bg12.AutoSize = true;
+            this.bg12.BackColor = System.Drawing.Color.Transparent;
+            this.bg12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg12.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg12.Location = new System.Drawing.Point(0, 350);
+            this.bg12.Margin = new System.Windows.Forms.Padding(0);
+            this.bg12.Name = "bg12";
+            this.bg12.Size = new System.Drawing.Size(109, 299);
+            this.bg12.TabIndex = 15;
+            // 
+            // bg11
+            // 
+            this.bg11.AutoSize = true;
+            this.bg11.BackColor = System.Drawing.Color.Transparent;
+            this.bg11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg11.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg11.Location = new System.Drawing.Point(0, 649);
+            this.bg11.Margin = new System.Windows.Forms.Padding(0);
+            this.bg11.Name = "bg11";
+            this.bg11.Size = new System.Drawing.Size(109, 37);
+            this.bg11.TabIndex = 14;
+            // 
+            // bg8
+            // 
+            this.bg8.AutoSize = true;
+            this.bg8.BackColor = System.Drawing.Color.Transparent;
+            this.bg8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg8.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg8.Location = new System.Drawing.Point(875, 649);
+            this.bg8.Margin = new System.Windows.Forms.Padding(0);
+            this.bg8.Name = "bg8";
+            this.bg8.Size = new System.Drawing.Size(383, 37);
+            this.bg8.TabIndex = 13;
+            // 
+            // bg9
+            // 
+            this.bg9.AutoSize = true;
+            this.bg9.BackColor = System.Drawing.Color.Transparent;
+            this.bg9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg9.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg9.Location = new System.Drawing.Point(492, 649);
+            this.bg9.Margin = new System.Windows.Forms.Padding(0);
+            this.bg9.Name = "bg9";
+            this.bg9.Size = new System.Drawing.Size(383, 37);
+            this.bg9.TabIndex = 12;
+            // 
+            // bg7
+            // 
+            this.bg7.AutoSize = true;
+            this.bg7.BackColor = System.Drawing.Color.Transparent;
+            this.bg7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg7.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg7.Location = new System.Drawing.Point(1258, 649);
+            this.bg7.Margin = new System.Windows.Forms.Padding(0);
+            this.bg7.Name = "bg7";
+            this.bg7.Size = new System.Drawing.Size(112, 37);
+            this.bg7.TabIndex = 11;
+            // 
+            // bg10
+            // 
+            this.bg10.AutoSize = true;
+            this.bg10.BackColor = System.Drawing.Color.Transparent;
+            this.bg10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg10.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg10.Location = new System.Drawing.Point(109, 649);
+            this.bg10.Margin = new System.Windows.Forms.Padding(0);
+            this.bg10.Name = "bg10";
+            this.bg10.Size = new System.Drawing.Size(383, 37);
+            this.bg10.TabIndex = 10;
+            // 
+            // bg2
+            // 
+            this.bg2.AutoSize = true;
+            this.bg2.BackColor = System.Drawing.Color.Transparent;
+            this.bg2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg2.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg2.Location = new System.Drawing.Point(109, 313);
+            this.bg2.Margin = new System.Windows.Forms.Padding(0);
+            this.bg2.Name = "bg2";
+            this.bg2.Size = new System.Drawing.Size(383, 37);
+            this.bg2.TabIndex = 9;
             // 
             // tableLayoutPanel3
             // 
@@ -225,158 +357,18 @@ namespace Display_test
             this.bg1.Size = new System.Drawing.Size(109, 37);
             this.bg1.TabIndex = 8;
             // 
-            // pictureBox2
+            // bgAlumni
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label1.Location = new System.Drawing.Point(109, 313);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 37);
-            this.label1.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label2.Location = new System.Drawing.Point(109, 649);
-            this.label2.Margin = new System.Windows.Forms.Padding(0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(383, 37);
-            this.label2.TabIndex = 10;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label3.Location = new System.Drawing.Point(1258, 649);
-            this.label3.Margin = new System.Windows.Forms.Padding(0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 37);
-            this.label3.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label4.Location = new System.Drawing.Point(492, 649);
-            this.label4.Margin = new System.Windows.Forms.Padding(0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(383, 37);
-            this.label4.TabIndex = 12;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label5.Location = new System.Drawing.Point(875, 649);
-            this.label5.Margin = new System.Windows.Forms.Padding(0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(383, 37);
-            this.label5.TabIndex = 13;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label6.Location = new System.Drawing.Point(0, 649);
-            this.label6.Margin = new System.Windows.Forms.Padding(0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 37);
-            this.label6.TabIndex = 14;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label7.Location = new System.Drawing.Point(0, 350);
-            this.label7.Margin = new System.Windows.Forms.Padding(0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 299);
-            this.label7.TabIndex = 15;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label8.Location = new System.Drawing.Point(1258, 350);
-            this.label8.Margin = new System.Windows.Forms.Padding(0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 299);
-            this.label8.TabIndex = 16;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label9.Location = new System.Drawing.Point(875, 313);
-            this.label9.Margin = new System.Windows.Forms.Padding(0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(383, 37);
-            this.label9.TabIndex = 17;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label10.Location = new System.Drawing.Point(492, 313);
-            this.label10.Margin = new System.Windows.Forms.Padding(0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(383, 37);
-            this.label10.TabIndex = 18;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.label11.Location = new System.Drawing.Point(1258, 313);
-            this.label11.Margin = new System.Windows.Forms.Padding(0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(112, 37);
-            this.label11.TabIndex = 19;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
-            this.panel1.Controls.Add(this.btnAlumni);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(109, 350);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(2);
-            this.panel1.Size = new System.Drawing.Size(383, 299);
-            this.panel1.TabIndex = 20;
+            this.bgAlumni.BackColor = System.Drawing.Color.Transparent;
+            this.bgAlumni.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
+            this.bgAlumni.Controls.Add(this.btnAlumni);
+            this.bgAlumni.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bgAlumni.Location = new System.Drawing.Point(109, 350);
+            this.bgAlumni.Margin = new System.Windows.Forms.Padding(0);
+            this.bgAlumni.Name = "bgAlumni";
+            this.bgAlumni.Padding = new System.Windows.Forms.Padding(2);
+            this.bgAlumni.Size = new System.Drawing.Size(383, 299);
+            this.bgAlumni.TabIndex = 20;
             // 
             // btnAlumni
             // 
@@ -393,20 +385,20 @@ namespace Display_test
             this.btnAlumni.Size = new System.Drawing.Size(379, 295);
             this.btnAlumni.TabIndex = 1;
             this.btnAlumni.UseVisualStyleBackColor = false;
-            this.btnAlumni.Click += new System.EventHandler(this.button1_Click);
+            this.btnAlumni.Click += new System.EventHandler(this.btnAlumni_Click);
             // 
-            // panel2
+            // bgExpBusiness
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
-            this.panel2.Controls.Add(this.btnExpBusiness);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(492, 350);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(2);
-            this.panel2.Size = new System.Drawing.Size(383, 299);
-            this.panel2.TabIndex = 21;
+            this.bgExpBusiness.BackColor = System.Drawing.Color.Transparent;
+            this.bgExpBusiness.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
+            this.bgExpBusiness.Controls.Add(this.btnExpBusiness);
+            this.bgExpBusiness.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bgExpBusiness.Location = new System.Drawing.Point(492, 350);
+            this.bgExpBusiness.Margin = new System.Windows.Forms.Padding(0);
+            this.bgExpBusiness.Name = "bgExpBusiness";
+            this.bgExpBusiness.Padding = new System.Windows.Forms.Padding(2);
+            this.bgExpBusiness.Size = new System.Drawing.Size(383, 299);
+            this.bgExpBusiness.TabIndex = 21;
             // 
             // btnExpBusiness
             // 
@@ -423,20 +415,20 @@ namespace Display_test
             this.btnExpBusiness.Size = new System.Drawing.Size(379, 295);
             this.btnExpBusiness.TabIndex = 2;
             this.btnExpBusiness.UseVisualStyleBackColor = false;
-            this.btnExpBusiness.Click += new System.EventHandler(this.button2_Click);
+            this.btnExpBusiness.Click += new System.EventHandler(this.btnExpBusiness_Click);
             // 
-            // panel3
+            // bgSocialMedia
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
-            this.panel3.Controls.Add(this.btnSocialMedia);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(875, 350);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(2);
-            this.panel3.Size = new System.Drawing.Size(383, 299);
-            this.panel3.TabIndex = 22;
+            this.bgSocialMedia.BackColor = System.Drawing.Color.Transparent;
+            this.bgSocialMedia.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
+            this.bgSocialMedia.Controls.Add(this.btnSocialMedia);
+            this.bgSocialMedia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bgSocialMedia.Location = new System.Drawing.Point(875, 350);
+            this.bgSocialMedia.Margin = new System.Windows.Forms.Padding(0);
+            this.bgSocialMedia.Name = "bgSocialMedia";
+            this.bgSocialMedia.Padding = new System.Windows.Forms.Padding(2);
+            this.bgSocialMedia.Size = new System.Drawing.Size(383, 299);
+            this.bgSocialMedia.TabIndex = 22;
             // 
             // btnSocialMedia
             // 
@@ -453,7 +445,15 @@ namespace Display_test
             this.btnSocialMedia.Size = new System.Drawing.Size(379, 295);
             this.btnSocialMedia.TabIndex = 3;
             this.btnSocialMedia.UseVisualStyleBackColor = false;
-            this.btnSocialMedia.Click += new System.EventHandler(this.button3_Click);
+            this.btnSocialMedia.Click += new System.EventHandler(this.btnSocialMedia_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -485,13 +485,13 @@ namespace Display_test
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.bgAlumni.ResumeLayout(false);
+            this.bgAlumni.PerformLayout();
+            this.bgExpBusiness.ResumeLayout(false);
+            this.bgExpBusiness.PerformLayout();
+            this.bgSocialMedia.ResumeLayout(false);
+            this.bgSocialMedia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -532,22 +532,22 @@ namespace Display_test
         private TableLayoutPanel tableLayoutPanel3;
         private Label lblWelcome;
         private Label bg1;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private Label label1;
-        private Panel panel1;
+        private Label bg5;
+        private Label bg3;
+        private Label bg4;
+        private Label bg6;
+        private Label bg12;
+        private Label bg11;
+        private Label bg8;
+        private Label bg9;
+        private Label bg7;
+        private Label bg10;
+        private Label bg2;
+        private Panel bgAlumni;
         private Button btnAlumni;
-        private Panel panel2;
+        private Panel bgExpBusiness;
         private Button btnExpBusiness;
-        private Panel panel3;
+        private Panel bgSocialMedia;
         private Button btnSocialMedia;
         //private PictureBox pictureBox1;
     }

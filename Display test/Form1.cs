@@ -173,7 +173,7 @@ namespace Display_test
 #endif
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAlumni_Click(object sender, EventArgs e)
         {
             writeStat(4);
             showWebPage("https://www.uakron.edu/cba/departments/marketing/alumni-stories");
@@ -181,16 +181,16 @@ namespace Display_test
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnExpBusiness_Click(object sender, EventArgs e)
         {
             writeStat(5);
             showWebPage("https://www.uakron.edu/cba/outcomes/experiential-learning");
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnSocialMedia_Click(object sender, EventArgs e)
         {
             writeStat(6);
-            showWebPage("https://www.uakron.edu/cba/executive/");
+            showWebPage("https://www.uakron.edu/cba/executive/"); // this still needs a link
         }
 
        void  onSecondLevelFormClosed(object obj, EventArgs args)
