@@ -315,12 +315,14 @@ namespace Display_test
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.activity_event);
+            this.ResizeEnd += new System.EventHandler(this.autoScale);
             this.Scroll += new System.Windows.Forms.ScrollEventHandler(this.activity_event);
             this.Click += new System.EventHandler(this.activity_event);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.activity_event);
             this.MouseHover += new System.EventHandler(this.activity_event);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.activity_event);
+            this.Resize += new System.EventHandler(this.autoScale);
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

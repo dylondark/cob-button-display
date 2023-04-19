@@ -63,6 +63,35 @@ namespace Display_test
             webBrowser.LifeSpanHandler = new ChromiumLifeSpanHandler();
         }
 
+        // automatically scale certain ui elements like text and margin size based on screen resolution
+        private void autoScale(object sender, EventArgs e)
+        {
+            const int scaleFactor = 72; // based on the desired font size for the welcome text on a 4k display, everything else will scale accordingly with this
+            float resFactor = Convert.ToSingle(this.Width) / 3840f;
+
+            lblWelcome.Font = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold);
+            pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
+
+            Padding buttonMargin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
+            btnCentersInstitutes.Margin = buttonMargin;
+            btnDirectory.Margin = buttonMargin;
+            btnExecEd.Margin = buttonMargin;
+            btnGrad.Margin = buttonMargin;
+            btnProfDev.Margin = buttonMargin;
+            btnUndergrad.Margin = buttonMargin;
+        }
+
+        /*
+         * Stat Codes:
+         * 0: close page
+         * 1-6: Form1 Buttons (topleft origin)
+         * 7-8: Debug on, off
+         * 9-11: Form2 Buttons
+         * 12: form1 URL change
+         * 13: form2 URL change
+         * 14: second level back
+         * 20: program start
+         */
         #region "stats"
 
         // each code describes an action that will be recorded and stored in the stats csv file
