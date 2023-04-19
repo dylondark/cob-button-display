@@ -169,8 +169,8 @@
   <data name="undergraduate3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\undergraduate3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Partners" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Partners.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Add a heading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add a heading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Test1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Test1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +187,9 @@
   <data name="Programs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Programs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="re-sized" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\re-sized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Fisherlogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fisherlogo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -201,9 +204,6 @@
   </data>
   <data name="News and Events2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\News and Events2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Add a heading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add a heading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="touch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,11 +220,14 @@
   <data name="Top Text5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Top Text5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backgroundFisher (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backgroundFisher (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="semitransparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\semitransparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Partners1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Partners1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Executive Education" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Executive Education.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Graduate2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graduate2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,8 +235,8 @@
   <data name="UAWordmark_gold1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UAWordmark_gold1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Executive Education" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Executive Education.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Partners" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Partners.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="alumni spotlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alumni spotlight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,8 +292,8 @@
   <data name="Top Text3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Top Text3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="re-sized" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\re-sized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backgroundFisher (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundFisher (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="backgroundFisher (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundFisher (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,7 +316,7 @@
   <data name="20220405_134407" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20220405_134407.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="semitransparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\semitransparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="polsky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\polsky.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

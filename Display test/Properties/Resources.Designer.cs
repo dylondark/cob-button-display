@@ -543,6 +543,16 @@ namespace Display_test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap polsky {
+            get {
+                object obj = ResourceManager.GetObject("polsky", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Programs {
             get {
                 object obj = ResourceManager.GetObject("Programs", resourceCulture);
