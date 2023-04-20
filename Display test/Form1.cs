@@ -76,6 +76,8 @@ namespace Display_test
             bgAlumni.Padding = buttonMargin;
             bgExpBusiness.Padding = buttonMargin;
             bgSocialMedia.Padding = buttonMargin;
+
+            pnLogo.Padding = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
         }
 
         /*
