@@ -207,7 +207,7 @@ namespace Display_test
         private void btnSocialMedia_Click(object sender, EventArgs e)
         {
             writeStat(6);
-            showWebPage("https://www.uakron.edu/cba/executive/"); // this still needs a link
+            showWebPage("https://keyhole.co/hashtag-tracking/media-wall/sv1yrn/digitaldisplays?page=1&perPage=25&displayText=1");
         }
 
        void  onSecondLevelFormClosed(object obj, EventArgs args)
