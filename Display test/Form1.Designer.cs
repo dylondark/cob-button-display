@@ -37,21 +37,9 @@ namespace Display_test
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.bg5 = new System.Windows.Forms.Label();
-            this.bg3 = new System.Windows.Forms.Label();
-            this.bg4 = new System.Windows.Forms.Label();
-            this.bg6 = new System.Windows.Forms.Label();
-            this.bg12 = new System.Windows.Forms.Label();
-            this.bg11 = new System.Windows.Forms.Label();
-            this.bg8 = new System.Windows.Forms.Label();
-            this.bg9 = new System.Windows.Forms.Label();
-            this.bg7 = new System.Windows.Forms.Label();
-            this.bg10 = new System.Windows.Forms.Label();
-            this.bg2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTouch = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bg1 = new System.Windows.Forms.Label();
             this.bgAlumni = new System.Windows.Forms.Panel();
             this.btnAlumni = new System.Windows.Forms.Button();
             this.bgExpBusiness = new System.Windows.Forms.Panel();
@@ -61,6 +49,10 @@ namespace Display_test
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.bg1 = new System.Windows.Forms.PictureBox();
+            this.bg2 = new System.Windows.Forms.PictureBox();
+            this.bg3 = new System.Windows.Forms.PictureBox();
+            this.bg4 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -71,6 +63,10 @@ namespace Display_test
             this.bgSocialMedia.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bg1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bg2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bg3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bg4)).BeginInit();
             this.SuspendLayout();
             // 
             // chromium
@@ -124,24 +120,16 @@ namespace Display_test
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel1.Controls.Add(this.bg4, 4, 4);
+            this.tableLayoutPanel1.Controls.Add(this.bg3, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.bg2, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bg5, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.bg3, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.bg4, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.bg6, 4, 4);
-            this.tableLayoutPanel1.Controls.Add(this.bg12, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.bg11, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.bg8, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.bg9, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.bg7, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.bg10, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.bg2, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bg1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.bgAlumni, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.bgExpBusiness, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.bgSocialMedia, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.bg1, 0, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -185,138 +173,6 @@ namespace Display_test
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 25;
             this.picLogo.TabStop = false;
-            // 
-            // bg5
-            // 
-            this.bg5.AutoSize = true;
-            this.bg5.BackColor = System.Drawing.Color.Transparent;
-            this.bg5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg5.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg5.Location = new System.Drawing.Point(1258, 313);
-            this.bg5.Margin = new System.Windows.Forms.Padding(0);
-            this.bg5.Name = "bg5";
-            this.bg5.Size = new System.Drawing.Size(112, 37);
-            this.bg5.TabIndex = 19;
-            // 
-            // bg3
-            // 
-            this.bg3.AutoSize = true;
-            this.bg3.BackColor = System.Drawing.Color.Transparent;
-            this.bg3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg3.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg3.Location = new System.Drawing.Point(492, 313);
-            this.bg3.Margin = new System.Windows.Forms.Padding(0);
-            this.bg3.Name = "bg3";
-            this.bg3.Size = new System.Drawing.Size(383, 37);
-            this.bg3.TabIndex = 18;
-            // 
-            // bg4
-            // 
-            this.bg4.AutoSize = true;
-            this.bg4.BackColor = System.Drawing.Color.Transparent;
-            this.bg4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg4.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg4.Location = new System.Drawing.Point(875, 313);
-            this.bg4.Margin = new System.Windows.Forms.Padding(0);
-            this.bg4.Name = "bg4";
-            this.bg4.Size = new System.Drawing.Size(383, 37);
-            this.bg4.TabIndex = 17;
-            // 
-            // bg6
-            // 
-            this.bg6.AutoSize = true;
-            this.bg6.BackColor = System.Drawing.Color.Transparent;
-            this.bg6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg6.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg6.Location = new System.Drawing.Point(1258, 350);
-            this.bg6.Margin = new System.Windows.Forms.Padding(0);
-            this.bg6.Name = "bg6";
-            this.bg6.Size = new System.Drawing.Size(112, 299);
-            this.bg6.TabIndex = 16;
-            // 
-            // bg12
-            // 
-            this.bg12.AutoSize = true;
-            this.bg12.BackColor = System.Drawing.Color.Transparent;
-            this.bg12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg12.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg12.Location = new System.Drawing.Point(0, 350);
-            this.bg12.Margin = new System.Windows.Forms.Padding(0);
-            this.bg12.Name = "bg12";
-            this.bg12.Size = new System.Drawing.Size(109, 299);
-            this.bg12.TabIndex = 15;
-            // 
-            // bg11
-            // 
-            this.bg11.AutoSize = true;
-            this.bg11.BackColor = System.Drawing.Color.Transparent;
-            this.bg11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg11.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg11.Location = new System.Drawing.Point(0, 649);
-            this.bg11.Margin = new System.Windows.Forms.Padding(0);
-            this.bg11.Name = "bg11";
-            this.bg11.Size = new System.Drawing.Size(109, 37);
-            this.bg11.TabIndex = 14;
-            // 
-            // bg8
-            // 
-            this.bg8.AutoSize = true;
-            this.bg8.BackColor = System.Drawing.Color.Transparent;
-            this.bg8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg8.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg8.Location = new System.Drawing.Point(875, 649);
-            this.bg8.Margin = new System.Windows.Forms.Padding(0);
-            this.bg8.Name = "bg8";
-            this.bg8.Size = new System.Drawing.Size(383, 37);
-            this.bg8.TabIndex = 13;
-            // 
-            // bg9
-            // 
-            this.bg9.AutoSize = true;
-            this.bg9.BackColor = System.Drawing.Color.Transparent;
-            this.bg9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg9.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg9.Location = new System.Drawing.Point(492, 649);
-            this.bg9.Margin = new System.Windows.Forms.Padding(0);
-            this.bg9.Name = "bg9";
-            this.bg9.Size = new System.Drawing.Size(383, 37);
-            this.bg9.TabIndex = 12;
-            // 
-            // bg7
-            // 
-            this.bg7.AutoSize = true;
-            this.bg7.BackColor = System.Drawing.Color.Transparent;
-            this.bg7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg7.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg7.Location = new System.Drawing.Point(1258, 649);
-            this.bg7.Margin = new System.Windows.Forms.Padding(0);
-            this.bg7.Name = "bg7";
-            this.bg7.Size = new System.Drawing.Size(112, 37);
-            this.bg7.TabIndex = 11;
-            // 
-            // bg10
-            // 
-            this.bg10.AutoSize = true;
-            this.bg10.BackColor = System.Drawing.Color.Transparent;
-            this.bg10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg10.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg10.Location = new System.Drawing.Point(109, 649);
-            this.bg10.Margin = new System.Windows.Forms.Padding(0);
-            this.bg10.Name = "bg10";
-            this.bg10.Size = new System.Drawing.Size(383, 37);
-            this.bg10.TabIndex = 10;
-            // 
-            // bg2
-            // 
-            this.bg2.AutoSize = true;
-            this.bg2.BackColor = System.Drawing.Color.Transparent;
-            this.bg2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg2.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg2.Location = new System.Drawing.Point(109, 313);
-            this.bg2.Margin = new System.Windows.Forms.Padding(0);
-            this.bg2.Name = "bg2";
-            this.bg2.Size = new System.Drawing.Size(383, 37);
-            this.bg2.TabIndex = 9;
             // 
             // tableLayoutPanel3
             // 
@@ -364,18 +220,6 @@ namespace Display_test
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            // 
-            // bg1
-            // 
-            this.bg1.AutoSize = true;
-            this.bg1.BackColor = System.Drawing.Color.Transparent;
-            this.bg1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg1.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg1.Location = new System.Drawing.Point(0, 313);
-            this.bg1.Margin = new System.Windows.Forms.Padding(0);
-            this.bg1.Name = "bg1";
-            this.bg1.Size = new System.Drawing.Size(109, 37);
-            this.bg1.TabIndex = 8;
             // 
             // bgAlumni
             // 
@@ -508,6 +352,60 @@ namespace Display_test
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
+            // bg1
+            // 
+            this.bg1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.bg1, 5);
+            this.bg1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg1.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg1.Location = new System.Drawing.Point(0, 313);
+            this.bg1.Margin = new System.Windows.Forms.Padding(0);
+            this.bg1.Name = "bg1";
+            this.bg1.Size = new System.Drawing.Size(1370, 37);
+            this.bg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bg1.TabIndex = 28;
+            this.bg1.TabStop = false;
+            // 
+            // bg2
+            // 
+            this.bg2.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.bg2, 5);
+            this.bg2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg2.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg2.Location = new System.Drawing.Point(0, 649);
+            this.bg2.Margin = new System.Windows.Forms.Padding(0);
+            this.bg2.Name = "bg2";
+            this.bg2.Size = new System.Drawing.Size(1370, 37);
+            this.bg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bg2.TabIndex = 29;
+            this.bg2.TabStop = false;
+            // 
+            // bg3
+            // 
+            this.bg3.BackColor = System.Drawing.Color.Transparent;
+            this.bg3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg3.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg3.Location = new System.Drawing.Point(0, 350);
+            this.bg3.Margin = new System.Windows.Forms.Padding(0);
+            this.bg3.Name = "bg3";
+            this.bg3.Size = new System.Drawing.Size(109, 299);
+            this.bg3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bg3.TabIndex = 30;
+            this.bg3.TabStop = false;
+            // 
+            // bg4
+            // 
+            this.bg4.BackColor = System.Drawing.Color.Transparent;
+            this.bg4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bg4.Image = global::Display_test.Properties.Resources.semitransparent;
+            this.bg4.Location = new System.Drawing.Point(1258, 350);
+            this.bg4.Margin = new System.Windows.Forms.Padding(0);
+            this.bg4.Name = "bg4";
+            this.bg4.Size = new System.Drawing.Size(112, 299);
+            this.bg4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bg4.TabIndex = 31;
+            this.bg4.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -535,7 +433,6 @@ namespace Display_test
             this.Resize += new System.EventHandler(this.autoScale);
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -548,6 +445,10 @@ namespace Display_test
             this.bgSocialMedia.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bg1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bg2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bg3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bg4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -585,18 +486,6 @@ namespace Display_test
         private Label lblDebug;
         private TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel3;
-        private Label bg1;
-        private Label bg5;
-        private Label bg3;
-        private Label bg4;
-        private Label bg6;
-        private Label bg12;
-        private Label bg11;
-        private Label bg8;
-        private Label bg9;
-        private Label bg7;
-        private Label bg10;
-        private Label bg2;
         private Panel bgAlumni;
         private Button btnAlumni;
         private Panel bgExpBusiness;
@@ -608,6 +497,10 @@ namespace Display_test
         private TableLayoutPanel tableLayoutPanel4;
         private Label lblWelcome;
         private Label lblTouch;
+        private PictureBox bg4;
+        private PictureBox bg3;
+        private PictureBox bg2;
+        private PictureBox bg1;
         //private PictureBox pictureBox1;
     }
 }
