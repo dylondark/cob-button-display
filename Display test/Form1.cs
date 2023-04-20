@@ -59,6 +59,7 @@ namespace Display_test
             this.WindowState = FormWindowState.Maximized;
 
             // init lifespanhandler for redirection of new tab requests back to the original browser
+            chromium.LifeSpanHandler = new ChromiumLifeSpanHandler();
         }
 
         // automatically scale certain ui elements like text and margin size based on screen resolution
