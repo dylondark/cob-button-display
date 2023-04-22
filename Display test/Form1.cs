@@ -381,29 +381,6 @@ namespace Display_test
             b.Margin = marg;
         }
 
-        private void pictureBox3_Resize(object sender, EventArgs e)
-        {
-            int colW = picLogo.Size.Width + picLogo.Margin.Horizontal;
-            int imgWidthScaled = picLogo.Size.Height * picLogo.BackgroundImage.Width / picLogo.BackgroundImage.Height;
-            var marg = picLogo.Margin;
-            int hMarg = colW - imgWidthScaled;
-            marg.Left = hMarg - 10;
-            marg.Right = 10;
-            picLogo.Margin = marg;
-        }
-
-        private void label1_Resize(object sender, EventArgs e)
-        {
-            Font font = lblWelcome.Font;
-            int fontW = TextRenderer.MeasureText(lblWelcome.Text, font).Width,
-                w = lblWelcome.Width,
-                target = w * 9 / 10;
-            if (fontW < target || fontW > w)
-            {
-                lblWelcome.Font = new Font(font.FontFamily, font.Size * target / fontW, font.Style, font.Unit);
-            }
-        }
-
         // Tap the logo 5 times quickly (within 3 secs) to toggle debugging.
         int clicks = 0;
         private void pictureBox3_Click(object sender, EventArgs e)
