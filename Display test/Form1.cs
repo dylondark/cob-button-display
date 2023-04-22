@@ -203,6 +203,30 @@ namespace Display_test
 #endif
         }
 
+        private void Directory_Click(object sender, EventArgs e)
+        {
+            writeStat(statCodes.Directory);
+            currentPage = CurrentPage.SecondLevelButtonsPage;
+            secondLevelButtonsWindow = new Form2(this);
+            this.Controls.Remove(lblDebug);
+            secondLevelButtonsWindow.Controls.Add(lblDebug);
+            secondLevelButtonsWindow.Show();
+            secondLevelButtonsWindow.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
+            inActivityWindow.startTimer();
+        }
+
+        private void Undergrad_Click(object sender, EventArgs e)
+        {
+            writeStat(statCodes.Undergraduate);
+            showWebPage("https://uakron.edu/cba/undergraduate/majors/");
+        }
+
+        private void Grad_Click(object sender, EventArgs e)
+        {
+            writeStat(statCodes.Graduate);
+            showWebPage("https://www.uakron.edu/cba/graduate/");
+        }
+
         private void CentersInstitutes_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.CentersInstitutes);
@@ -222,30 +246,7 @@ namespace Display_test
             writeStat(statCodes.ExecEd);
             showWebPage("https://www.uakron.edu/cba/executive/");
         }
-        private void Undergrad_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Undergraduate);
-            showWebPage("https://uakron.edu/cba/undergraduate/majors/");
-        }
-
-        private void Grad_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Graduate);
-            showWebPage("https://www.uakron.edu/cba/graduate/");
-        }
-
-        private void Directory_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Directory);
-            currentPage = CurrentPage.SecondLevelButtonsPage;
-            secondLevelButtonsWindow = new Form2(this);
-            this.Controls.Remove(lblDebug);
-            secondLevelButtonsWindow.Controls.Add(lblDebug);
-            secondLevelButtonsWindow.Show();
-            secondLevelButtonsWindow.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
-            inActivityWindow.startTimer();
-        }
-
+        
        void  onSecondLevelFormClosed(object obj, EventArgs args)
         {
             writeStat(0, "lvl2-ev");
@@ -361,29 +362,6 @@ namespace Display_test
             marg.Left = hMarg / 2;
             marg.Right = hMarg / 2;
             b.Margin = marg;
-        }
-
-        private void pictureBox3_Resize(object sender, EventArgs e)
-        {
-            int colW = picCOB.Size.Width + picCOB.Margin.Horizontal;
-            int imgWidthScaled = picCOB.Size.Height * picCOB.BackgroundImage.Width / picCOB.BackgroundImage.Height;
-            var marg = picCOB.Margin;
-            int hMarg = colW - imgWidthScaled;
-            marg.Left = hMarg - 10;
-            marg.Right = 10;
-            picCOB.Margin = marg;
-        }
-
-        private void label1_Resize(object sender, EventArgs e)
-        {
-            Font font = lblWelcome.Font;
-            int fontW = TextRenderer.MeasureText(lblWelcome.Text, font).Width,
-                w = lblWelcome.Width,
-                target = w * 9 / 10;
-            if (fontW < target || fontW > w)
-            {
-                lblWelcome.Font = new Font(font.FontFamily, font.Size * target / fontW, font.Style, font.Unit);
-            }
         }
 
         // Tap the logo 5 times quickly (within 3 secs) to toggle debugging.
