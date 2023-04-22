@@ -399,7 +399,7 @@ namespace Display_test
         // when directory menu is closed
         void onSecondLevelFormClosed(object obj, EventArgs args)
         {
-            writeStat(0, "lvl2-ev");
+            writeStat(statCodes.PageClose, "lvl2-ev");
             secondLevelButtonsWindow.Controls.Remove(lblDebug);
             this.Controls.Add(lblDebug);
             inActivityWindow.stopTimer();
@@ -424,7 +424,7 @@ namespace Display_test
         // show main menu after user hits back button
         void closeWebpage(bool auto = false)
         {
-            writeStat(0, auto ? "auto" : "back"); // write whether this was done by timer or by user
+            writeStat(statCodes.PageClose, auto ? "auto" : "back"); // write whether this was done by timer or by user
             webBrowser.Hide();
             backButton.Hide();
             tableLayoutPanel1.Show();
@@ -441,7 +441,7 @@ namespace Display_test
         // called when going back from directoy menu
         void secondLevelBack()
         {
-            writeStat(0, "lvl2-auto");
+            writeStat(statCodes.PageClose, "lvl2-auto");
             secondLevelButtonsWindow.Close();
             inActivityWindow.stopTimer();
         }
