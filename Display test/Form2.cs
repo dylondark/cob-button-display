@@ -31,20 +31,20 @@ namespace Display_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            form1.writeStat(9);
+            form1.writeStat(Form1.statCodes.Staff);
            showWebPage("https://www.uakron.edu/cba/about-us/staff.dot");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            form1.writeStat(10);
+            form1.writeStat(Form1.statCodes.Faculty);
             showWebPage("https://www.uakron.edu/cba/faculty/");
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            form1.writeStat(11);
+            form1.writeStat(Form1.statCodes.Search);
             showWebPage("https://www.uakron.edu/search/search.dot?searchText=&collection=l2");
         }
 
@@ -85,7 +85,7 @@ namespace Display_test
             btnStaff.Show();
             btnFaculty.Show();
             btnSearch.Show();
-            form1.writeStat(14);
+            form1.writeStat(Form1.statCodes.Back);
             webBrowser1.Hide();
             picCOB.Show();
             tableLayoutPanel1.Show();
@@ -113,7 +113,7 @@ namespace Display_test
 
         private void webBrowser1_AddressChanged(object sender, CefSharp.AddressChangedEventArgs e)
         {
-            form1.writeStat(13, e.Address);
+            form1.writeStat(Form1.statCodes.Form2UrlChange, e.Address);
         }
     }
 }

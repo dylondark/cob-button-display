@@ -83,6 +83,17 @@ namespace Display_test
             picLogo.Size = new Size(picSize, picSize);
         }
 
+        public enum statCodes
+        {
+            PageClose,
+            Alumni, ExpBusiness, SocialMedia, // form1 buttons
+            DebugOn, DebugOff, 
+            Staff, Faculty, Search, // form2 buttons
+            Form1UrlChange, Form2UrlChange,
+            Back,
+            ProgramStart
+        }
+
         /*
          * Stat Codes:
          * 0: close page
@@ -123,7 +134,7 @@ namespace Display_test
                 }
                 try
                 {
-                    File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), "20", Environment.NewLine));
+                    File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), statCodes.ProgramStart.ToString(), Environment.NewLine));
                 }
                 catch (Exception e)
                 {
@@ -132,7 +143,7 @@ namespace Display_test
             }
         }
 
-        public void writeStat(int code)
+        public void writeStat(statCodes code)
         {
             Task.Run(() =>
             {
@@ -140,7 +151,7 @@ namespace Display_test
                 { 
                     try
                     {
-                        File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), code, Environment.NewLine));
+                        File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), code.ToString(), Environment.NewLine));
                     }
                     catch (Exception e)
                     {
@@ -150,7 +161,7 @@ namespace Display_test
             });
         }
 
-        public void writeStat(int code, string str)
+        public void writeStat(statCodes code, string str)
         {
             Task.Run(() =>
             {
@@ -158,7 +169,7 @@ namespace Display_test
                 {
                     try
                     {
-                        File.AppendAllText(statsFile, string.Format("{0},{1},{2}{3}", DateTimeOffset.UtcNow.ToString("s"), code, str, Environment.NewLine));
+                        File.AppendAllText(statsFile, string.Format("{0},{1},{2}{3}", DateTimeOffset.UtcNow.ToString("s"), code.ToString(), str, Environment.NewLine));
                     }
                     catch (Exception e)
                     {
@@ -199,7 +210,7 @@ namespace Display_test
 
         private async Task DebugDisable()
         {
-            writeStat(8);
+            writeStat(statCodes.DebugOff);
             debugEnabled = false;
             Debugs.Clear();
             Debug.WriteLine("WinForm Debug Disabled");
@@ -214,7 +225,7 @@ namespace Display_test
         }
         private async Task DebugEnable()
         {
-            writeStat(7);
+            writeStat(statCodes.DebugOn);
 #if DEBUG
             Debug.WriteLine("WinForm Debug Enabled");
             debugEnabled = true;
@@ -226,7 +237,7 @@ namespace Display_test
 
         private void btnAlumni_Click(object sender, EventArgs e)
         {
-            writeStat(4);
+            writeStat(statCodes.Alumni);
             showWebPage("https://www.uakron.edu/cba/departments/marketing/alumni-stories");
             this.ControlBox = false;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -234,19 +245,19 @@ namespace Display_test
 
         private void btnExpBusiness_Click(object sender, EventArgs e)
         {
-            writeStat(5);
+            writeStat(statCodes.ExpBusiness);
             showWebPage("https://www.uakron.edu/cba/outcomes/experiential-learning");
         }
 
         private void btnSocialMedia_Click(object sender, EventArgs e)
         {
-            writeStat(6);
+            writeStat(statCodes.SocialMedia);
             showWebPage("https://keyhole.co/hashtag-tracking/media-wall/sv1yrn/digitaldisplays?page=1&perPage=25&displayText=1");
         }
 
        void  onSecondLevelFormClosed(object obj, EventArgs args)
         {
-            writeStat(0, "lvl2-ev");
+            writeStat(statCodes.PageClose, "lvl2-ev");
             secondLevelButtonsWindow.Controls.Remove(lblDebug);
             this.Controls.Add(lblDebug);
             inActivityWindow.stopTimer();
@@ -274,7 +285,7 @@ namespace Display_test
 
         void closeWebpage(bool auto = false)
         {
-            writeStat(0, auto ? "auto" : "back");
+            writeStat(statCodes.PageClose, auto ? "auto" : "back");
             chromium.Hide();
             backButton.Hide();
             tableLayoutPanel1.Show();
@@ -290,7 +301,7 @@ namespace Display_test
 
         void secondLevelBack()
         {
-            writeStat(0, "lvl2-auto");
+            writeStat(statCodes.PageClose, "lvl2-auto");
             secondLevelButtonsWindow.Close();
             inActivityWindow.stopTimer();
         }
@@ -424,7 +435,7 @@ namespace Display_test
         {
             Invoke(new Action(() =>
             {
-                writeStat(12, e.Address);
+                writeStat(statCodes.Form1UrlChange, e.Address);
                 inActivityWindow.activityDetected("URL CHNG");
             }));
         }
