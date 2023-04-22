@@ -36,6 +36,7 @@ namespace Display_test
         private string statsFile;
         private object statsLock = new object();
 
+        // runs on startup
         public Form1()
         {
             currentPage = CurrentPage.HomePage;
@@ -64,6 +65,7 @@ namespace Display_test
 
         #region "stats"
 
+        // each code describes an action that will be recorded and stored in the stats csv file
         public enum statCodes
         {
             PageClose,
@@ -75,6 +77,7 @@ namespace Display_test
             ProgramStart
         }
 
+        // creates the stats file 'data.csv' in home user documents folder and sets up proper formatting
         private void setupStats()
         {
             string targetDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Documents", "displaytest_output");
@@ -113,6 +116,7 @@ namespace Display_test
             }
         }
 
+        // writes stat to stats file
         public void writeStat(statCodes code)
         {
             Task.Run(() =>
@@ -131,6 +135,7 @@ namespace Display_test
             });
         }
 
+        // writes stat to stats file (with description message)
         public void writeStat(statCodes code, string str)
         {
             Task.Run(() =>
@@ -153,6 +158,7 @@ namespace Display_test
 
         #region "debug"
 
+        // stores debug messages that show up in the debug label
         private List<string> Debugs = new List<string>();
 
         // Tap the logo 5 times quickly (within 3 secs) to toggle debugging.
@@ -173,6 +179,7 @@ namespace Display_test
             }
         }
 
+        // update debug label with new debug messages and show
         private async Task DebugIfAble(string msg)
         {
             if (!debugEnabled) return;
@@ -200,6 +207,20 @@ namespace Display_test
             }));
         }
 
+        // enables debug system after clicking cob logo 5 times
+        private async Task DebugEnable()
+        {
+            writeStat(statCodes.DebugOn);
+#if DEBUG
+            Debug.WriteLine("WinForm Debug Enabled");
+            debugEnabled = true;
+            lblDebug.BackColor = Color.LightSeaGreen;
+            await DebugIfAble("EN");
+            lblDebug.BackColor = Color.PaleGoldenrod;
+#endif
+        }
+
+        // disables debug system after clicking cob logo 5 times again
         private async Task DebugDisable()
         {
             writeStat(statCodes.DebugOff);
@@ -214,17 +235,6 @@ namespace Display_test
             lblDebug.Hide();
             lblDebug.Text = "";
             lblDebug.BackColor = Color.PaleGoldenrod;
-        }
-        private async Task DebugEnable()
-        {
-            writeStat(statCodes.DebugOn);
-#if DEBUG
-            Debug.WriteLine("WinForm Debug Enabled");
-            debugEnabled = true;
-            lblDebug.BackColor = Color.LightSeaGreen;
-            await DebugIfAble("EN");
-            lblDebug.BackColor = Color.PaleGoldenrod;
-#endif
         }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
@@ -290,12 +300,13 @@ namespace Display_test
 
         #region "activity"
 
+        // go back to main page after inactivity timer
         void onTimerTick(object sender, EventArgs args)
         {
-            navigateBackAfterInacitivity();
+            navigateBackAfterInactivity();
         }
 
-        void navigateBackAfterInacitivity()
+        void navigateBackAfterInactivity()
         {
             inActivityWindow.stopTimer();
             DialogResult result = DialogResult.None;
@@ -315,14 +326,25 @@ namespace Display_test
                 inActivityWindow.startTimer();
             }
         }
+
+        // when activity event is noticed
         private void activity_event(object sender, EventArgs e)
         {
             inActivityWindow.activityDetected("EVNT");
         }
+        // js script to detect activity in browser
         private const string script = @"if(typeof WINFORMS_SCR_LOADED === 'undefined') { document.addEventListener(""click"", function(e) { console.log(""WINFORMS CLICK ACTIVITY""); }); document.addEventListener(""scroll"", function(e) { console.log(""WINFORMS SCROLL ACTIVITY""); }); WINFORMS_SCR_LOADED = true; }";
 
+        // inject said script into page
+        public void webBrowser2_LoadingStateChanged(object sender, LoadingStateChangedEventArgs e)
+        {
+            if (!e.IsLoading)
+            {
+                e.Browser.ExecuteScriptAsync(script);
+            }
+        }
 
-
+        // detects activity from console output from js script
         public void webBrowser2_ConsoleMessage(object sender, ConsoleMessageEventArgs e)
         {
             if (e.Message.Equals("WINFORMS CLICK ACTIVITY"))
@@ -341,16 +363,19 @@ namespace Display_test
             }
         }
 
+        // detect scroll action on form
         private void activity_event(object sender, ScrollEventArgs e)
         {
             inActivityWindow.activityDetected("EVNT SCR");
         }
 
+        // detect mouse click/movement on form
         private void activity_event(object sender, MouseEventArgs e)
         {
             inActivityWindow.activityDetected("EVNT MOU");
         }
 
+        // detect change of web browser url
         private void activity_event(object sender, AddressChangedEventArgs e)
         {
             Invoke(new Action(() =>
@@ -360,6 +385,7 @@ namespace Display_test
             }));
         }
 
+        // when activity is detected on form2
         public void form2Activity()
         {
             Invoke(new Action(() =>
@@ -370,6 +396,7 @@ namespace Display_test
 
         #endregion
 
+        // when directory menu is closed
         void onSecondLevelFormClosed(object obj, EventArgs args)
         {
             writeStat(0, "lvl2-ev");
@@ -378,6 +405,7 @@ namespace Display_test
             inActivityWindow.stopTimer();
         }
 
+        // changes form1 web browser url and shows the browser
         void showWebPage(String url)
         {
             currentPage = CurrentPage.FirstLevelWebpage;
@@ -393,9 +421,10 @@ namespace Display_test
             inActivityWindow.startTimer();
         }
 
+        // show main menu after user hits back button
         void closeWebpage(bool auto = false)
         {
-            writeStat(0, auto ? "auto" : "back");
+            writeStat(0, auto ? "auto" : "back"); // write whether this was done by timer or by user
             webBrowser.Hide();
             backButton.Hide();
             tableLayoutPanel1.Show();
@@ -403,11 +432,13 @@ namespace Display_test
             currentPage = CurrentPage.HomePage;
         }
 
+        // called when inactivity timer has reached limit
         void closeWebpageAuto()
         {
             closeWebpage(true);
         }
 
+        // called when going back from directoy menu
         void secondLevelBack()
         {
             writeStat(0, "lvl2-auto");
@@ -415,14 +446,7 @@ namespace Display_test
             inActivityWindow.stopTimer();
         }
 
-        public void webBrowser2_LoadingStateChanged(object sender, LoadingStateChangedEventArgs e)
-        {
-            if (!e.IsLoading)
-            {
-                e.Browser.ExecuteScriptAsync(script);
-            }
-        }
-
+        // ensure proper resizing of buttons 
         private void gridbuttonResize(object sender, EventArgs e)
         {
             Button b = (Button)sender;
