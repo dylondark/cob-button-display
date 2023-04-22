@@ -90,9 +90,24 @@ namespace Display_test
                 }
                 else
                 {
-                    File.WriteAllText(statsFile, "UTC Timestamp,Action Code,Details" + Environment.NewLine);
+                    try
+                    {
+                        File.WriteAllText(statsFile, "UTC Timestamp,Action Code,Details" + Environment.NewLine);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("[" + DateTime.Now + "] File access error: Unable to begin formatting of stats file. Exception: " + e.Message);
+                    }
+                    
                 }
-                File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), "20", Environment.NewLine));
+                try
+                {
+                    File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), "20", Environment.NewLine));
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("[" + DateTime.Now + "] File access error: Unable to write line to stats file. Exception: " + e.Message);
+                }
             }
         }
 
@@ -101,8 +116,15 @@ namespace Display_test
             Task.Run(() =>
             {
                 lock (statsLock)
-                {
-                    File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), code, Environment.NewLine));
+                { 
+                    try
+                    {
+                        File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), code, Environment.NewLine));
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("[" + DateTime.Now + "] File access error: Unable to write line to stats file. Exception: " + e.Message);
+                    }
                 }
             });
         }
@@ -113,7 +135,14 @@ namespace Display_test
             {
                 lock (statsLock)
                 {
-                    File.AppendAllText(statsFile, string.Format("{0},{1},{2}{3}", DateTimeOffset.UtcNow.ToString("s"), code, str, Environment.NewLine));
+                    try
+                    {
+                        File.AppendAllText(statsFile, string.Format("{0},{1},{2}{3}", DateTimeOffset.UtcNow.ToString("s"), code, str, Environment.NewLine));
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("[" + DateTime.Now + "] File access error: Unable to write line to stats file. Exception: " + e.Message);
+                    }
                 }
             });
         }
