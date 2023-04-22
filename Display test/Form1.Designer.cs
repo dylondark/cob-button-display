@@ -116,7 +116,7 @@ namespace Display_test
             this.btnProfDev.Size = new System.Drawing.Size(407, 258);
             this.btnProfDev.TabIndex = 1;
             this.btnProfDev.UseVisualStyleBackColor = false;
-            this.btnProfDev.Click += new System.EventHandler(this.button2_Click);
+            this.btnProfDev.Click += new System.EventHandler(this.ProfDev_Click);
             this.btnProfDev.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
             // btnCentersInstitutes
@@ -136,7 +136,7 @@ namespace Display_test
             this.btnCentersInstitutes.Size = new System.Drawing.Size(405, 256);
             this.btnCentersInstitutes.TabIndex = 0;
             this.btnCentersInstitutes.UseVisualStyleBackColor = false;
-            this.btnCentersInstitutes.Click += new System.EventHandler(this.button1_Click);
+            this.btnCentersInstitutes.Click += new System.EventHandler(this.CentersInstitutes_Click);
             this.btnCentersInstitutes.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
             // btnExecEd
@@ -155,7 +155,7 @@ namespace Display_test
             this.btnExecEd.Size = new System.Drawing.Size(407, 258);
             this.btnExecEd.TabIndex = 2;
             this.btnExecEd.UseVisualStyleBackColor = false;
-            this.btnExecEd.Click += new System.EventHandler(this.button3_Click);
+            this.btnExecEd.Click += new System.EventHandler(this.ExecEd_Click);
             this.btnExecEd.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
             // btnUndergrad
@@ -176,7 +176,7 @@ namespace Display_test
             this.btnUndergrad.Size = new System.Drawing.Size(407, 258);
             this.btnUndergrad.TabIndex = 9;
             this.btnUndergrad.UseVisualStyleBackColor = false;
-            this.btnUndergrad.Click += new System.EventHandler(this.button6_Click);
+            this.btnUndergrad.Click += new System.EventHandler(this.Undergrad_Click);
             this.btnUndergrad.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
             // btnDirectory
@@ -199,7 +199,7 @@ namespace Display_test
             this.btnDirectory.TabIndex = 8;
             this.btnDirectory.Text = "\r\n";
             this.btnDirectory.UseVisualStyleBackColor = false;
-            this.btnDirectory.Click += new System.EventHandler(this.button5_Click);
+            this.btnDirectory.Click += new System.EventHandler(this.Directory_Click);
             this.btnDirectory.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
             // btnGrad
@@ -220,7 +220,7 @@ namespace Display_test
             this.btnGrad.Size = new System.Drawing.Size(407, 258);
             this.btnGrad.TabIndex = 10;
             this.btnGrad.UseVisualStyleBackColor = false;
-            this.btnGrad.Click += new System.EventHandler(this.button7_Click);
+            this.btnGrad.Click += new System.EventHandler(this.Grad_Click);
             this.btnGrad.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
             // tableLayoutPanel2

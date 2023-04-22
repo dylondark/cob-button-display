@@ -73,17 +73,6 @@ namespace Display_test
             ProgramStart
         }
 
-        /*
-         * Stat Codes:
-         * 0: close page
-         * 1-6: Form1 Buttons (topleft origin)
-         * 7-8: Debug on, off
-         * 9-11: Form2 Buttons
-         * 12: form1 URL change
-         * 13: form2 URL change
-         * 14: second level back
-         * 20: program start
-         */
         private void setupStats()
         {
             string targetDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Documents", "displaytest_output");
@@ -214,7 +203,7 @@ namespace Display_test
 #endif
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void CentersInstitutes_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.CentersInstitutes);
             showWebPage("https://www.uakron.edu/cba/centers-and-institutes/");
@@ -222,30 +211,30 @@ namespace Display_test
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ProfDev_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.ProfDev);
             showWebPage("https://www.uakron.edu/cba/outcomes/");
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void ExecEd_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.ExecEd);
             showWebPage("https://www.uakron.edu/cba/executive/");
         }
-        private void button6_Click(object sender, EventArgs e)
+        private void Undergrad_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.Undergraduate);
             showWebPage("https://uakron.edu/cba/undergraduate/majors/");
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void Grad_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.Graduate);
             showWebPage("https://www.uakron.edu/cba/graduate/");
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Directory_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.Directory);
             currentPage = CurrentPage.SecondLevelButtonsPage;
