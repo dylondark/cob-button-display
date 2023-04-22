@@ -79,6 +79,8 @@ namespace Display_test
             bgSocialMedia.Padding = buttonMargin;
 
             pnLogo.Padding = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
+            int picSize = Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor * 12f));
+            picLogo.Size = new Size(picSize, picSize);
         }
 
         /*
