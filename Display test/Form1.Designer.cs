@@ -35,7 +35,7 @@ namespace Display_test
             this.webBrowser = new CefSharp.WinForms.ChromiumWebBrowser();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnProfDev = new System.Windows.Forms.Button();
-            this.btnNews = new System.Windows.Forms.Button();
+            this.btnCentersInstitutes = new System.Windows.Forms.Button();
             this.btnExecEd = new System.Windows.Forms.Button();
             this.btnUndergrad = new System.Windows.Forms.Button();
             this.btnDirectory = new System.Windows.Forms.Button();
@@ -81,7 +81,7 @@ namespace Display_test
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.Controls.Add(this.btnProfDev, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnNews, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnCentersInstitutes, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnExecEd, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnUndergrad, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnDirectory, 1, 1);
@@ -119,25 +119,25 @@ namespace Display_test
             this.btnProfDev.Click += new System.EventHandler(this.button2_Click);
             this.btnProfDev.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
-            // btnNews
+            // btnCentersInstitutes
             // 
-            this.btnNews.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnCentersInstitutes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNews.AutoSize = true;
-            this.btnNews.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnNews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnNews.BackgroundImage = global::Display_test.Properties.Resources.centers_and_institutes;
-            this.btnNews.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnNews.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNews.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnNews.Location = new System.Drawing.Point(71, 339);
-            this.btnNews.Name = "btnNews";
-            this.btnNews.Size = new System.Drawing.Size(405, 256);
-            this.btnNews.TabIndex = 0;
-            this.btnNews.UseVisualStyleBackColor = false;
-            this.btnNews.Click += new System.EventHandler(this.button1_Click);
-            this.btnNews.Resize += new System.EventHandler(this.gridbuttonResize);
+            this.btnCentersInstitutes.AutoSize = true;
+            this.btnCentersInstitutes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCentersInstitutes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnCentersInstitutes.BackgroundImage = global::Display_test.Properties.Resources.centers_and_institutes;
+            this.btnCentersInstitutes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCentersInstitutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCentersInstitutes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnCentersInstitutes.Location = new System.Drawing.Point(71, 339);
+            this.btnCentersInstitutes.Name = "btnCentersInstitutes";
+            this.btnCentersInstitutes.Size = new System.Drawing.Size(405, 256);
+            this.btnCentersInstitutes.TabIndex = 0;
+            this.btnCentersInstitutes.UseVisualStyleBackColor = false;
+            this.btnCentersInstitutes.Click += new System.EventHandler(this.button1_Click);
+            this.btnCentersInstitutes.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
             // btnExecEd
             // 
@@ -363,7 +363,7 @@ namespace Display_test
         private System.Windows.Forms.Button btnGrad;
         private System.Windows.Forms.Button btnUndergrad;
         private System.Windows.Forms.Button btnDirectory;
-        private System.Windows.Forms.Button btnNews;
+        private System.Windows.Forms.Button btnCentersInstitutes;
         private System.Windows.Forms.Button btnProfDev;
         private System.Windows.Forms.PictureBox picCOB;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

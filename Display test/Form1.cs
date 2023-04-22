@@ -62,6 +62,17 @@ namespace Display_test
             webBrowser.LifeSpanHandler = new ChromiumLifeSpanHandler();
         }
 
+        public enum statCodes
+        {
+            PageClose,
+            Directory, Undergraduate, Graduate, CentersInstitutes, ProfDev, ExecEd, // form1 buttons
+            DebugOn, DebugOff, 
+            Staff, Faculty, Search, // form2 buttons
+            Form1UrlChange, Form2UrlChange,
+            Back,
+            ProgramStart
+        }
+
         /*
          * Stat Codes:
          * 0: close page
@@ -102,7 +113,7 @@ namespace Display_test
                 }
                 try
                 {
-                    File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), "20", Environment.NewLine));
+                    File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), statCodes.ProgramStart.ToString(), Environment.NewLine));
                 }
                 catch (Exception e)
                 {
@@ -111,7 +122,7 @@ namespace Display_test
             }
         }
 
-        public void writeStat(int code)
+        public void writeStat(statCodes code)
         {
             Task.Run(() =>
             {
@@ -119,7 +130,7 @@ namespace Display_test
                 { 
                     try
                     {
-                        File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), code, Environment.NewLine));
+                        File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), code.ToString(), Environment.NewLine));
                     }
                     catch (Exception e)
                     {
@@ -129,7 +140,7 @@ namespace Display_test
             });
         }
 
-        public void writeStat(int code, string str)
+        public void writeStat(statCodes code, string str)
         {
             Task.Run(() =>
             {
@@ -137,7 +148,7 @@ namespace Display_test
                 {
                     try
                     {
-                        File.AppendAllText(statsFile, string.Format("{0},{1},{2}{3}", DateTimeOffset.UtcNow.ToString("s"), code, str, Environment.NewLine));
+                        File.AppendAllText(statsFile, string.Format("{0},{1},{2}{3}", DateTimeOffset.UtcNow.ToString("s"), code.ToString(), str, Environment.NewLine));
                     }
                     catch (Exception e)
                     {
@@ -178,7 +189,7 @@ namespace Display_test
 
         private async Task DebugDisable()
         {
-            writeStat(8);
+            writeStat(statCodes.DebugOff);
             debugEnabled = false;
             Debugs.Clear();
             Debug.WriteLine("WinForm Debug Disabled");
@@ -193,7 +204,7 @@ namespace Display_test
         }
         private async Task DebugEnable()
         {
-            writeStat(7);
+            writeStat(statCodes.DebugOn);
 #if DEBUG
             Debug.WriteLine("WinForm Debug Enabled");
             debugEnabled = true;
@@ -205,7 +216,7 @@ namespace Display_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            writeStat(4);
+            writeStat(statCodes.CentersInstitutes);
             showWebPage("https://www.uakron.edu/cba/centers-and-institutes/");
             this.ControlBox = false;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -213,30 +224,30 @@ namespace Display_test
 
         private void button2_Click(object sender, EventArgs e)
         {
-            writeStat(5);
+            writeStat(statCodes.ProfDev);
             showWebPage("https://www.uakron.edu/cba/outcomes/");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            writeStat(6);
+            writeStat(statCodes.ExecEd);
             showWebPage("https://www.uakron.edu/cba/executive/");
         }
         private void button6_Click(object sender, EventArgs e)
         {
-            writeStat(2);
+            writeStat(statCodes.Undergraduate);
             showWebPage("https://uakron.edu/cba/undergraduate/majors/");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            writeStat(3);
+            writeStat(statCodes.Graduate);
             showWebPage("https://www.uakron.edu/cba/graduate/");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            writeStat(1);
+            writeStat(statCodes.Directory);
             currentPage = CurrentPage.SecondLevelButtonsPage;
             secondLevelButtonsWindow = new Form2(this);
             this.Controls.Remove(lblDebug);
@@ -418,7 +429,7 @@ namespace Display_test
         {
             Invoke(new Action(() =>
             {
-                writeStat(12, e.Address);
+                writeStat(statCodes.Form1UrlChange, e.Address);
                 inActivityWindow.activityDetected("URL CHNG");
             }));
         }
