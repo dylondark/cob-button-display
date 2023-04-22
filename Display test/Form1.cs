@@ -83,6 +83,8 @@ namespace Display_test
             picLogo.Size = new Size(picSize, picSize);
         }
 
+        #region "stats"
+
         public enum statCodes
         {
             PageClose,
@@ -179,7 +181,29 @@ namespace Display_test
             });
         }
 
+        #endregion
+
+        #region "debug"
+
         private List<string> Debugs = new List<string>();
+
+        // Tap the logo 5 times quickly (within 3 secs) to toggle debugging.
+        int clicks = 0;
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (clicks == 0)
+                Task.Run(async () => {
+                    await Task.Delay(3000);
+                    if (clicks < 5) clicks = 0;
+                });
+            clicks++;
+            if (clicks >= 5)
+            {
+                clicks = 0;
+                if (debugEnabled) DebugDisable();
+                else DebugEnable();
+            }
+        }
 
         private async Task DebugIfAble(string msg)
         {
@@ -235,6 +259,16 @@ namespace Display_test
 #endif
         }
 
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 't')
+                DebugIfAble("TM " + timerRef.Enabled + timerRef.ToString());
+        }
+
+        #endregion
+
+        #region "button clicks"
+
         private void btnAlumni_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.Alumni);
@@ -255,17 +289,100 @@ namespace Display_test
             showWebPage("https://keyhole.co/hashtag-tracking/media-wall/sv1yrn/digitaldisplays?page=1&perPage=25&displayText=1");
         }
 
-       void  onSecondLevelFormClosed(object obj, EventArgs args)
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            closeWebpage();
+        }
+
+        #endregion
+
+        #region "activity"
+
+        void onTimerTick(object sender, EventArgs args)
+        {
+            navigateBackAfterInacitivity();
+        }
+
+        void navigateBackAfterInacitivity()
+        {
+            inActivityWindow.stopTimer();
+            DialogResult result = DialogResult.None;
+            if (currentPage == CurrentPage.FirstLevelWebpage)
+            {
+                inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
+                result = inActivityWindow.ShowDialog(this);
+            }
+            else if (currentPage == CurrentPage.SecondLevelButtonsPage && secondLevelButtonsWindow != null)
+            {
+                inActivityWindow = new InActivityWindow(secondLevelBack, timerRef, DebugIfAble);
+                result = inActivityWindow.ShowDialog(secondLevelButtonsWindow);
+            }
+
+            if (result == DialogResult.Yes)
+            {
+                inActivityWindow.startTimer();
+            }
+        }
+
+        private void activity_event(object sender, EventArgs e)
+        {
+            inActivityWindow.activityDetected("EVNT");
+        }
+        private const string script = @"if(typeof WINFORMS_SCR_LOADED === 'undefined') { document.addEventListener(""click"", function(e) { console.log(""WINFORMS CLICK ACTIVITY""); }); document.addEventListener(""scroll"", function(e) { console.log(""WINFORMS SCROLL ACTIVITY""); }); WINFORMS_SCR_LOADED = true; }";
+
+        public void webBrowser2_ConsoleMessage(object sender, ConsoleMessageEventArgs e)
+        {
+            if (e.Message.Equals("WINFORMS CLICK ACTIVITY"))
+            {
+                Invoke(new Action(() =>
+                {
+                    inActivityWindow.activityDetected("JS CLK");
+                }));
+            }
+            else if (e.Message.Equals("WINFORMS SCROLL ACTIVITY"))
+            {
+                Invoke(new Action(() =>
+                {
+                    inActivityWindow.activityDetected("JS SCR");
+                }));
+            }
+        }
+
+        private void activity_event(object sender, ScrollEventArgs e)
+        {
+            inActivityWindow.activityDetected("EVNT SCR");
+        }
+
+        private void activity_event(object sender, MouseEventArgs e)
+        {
+            inActivityWindow.activityDetected("EVNT MOU");
+        }
+
+        private void activity_event(object sender, AddressChangedEventArgs e)
+        {
+            Invoke(new Action(() =>
+            {
+                writeStat(statCodes.Form1UrlChange, e.Address);
+                inActivityWindow.activityDetected("URL CHNG");
+            }));
+        }
+
+        public void form2Activity()
+        {
+            Invoke(new Action(() =>
+            {
+                inActivityWindow.activityDetected("FORM2");
+            }));
+        }
+
+        #endregion
+
+        void onSecondLevelFormClosed(object obj, EventArgs args)
         {
             writeStat(statCodes.PageClose, "lvl2-ev");
             secondLevelButtonsWindow.Controls.Remove(lblDebug);
             this.Controls.Add(lblDebug);
             inActivityWindow.stopTimer();
-        }
-
-        private void backButton_Click(object sender, EventArgs e)
-        {
-            closeWebpage();
         }
 
         void showWebPage(String url)
@@ -306,58 +423,11 @@ namespace Display_test
             inActivityWindow.stopTimer();
         }
 
-        void onTimerTick(object sender, EventArgs args)
-        {
-            navigateBackAfterInacitivity();
-        }
-
-        void navigateBackAfterInacitivity()
-        {
-            inActivityWindow.stopTimer();
-            DialogResult result = DialogResult.None;
-            if (currentPage == CurrentPage.FirstLevelWebpage)
-            {
-                inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
-                result = inActivityWindow.ShowDialog(this);
-            } else if(currentPage == CurrentPage.SecondLevelButtonsPage && secondLevelButtonsWindow != null)
-            {
-                inActivityWindow = new InActivityWindow(secondLevelBack, timerRef, DebugIfAble);
-                result = inActivityWindow.ShowDialog(secondLevelButtonsWindow);
-            }
-
-            if (result  == DialogResult.Yes)
-            {
-                inActivityWindow.startTimer();
-            }
-        }
-        private void activity_event(object sender, EventArgs e)
-        {
-            inActivityWindow.activityDetected("EVNT");
-        }
-        private const string script = @"if(typeof WINFORMS_SCR_LOADED === 'undefined') { document.addEventListener(""click"", function(e) { console.log(""WINFORMS CLICK ACTIVITY""); }); document.addEventListener(""scroll"", function(e) { console.log(""WINFORMS SCROLL ACTIVITY""); }); WINFORMS_SCR_LOADED = true; }";
-
         public void webBrowser2_LoadingStateChanged(object sender, LoadingStateChangedEventArgs e)
         {
             if(!e.IsLoading)
             {
                 e.Browser.ExecuteScriptAsync(script);
-            }
-        }
-
-        public void webBrowser2_ConsoleMessage(object sender, ConsoleMessageEventArgs e)
-        {
-            if (e.Message.Equals("WINFORMS CLICK ACTIVITY"))
-            {
-                Invoke(new Action(() =>
-                {
-                    inActivityWindow.activityDetected("JS CLK");
-                }));
-            } else if (e.Message.Equals("WINFORMS SCROLL ACTIVITY"))
-            {
-                Invoke(new Action(() =>
-                {
-                    inActivityWindow.activityDetected("JS SCR");
-                }));
             }
         }
 
@@ -381,54 +451,8 @@ namespace Display_test
             b.Margin = marg;
         }
 
-        // Tap the logo 5 times quickly (within 3 secs) to toggle debugging.
-        int clicks = 0;
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            if (clicks == 0)
-                Task.Run(async () => {
-                    await Task.Delay(3000);
-                    if (clicks < 5) clicks = 0;
-                });
-            clicks++;
-            if(clicks >= 5)
-            {
-                clicks = 0;
-                if (debugEnabled) DebugDisable();
-                else DebugEnable();
-            }
-        }
-        private void activity_event(object sender, ScrollEventArgs e)
-        {
-            inActivityWindow.activityDetected("EVNT SCR");
-        }
+       
 
-        private void activity_event(object sender, MouseEventArgs e)
-        {
-            inActivityWindow.activityDetected("EVNT MOU");
-        }
-
-        private void activity_event(object sender, AddressChangedEventArgs e)
-        {
-            Invoke(new Action(() =>
-            {
-                writeStat(statCodes.Form1UrlChange, e.Address);
-                inActivityWindow.activityDetected("URL CHNG");
-            }));
-        }
-
-        public void form2Activity()
-        {
-            Invoke(new Action(() =>
-            {
-                inActivityWindow.activityDetected("FORM2");
-            }));
-        }
-
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 't')
-                DebugIfAble("TM " + timerRef.Enabled + timerRef.ToString());
-        }
+        
     }
 }
