@@ -292,7 +292,20 @@ namespace Display_test
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            closeWebpage();
+            int historyMax = urlHistory.Count - 1;
+            string backUrl;
+            if (historyMax > 0)
+            {
+                // go back to last url and remove most current url from list
+                backUrl = urlHistory[historyMax - 1];
+                chromium.LoadUrl(backUrl);
+                urlHistory.RemoveRange(historyMax - 1, 2); // remove current url and url that was just navigated to
+            }
+            else
+            {
+                closeWebpage();
+            }
+            
         }
 
         #endregion
