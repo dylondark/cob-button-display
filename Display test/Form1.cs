@@ -380,6 +380,7 @@ namespace Display_test
             Invoke(new Action(() =>
             {
                 writeStat(statCodes.Form1UrlChange, e.Address);
+                urlHistory.Add(e.Address);
                 inActivityWindow.activityDetected("URL CHNG");
             }));
         }
