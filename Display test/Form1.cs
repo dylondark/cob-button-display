@@ -36,6 +36,8 @@ namespace Display_test
         private string statsFile;
         private object statsLock = new object();
 
+        private List<string> urlHistory = new List<string>();
+
         // runs on startup
         public Form1()
         {
