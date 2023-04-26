@@ -461,6 +461,7 @@ namespace Display_test
             tableLayoutPanel1.Show();
             picCOB.Show();
             currentPage = CurrentPage.HomePage;
+            urlHistory.Clear();
         }
 
         // called when inactivity timer has reached limit
