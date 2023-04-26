@@ -36,6 +36,8 @@ namespace Display_test
         private string statsFile;
         private object statsLock = new object();
 
+        private List<string> urlHistory = new List<string>();
+
         // runs on startup
         public Form1()
         {
@@ -322,7 +324,20 @@ namespace Display_test
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            closeWebpage();
+            int historyMax = urlHistory.Count - 1;
+            string backUrl;
+            if (historyMax > 0)
+            {
+                // go back to last url and remove most current url from list
+                backUrl = urlHistory[historyMax - 1];
+                webBrowser.LoadUrl(backUrl);
+                urlHistory.RemoveRange(historyMax - 1, 2); // remove current url and url that was just navigated to
+            }
+            else
+            {
+                closeWebpage();
+            }
+            
         }
 
         #endregion
@@ -410,6 +425,7 @@ namespace Display_test
             Invoke(new Action(() =>
             {
                 writeStat(statCodes.Form1UrlChange, e.Address);
+                urlHistory.Add(e.Address);
                 inActivityWindow.activityDetected("URL CHNG");
             }));
         }
@@ -459,6 +475,7 @@ namespace Display_test
             tableLayoutPanel1.Show();
             picCOB.Show();
             currentPage = CurrentPage.HomePage;
+            urlHistory.Clear();
         }
 
         // called when inactivity timer has reached limit

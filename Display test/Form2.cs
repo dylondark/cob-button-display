@@ -15,6 +15,8 @@ namespace Display_test
     {
 
         private Form1 form1;
+        private List<string> urlHistory = new List<string>();
+
         public Form2(Form1 form1)
         {
             InitializeComponent();
@@ -52,7 +54,19 @@ namespace Display_test
         {
             if(webBrowser1.Visible)
             {
-                closeWebPage();
+                int historyMax = urlHistory.Count - 1;
+                string backUrl;
+                if (historyMax > 0)
+                {
+                    // go back to last url and remove most current url from list
+                    backUrl = urlHistory[historyMax - 1];
+                    webBrowser1.LoadUrl(backUrl);
+                    urlHistory.RemoveRange(historyMax - 1, 2); // remove current url and url that was just navigated to
+                }
+                else
+                {
+                    closeWebPage();
+                }
             } else
             {
                 form1.writeStat(0, "lvl2-back");
@@ -89,6 +103,7 @@ namespace Display_test
             webBrowser1.Hide();
             picCOB.Show();
             tableLayoutPanel1.Show();
+            urlHistory.Clear();
         }
 
         private void activity_event(object sender, EventArgs e)
@@ -114,6 +129,7 @@ namespace Display_test
         private void webBrowser1_AddressChanged(object sender, CefSharp.AddressChangedEventArgs e)
         {
             form1.writeStat(Form1.statCodes.Form2UrlChange, e.Address);
+            urlHistory.Add(e.Address);
         }
     }
 }
