@@ -429,6 +429,7 @@ namespace Display_test
             tableLayoutPanel1.Show();
             picLogo.Show();
             currentPage = CurrentPage.HomePage;
+            urlHistory.Clear();
             pictureBox1.Show();
         }
 
