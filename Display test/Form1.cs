@@ -83,17 +83,6 @@ namespace Display_test
             btnUndergrad.Margin = buttonMargin;
         }
 
-        /*
-         * Stat Codes:
-         * 0: close page
-         * 1-6: Form1 Buttons (topleft origin)
-         * 7-8: Debug on, off
-         * 9-11: Form2 Buttons
-         * 12: form1 URL change
-         * 13: form2 URL change
-         * 14: second level back
-         * 20: program start
-         */
         #region "stats"
 
         // each code describes an action that will be recorded and stored in the stats csv file
