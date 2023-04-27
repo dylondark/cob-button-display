@@ -51,7 +51,7 @@ namespace Display_test
 
             createBackButton();
             InitializeComponent();
-            chromium.Hide();
+            chromium.SendToBack();
             backButton.Hide();
             lblDebug.Hide();
 
@@ -423,13 +423,9 @@ namespace Display_test
         {
             currentPage = CurrentPage.FirstLevelWebpage;
             backButton.Show();
-            backButton.BringToFront();
-            backButton.BringToFront();
             chromium.Load(url);
-            chromium.Show();
-            pictureBox1.Hide();
-            tableLayoutPanel1.Hide();
-            picLogo.Hide();
+            chromium.BringToFront();
+            backButton.BringToFront();
 
             inActivityWindow.startTimer();
         }
@@ -438,13 +434,10 @@ namespace Display_test
         void closeWebpage(bool auto = false)
         {
             writeStat(statCodes.PageClose, auto ? "auto" : "back");
-            chromium.Hide();
+            chromium.SendToBack();
             backButton.Hide();
-            tableLayoutPanel1.Show();
-            picLogo.Show();
             currentPage = CurrentPage.HomePage;
             urlHistory.Clear();
-            pictureBox1.Show();
         }
 
         // called when inactivity timer has reached limit
