@@ -287,7 +287,7 @@ namespace Display_test
         private void btnSocialMedia_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.SocialMedia);
-            showWebPage("https://keyhole.co/hashtag-tracking/media-wall/sv1yrn/digitaldisplays?page=1&perPage=25&displayText=1");
+            showWebPage("https://keyhole.co/hashtag-tracking/media-wall/1JZR73/digitaldisplaysmarketing?page=1&perPage=25");
         }
 
         private void backButton_Click(object sender, EventArgs e)
