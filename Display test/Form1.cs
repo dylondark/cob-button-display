@@ -67,10 +67,11 @@ namespace Display_test
         // automatically scale certain ui elements like text and margin size based on screen resolution
         private void autoScale(object sender, EventArgs e)
         {
-            const int scaleFactor = 72; // based on the desired font size for the welcome text on a 4k display, everything else will scale accordingly with this
-            float resFactor = Convert.ToSingle(this.Width) / 3840f;
+            const int scaleFactor = 60; // based on the desired font size for the welcome text on a 4k display, everything else will scale accordingly with this
+            float resFactor = Convert.ToSingle(this.Width) / 3840f; // this will be 1 at 4k
 
-            lblWelcome.Font = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold);
+            Font labelFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold); ;
+            lblWelcome.Font = labelFont;
             pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
 
             Padding buttonMargin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
@@ -80,6 +81,18 @@ namespace Display_test
             btnGrad.Margin = buttonMargin;
             btnProfDev.Margin = buttonMargin;
             btnUndergrad.Margin = buttonMargin;
+
+            // back buttons scaling
+            int buttonDim = Convert.ToInt32(scaleFactor * 4f * resFactor);
+            backButton.Width = buttonDim;
+            backButton.Height = buttonDim;
+
+            // back button positions
+            int[] buttonPos = new int[] {this.Width - 20 - buttonDim, this.Height - 20 - buttonDim};
+            backButton.Left = buttonPos[0];
+            backButton.Top = buttonPos[1];
+
+            
         }
 
         #region "stats"

@@ -40,6 +40,7 @@ namespace Display_test
             this.btnUndergrad = new System.Windows.Forms.Button();
             this.btnDirectory = new System.Windows.Forms.Button();
             this.btnGrad = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -299,6 +300,19 @@ namespace Display_test
             this.lblDebug.Text = "Debug";
             this.lblDebug.Visible = false;
             // 
+            // backButton
+            // 
+            this.backButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.Location = new System.Drawing.Point(1250, 630);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(100, 100);
+            this.backButton.TabIndex = 3;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,6 +321,7 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.chromium);
@@ -332,22 +347,6 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-            // 
-            // backButton
-            // 
-            this.backButton = new System.Windows.Forms.Button();
-            this.backButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(940, 520);
-            this.backButton.Anchor = (System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom);
-            this.backButton.MinimumSize = new System.Drawing.Size(400, 200);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(400, 200);
-            this.backButton.TabIndex = 3;
-            this.backButton.Text = "Back";
-            this.backButton.UseVisualStyleBackColor = false;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            this.Controls.Add(this.backButton);
 
         }
 
