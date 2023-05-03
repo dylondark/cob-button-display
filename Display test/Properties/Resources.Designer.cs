@@ -413,6 +413,16 @@ namespace Display_test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap homebutton {
+            get {
+                object obj = ResourceManager.GetObject("homebutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IMG_3047 {
             get {
                 object obj = ResourceManager.GetObject("IMG_3047", resourceCulture);

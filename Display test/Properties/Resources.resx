@@ -121,6 +121,9 @@
   <data name="MicrosoftTeams-image (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (4)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="backbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Black and white history1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Black and white history1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -187,6 +190,9 @@
   <data name="Programs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Programs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="re-sized" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\re-sized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Fisherlogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fisherlogo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -219,9 +225,6 @@
   </data>
   <data name="semitransparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\semitransparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backgroundFisher (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backgroundFisher (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Partners1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Partners1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,8 +295,8 @@
   <data name="Top Text3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Top Text3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="re-sized" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\re-sized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backgroundFisher (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundFisher (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="backgroundFisher (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundFisher (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -319,7 +322,7 @@
   <data name="20220405_134407" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20220405_134407.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="homebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\homebutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
