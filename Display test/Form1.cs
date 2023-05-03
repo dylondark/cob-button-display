@@ -325,7 +325,7 @@ namespace Display_test
             showWebPage("https://www.uakron.edu/cba/executive/");
         }
 
-        private void backButton_Click(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
             int historyMax = urlHistory.Count - 1;
             string backUrl;
