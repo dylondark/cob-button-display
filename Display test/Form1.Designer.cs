@@ -332,20 +332,13 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
-        }
-
-        #endregion
-
-        void createBackButton()
-        {
             // 
             // backButton
             // 
             this.backButton = new System.Windows.Forms.Button();
             this.backButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(940,520);
+            this.backButton.Location = new System.Drawing.Point(940, 520);
             this.backButton.Anchor = (System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom);
             this.backButton.MinimumSize = new System.Drawing.Size(400, 200);
             this.backButton.Name = "backButton";
@@ -354,10 +347,11 @@ namespace Display_test
             this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
-
             this.Controls.Add(this.backButton);
 
         }
+
+        #endregion
 
         private CefSharp.WinForms.ChromiumWebBrowser chromium;
         private System.Windows.Forms.Button backButton;
