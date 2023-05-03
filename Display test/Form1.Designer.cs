@@ -303,13 +303,14 @@ namespace Display_test
             // backButton
             // 
             this.backButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.backButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.backButton.BackColor = System.Drawing.Color.Silver;
+            this.backButton.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
+            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.Location = new System.Drawing.Point(1250, 630);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(100, 100);
             this.backButton.TabIndex = 3;
-            this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
