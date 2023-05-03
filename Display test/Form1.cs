@@ -51,7 +51,8 @@ namespace Display_test
 
             InitializeComponent();
             chromium.Hide();
-            backButton.Hide();
+            btnBack.Hide();
+            btnHome.Hide();
             lblDebug.Hide();
 
             lblDebug.Text = "";
@@ -72,7 +73,6 @@ namespace Display_test
 
             Font labelFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold); ;
             lblWelcome.Font = labelFont;
-            pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
 
             Padding buttonMargin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
             btnCentersInstitutes.Margin = buttonMargin;
@@ -84,15 +84,17 @@ namespace Display_test
 
             // back buttons scaling
             int buttonDim = Convert.ToInt32(scaleFactor * 4f * resFactor);
-            backButton.Width = buttonDim;
-            backButton.Height = buttonDim;
+            btnBack.Width = buttonDim;
+            btnBack.Height = buttonDim;
+            btnHome.Width = buttonDim;
+            btnHome.Height = buttonDim;
 
             // back button positions
             int[] buttonPos = new int[] {this.Width - 20 - buttonDim, this.Height - 20 - buttonDim};
-            backButton.Left = buttonPos[0];
-            backButton.Top = buttonPos[1];
-
-            
+            btnBack.Left = buttonPos[0];
+            btnBack.Top = buttonPos[1];
+            btnHome.Left = buttonPos[0] - buttonDim;
+            btnHome.Top = buttonPos[1];
         }
 
         #region "stats"
@@ -455,9 +457,10 @@ namespace Display_test
         void showWebPage(String url)
         {
             currentPage = CurrentPage.FirstLevelWebpage;
-            backButton.Show();
-            backButton.BringToFront();
-            backButton.BringToFront();
+            btnBack.Show();
+            btnBack.BringToFront();
+            btnHome.Show();
+            btnHome.BringToFront();
             chromium.Load(url);
 
             chromium.Show();
@@ -472,7 +475,8 @@ namespace Display_test
         {
             writeStat(statCodes.PageClose, auto ? "auto" : "back"); // write whether this was done by timer or by user
             chromium.Hide();
-            backButton.Hide();
+            btnBack.Hide();
+            btnHome.Hide();
             tableLayoutPanel1.Show();
             picCOB.Show();
             currentPage = CurrentPage.HomePage;

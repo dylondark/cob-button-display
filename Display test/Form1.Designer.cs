@@ -40,7 +40,8 @@ namespace Display_test
             this.btnUndergrad = new System.Windows.Forms.Button();
             this.btnDirectory = new System.Windows.Forms.Button();
             this.btnGrad = new System.Windows.Forms.Button();
-            this.backButton = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -300,19 +301,32 @@ namespace Display_test
             this.lblDebug.Text = "Debug";
             this.lblDebug.Visible = false;
             // 
-            // backButton
+            // btnBack
             // 
-            this.backButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.backButton.BackColor = System.Drawing.Color.Silver;
-            this.backButton.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
-            this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(1250, 630);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(100, 100);
-            this.backButton.TabIndex = 3;
-            this.backButton.UseVisualStyleBackColor = false;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBack.BackColor = System.Drawing.Color.Silver;
+            this.btnBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1250, 630);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(100, 100);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnHome.BackColor = System.Drawing.Color.Silver;
+            this.btnHome.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Location = new System.Drawing.Point(1150, 630);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(100, 100);
+            this.btnHome.TabIndex = 15;
+            this.btnHome.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -322,7 +336,8 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.btnHome);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.chromium);
@@ -354,7 +369,8 @@ namespace Display_test
         #endregion
 
         private CefSharp.WinForms.ChromiumWebBrowser chromium;
-        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnExecEd;
         private System.Windows.Forms.Button btnGrad;
         private System.Windows.Forms.Button btnUndergrad;
@@ -362,11 +378,11 @@ namespace Display_test
         private System.Windows.Forms.Button btnCentersInstitutes;
         private System.Windows.Forms.Button btnProfDev;
         private System.Windows.Forms.PictureBox picCOB;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Label lblDebug;
         private TableLayoutPanel tableLayoutPanel2;
         private Label lblWelcome;
-        private PictureBox pictureBox1;
     }
 }
 
