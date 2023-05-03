@@ -343,6 +343,18 @@ namespace Display_test
             
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (chromium.CanGoBack)
+            {
+                chromium.Back();
+            }
+            else
+            {
+                closeWebpage();
+            }
+        }
+
         #endregion
 
         #region "activity"
