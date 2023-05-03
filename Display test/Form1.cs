@@ -47,7 +47,6 @@ namespace Display_test
 
             setupStats();
 
-            createBackButton();
             InitializeComponent();
             chromium.Hide();
             backButton.Hide();
