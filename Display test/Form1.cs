@@ -393,7 +393,18 @@ namespace Display_test
             Invoke(new Action(() =>
             {
                 writeStat(statCodes.Form1UrlChange, e.Address);
-                urlHistory.Add(e.Address);
+
+                // only add url once
+                if (urlHistory.Count > 0)
+                {
+                    if (e.Address != urlHistory.Last())
+                    {
+                        urlHistory.Add(e.Address);
+                    }
+                    
+                }
+                else { urlHistory.Add(e.Address); }
+
                 inActivityWindow.activityDetected("URL CHNG");
             }));
         }
