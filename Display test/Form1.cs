@@ -48,9 +48,7 @@ namespace Display_test
             inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
 
             setupStats();
-
             InitializeComponent();
-            chromium.Hide();
             btnBack.Hide();
             btnHome.Hide();
             lblDebug.Hide();
@@ -58,11 +56,8 @@ namespace Display_test
             lblDebug.Text = "";
 
             FormBorderStyle = FormBorderStyle.None;
-            
-            this.WindowState = FormWindowState.Maximized;
 
-            // init lifespanhandler for redirection of new tab requests back to the original browser
-            chromium.LifeSpanHandler = new ChromiumLifeSpanHandler();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         // automatically scale certain ui elements like text and margin size based on screen resolution
@@ -468,6 +463,7 @@ namespace Display_test
         // changes form1 web browser url and shows the browser
         void showWebPage(String url)
         {
+            initBrowser();   
             currentPage = CurrentPage.FirstLevelWebpage;
             btnBack.Show();
             btnBack.BringToFront();
@@ -492,7 +488,10 @@ namespace Display_test
             tableLayoutPanel1.Show();
             picCOB.Show();
             currentPage = CurrentPage.HomePage;
-            urlHistory.Clear();
+            pictureBox1.Show();
+            Controls.Remove(chromium);
+            chromium.Dispose();
+            chromium = null;
         }
 
         // called when inactivity timer has reached limit
