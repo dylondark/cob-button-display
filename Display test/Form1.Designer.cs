@@ -419,7 +419,6 @@ namespace Display_test
             this.btnBack.Size = new System.Drawing.Size(100, 100);
             this.btnBack.TabIndex = 3;
             this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.backButton_Click);
             // 
             // btnHome
             // 
@@ -433,6 +432,7 @@ namespace Display_test
             this.btnHome.Size = new System.Drawing.Size(100, 100);
             this.btnHome.TabIndex = 15;
             this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // Form1
             // 

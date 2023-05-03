@@ -302,7 +302,7 @@ namespace Display_test
             showWebPage("https://keyhole.co/hashtag-tracking/media-wall/sv1yrn/digitaldisplays?page=1&perPage=25&displayText=1");
         }
 
-        private void backButton_Click(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
             closeWebpage();
         }
