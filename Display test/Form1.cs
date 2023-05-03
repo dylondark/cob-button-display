@@ -66,7 +66,7 @@ namespace Display_test
         private void autoScale(object sender, EventArgs e)
         {
             const int scaleFactor = 60; // based on the desired font size for the welcome text on a 4k display, everything else will scale accordingly with this
-            float resFactor = Convert.ToSingle(this.Width) / 3840f;
+            float resFactor = Convert.ToSingle(this.Width) / 3840f; // this will be 1 at 4k
 
             Font labelFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold); ;
             lblWelcome.Font = labelFont;
@@ -81,6 +81,17 @@ namespace Display_test
             pnLogo.Padding = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
             int picSize = Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor * 12f));
             picLogo.Size = new Size(picSize, picSize);
+
+            // back buttons scaling
+            int buttonDim = Convert.ToInt32(scaleFactor * 4f * resFactor);
+            backButton.Width = buttonDim;
+            backButton.Height = buttonDim;
+
+            // back button positions
+            int[] buttonPos = new int[] {this.Width - 20 - buttonDim, this.Height - 20 - buttonDim};
+            backButton.Left = buttonPos[0];
+            backButton.Top = buttonPos[1];
+
         }
 
         #region "stats"
