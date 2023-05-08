@@ -31,7 +31,6 @@ namespace Display_test
         /// </summary>
         private void InitializeComponent()
         {
-            this.chromium = new CefSharp.WinForms.ChromiumWebBrowser();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblDebug = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -53,6 +52,8 @@ namespace Display_test
             this.lblWelcome = new System.Windows.Forms.Label();
             this.bg1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bg4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg3)).BeginInit();
@@ -68,21 +69,6 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.bg1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // chromium
-            // 
-            this.chromium.ActivateBrowserOnCreation = false;
-            this.chromium.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chromium.Location = new System.Drawing.Point(0, 0);
-            this.chromium.Margin = new System.Windows.Forms.Padding(2);
-            this.chromium.MinimumSize = new System.Drawing.Size(10, 10);
-            this.chromium.Name = "chromium";
-            this.chromium.Size = new System.Drawing.Size(1370, 749);
-            this.chromium.TabIndex = 4;
-            this.chromium.AddressChanged += new System.EventHandler<CefSharp.AddressChangedEventArgs>(this.activity_event);
-            this.chromium.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.webBrowser2_LoadingStateChanged);
-            this.chromium.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser2_ConsoleMessage);
-            this.chromium.Click += new System.EventHandler(this.activity_event);
             // 
             // tableLayoutPanel2
             // 
@@ -405,6 +391,34 @@ namespace Display_test
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBack.BackColor = System.Drawing.Color.Silver;
+            this.btnBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1250, 630);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(100, 100);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnHome.BackColor = System.Drawing.Color.Silver;
+            this.btnHome.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Location = new System.Drawing.Point(1150, 630);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(100, 100);
+            this.btnHome.TabIndex = 15;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -413,9 +427,10 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btnHome);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.chromium);
             this.Controls.Add(this.pictureBox2);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
@@ -455,31 +470,28 @@ namespace Display_test
 
         #endregion
 
-        void createBackButton()
+        private void initBrowser()
         {
-            // 
-            // backButton
-            // 
-            this.backButton = new System.Windows.Forms.Button();
-            this.backButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(940,520);
-            this.backButton.Anchor = (System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom);
-            this.backButton.MinimumSize = new System.Drawing.Size(400, 200);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(400, 200);
-            this.backButton.TabIndex = 3;
-            this.backButton.Text = "Back";
-            this.backButton.UseVisualStyleBackColor = false;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-
-            this.Controls.Add(this.backButton);
-
+            this.chromium = new CefSharp.WinForms.ChromiumWebBrowser();
+            this.chromium.ActivateBrowserOnCreation = false;
+            this.chromium.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chromium.Location = new System.Drawing.Point(0, 0);
+            this.chromium.Margin = new System.Windows.Forms.Padding(2);
+            this.chromium.MinimumSize = new System.Drawing.Size(10, 10);
+            this.chromium.Name = "chromium";
+            this.chromium.Size = new System.Drawing.Size(1370, 749);
+            this.chromium.TabIndex = 4;
+            this.chromium.AddressChanged += new System.EventHandler<CefSharp.AddressChangedEventArgs>(this.activity_event);
+            this.chromium.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.webBrowser2_LoadingStateChanged);
+            this.chromium.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser2_ConsoleMessage);
+            this.chromium.Click += new System.EventHandler(this.activity_event);
+            this.chromium.LifeSpanHandler = new ChromiumLifeSpanHandler();
+            this.Controls.Add(this.chromium);
         }
 
         private CefSharp.WinForms.ChromiumWebBrowser chromium;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Label lblDebug;
@@ -500,6 +512,7 @@ namespace Display_test
         private PictureBox bg3;
         private PictureBox bg2;
         private PictureBox bg1;
+        private Button btnHome;
         //private PictureBox pictureBox1;
     }
 }

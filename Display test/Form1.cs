@@ -48,28 +48,23 @@ namespace Display_test
             inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
 
             setupStats();
-
-            createBackButton();
             InitializeComponent();
-            chromium.SendToBack();
-            backButton.Hide();
+            btnBack.Hide();
+            btnHome.Hide();
             lblDebug.Hide();
 
             lblDebug.Text = "";
 
             FormBorderStyle = FormBorderStyle.None;
-            
-            this.WindowState = FormWindowState.Maximized;
 
-            // init lifespanhandler for redirection of new tab requests back to the original browser
-            chromium.LifeSpanHandler = new ChromiumLifeSpanHandler();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         // automatically scale certain ui elements like text and margin size based on screen resolution
         private void autoScale(object sender, EventArgs e)
         {
             const int scaleFactor = 60; // based on the desired font size for the welcome text on a 4k display, everything else will scale accordingly with this
-            float resFactor = Convert.ToSingle(this.Width) / 3840f;
+            float resFactor = Convert.ToSingle(this.Width) / 3840f; // this will be 1 at 4k
 
             Font labelFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold); ;
             lblWelcome.Font = labelFont;
@@ -84,6 +79,20 @@ namespace Display_test
             pnLogo.Padding = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
             int picSize = Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor * 12f));
             picLogo.Size = new Size(picSize, picSize);
+
+            // back buttons scaling
+            int buttonDim = Convert.ToInt32(scaleFactor * 4f * resFactor);
+            btnBack.Width = buttonDim;
+            btnBack.Height = buttonDim;
+            btnHome.Width = buttonDim;
+            btnHome.Height = buttonDim;
+
+            // back button positions
+            int[] buttonPos = new int[] {this.Width - 20 - buttonDim, this.Height - 20 - buttonDim};
+            btnBack.Left = buttonPos[0];
+            btnBack.Top = buttonPos[1];
+            btnHome.Left = buttonPos[0] - buttonDim;
+            btnHome.Top = buttonPos[1];
         }
 
         #region "stats"
@@ -290,7 +299,7 @@ namespace Display_test
             showWebPage("https://keyhole.co/hashtag-tracking/media-wall/1JZR73/digitaldisplaysmarketing?page=1&perPage=25");
         }
 
-        private void backButton_Click(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
             int historyMax = urlHistory.Count - 1;
             string backUrl;
@@ -306,6 +315,18 @@ namespace Display_test
                 closeWebpage();
             }
             
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (chromium.CanGoBack)
+            {
+                chromium.Back();
+            }
+            else
+            {
+                closeWebpage();
+            }
         }
 
         #endregion
@@ -432,8 +453,12 @@ namespace Display_test
         // changes form1 web browser url and shows the browser
         void showWebPage(String url)
         {
+            initBrowser();   
             currentPage = CurrentPage.FirstLevelWebpage;
-            backButton.Show();
+            btnBack.Show();
+            btnBack.BringToFront();
+            btnHome.Show();
+            btnHome.BringToFront();
             chromium.Load(url);
             chromium.BringToFront();
             backButton.BringToFront();
@@ -445,10 +470,16 @@ namespace Display_test
         void closeWebpage(bool auto = false)
         {
             writeStat(statCodes.PageClose, auto ? "auto" : "back");
-            chromium.SendToBack();
-            backButton.Hide();
+            chromium.Hide();
+            btnBack.Hide();
+            btnHome.Hide();
+            tableLayoutPanel1.Show();
+            picLogo.Show();
             currentPage = CurrentPage.HomePage;
-            urlHistory.Clear();
+            pictureBox1.Show();
+            Controls.Remove(chromium);
+            chromium.Dispose();
+            chromium = null;
         }
 
         // called when inactivity timer has reached limit
