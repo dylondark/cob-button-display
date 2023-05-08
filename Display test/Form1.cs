@@ -47,10 +47,9 @@ namespace Display_test
 
             setupStats();
             InitializeComponent();
-            btnBack.Hide();
-            btnHome.Hide();
             lblDebug.Hide();
-
+            btnHome.SendToBack();
+            btnBack.SendToBack();
             lblDebug.Text = "";
 
             FormBorderStyle = FormBorderStyle.None;
@@ -452,10 +451,9 @@ namespace Display_test
             currentPage = CurrentPage.FirstLevelWebpage;
             chromium.Load(url);
             chromium.BringToFront();
-            btnBack.Show();
             btnBack.BringToFront();
-            btnHome.Show();
             btnHome.BringToFront();
+            tableLayoutPanel1.SendToBack();
 
             inActivityWindow.startTimer();
         }
@@ -463,14 +461,12 @@ namespace Display_test
         // show main menu after user hits back button
         void closeWebpage(bool auto = false)
         {
-            writeStat(statCodes.PageClose, auto ? "auto" : "back"); // write whether this was done by timer or by user
-            chromium.Hide();
-            btnBack.Hide();
-            btnHome.Hide();
-            tableLayoutPanel1.Show();
-            picCOB.Show();
-            currentPage = CurrentPage.HomePage;
-            pictureBox1.Show();
+            writeStat(statCodes.PageClose, auto ? "auto" : "back");
+            btnHome.SendToBack();
+            btnBack.SendToBack();
+            tableLayoutPanel1.BringToFront();
+
+            // destroy chromium browser
             Controls.Remove(chromium);
             chromium.Dispose();
             chromium = null;
