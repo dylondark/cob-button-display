@@ -36,6 +36,8 @@ namespace Display_test
         private string statsFile;
         private object statsLock = new object();
 
+        private List<string> urlHistory = new List<string>();
+
         // runs on startup
         public Form1()
         {
@@ -294,12 +296,25 @@ namespace Display_test
         private void btnSocialMedia_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.SocialMedia);
-            showWebPage("https://keyhole.co/hashtag-tracking/media-wall/sv1yrn/digitaldisplays?page=1&perPage=25&displayText=1");
+            showWebPage("https://keyhole.co/hashtag-tracking/media-wall/1JZR73/digitaldisplaysmarketing?page=1&perPage=25");
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            closeWebpage();
+            int historyMax = urlHistory.Count - 1;
+            string backUrl;
+            if (historyMax > 0)
+            {
+                // go back to last url and remove most current url from list
+                backUrl = urlHistory[historyMax - 1];
+                chromium.LoadUrl(backUrl);
+                urlHistory.RemoveRange(historyMax - 1, 2); // remove current url and url that was just navigated to
+            }
+            else
+            {
+                closeWebpage();
+            }
+            
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -399,6 +414,18 @@ namespace Display_test
             Invoke(new Action(() =>
             {
                 writeStat(statCodes.Form1UrlChange, e.Address);
+
+                // only add url once
+                if (urlHistory.Count > 0)
+                {
+                    if (e.Address != urlHistory.Last())
+                    {
+                        urlHistory.Add(e.Address);
+                    }
+                    
+                }
+                else { urlHistory.Add(e.Address); }
+
                 inActivityWindow.activityDetected("URL CHNG");
             }));
         }
@@ -433,10 +460,8 @@ namespace Display_test
             btnHome.Show();
             btnHome.BringToFront();
             chromium.Load(url);
-            chromium.Show();
-            pictureBox1.Hide();
-            tableLayoutPanel1.Hide();
-            picLogo.Hide();
+            chromium.BringToFront();
+            backButton.BringToFront();
 
             inActivityWindow.startTimer();
         }
