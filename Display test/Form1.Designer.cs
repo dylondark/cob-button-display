@@ -32,7 +32,7 @@ namespace Display_test
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.webBrowser = new CefSharp.WinForms.ChromiumWebBrowser();
+            this.chromium = new CefSharp.WinForms.ChromiumWebBrowser();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnProfDev = new System.Windows.Forms.Button();
             this.btnCentersInstitutes = new System.Windows.Forms.Button();
@@ -51,20 +51,20 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
             this.SuspendLayout();
             // 
-            // webBrowser
+            // chromium
             // 
-            this.webBrowser.ActivateBrowserOnCreation = false;
-            this.webBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser.Margin = new System.Windows.Forms.Padding(2);
-            this.webBrowser.MinimumSize = new System.Drawing.Size(10, 10);
-            this.webBrowser.Name = "webBrowser";
-            this.webBrowser.Size = new System.Drawing.Size(1370, 749);
-            this.webBrowser.TabIndex = 4;
-            this.webBrowser.AddressChanged += new System.EventHandler<CefSharp.AddressChangedEventArgs>(this.activity_event);
-            this.webBrowser.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.webBrowser2_LoadingStateChanged);
-            this.webBrowser.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser2_ConsoleMessage);
-            this.webBrowser.Click += new System.EventHandler(this.activity_event);
+            this.chromium.ActivateBrowserOnCreation = false;
+            this.chromium.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chromium.Location = new System.Drawing.Point(0, 0);
+            this.chromium.Margin = new System.Windows.Forms.Padding(2);
+            this.chromium.MinimumSize = new System.Drawing.Size(10, 10);
+            this.chromium.Name = "chromium";
+            this.chromium.Size = new System.Drawing.Size(1370, 749);
+            this.chromium.TabIndex = 4;
+            this.chromium.AddressChanged += new System.EventHandler<CefSharp.AddressChangedEventArgs>(this.activity_event);
+            this.chromium.LoadingStateChanged += new System.EventHandler<CefSharp.LoadingStateChangedEventArgs>(this.webBrowser2_LoadingStateChanged);
+            this.chromium.ConsoleMessage += new System.EventHandler<CefSharp.ConsoleMessageEventArgs>(this.webBrowser2_ConsoleMessage);
+            this.chromium.Click += new System.EventHandler(this.activity_event);
             // 
             // tableLayoutPanel1
             // 
@@ -309,7 +309,7 @@ namespace Display_test
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.webBrowser);
+            this.Controls.Add(this.chromium);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
@@ -359,7 +359,7 @@ namespace Display_test
 
         }
 
-        private CefSharp.WinForms.ChromiumWebBrowser webBrowser;
+        private CefSharp.WinForms.ChromiumWebBrowser chromium;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button btnExecEd;
         private System.Windows.Forms.Button btnGrad;

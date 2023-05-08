@@ -51,7 +51,7 @@ namespace Display_test
 
             createBackButton();
             InitializeComponent();
-            webBrowser.Hide();
+            chromium.Hide();
             backButton.Hide();
             lblDebug.Hide();
 
@@ -62,7 +62,7 @@ namespace Display_test
             this.WindowState = FormWindowState.Maximized;
 
             // init lifespanhandler for redirection of new tab requests back to the original browser
-            webBrowser.LifeSpanHandler = new ChromiumLifeSpanHandler();
+            chromium.LifeSpanHandler = new ChromiumLifeSpanHandler();
         }
 
         // automatically scale certain ui elements like text and margin size based on screen resolution
@@ -319,7 +319,7 @@ namespace Display_test
             {
                 // go back to last url and remove most current url from list
                 backUrl = urlHistory[historyMax - 1];
-                webBrowser.LoadUrl(backUrl);
+                chromium.LoadUrl(backUrl);
                 urlHistory.RemoveRange(historyMax - 1, 2); // remove current url and url that was just navigated to
             }
             else
@@ -446,9 +446,9 @@ namespace Display_test
             backButton.Show();
             backButton.BringToFront();
             backButton.BringToFront();
-            webBrowser.Load(url);
+            chromium.Load(url);
 
-            webBrowser.Show();
+            chromium.Show();
             tableLayoutPanel1.Hide();
             picCOB.Hide();
 
@@ -459,7 +459,7 @@ namespace Display_test
         void closeWebpage(bool auto = false)
         {
             writeStat(statCodes.PageClose, auto ? "auto" : "back"); // write whether this was done by timer or by user
-            webBrowser.Hide();
+            chromium.Hide();
             backButton.Hide();
             tableLayoutPanel1.Show();
             picCOB.Show();
