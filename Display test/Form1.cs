@@ -36,8 +36,6 @@ namespace Display_test
         private string statsFile;
         private object statsLock = new object();
 
-        private List<string> urlHistory = new List<string>();
-
         // runs on startup
         public Form1()
         {
@@ -301,20 +299,7 @@ namespace Display_test
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            int historyMax = urlHistory.Count - 1;
-            string backUrl;
-            if (historyMax > 0)
-            {
-                // go back to last url and remove most current url from list
-                backUrl = urlHistory[historyMax - 1];
-                chromium.LoadUrl(backUrl);
-                urlHistory.RemoveRange(historyMax - 1, 2); // remove current url and url that was just navigated to
-            }
-            else
-            {
-                closeWebpage();
-            }
-            
+            closeWebpage();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -415,17 +400,6 @@ namespace Display_test
             {
                 writeStat(statCodes.Form1UrlChange, e.Address);
 
-                // only add url once
-                if (urlHistory.Count > 0)
-                {
-                    if (e.Address != urlHistory.Last())
-                    {
-                        urlHistory.Add(e.Address);
-                    }
-                    
-                }
-                else { urlHistory.Add(e.Address); }
-
                 inActivityWindow.activityDetected("URL CHNG");
             }));
         }
@@ -455,13 +429,12 @@ namespace Display_test
         {
             initBrowser();   
             currentPage = CurrentPage.FirstLevelWebpage;
+            chromium.Load(url);
+            chromium.BringToFront();
             btnBack.Show();
             btnBack.BringToFront();
             btnHome.Show();
             btnHome.BringToFront();
-            chromium.Load(url);
-            chromium.BringToFront();
-            backButton.BringToFront();
 
             inActivityWindow.startTimer();
         }
