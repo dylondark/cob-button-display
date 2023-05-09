@@ -73,6 +73,9 @@ namespace Display_test
             lblTwitter.Font = socialFont;
             lblFB.Font = socialFont;
 
+            lblHashtags.Font = socialFont;
+            lblHashtags.Padding = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor * 0.3f)));
+
             Padding buttonMargin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
             bgAlumni.Padding = buttonMargin;
             bgExpBusiness.Padding = buttonMargin;

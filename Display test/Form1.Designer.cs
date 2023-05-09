@@ -60,6 +60,7 @@ namespace Display_test
             this.lblFB = new System.Windows.Forms.Label();
             this.bg1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblHashtags = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bg4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg3)).BeginInit();
@@ -153,6 +154,7 @@ namespace Display_test
             this.tableLayoutPanel1.Controls.Add(this.bgSocialMedia, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.bg1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblHashtags, 1, 6);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -488,6 +490,22 @@ namespace Display_test
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
+            // lblHashtags
+            // 
+            this.lblHashtags.AutoSize = true;
+            this.lblHashtags.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.lblHashtags, 3);
+            this.lblHashtags.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblHashtags.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHashtags.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHashtags.Location = new System.Drawing.Point(112, 689);
+            this.lblHashtags.Margin = new System.Windows.Forms.Padding(3);
+            this.lblHashtags.Name = "lblHashtags";
+            this.lblHashtags.Size = new System.Drawing.Size(1143, 57);
+            this.lblHashtags.TabIndex = 32;
+            this.lblHashtags.Text = "#theuniversityofakron #zips #uakronbusiness #experiencebusiness";
+            this.lblHashtags.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -516,6 +534,7 @@ namespace Display_test
             this.Resize += new System.EventHandler(this.autoScale);
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bg4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg2)).EndInit();
@@ -590,6 +609,7 @@ namespace Display_test
         private Label lblIG;
         private Label lblTwitter;
         private Label lblFB;
+        private Label lblHashtags;
         //private PictureBox pictureBox1;
     }
 }
