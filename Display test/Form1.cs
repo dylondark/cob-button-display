@@ -65,7 +65,6 @@ namespace Display_test
             float resFactor = Convert.ToSingle(this.Width) / 3840f; // this will be 1 at 4k
 
             Font labelFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold); ;
-            lblWelcome.Font = labelFont;
             lblTouch.Font = labelFont;
             pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
 

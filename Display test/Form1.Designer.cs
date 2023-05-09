@@ -31,6 +31,7 @@ namespace Display_test
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblDebug = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
@@ -51,9 +52,14 @@ namespace Display_test
             this.bgSocialMedia = new System.Windows.Forms.Panel();
             this.btnSocialMedia = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblWelcome = new System.Windows.Forms.Label();
             this.bg1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picIG = new System.Windows.Forms.PictureBox();
+            this.picTwitter = new System.Windows.Forms.PictureBox();
+            this.picFB = new System.Windows.Forms.PictureBox();
+            this.lblIG = new System.Windows.Forms.Label();
+            this.lblTwitter = new System.Windows.Forms.Label();
+            this.lblFB = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bg4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg3)).BeginInit();
@@ -68,6 +74,9 @@ namespace Display_test
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bg1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFB)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -292,7 +301,7 @@ namespace Display_test
             this.btnAlumni.AutoSize = true;
             this.btnAlumni.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAlumni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnAlumni.BackgroundImage = global::Display_test.Properties.Resources.alumni_spotlight;
+            this.btnAlumni.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlumni.BackgroundImage")));
             this.btnAlumni.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAlumni.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAlumni.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -322,7 +331,7 @@ namespace Display_test
             this.btnExpBusiness.AutoSize = true;
             this.btnExpBusiness.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExpBusiness.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnExpBusiness.BackgroundImage = global::Display_test.Properties.Resources.experience_business;
+            this.btnExpBusiness.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExpBusiness.BackgroundImage")));
             this.btnExpBusiness.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnExpBusiness.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnExpBusiness.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -352,7 +361,7 @@ namespace Display_test
             this.btnSocialMedia.AutoSize = true;
             this.btnSocialMedia.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSocialMedia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnSocialMedia.BackgroundImage = global::Display_test.Properties.Resources.social_media;
+            this.btnSocialMedia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSocialMedia.BackgroundImage")));
             this.btnSocialMedia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSocialMedia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSocialMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -370,32 +379,24 @@ namespace Display_test
             this.tableLayoutPanel4.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel4, 2);
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel4.Controls.Add(this.lblWelcome, 0, 0);
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel4.Controls.Add(this.picIG, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.picTwitter, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.picFB, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.lblIG, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblTwitter, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblFB, 1, 2);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 37);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(492, 157);
             this.tableLayoutPanel4.TabIndex = 27;
-            // 
-            // lblWelcome
-            // 
-            this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
-            this.lblWelcome.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lblWelcome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblWelcome.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.ForeColor = System.Drawing.Color.Black;
-            this.lblWelcome.Location = new System.Drawing.Point(0, 0);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(0);
-            this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(196, 157);
-            this.lblWelcome.TabIndex = 29;
-            this.lblWelcome.Text = "Welcome to the Marketing Department\r\n";
-            this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bg1
             // 
@@ -418,6 +419,57 @@ namespace Display_test
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
+            // 
+            // picIG
+            // 
+            this.picIG.Location = new System.Drawing.Point(3, 3);
+            this.picIG.Name = "picIG";
+            this.picIG.Size = new System.Drawing.Size(67, 45);
+            this.picIG.TabIndex = 0;
+            this.picIG.TabStop = false;
+            // 
+            // picTwitter
+            // 
+            this.picTwitter.Location = new System.Drawing.Point(3, 54);
+            this.picTwitter.Name = "picTwitter";
+            this.picTwitter.Size = new System.Drawing.Size(67, 45);
+            this.picTwitter.TabIndex = 1;
+            this.picTwitter.TabStop = false;
+            // 
+            // picFB
+            // 
+            this.picFB.Location = new System.Drawing.Point(3, 105);
+            this.picFB.Name = "picFB";
+            this.picFB.Size = new System.Drawing.Size(67, 49);
+            this.picFB.TabIndex = 2;
+            this.picFB.TabStop = false;
+            // 
+            // lblIG
+            // 
+            this.lblIG.AutoSize = true;
+            this.lblIG.Location = new System.Drawing.Point(76, 0);
+            this.lblIG.Name = "lblIG";
+            this.lblIG.Size = new System.Drawing.Size(35, 13);
+            this.lblIG.TabIndex = 3;
+            this.lblIG.Text = "label1";
+            // 
+            // lblTwitter
+            // 
+            this.lblTwitter.AutoSize = true;
+            this.lblTwitter.Location = new System.Drawing.Point(76, 51);
+            this.lblTwitter.Name = "lblTwitter";
+            this.lblTwitter.Size = new System.Drawing.Size(35, 13);
+            this.lblTwitter.TabIndex = 4;
+            this.lblTwitter.Text = "label2";
+            // 
+            // lblFB
+            // 
+            this.lblFB.AutoSize = true;
+            this.lblFB.Location = new System.Drawing.Point(76, 102);
+            this.lblFB.Name = "lblFB";
+            this.lblFB.Size = new System.Drawing.Size(35, 13);
+            this.lblFB.TabIndex = 5;
+            this.lblFB.Text = "label3";
             // 
             // Form1
             // 
@@ -461,8 +513,12 @@ namespace Display_test
             this.bgSocialMedia.ResumeLayout(false);
             this.bgSocialMedia.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bg1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -506,13 +562,18 @@ namespace Display_test
         private Panel pnLogo;
         private PictureBox picLogo;
         private TableLayoutPanel tableLayoutPanel4;
-        private Label lblWelcome;
         private Label lblTouch;
         private PictureBox bg4;
         private PictureBox bg3;
         private PictureBox bg2;
         private PictureBox bg1;
         private Button btnHome;
+        private PictureBox picIG;
+        private PictureBox picTwitter;
+        private PictureBox picFB;
+        private Label lblIG;
+        private Label lblTwitter;
+        private Label lblFB;
         //private PictureBox pictureBox1;
     }
 }
