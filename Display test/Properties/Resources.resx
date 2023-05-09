@@ -121,11 +121,17 @@
   <data name="MicrosoftTeams-image (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (4)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="instagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\instagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="backbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Black and white history1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Black and white history1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marketinglogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MicrosoftTeams-image (39).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Programs2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Programs2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +178,8 @@
   <data name="undergraduate3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\undergraduate3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Add a heading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add a heading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Partners" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Partners.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Test1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Test1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -183,6 +189,12 @@
   </data>
   <data name="Graduate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graduate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alumni_spotlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alumni spotlight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="homebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\homebutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image-rs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image-rs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,6 +220,9 @@
   <data name="News and Events2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\News and Events2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Add a heading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add a heading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="touch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -223,11 +238,11 @@
   <data name="semitransparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\semitransparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="social_media" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\social media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Partners1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Partners1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Executive Education" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Executive Education.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Graduate2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graduate2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +250,8 @@
   <data name="UAWordmark_gold1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UAWordmark_gold1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Partners" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Partners.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Executive Education" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Executive Education.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled design" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -246,6 +261,9 @@
   </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="experience_business" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\experience business.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -270,6 +288,9 @@
   </data>
   <data name="backgroundFisherWashOutMore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundFisherWashOutMore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="twitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\twitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,19 +334,7 @@
   <data name="20220405_134407" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20220405_134407.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="homebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\homebutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marketinglogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MicrosoftTeams-image (39).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="alumni_spotlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alumni spotlight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="experience_business" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\experience business.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="social_media" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\social media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

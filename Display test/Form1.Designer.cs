@@ -52,14 +52,14 @@ namespace Display_test
             this.bgSocialMedia = new System.Windows.Forms.Panel();
             this.btnSocialMedia = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.bg1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picIG = new System.Windows.Forms.PictureBox();
             this.picTwitter = new System.Windows.Forms.PictureBox();
             this.picFB = new System.Windows.Forms.PictureBox();
             this.lblIG = new System.Windows.Forms.Label();
             this.lblTwitter = new System.Windows.Forms.Label();
             this.lblFB = new System.Windows.Forms.Label();
+            this.bg1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bg4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg3)).BeginInit();
@@ -72,11 +72,11 @@ namespace Display_test
             this.bgExpBusiness.SuspendLayout();
             this.bgSocialMedia.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bg1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bg1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -379,8 +379,8 @@ namespace Display_test
             this.tableLayoutPanel4.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel4, 2);
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 88F));
             this.tableLayoutPanel4.Controls.Add(this.picIG, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.picTwitter, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.picFB, 0, 2);
@@ -397,6 +397,74 @@ namespace Display_test
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(492, 157);
             this.tableLayoutPanel4.TabIndex = 27;
+            // 
+            // picIG
+            // 
+            this.picIG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picIG.Image = global::Display_test.Properties.Resources.instagram;
+            this.picIG.Location = new System.Drawing.Point(10, 10);
+            this.picIG.Margin = new System.Windows.Forms.Padding(10);
+            this.picIG.Name = "picIG";
+            this.picIG.Size = new System.Drawing.Size(39, 31);
+            this.picIG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picIG.TabIndex = 0;
+            this.picIG.TabStop = false;
+            // 
+            // picTwitter
+            // 
+            this.picTwitter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picTwitter.Image = global::Display_test.Properties.Resources.twitter;
+            this.picTwitter.Location = new System.Drawing.Point(3, 54);
+            this.picTwitter.Name = "picTwitter";
+            this.picTwitter.Size = new System.Drawing.Size(53, 45);
+            this.picTwitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTwitter.TabIndex = 1;
+            this.picTwitter.TabStop = false;
+            // 
+            // picFB
+            // 
+            this.picFB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picFB.Image = global::Display_test.Properties.Resources.facebook;
+            this.picFB.Location = new System.Drawing.Point(10, 112);
+            this.picFB.Margin = new System.Windows.Forms.Padding(10);
+            this.picFB.Name = "picFB";
+            this.picFB.Size = new System.Drawing.Size(39, 35);
+            this.picFB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picFB.TabIndex = 2;
+            this.picFB.TabStop = false;
+            // 
+            // lblIG
+            // 
+            this.lblIG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblIG.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIG.Location = new System.Drawing.Point(62, 0);
+            this.lblIG.Name = "lblIG";
+            this.lblIG.Size = new System.Drawing.Size(427, 51);
+            this.lblIG.TabIndex = 3;
+            this.lblIG.Text = "@fishersalesua @uakronama";
+            this.lblIG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblTwitter
+            // 
+            this.lblTwitter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTwitter.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTwitter.Location = new System.Drawing.Point(62, 51);
+            this.lblTwitter.Name = "lblTwitter";
+            this.lblTwitter.Size = new System.Drawing.Size(427, 51);
+            this.lblTwitter.TabIndex = 4;
+            this.lblTwitter.Text = "@uakronbusiness @TaylorInst";
+            this.lblTwitter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblFB
+            // 
+            this.lblFB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblFB.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFB.Location = new System.Drawing.Point(62, 102);
+            this.lblFB.Name = "lblFB";
+            this.lblFB.Size = new System.Drawing.Size(427, 55);
+            this.lblFB.TabIndex = 5;
+            this.lblFB.Text = "University of Akron - AMA";
+            this.lblFB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // bg1
             // 
@@ -419,63 +487,6 @@ namespace Display_test
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
-            // 
-            // picIG
-            // 
-            this.picIG.Location = new System.Drawing.Point(3, 3);
-            this.picIG.Name = "picIG";
-            this.picIG.Size = new System.Drawing.Size(67, 45);
-            this.picIG.TabIndex = 0;
-            this.picIG.TabStop = false;
-            // 
-            // picTwitter
-            // 
-            this.picTwitter.Location = new System.Drawing.Point(3, 54);
-            this.picTwitter.Name = "picTwitter";
-            this.picTwitter.Size = new System.Drawing.Size(67, 45);
-            this.picTwitter.TabIndex = 1;
-            this.picTwitter.TabStop = false;
-            // 
-            // picFB
-            // 
-            this.picFB.Location = new System.Drawing.Point(3, 105);
-            this.picFB.Name = "picFB";
-            this.picFB.Size = new System.Drawing.Size(67, 49);
-            this.picFB.TabIndex = 2;
-            this.picFB.TabStop = false;
-            // 
-            // lblIG
-            // 
-            this.lblIG.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblIG.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIG.Location = new System.Drawing.Point(76, 0);
-            this.lblIG.Name = "lblIG";
-            this.lblIG.Size = new System.Drawing.Size(413, 51);
-            this.lblIG.TabIndex = 3;
-            this.lblIG.Text = "@fishersalesua @uakronama";
-            this.lblIG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblTwitter
-            // 
-            this.lblTwitter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTwitter.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTwitter.Location = new System.Drawing.Point(76, 51);
-            this.lblTwitter.Name = "lblTwitter";
-            this.lblTwitter.Size = new System.Drawing.Size(413, 51);
-            this.lblTwitter.TabIndex = 4;
-            this.lblTwitter.Text = "@uakronbusiness @TaylorInst";
-            this.lblTwitter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblFB
-            // 
-            this.lblFB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblFB.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFB.Location = new System.Drawing.Point(76, 102);
-            this.lblFB.Name = "lblFB";
-            this.lblFB.Size = new System.Drawing.Size(413, 55);
-            this.lblFB.TabIndex = 5;
-            this.lblFB.Text = "University of Akron - AMA";
-            this.lblFB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
@@ -519,11 +530,11 @@ namespace Display_test
             this.bgSocialMedia.ResumeLayout(false);
             this.bgSocialMedia.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bg1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bg1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
