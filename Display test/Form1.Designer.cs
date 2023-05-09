@@ -33,6 +33,8 @@ namespace Display_test
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblDebug = new System.Windows.Forms.Label();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bg4 = new System.Windows.Forms.PictureBox();
             this.bg3 = new System.Windows.Forms.PictureBox();
@@ -52,8 +54,6 @@ namespace Display_test
             this.lblWelcome = new System.Windows.Forms.Label();
             this.bg1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bg4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg3)).BeginInit();
@@ -91,6 +91,34 @@ namespace Display_test
             this.lblDebug.TabIndex = 13;
             this.lblDebug.Text = "Debug";
             this.lblDebug.Visible = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnHome.BackColor = System.Drawing.Color.Silver;
+            this.btnHome.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Location = new System.Drawing.Point(1150, 630);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(100, 100);
+            this.btnHome.TabIndex = 15;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBack.BackColor = System.Drawing.Color.Silver;
+            this.btnBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1250, 630);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(100, 100);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -188,7 +216,7 @@ namespace Display_test
             this.picLogo.BackColor = System.Drawing.Color.Transparent;
             this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picLogo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picLogo.Image = global::Display_test.Properties.Resources.CBALogo2;
+            this.picLogo.Image = global::Display_test.Properties.Resources.marketinglogo;
             this.picLogo.Location = new System.Drawing.Point(161, 0);
             this.picLogo.Margin = new System.Windows.Forms.Padding(0);
             this.picLogo.MaximumSize = new System.Drawing.Size(900, 287);
@@ -390,34 +418,6 @@ namespace Display_test
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBack.BackColor = System.Drawing.Color.Silver;
-            this.btnBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1250, 630);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(100, 100);
-            this.btnBack.TabIndex = 3;
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnHome.BackColor = System.Drawing.Color.Silver;
-            this.btnHome.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
-            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Location = new System.Drawing.Point(1150, 630);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(100, 100);
-            this.btnHome.TabIndex = 15;
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // Form1
             // 
