@@ -446,30 +446,36 @@ namespace Display_test
             // 
             // lblIG
             // 
-            this.lblIG.AutoSize = true;
+            this.lblIG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblIG.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIG.Location = new System.Drawing.Point(76, 0);
             this.lblIG.Name = "lblIG";
-            this.lblIG.Size = new System.Drawing.Size(35, 13);
+            this.lblIG.Size = new System.Drawing.Size(413, 51);
             this.lblIG.TabIndex = 3;
-            this.lblIG.Text = "label1";
+            this.lblIG.Text = "@fishersalesua @uakronama";
+            this.lblIG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTwitter
             // 
-            this.lblTwitter.AutoSize = true;
+            this.lblTwitter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTwitter.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTwitter.Location = new System.Drawing.Point(76, 51);
             this.lblTwitter.Name = "lblTwitter";
-            this.lblTwitter.Size = new System.Drawing.Size(35, 13);
+            this.lblTwitter.Size = new System.Drawing.Size(413, 51);
             this.lblTwitter.TabIndex = 4;
-            this.lblTwitter.Text = "label2";
+            this.lblTwitter.Text = "@uakronbusiness @TaylorInst";
+            this.lblTwitter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblFB
             // 
-            this.lblFB.AutoSize = true;
+            this.lblFB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblFB.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFB.Location = new System.Drawing.Point(76, 102);
             this.lblFB.Name = "lblFB";
-            this.lblFB.Size = new System.Drawing.Size(35, 13);
+            this.lblFB.Size = new System.Drawing.Size(413, 55);
             this.lblFB.TabIndex = 5;
-            this.lblFB.Text = "label3";
+            this.lblFB.Text = "University of Akron - AMA";
+            this.lblFB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
@@ -513,7 +519,6 @@ namespace Display_test
             this.bgSocialMedia.ResumeLayout(false);
             this.bgSocialMedia.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bg1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIG)).EndInit();
