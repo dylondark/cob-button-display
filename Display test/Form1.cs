@@ -68,6 +68,11 @@ namespace Display_test
             lblTouch.Font = labelFont;
             pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
 
+            Font socialFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor * 0.6f, FontStyle.Bold);
+            lblIG.Font = socialFont;
+            lblTwitter.Font = socialFont;
+            lblFB.Font = socialFont;
+
             Padding buttonMargin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
             bgAlumni.Padding = buttonMargin;
             bgExpBusiness.Padding = buttonMargin;
