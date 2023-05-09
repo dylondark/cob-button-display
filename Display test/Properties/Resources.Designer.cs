@@ -135,7 +135,7 @@ namespace Display_test.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap alumni_spotlight {
             get {
-                object obj = ResourceManager.GetObject("alumni spotlight", resourceCulture);
+                object obj = ResourceManager.GetObject("alumni_spotlight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -315,7 +315,7 @@ namespace Display_test.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap experience_business {
             get {
-                object obj = ResourceManager.GetObject("experience business", resourceCulture);
+                object obj = ResourceManager.GetObject("experience_business", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -635,7 +635,7 @@ namespace Display_test.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap social_media {
             get {
-                object obj = ResourceManager.GetObject("social media", resourceCulture);
+                object obj = ResourceManager.GetObject("social_media", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

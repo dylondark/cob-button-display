@@ -347,15 +347,6 @@
     <None Include="Resources\Graduate3.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\alumni spotlight.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\experience business.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\social media.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\semitransparent.png" />
   </ItemGroup>
   <ItemGroup>
@@ -369,6 +360,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MicrosoftTeams-image %2839%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alumni spotlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social media.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experience business.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
