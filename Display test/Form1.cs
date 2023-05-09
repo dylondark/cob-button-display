@@ -31,6 +31,7 @@ namespace Display_test
         private const int WM_TOUCH = 0x246;
         private const int WM_TOUCHUPDATE = 0x245;
         private bool debugEnabled = false;
+        private string backAddr = "";
 
         private Timer timerRef;
         private string statsFile;
@@ -305,6 +306,8 @@ namespace Display_test
         {
             if (chromium.CanGoBack)
             {
+                // save current url
+                backAddr = chromium.Address;
                 chromium.Back();
             }
             else
@@ -352,12 +355,22 @@ namespace Display_test
         // js script to detect activity in browser
         private const string script = @"if(typeof WINFORMS_SCR_LOADED === 'undefined') { document.addEventListener(""click"", function(e) { console.log(""WINFORMS CLICK ACTIVITY""); }); document.addEventListener(""scroll"", function(e) { console.log(""WINFORMS SCROLL ACTIVITY""); }); WINFORMS_SCR_LOADED = true; }";
 
-        // inject said script into page
+        // inject script into page and handle back logic
         public void webBrowser2_LoadingStateChanged(object sender, LoadingStateChangedEventArgs e)
         {
             if (!e.IsLoading)
             {
                 e.Browser.ExecuteScriptAsync(script);
+            }
+
+            // ensure that a back button click never results in the browser going back to the same page (even when this is the website's fault and would happen in a normal browser)
+            // this will repeatedly call the back method until the browser's address has actually changed
+            if (backAddr != "" && !e.IsLoading)
+            {
+                if (chromium.Address == backAddr)
+                    Invoke(new Action(() => btnBack_Click(null, null))); // this method apparently gets called from a non ui thread so we must invoke the ui thread to do it
+                else
+                    backAddr = "";
             }
         }
 
