@@ -37,9 +37,10 @@ namespace Display_test
             this.btnHome = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnHashtags = new System.Windows.Forms.Panel();
+            this.lblHashtags = new System.Windows.Forms.Label();
             this.bg4 = new System.Windows.Forms.PictureBox();
             this.bg3 = new System.Windows.Forms.PictureBox();
-            this.bg2 = new System.Windows.Forms.PictureBox();
             this.pnLogo = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -60,11 +61,10 @@ namespace Display_test
             this.lblFB = new System.Windows.Forms.Label();
             this.bg1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblHashtags = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
+            this.pnHashtags.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bg4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bg2)).BeginInit();
             this.pnLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -144,9 +144,9 @@ namespace Display_test
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel1.Controls.Add(this.pnHashtags, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.bg4, 4, 4);
             this.tableLayoutPanel1.Controls.Add(this.bg3, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.bg2, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.pnLogo, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.bgAlumni, 1, 4);
@@ -154,7 +154,6 @@ namespace Display_test
             this.tableLayoutPanel1.Controls.Add(this.bgSocialMedia, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.bg1, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lblHashtags, 1, 6);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -164,10 +163,38 @@ namespace Display_test
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 749);
             this.tableLayoutPanel1.TabIndex = 6;
+            // 
+            // pnHashtags
+            // 
+            this.pnHashtags.BackColor = System.Drawing.Color.Transparent;
+            this.pnHashtags.BackgroundImage = global::Display_test.Properties.Resources.semitransparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.pnHashtags, 5);
+            this.pnHashtags.Controls.Add(this.lblHashtags);
+            this.pnHashtags.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnHashtags.Location = new System.Drawing.Point(0, 649);
+            this.pnHashtags.Margin = new System.Windows.Forms.Padding(0);
+            this.pnHashtags.Name = "pnHashtags";
+            this.pnHashtags.Size = new System.Drawing.Size(1370, 52);
+            this.pnHashtags.TabIndex = 33;
+            // 
+            // lblHashtags
+            // 
+            this.lblHashtags.BackColor = System.Drawing.Color.Transparent;
+            this.lblHashtags.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblHashtags.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHashtags.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblHashtags.Location = new System.Drawing.Point(0, 0);
+            this.lblHashtags.Margin = new System.Windows.Forms.Padding(3);
+            this.lblHashtags.Name = "lblHashtags";
+            this.lblHashtags.Size = new System.Drawing.Size(1370, 52);
+            this.lblHashtags.TabIndex = 32;
+            this.lblHashtags.Text = "#theuniversityofakron    #zips    #uakronbusiness    #experiencebusiness";
+            this.lblHashtags.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // bg4
             // 
@@ -194,20 +221,6 @@ namespace Display_test
             this.bg3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bg3.TabIndex = 30;
             this.bg3.TabStop = false;
-            // 
-            // bg2
-            // 
-            this.bg2.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.bg2, 5);
-            this.bg2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bg2.Image = global::Display_test.Properties.Resources.semitransparent;
-            this.bg2.Location = new System.Drawing.Point(0, 649);
-            this.bg2.Margin = new System.Windows.Forms.Padding(0);
-            this.bg2.Name = "bg2";
-            this.bg2.Size = new System.Drawing.Size(1370, 37);
-            this.bg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bg2.TabIndex = 29;
-            this.bg2.TabStop = false;
             // 
             // pnLogo
             // 
@@ -490,22 +503,6 @@ namespace Display_test
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
-            // lblHashtags
-            // 
-            this.lblHashtags.AutoSize = true;
-            this.lblHashtags.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblHashtags, 3);
-            this.lblHashtags.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblHashtags.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHashtags.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblHashtags.Location = new System.Drawing.Point(112, 689);
-            this.lblHashtags.Margin = new System.Windows.Forms.Padding(3);
-            this.lblHashtags.Name = "lblHashtags";
-            this.lblHashtags.Size = new System.Drawing.Size(1143, 57);
-            this.lblHashtags.TabIndex = 32;
-            this.lblHashtags.Text = "#theuniversityofakron #zips #uakronbusiness #experiencebusiness";
-            this.lblHashtags.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -534,10 +531,9 @@ namespace Display_test
             this.Resize += new System.EventHandler(this.autoScale);
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.pnHashtags.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bg4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bg2)).EndInit();
             this.pnLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -600,7 +596,6 @@ namespace Display_test
         private Label lblTouch;
         private PictureBox bg4;
         private PictureBox bg3;
-        private PictureBox bg2;
         private PictureBox bg1;
         private Button btnHome;
         private PictureBox picIG;
@@ -610,6 +605,7 @@ namespace Display_test
         private Label lblTwitter;
         private Label lblFB;
         private Label lblHashtags;
+        private Panel pnHashtags;
         //private PictureBox pictureBox1;
     }
 }
