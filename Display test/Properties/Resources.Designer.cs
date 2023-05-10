@@ -173,6 +173,16 @@ namespace Display_test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backbutton_grayed {
+            get {
+                object obj = ResourceManager.GetObject("backbutton_grayed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap backgroundFisher {
             get {
                 object obj = ResourceManager.GetObject("backgroundFisher", resourceCulture);
