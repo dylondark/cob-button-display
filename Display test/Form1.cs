@@ -391,6 +391,15 @@ namespace Display_test
                 e.Browser.ExecuteScriptAsync(script);
             }
 
+            if (e.IsLoading && !chromium.CanGoBack)
+            {
+                btnBack.BackgroundImage = Properties.Resources.backbutton_grayed;
+            }
+            else
+            {
+                btnBack.BackgroundImage = Properties.Resources.backbutton;
+            }
+
             // ensure that a back button click never results in the browser going back to the same page (even when this is the website's fault and would happen in a normal browser)
             // this will repeatedly call the back method until the browser's address has actually changed
             if (backAddr != "" && !e.IsLoading)
