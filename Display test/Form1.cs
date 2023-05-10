@@ -32,6 +32,7 @@ namespace Display_test
         private const int WM_TOUCHUPDATE = 0x245;
         private bool debugEnabled = false;
         private string backAddr = "";
+        private string firstAddr = "";
 
         private Timer timerRef;
         private string statsFile;
@@ -313,18 +314,29 @@ namespace Display_test
         {
             if (chromium.CanGoBack)
             {
-                // save current url
-                backAddr = chromium.Address;
-                chromium.Back();
+                /*
+                 * check if we are on the first page and go back anyway.
+                 * fixes an irritating issue where when on the first page from the main menu chromium will report it can go back 
+                 * but nothing happens when you try to actually go back, preventing the user from going back to the main 
+                 * menu even though the back button is not grayed out.
+                 */
+                if (chromium.Address == firstAddr)
+                    closeWebpage();
+                else
+                {
+                    // save current url
+                    backAddr = chromium.Address;
+                    chromium.Back();
+                }
             }
             else
             {
                 /*
-                for some unknown reason, chromium will report that it cannot go back while it is still in the process of loading a page.
-                if we always close webpage when chromium reports it cannot go back, we may encounter a situation where the user clicks 
-                back and it closes the page on them when it shouldnt because it is still loading.
-                the safest option here is to just not do anything when the user clicks back and the browser is still loading.
-                */
+                 * for some unknown reason, chromium will report that it cannot go back while it is still in the process of loading a page.
+                 * if we always close webpage when chromium reports it cannot go back, we may encounter a situation where the user clicks 
+                 * back and it closes the page on them when it shouldnt because it is still loading.
+                 * the safest option here is to just not do anything when the user clicks back and the browser is still loading.
+                 */
                 if (!chromium.IsLoading)
                     closeWebpage();
             }
@@ -465,6 +477,7 @@ namespace Display_test
             initBrowser();   
             currentPage = CurrentPage.FirstLevelWebpage;
             chromium.Load(url);
+            firstAddr = url;
             chromium.BringToFront();
             btnBack.BringToFront();
             btnHome.BringToFront();
