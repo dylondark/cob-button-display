@@ -319,7 +319,14 @@ namespace Display_test
             }
             else
             {
-                closeWebpage();
+                /*
+                for some unknown reason, chromium will report that it cannot go back while it is still in the process of loading a page.
+                if we always close webpage when chromium reports it cannot go back, we may encounter a situation where the user clicks 
+                back and it closes the page on them when it shouldnt because it is still loading.
+                the safest option here is to just not do anything when the user clicks back and the browser is still loading.
+                */
+                if (!chromium.IsLoading)
+                    closeWebpage();
             }
         }
 
@@ -469,6 +476,8 @@ namespace Display_test
             Controls.Remove(chromium);
             chromium.Dispose();
             chromium = null;
+
+            backAddr = "";
         }
 
         // called when inactivity timer has reached limit
