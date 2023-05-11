@@ -89,6 +89,12 @@ namespace Display_test
             btnBack.Top = buttonPos[1];
             btnHome.Left = buttonPos[0] - buttonDim;
             btnHome.Top = buttonPos[1];
+
+            // directory back button
+            btnDirectoryBack.Width = Convert.ToInt32(scaleFactor * 8f * resFactor);
+            btnDirectoryBack.Height = Convert.ToInt32(scaleFactor * 4f * resFactor);
+            btnDirectoryBack.Left = this.Width - 20 - btnDirectoryBack.Width;
+            btnDirectoryBack.Top = this.Height - 20 - btnDirectoryBack.Height;
         }
 
         #region "stats"
