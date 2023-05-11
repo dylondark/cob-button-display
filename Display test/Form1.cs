@@ -484,6 +484,15 @@ namespace Display_test
             }));
         }
 
+        // when activity is detected on directory tlp
+        public void directoryActivity(object sender, EventArgs e)
+        {
+            Invoke(new Action(() =>
+            {
+                inActivityWindow.activityDetected("DIRECTORY");
+            }));
+        }
+
         #endregion
 
 
@@ -509,7 +518,7 @@ namespace Display_test
             writeStat(statCodes.PageClose, auto ? "auto" : "back");
             btnHome.SendToBack();
             btnBack.SendToBack();
-            if (currentPage == CurrentPage.SecondLevelButtonsPage)
+            if (currentPage == CurrentPage.SecondLevelButtonsPage && !auto)
             {
                 tlpDirectory.BringToFront();
                 btnDirectoryBack.BringToFront();

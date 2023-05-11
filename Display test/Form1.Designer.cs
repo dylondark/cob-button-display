@@ -342,6 +342,7 @@ namespace Display_test
             this.tlpDirectory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpDirectory.Size = new System.Drawing.Size(1370, 749);
             this.tlpDirectory.TabIndex = 16;
+            this.tlpDirectory.Click += new System.EventHandler(this.directoryActivity);
             // 
             // btnStaff
             // 
