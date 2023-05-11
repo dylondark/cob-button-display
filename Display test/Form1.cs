@@ -279,11 +279,8 @@ namespace Display_test
         {
             writeStat(statCodes.Directory);
             currentPage = CurrentPage.SecondLevelButtonsPage;
-            secondLevelButtonsWindow = new Form2(this);
-            this.Controls.Remove(lblDebug);
-            secondLevelButtonsWindow.Controls.Add(lblDebug);
-            secondLevelButtonsWindow.Show();
-            secondLevelButtonsWindow.FormClosed += new FormClosedEventHandler(onSecondLevelFormClosed);
+            tlpDirectory.BringToFront();
+            btnDirectoryBack.BringToFront();
             inActivityWindow.startTimer();
         }
 
