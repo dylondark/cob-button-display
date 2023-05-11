@@ -468,8 +468,11 @@ namespace Display_test
 
             // destroy chromium browser
             Controls.Remove(chromium);
-            chromium.Dispose();
-            chromium = null;
+            if (chromium != null) // potential fix for object reference not set to an instance of an object error
+            {
+                chromium.Dispose();
+                chromium = null;
+            }
 
             backAddr = "";
         }
