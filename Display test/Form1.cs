@@ -495,7 +495,7 @@ namespace Display_test
             chromium.BringToFront();
             btnBack.BringToFront();
             btnHome.BringToFront();
-            tableLayoutPanel1.SendToBack();
+            tlpMain.SendToBack();
 
             inActivityWindow.startTimer();
         }
@@ -506,7 +506,7 @@ namespace Display_test
             writeStat(statCodes.PageClose, auto ? "auto" : "back");
             btnHome.SendToBack();
             btnBack.SendToBack();
-            tableLayoutPanel1.BringToFront();
+            tlpMain.BringToFront();
 
             // destroy chromium browser
             Controls.Remove(chromium);

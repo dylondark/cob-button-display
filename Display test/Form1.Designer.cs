@@ -32,57 +32,57 @@ namespace Display_test
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
             this.btnProfDev = new System.Windows.Forms.Button();
             this.btnCentersInstitutes = new System.Windows.Forms.Button();
             this.btnExecEd = new System.Windows.Forms.Button();
             this.btnUndergrad = new System.Windows.Forms.Button();
             this.btnDirectory = new System.Windows.Forms.Button();
             this.btnGrad = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpTouch = new System.Windows.Forms.TableLayoutPanel();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picCOB = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.lblDebug = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.tlpMain.SuspendLayout();
+            this.tlpTouch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tlpMain
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tlpMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.BackgroundImage = global::Display_test.Properties.Resources.Untitled_design__1_;
-            this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.Controls.Add(this.btnProfDev, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnCentersInstitutes, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnExecEd, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnUndergrad, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnDirectory, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnGrad, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.picCOB, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 749);
-            this.tableLayoutPanel1.TabIndex = 6;
+            this.tlpMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tlpMain.BackgroundImage = global::Display_test.Properties.Resources.Untitled_design__1_;
+            this.tlpMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tlpMain.ColumnCount = 5;
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpMain.Controls.Add(this.btnProfDev, 2, 2);
+            this.tlpMain.Controls.Add(this.btnCentersInstitutes, 1, 2);
+            this.tlpMain.Controls.Add(this.btnExecEd, 3, 2);
+            this.tlpMain.Controls.Add(this.btnUndergrad, 2, 1);
+            this.tlpMain.Controls.Add(this.btnDirectory, 1, 1);
+            this.tlpMain.Controls.Add(this.btnGrad, 3, 1);
+            this.tlpMain.Controls.Add(this.tlpTouch, 2, 3);
+            this.tlpMain.Controls.Add(this.picCOB, 2, 0);
+            this.tlpMain.Location = new System.Drawing.Point(0, 0);
+            this.tlpMain.Name = "tlpMain";
+            this.tlpMain.RowCount = 4;
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpMain.Size = new System.Drawing.Size(1370, 749);
+            this.tlpMain.TabIndex = 6;
             // 
             // btnProfDev
             // 
@@ -209,20 +209,20 @@ namespace Display_test
             this.btnGrad.Click += new System.EventHandler(this.Grad_Click);
             this.btnGrad.Resize += new System.EventHandler(this.gridbuttonResize);
             // 
-            // tableLayoutPanel2
+            // tlpTouch
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.Controls.Add(this.lblWelcome, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(482, 601);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(405, 145);
-            this.tableLayoutPanel2.TabIndex = 15;
+            this.tlpTouch.ColumnCount = 2;
+            this.tlpTouch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tlpTouch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tlpTouch.Controls.Add(this.lblWelcome, 0, 0);
+            this.tlpTouch.Controls.Add(this.pictureBox1, 1, 0);
+            this.tlpTouch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpTouch.Location = new System.Drawing.Point(482, 601);
+            this.tlpTouch.Name = "tlpTouch";
+            this.tlpTouch.RowCount = 1;
+            this.tlpTouch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpTouch.Size = new System.Drawing.Size(405, 145);
+            this.tlpTouch.TabIndex = 15;
             // 
             // lblWelcome
             // 
@@ -270,21 +270,6 @@ namespace Display_test
             this.picCOB.Click += new System.EventHandler(this.pictureBox3_Click);
             this.picCOB.DoubleClick += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // lblDebug
-            // 
-            this.lblDebug.AutoSize = true;
-            this.lblDebug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblDebug.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblDebug.Location = new System.Drawing.Point(8, 8);
-            this.lblDebug.Margin = new System.Windows.Forms.Padding(8);
-            this.lblDebug.Name = "lblDebug";
-            this.lblDebug.Padding = new System.Windows.Forms.Padding(1);
-            this.lblDebug.Size = new System.Drawing.Size(65, 24);
-            this.lblDebug.TabIndex = 13;
-            this.lblDebug.Text = "Debug";
-            this.lblDebug.Visible = false;
-            // 
             // btnBack
             // 
             this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -313,6 +298,21 @@ namespace Display_test
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // lblDebug
+            // 
+            this.lblDebug.AutoSize = true;
+            this.lblDebug.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblDebug.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblDebug.Location = new System.Drawing.Point(8, 8);
+            this.lblDebug.Margin = new System.Windows.Forms.Padding(8);
+            this.lblDebug.Name = "lblDebug";
+            this.lblDebug.Padding = new System.Windows.Forms.Padding(1);
+            this.lblDebug.Size = new System.Drawing.Size(65, 24);
+            this.lblDebug.TabIndex = 13;
+            this.lblDebug.Text = "Debug";
+            this.lblDebug.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,7 +324,7 @@ namespace Display_test
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tlpMain);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
@@ -339,10 +339,10 @@ namespace Display_test
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.activity_event);
             this.Resize += new System.EventHandler(this.autoScale);
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
+            this.tlpMain.ResumeLayout(false);
+            this.tlpMain.PerformLayout();
+            this.tlpTouch.ResumeLayout(false);
+            this.tlpTouch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             this.ResumeLayout(false);
@@ -382,9 +382,9 @@ namespace Display_test
         private System.Windows.Forms.Button btnProfDev;
         private System.Windows.Forms.PictureBox picCOB;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tlpMain;
         private Label lblDebug;
-        private TableLayoutPanel tableLayoutPanel2;
+        private TableLayoutPanel tlpTouch;
         private Label lblWelcome;
     }
 }
