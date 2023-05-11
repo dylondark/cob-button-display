@@ -19,9 +19,6 @@ namespace Display_test
     public enum CurrentPage {  HomePage, FirstLevelWebpage, SecondLevelButtonsPage }
     public partial class Form1 : Form
     {
-
-        
-        Form2 secondLevelButtonsWindow;
         private CurrentPage currentPage;
 
         private int inactivityCheckDuration = 60000;//milliseconds
@@ -104,8 +101,8 @@ namespace Display_test
         {
             PageClose,
             Directory, Undergraduate, Graduate, CentersInstitutes, ProfDev, ExecEd, // form1 buttons
-            DebugOn, DebugOff, 
-            Staff, Faculty, Search, // form2 buttons
+            DebugOn, DebugOff,
+            Staff, Faculty, Search, // directory buttons
             Form1UrlChange, Form2UrlChange,
             Back,
             ProgramStart
@@ -399,16 +396,9 @@ namespace Display_test
         {
             inActivityWindow.stopTimer();
             DialogResult result = DialogResult.None;
-            if (currentPage == CurrentPage.FirstLevelWebpage)
-            {
-                inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
-                result = inActivityWindow.ShowDialog(this);
-            }
-            else if (currentPage == CurrentPage.SecondLevelButtonsPage && secondLevelButtonsWindow != null)
-            {
-                inActivityWindow = new InActivityWindow(secondLevelBack, timerRef, DebugIfAble);
-                result = inActivityWindow.ShowDialog(secondLevelButtonsWindow);
-            }
+
+            inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
+            result = inActivityWindow.ShowDialog(this);
 
             if (result == DialogResult.Yes)
             {
@@ -494,25 +484,8 @@ namespace Display_test
             }));
         }
 
-        // when activity is detected on form2
-        public void form2Activity()
-        {
-            Invoke(new Action(() =>
-            {
-                inActivityWindow.activityDetected("FORM2");
-            }));
-        }
-
         #endregion
 
-        // when directory menu is closed
-        void onSecondLevelFormClosed(object obj, EventArgs args)
-        {
-            writeStat(statCodes.PageClose, "lvl2-ev");
-            secondLevelButtonsWindow.Controls.Remove(lblDebug);
-            this.Controls.Add(lblDebug);
-            inActivityWindow.stopTimer();
-        }
 
         // changes form1 web browser url and shows the browser
         void showWebPage(String url)
@@ -559,14 +532,6 @@ namespace Display_test
         void closeWebpageAuto()
         {
             closeWebpage(true);
-        }
-
-        // called when going back from directoy menu
-        void secondLevelBack()
-        {
-            writeStat(statCodes.PageClose, "lvl2-auto");
-            secondLevelButtonsWindow.Close();
-            inActivityWindow.stopTimer();
         }
 
         // ensure proper resizing of buttons 
