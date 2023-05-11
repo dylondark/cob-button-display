@@ -131,7 +131,7 @@ namespace Display_test
                 {
                     try
                     {
-                        File.WriteAllText(statsFile, "UTC Timestamp,Action Code,Details" + Environment.NewLine);
+                        File.WriteAllText(statsFile, "Timestamp,Action Code,Details" + Environment.NewLine);
                     }
                     catch (Exception e)
                     {
@@ -141,7 +141,7 @@ namespace Display_test
                 }
                 try
                 {
-                    File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), statCodes.ProgramStart.ToString(), Environment.NewLine));
+                    File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTime.Now.ToString("s"), statCodes.ProgramStart.ToString(), Environment.NewLine));
                 }
                 catch (Exception e)
                 {
@@ -159,7 +159,7 @@ namespace Display_test
                 { 
                     try
                     {
-                        File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTimeOffset.UtcNow.ToString("s"), code.ToString(), Environment.NewLine));
+                        File.AppendAllText(statsFile, string.Format("{0},{1}{2}", DateTime.Now.ToString("s"), code.ToString(), Environment.NewLine));
                     }
                     catch (Exception e)
                     {
@@ -178,7 +178,7 @@ namespace Display_test
                 {
                     try
                     {
-                        File.AppendAllText(statsFile, string.Format("{0},{1},{2}{3}", DateTimeOffset.UtcNow.ToString("s"), code.ToString(), str, Environment.NewLine));
+                        File.AppendAllText(statsFile, string.Format("{0},{1},{2}{3}", DateTime.Now.ToString("s"), code.ToString(), str, Environment.NewLine));
                     }
                     catch (Exception e)
                     {
