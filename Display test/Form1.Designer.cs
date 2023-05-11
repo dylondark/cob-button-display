@@ -416,6 +416,7 @@ namespace Display_test
             this.btnDirectoryBack.TabIndex = 17;
             this.btnDirectoryBack.Text = "Back";
             this.btnDirectoryBack.UseVisualStyleBackColor = false;
+            this.btnDirectoryBack.Click += new System.EventHandler(this.btnDirectoryBack_Click);
             // 
             // Form1
             // 

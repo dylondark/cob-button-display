@@ -353,6 +353,13 @@ namespace Display_test
             }
         }
 
+        private void btnDirectoryBack_Click(object sender, EventArgs e)
+        {
+            tlpDirectory.SendToBack();
+            btnDirectoryBack.SendToBack();
+            writeStat(statCodes.Back, "lvl2-back");
+        }
+
         #endregion
 
         #region "activity"
