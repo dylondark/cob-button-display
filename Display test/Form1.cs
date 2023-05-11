@@ -366,6 +366,24 @@ namespace Display_test
             writeStat(statCodes.Back, "lvl2-back");
         }
 
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            writeStat(statCodes.Staff);
+            showWebPage("https://www.uakron.edu/cba/about-us/staff.dot");
+        }
+
+        private void btnFaculty_Click(object sender, EventArgs e)
+        {
+            writeStat(statCodes.Faculty);
+            showWebPage("https://www.uakron.edu/cba/faculty/");
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            writeStat(statCodes.Search);
+            showWebPage("https://www.uakron.edu/search/search.dot?searchText=&collection=l2");
+        }
+
         #endregion
 
         #region "activity"

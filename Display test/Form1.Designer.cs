@@ -358,6 +358,7 @@ namespace Display_test
             this.btnStaff.Size = new System.Drawing.Size(450, 368);
             this.btnStaff.TabIndex = 0;
             this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // btnFaculty
             // 
@@ -374,6 +375,7 @@ namespace Display_test
             this.btnFaculty.Size = new System.Drawing.Size(450, 368);
             this.btnFaculty.TabIndex = 1;
             this.btnFaculty.UseVisualStyleBackColor = true;
+            this.btnFaculty.Click += new System.EventHandler(this.btnFaculty_Click);
             // 
             // btnSearch
             // 
@@ -390,6 +392,7 @@ namespace Display_test
             this.btnSearch.Size = new System.Drawing.Size(452, 368);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // pictureBox2
             // 
