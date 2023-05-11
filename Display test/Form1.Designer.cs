@@ -51,6 +51,7 @@ namespace Display_test
             this.btnFaculty = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnDirectoryBack = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
             this.tlpTouch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -403,6 +404,19 @@ namespace Display_test
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
+            // btnDirectoryBack
+            // 
+            this.btnDirectoryBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDirectoryBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnDirectoryBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDirectoryBack.Location = new System.Drawing.Point(485, 274);
+            this.btnDirectoryBack.MinimumSize = new System.Drawing.Size(400, 200);
+            this.btnDirectoryBack.Name = "btnDirectoryBack";
+            this.btnDirectoryBack.Size = new System.Drawing.Size(400, 200);
+            this.btnDirectoryBack.TabIndex = 17;
+            this.btnDirectoryBack.Text = "Back";
+            this.btnDirectoryBack.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -416,6 +430,7 @@ namespace Display_test
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tlpMain);
             this.Controls.Add(this.tlpDirectory);
+            this.Controls.Add(this.btnDirectoryBack);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
@@ -484,6 +499,7 @@ namespace Display_test
         private Button btnFaculty;
         private Button btnSearch;
         private PictureBox pictureBox2;
+        private Button btnDirectoryBack;
     }
 }
 
