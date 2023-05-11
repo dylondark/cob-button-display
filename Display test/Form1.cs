@@ -364,6 +364,7 @@ namespace Display_test
             tlpDirectory.SendToBack();
             btnDirectoryBack.SendToBack();
             writeStat(statCodes.Back, "lvl2-back");
+            currentPage = CurrentPage.HomePage;
         }
 
         private void btnStaff_Click(object sender, EventArgs e)
@@ -516,8 +517,9 @@ namespace Display_test
         // changes form1 web browser url and shows the browser
         void showWebPage(String url)
         {
-            initBrowser();   
-            currentPage = CurrentPage.FirstLevelWebpage;
+            initBrowser();  
+            if (currentPage == CurrentPage.HomePage)
+                currentPage = CurrentPage.FirstLevelWebpage;
             chromium.Load(url);
             firstAddr = url;
             chromium.BringToFront();
@@ -534,7 +536,13 @@ namespace Display_test
             writeStat(statCodes.PageClose, auto ? "auto" : "back");
             btnHome.SendToBack();
             btnBack.SendToBack();
-            tlpMain.BringToFront();
+            if (currentPage == CurrentPage.SecondLevelButtonsPage)
+            {
+                tlpDirectory.BringToFront();
+                btnDirectoryBack.BringToFront();
+            }
+            else
+                tlpMain.BringToFront();
 
             // destroy chromium browser
             Controls.Remove(chromium);
