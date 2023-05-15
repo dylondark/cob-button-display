@@ -362,6 +362,7 @@ namespace Display_test
             btnDirectoryBack.SendToBack();
             writeStat(statCodes.Back, "lvl2-back");
             currentPage = CurrentPage.HomePage;
+            inActivityWindow.stopTimer();
         }
 
         private void btnStaff_Click(object sender, EventArgs e)
@@ -524,9 +525,12 @@ namespace Display_test
                 btnDirectoryBack.BringToFront();
             }
             else
+            {
+                inActivityWindow.stopTimer();
                 tlpMain.BringToFront();
+            }
             lblDebug.BringToFront();
-            inActivityWindow.stopTimer();
+            
 
             // destroy chromium browser
             Controls.Remove(chromium);
