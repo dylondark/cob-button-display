@@ -32,8 +32,11 @@ namespace Display_test
         public void activityDetected(string m = "")
         {
             WriteDebug("ACTDET " + m);
+
+            // reset timer
             activityTimer.Stop();
             activityTimer.Start();
+
             if(timeChecker.Enabled)
             {
                 this.DialogResult = DialogResult.Yes;
