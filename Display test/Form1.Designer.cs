@@ -325,36 +325,37 @@ namespace Display_test
             // 
             this.tlpDirectory.BackgroundImage = global::Display_test.Properties.Resources.Untitled_design__1_;
             this.tlpDirectory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tlpDirectory.ColumnCount = 3;
-            this.tlpDirectory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
-            this.tlpDirectory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tlpDirectory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tlpDirectory.Controls.Add(this.btnStaff, 0, 1);
-            this.tlpDirectory.Controls.Add(this.btnFaculty, 1, 1);
-            this.tlpDirectory.Controls.Add(this.btnSearch, 2, 1);
-            this.tlpDirectory.Controls.Add(this.pictureBox2, 0, 2);
+            this.tlpDirectory.ColumnCount = 7;
+            this.tlpDirectory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.5F));
+            this.tlpDirectory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27F));
+            this.tlpDirectory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tlpDirectory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27F));
+            this.tlpDirectory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tlpDirectory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27F));
+            this.tlpDirectory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.5F));
+            this.tlpDirectory.Controls.Add(this.btnStaff, 1, 1);
+            this.tlpDirectory.Controls.Add(this.btnFaculty, 3, 1);
+            this.tlpDirectory.Controls.Add(this.btnSearch, 5, 1);
+            this.tlpDirectory.Controls.Add(this.pictureBox2, 0, 3);
             this.tlpDirectory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpDirectory.Location = new System.Drawing.Point(0, 0);
             this.tlpDirectory.Name = "tlpDirectory";
-            this.tlpDirectory.RowCount = 3;
+            this.tlpDirectory.RowCount = 4;
             this.tlpDirectory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpDirectory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpDirectory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpDirectory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpDirectory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tlpDirectory.Size = new System.Drawing.Size(1370, 749);
             this.tlpDirectory.TabIndex = 16;
             this.tlpDirectory.Click += new System.EventHandler(this.directoryActivity);
             // 
             // btnStaff
             // 
-            this.btnStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStaff.BackgroundImage = global::Display_test.Properties.Resources._1;
             this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStaff.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaff.Location = new System.Drawing.Point(3, 190);
-            this.btnStaff.MaximumSize = new System.Drawing.Size(900, 700);
-            this.btnStaff.MinimumSize = new System.Drawing.Size(225, 175);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(450, 368);
             this.btnStaff.TabIndex = 0;
@@ -363,15 +364,11 @@ namespace Display_test
             // 
             // btnFaculty
             // 
-            this.btnFaculty.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFaculty.BackgroundImage = global::Display_test.Properties.Resources._2;
             this.btnFaculty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFaculty.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnFaculty.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFaculty.Location = new System.Drawing.Point(459, 190);
-            this.btnFaculty.MaximumSize = new System.Drawing.Size(900, 700);
-            this.btnFaculty.MinimumSize = new System.Drawing.Size(225, 175);
             this.btnFaculty.Name = "btnFaculty";
             this.btnFaculty.Size = new System.Drawing.Size(450, 368);
             this.btnFaculty.TabIndex = 1;
@@ -380,15 +377,11 @@ namespace Display_test
             // 
             // btnSearch
             // 
-            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSearch.BackgroundImage = global::Display_test.Properties.Resources._3;
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Location = new System.Drawing.Point(915, 190);
-            this.btnSearch.MaximumSize = new System.Drawing.Size(900, 700);
-            this.btnSearch.MinimumSize = new System.Drawing.Size(225, 175);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(452, 368);
             this.btnSearch.TabIndex = 2;
@@ -398,13 +391,14 @@ namespace Display_test
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::Display_test.Properties.Resources.re_sized;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tlpDirectory.SetColumnSpan(this.pictureBox2, 2);
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Display_test.Properties.Resources.re_sized;
             this.pictureBox2.Location = new System.Drawing.Point(3, 564);
-            this.pictureBox2.MinimumSize = new System.Drawing.Size(500, 200);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(500, 200);
+            this.pictureBox2.Size = new System.Drawing.Size(500, 160);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
@@ -430,11 +424,11 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.tlpDirectory);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tlpMain);
-            this.Controls.Add(this.tlpDirectory);
             this.Controls.Add(this.btnDirectoryBack);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
@@ -457,6 +451,7 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             this.tlpDirectory.ResumeLayout(false);
+            this.tlpDirectory.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
