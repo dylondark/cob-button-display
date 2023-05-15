@@ -526,6 +526,7 @@ namespace Display_test
             else
                 tlpMain.BringToFront();
             lblDebug.BringToFront();
+            inActivityWindow.stopTimer();
 
             // destroy chromium browser
             Controls.Remove(chromium);
