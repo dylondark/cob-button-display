@@ -520,7 +520,6 @@ namespace Display_test
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.activity_event);
             this.ResizeEnd += new System.EventHandler(this.autoScale);
             this.Scroll += new System.Windows.Forms.ScrollEventHandler(this.activity_event);
             this.Click += new System.EventHandler(this.activity_event);
