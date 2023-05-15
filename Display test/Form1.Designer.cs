@@ -250,6 +250,7 @@ namespace Display_test
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 25;
             this.picLogo.TabStop = false;
+            this.picLogo.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // tableLayoutPanel3
             // 
