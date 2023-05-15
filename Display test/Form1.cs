@@ -465,6 +465,7 @@ namespace Display_test
             btnHome.SendToBack();
             btnBack.SendToBack();
             tableLayoutPanel1.BringToFront();
+            lblDebug.BringToFront();
 
             // destroy chromium browser
             Controls.Remove(chromium);
