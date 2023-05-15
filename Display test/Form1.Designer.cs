@@ -355,9 +355,9 @@ namespace Display_test
             this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStaff.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStaff.Location = new System.Drawing.Point(3, 190);
+            this.btnStaff.Location = new System.Drawing.Point(105, 190);
             this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(450, 368);
+            this.btnStaff.Size = new System.Drawing.Size(363, 368);
             this.btnStaff.TabIndex = 0;
             this.btnStaff.UseVisualStyleBackColor = true;
             this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
@@ -368,9 +368,9 @@ namespace Display_test
             this.btnFaculty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFaculty.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnFaculty.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFaculty.Location = new System.Drawing.Point(459, 190);
+            this.btnFaculty.Location = new System.Drawing.Point(501, 190);
             this.btnFaculty.Name = "btnFaculty";
-            this.btnFaculty.Size = new System.Drawing.Size(450, 368);
+            this.btnFaculty.Size = new System.Drawing.Size(363, 368);
             this.btnFaculty.TabIndex = 1;
             this.btnFaculty.UseVisualStyleBackColor = true;
             this.btnFaculty.Click += new System.EventHandler(this.btnFaculty_Click);
@@ -381,23 +381,23 @@ namespace Display_test
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(915, 190);
+            this.btnSearch.Location = new System.Drawing.Point(897, 190);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(452, 368);
+            this.btnSearch.Size = new System.Drawing.Size(363, 368);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tlpDirectory.SetColumnSpan(this.pictureBox2, 2);
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::Display_test.Properties.Resources.re_sized;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 564);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 638);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(500, 160);
+            this.pictureBox2.Size = new System.Drawing.Size(465, 108);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
