@@ -189,7 +189,7 @@ namespace Display_test
             this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel1.SetColumnSpan(this.picLogo, 2);
             this.picLogo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picLogo.Image = global::Display_test.Properties.Resources.marketinglogo;
+            this.picLogo.Image = global::Display_test.Properties.Resources.Fisher2;
             this.picLogo.Location = new System.Drawing.Point(1036, 0);
             this.picLogo.Margin = new System.Windows.Forms.Padding(0);
             this.picLogo.Name = "picLogo";
