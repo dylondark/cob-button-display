@@ -37,6 +37,11 @@ namespace Display_test
             this.btnHome = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnSocialMedia = new System.Windows.Forms.Button();
+            this.btnExpBusiness = new System.Windows.Forms.Button();
+            this.btnAlumni = new System.Windows.Forms.Button();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.lblHashtags = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTouch = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,12 +53,8 @@ namespace Display_test
             this.lblTwitter = new System.Windows.Forms.Label();
             this.lblFB = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblHashtags = new System.Windows.Forms.Label();
-            this.picLogo = new System.Windows.Forms.PictureBox();
-            this.btnAlumni = new System.Windows.Forms.Button();
-            this.btnExpBusiness = new System.Windows.Forms.Button();
-            this.btnSocialMedia = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
@@ -61,7 +62,6 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -149,6 +149,88 @@ namespace Display_test
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 749);
             this.tableLayoutPanel1.TabIndex = 6;
+            // 
+            // btnSocialMedia
+            // 
+            this.btnSocialMedia.AutoSize = true;
+            this.btnSocialMedia.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnSocialMedia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnSocialMedia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSocialMedia.BackgroundImage")));
+            this.btnSocialMedia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSocialMedia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSocialMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSocialMedia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnSocialMedia.Location = new System.Drawing.Point(878, 353);
+            this.btnSocialMedia.Name = "btnSocialMedia";
+            this.btnSocialMedia.Size = new System.Drawing.Size(377, 293);
+            this.btnSocialMedia.TabIndex = 37;
+            this.btnSocialMedia.UseVisualStyleBackColor = false;
+            this.btnSocialMedia.Click += new System.EventHandler(this.btnSocialMedia_Click);
+            // 
+            // btnExpBusiness
+            // 
+            this.btnExpBusiness.AutoSize = true;
+            this.btnExpBusiness.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnExpBusiness.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnExpBusiness.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExpBusiness.BackgroundImage")));
+            this.btnExpBusiness.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExpBusiness.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnExpBusiness.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpBusiness.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnExpBusiness.Location = new System.Drawing.Point(495, 353);
+            this.btnExpBusiness.Name = "btnExpBusiness";
+            this.btnExpBusiness.Size = new System.Drawing.Size(377, 293);
+            this.btnExpBusiness.TabIndex = 36;
+            this.btnExpBusiness.UseVisualStyleBackColor = false;
+            this.btnExpBusiness.Click += new System.EventHandler(this.btnExpBusiness_Click);
+            // 
+            // btnAlumni
+            // 
+            this.btnAlumni.AutoSize = true;
+            this.btnAlumni.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAlumni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnAlumni.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlumni.BackgroundImage")));
+            this.btnAlumni.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAlumni.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAlumni.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlumni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAlumni.Location = new System.Drawing.Point(112, 353);
+            this.btnAlumni.Name = "btnAlumni";
+            this.btnAlumni.Size = new System.Drawing.Size(377, 293);
+            this.btnAlumni.TabIndex = 35;
+            this.btnAlumni.UseVisualStyleBackColor = false;
+            this.btnAlumni.Click += new System.EventHandler(this.btnAlumni_Click);
+            // 
+            // picLogo
+            // 
+            this.picLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tableLayoutPanel1.SetColumnSpan(this.picLogo, 2);
+            this.picLogo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picLogo.Image = global::Display_test.Properties.Resources.marketinglogo;
+            this.picLogo.Location = new System.Drawing.Point(1036, 37);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(0);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(334, 157);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 34;
+            this.picLogo.TabStop = false;
+            // 
+            // lblHashtags
+            // 
+            this.lblHashtags.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.lblHashtags, 5);
+            this.lblHashtags.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblHashtags.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHashtags.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblHashtags.Location = new System.Drawing.Point(3, 652);
+            this.lblHashtags.Margin = new System.Windows.Forms.Padding(3);
+            this.lblHashtags.Name = "lblHashtags";
+            this.lblHashtags.Size = new System.Drawing.Size(1364, 46);
+            this.lblHashtags.TabIndex = 33;
+            this.lblHashtags.Text = "#theuniversityofakron    #zips    #uakronbusiness    #experiencebusiness    #uakr" +
+    "onmarketing";
+            this.lblHashtags.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // tableLayoutPanel3
             // 
@@ -296,90 +378,6 @@ namespace Display_test
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
-            // lblHashtags
-            // 
-            this.lblHashtags.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblHashtags, 5);
-            this.lblHashtags.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblHashtags.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHashtags.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblHashtags.Location = new System.Drawing.Point(3, 652);
-            this.lblHashtags.Margin = new System.Windows.Forms.Padding(3);
-            this.lblHashtags.Name = "lblHashtags";
-            this.lblHashtags.Size = new System.Drawing.Size(1364, 46);
-            this.lblHashtags.TabIndex = 33;
-            this.lblHashtags.Text = "#theuniversityofakron    #zips    #uakronbusiness    #experiencebusiness    #uakr" +
-    "onmarketing";
-            this.lblHashtags.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // picLogo
-            // 
-            this.picLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tableLayoutPanel1.SetColumnSpan(this.picLogo, 2);
-            this.picLogo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picLogo.Image = global::Display_test.Properties.Resources.marketinglogo;
-            this.picLogo.Location = new System.Drawing.Point(1036, 37);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(0);
-            this.picLogo.MaximumSize = new System.Drawing.Size(900, 287);
-            this.picLogo.MinimumSize = new System.Drawing.Size(157, 48);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(334, 157);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 34;
-            this.picLogo.TabStop = false;
-            // 
-            // btnAlumni
-            // 
-            this.btnAlumni.AutoSize = true;
-            this.btnAlumni.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAlumni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnAlumni.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlumni.BackgroundImage")));
-            this.btnAlumni.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAlumni.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAlumni.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlumni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAlumni.Location = new System.Drawing.Point(112, 353);
-            this.btnAlumni.Name = "btnAlumni";
-            this.btnAlumni.Size = new System.Drawing.Size(377, 293);
-            this.btnAlumni.TabIndex = 35;
-            this.btnAlumni.UseVisualStyleBackColor = false;
-            this.btnAlumni.Click += new System.EventHandler(this.btnAlumni_Click);
-            // 
-            // btnExpBusiness
-            // 
-            this.btnExpBusiness.AutoSize = true;
-            this.btnExpBusiness.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnExpBusiness.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnExpBusiness.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExpBusiness.BackgroundImage")));
-            this.btnExpBusiness.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExpBusiness.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnExpBusiness.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExpBusiness.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnExpBusiness.Location = new System.Drawing.Point(495, 353);
-            this.btnExpBusiness.Name = "btnExpBusiness";
-            this.btnExpBusiness.Size = new System.Drawing.Size(377, 293);
-            this.btnExpBusiness.TabIndex = 36;
-            this.btnExpBusiness.UseVisualStyleBackColor = false;
-            this.btnExpBusiness.Click += new System.EventHandler(this.btnExpBusiness_Click);
-            // 
-            // btnSocialMedia
-            // 
-            this.btnSocialMedia.AutoSize = true;
-            this.btnSocialMedia.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnSocialMedia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnSocialMedia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSocialMedia.BackgroundImage")));
-            this.btnSocialMedia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSocialMedia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSocialMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSocialMedia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnSocialMedia.Location = new System.Drawing.Point(878, 353);
-            this.btnSocialMedia.Name = "btnSocialMedia";
-            this.btnSocialMedia.Size = new System.Drawing.Size(377, 293);
-            this.btnSocialMedia.TabIndex = 37;
-            this.btnSocialMedia.UseVisualStyleBackColor = false;
-            this.btnSocialMedia.Click += new System.EventHandler(this.btnSocialMedia_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,6 +406,7 @@ namespace Display_test
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -415,7 +414,6 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
