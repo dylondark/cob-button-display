@@ -75,11 +75,11 @@ namespace Display_test
             lblHashtags.Padding = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor * 0.3f)));
 
             Padding buttonMargin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
-            bgAlumni.Padding = buttonMargin;
-            bgExpBusiness.Padding = buttonMargin;
-            bgSocialMedia.Padding = buttonMargin;
+            btnAlumni.Margin = buttonMargin;
+            btnExpBusiness.Margin = buttonMargin;
+            btnSocialMedia.Margin = buttonMargin;
 
-            pnLogo.Padding = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
+            pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
             int picSize = Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor * 12f));
             picLogo.Size = new Size(picSize, picSize);
 
