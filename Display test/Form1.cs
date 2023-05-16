@@ -94,6 +94,17 @@ namespace Display_test
             btnDirectoryBack.Top = this.Height - 20 - btnDirectoryBack.Height;
         }
 
+        // magic function that fixes repaint flicker
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;    // Turn on WS_EX_COMPOSITED
+                return cp;
+            }
+        }
+
         #region "stats"
 
         // each code describes an action that will be recorded and stored in the stats csv file
