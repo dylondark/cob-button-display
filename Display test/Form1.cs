@@ -67,9 +67,9 @@ namespace Display_test
             pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
 
             Padding buttonMargin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
-            btnAlumni.Margin = buttonMargin;
-            btnExpBusiness.Margin = buttonMargin;
-            btnSocialMedia.Margin = buttonMargin;
+            btnPrograms.Margin = buttonMargin;
+            btnPartners.Margin = buttonMargin;
+            btnHistory.Margin = buttonMargin;
 
             pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
             int picSize = Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor * 12f));
