@@ -1,5 +1,5 @@
-# Marketing Display
-Display for the touchscreen in the UA Polsky marketing department
+# Fisher Display
+Display for the touchscreen in the UA Polsky Fisher Institute
 
 Written in C#, WinForms, .NET Framework. Intended to be edited in Visual Studio (VS)
 
