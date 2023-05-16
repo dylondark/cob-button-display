@@ -458,7 +458,7 @@ namespace Display_test
             this.lblIG.Name = "lblIG";
             this.lblIG.Size = new System.Drawing.Size(427, 51);
             this.lblIG.TabIndex = 3;
-            this.lblIG.Text = "@fishersalesua @uakronama";
+            this.lblIG.Text = "@uakronmarketing @fishersalesua @uakronama";
             this.lblIG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTwitter
@@ -469,7 +469,7 @@ namespace Display_test
             this.lblTwitter.Name = "lblTwitter";
             this.lblTwitter.Size = new System.Drawing.Size(427, 51);
             this.lblTwitter.TabIndex = 4;
-            this.lblTwitter.Text = "@uakronbusiness @TaylorInst";
+            this.lblTwitter.Text = "@uakronmarketing @uakronbusiness @TaylorInst";
             this.lblTwitter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblFB
@@ -480,7 +480,7 @@ namespace Display_test
             this.lblFB.Name = "lblFB";
             this.lblFB.Size = new System.Drawing.Size(427, 55);
             this.lblFB.TabIndex = 5;
-            this.lblFB.Text = "University of Akron - AMA";
+            this.lblFB.Text = "@uakronmarketing";
             this.lblFB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // bg1
