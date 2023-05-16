@@ -193,7 +193,8 @@ namespace Display_test
             this.lblHashtags.Name = "lblHashtags";
             this.lblHashtags.Size = new System.Drawing.Size(1370, 52);
             this.lblHashtags.TabIndex = 32;
-            this.lblHashtags.Text = "#theuniversityofakron    #zips    #uakronbusiness    #experiencebusiness";
+            this.lblHashtags.Text = "#theuniversityofakron    #zips    #uakronbusiness    #experiencebusiness    #uakr" +
+    "onmarketing";
             this.lblHashtags.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // bg4
