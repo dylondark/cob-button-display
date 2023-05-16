@@ -124,11 +124,9 @@ namespace Display_test
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 749);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
@@ -142,9 +140,9 @@ namespace Display_test
             this.btnHistory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnHistory.Location = new System.Drawing.Point(878, 227);
+            this.btnHistory.Location = new System.Drawing.Point(878, 220);
             this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(377, 293);
+            this.btnHistory.Size = new System.Drawing.Size(377, 308);
             this.btnHistory.TabIndex = 37;
             this.btnHistory.UseVisualStyleBackColor = false;
             this.btnHistory.Click += new System.EventHandler(this.btnSocialMedia_Click);
@@ -159,9 +157,9 @@ namespace Display_test
             this.btnPartners.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartners.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartners.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartners.Location = new System.Drawing.Point(495, 227);
+            this.btnPartners.Location = new System.Drawing.Point(495, 220);
             this.btnPartners.Name = "btnPartners";
-            this.btnPartners.Size = new System.Drawing.Size(377, 293);
+            this.btnPartners.Size = new System.Drawing.Size(377, 308);
             this.btnPartners.TabIndex = 36;
             this.btnPartners.UseVisualStyleBackColor = false;
             this.btnPartners.Click += new System.EventHandler(this.btnExpBusiness_Click);
@@ -176,9 +174,9 @@ namespace Display_test
             this.btnPrograms.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPrograms.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrograms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPrograms.Location = new System.Drawing.Point(112, 227);
+            this.btnPrograms.Location = new System.Drawing.Point(112, 220);
             this.btnPrograms.Name = "btnPrograms";
-            this.btnPrograms.Size = new System.Drawing.Size(377, 293);
+            this.btnPrograms.Size = new System.Drawing.Size(377, 308);
             this.btnPrograms.TabIndex = 35;
             this.btnPrograms.UseVisualStyleBackColor = false;
             this.btnPrograms.Click += new System.EventHandler(this.btnAlumni_Click);
@@ -193,7 +191,7 @@ namespace Display_test
             this.picLogo.Location = new System.Drawing.Point(1036, 0);
             this.picLogo.Margin = new System.Windows.Forms.Padding(0);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(334, 224);
+            this.picLogo.Size = new System.Drawing.Size(334, 217);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 34;
             this.picLogo.TabStop = false;
@@ -212,7 +210,7 @@ namespace Display_test
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(383, 224);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(383, 217);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // lblTouch
@@ -225,7 +223,7 @@ namespace Display_test
             this.lblTouch.Location = new System.Drawing.Point(0, 0);
             this.lblTouch.Margin = new System.Windows.Forms.Padding(0);
             this.lblTouch.Name = "lblTouch";
-            this.lblTouch.Size = new System.Drawing.Size(229, 224);
+            this.lblTouch.Size = new System.Drawing.Size(229, 217);
             this.lblTouch.TabIndex = 30;
             this.lblTouch.Text = "Touch Screen to Interact";
             this.lblTouch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -239,7 +237,7 @@ namespace Display_test
             this.pictureBox1.Location = new System.Drawing.Point(249, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 184);
+            this.pictureBox1.Size = new System.Drawing.Size(114, 177);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
