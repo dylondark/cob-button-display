@@ -137,11 +137,10 @@ namespace Display_test
             // 
             // btnHistory
             // 
-            this.btnHistory.AutoSize = true;
             this.btnHistory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.btnHistory.BackgroundImage = global::Display_test.Properties.Resources.historybutton;
-            this.btnHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHistory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
@@ -154,11 +153,10 @@ namespace Display_test
             // 
             // btnPartners
             // 
-            this.btnPartners.AutoSize = true;
             this.btnPartners.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnPartners.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.btnPartners.BackgroundImage = global::Display_test.Properties.Resources.partnersbutton;
-            this.btnPartners.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPartners.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPartners.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartners.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartners.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
@@ -171,11 +169,10 @@ namespace Display_test
             // 
             // btnPrograms
             // 
-            this.btnPrograms.AutoSize = true;
             this.btnPrograms.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnPrograms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.btnPrograms.BackgroundImage = global::Display_test.Properties.Resources.programsbutton;
-            this.btnPrograms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPrograms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPrograms.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPrograms.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrograms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
@@ -294,7 +291,6 @@ namespace Display_test
             this.Resize += new System.EventHandler(this.autoScale);
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
