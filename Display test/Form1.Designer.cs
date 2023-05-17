@@ -263,6 +263,7 @@ namespace Display_test
             this.picCOB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCOB.TabIndex = 38;
             this.picCOB.TabStop = false;
+            this.picCOB.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // Form1
             // 
