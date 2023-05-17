@@ -434,6 +434,9 @@ namespace Display_test
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Activated += new System.EventHandler(this.activity_event_activated);
+            this.Deactivate += new System.EventHandler(this.activity_event_deactivated);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.activity_event);
             this.ResizeEnd += new System.EventHandler(this.autoScale);
             this.Scroll += new System.Windows.Forms.ScrollEventHandler(this.activity_event);
             this.Click += new System.EventHandler(this.activity_event);
