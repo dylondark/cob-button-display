@@ -107,9 +107,9 @@ namespace Display_test
         public enum statCodes
         {
             PageClose,
-            Programs, Partners, History, // form1 buttons
+            Programs, Partners, History,
             DebugOn, DebugOff, 
-            Form1UrlChange,
+            BrowserUrlChange,
             Back,
             ProgramStart
         }
@@ -437,7 +437,7 @@ namespace Display_test
         {
             Invoke(new Action(() =>
             {
-                writeStat(statCodes.Form1UrlChange, e.Address);
+                writeStat(statCodes.BrowserUrlChange, e.Address);
 
                 inActivityWindow.activityDetected("URL CHNG");
             }));
