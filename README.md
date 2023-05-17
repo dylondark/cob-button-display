@@ -15,6 +15,8 @@ Written in C#, WinForms, .NET Framework. Intended to be edited in Visual Studio 
 - Debug mode can be entered by clicking/tapping the COB logo 5 times if you have built the project in the debug profile
 - Program saves a csv file containing recorded activity in User\Documents\displaytest_output
 
-## Project Goals
-- Potentially organize code into separate classes instead of having everything on the form class
-- Write better documentation for functions and on how the project works in general
+## Maintenance Information
+- The web browser will likely need updated from time to time. To do this go to solution explorer in VS -> right click project file -> go to "manage nuget packages" -> updates tab -> select all cefsharp packages and update. Make a commit with ONLY THESE CHANGES and cherry pick it to all the other branches (or else VS may break for the other branches)
+- All functions (unless they are extremely self explanatory) should have a comment above them explaining what they do in a sentence or two
+- All window controls follow a naming scheme of a 3 or so letter abbreviation of the object type followed by the name (Ex. picLogo for a picturebox, lblDebug for a label, etc)
+- Related functions (functions that are part of a single system like the stats system or the debug system) should be grouped into regions to assist readability (you can toggle their visibility in VS)
