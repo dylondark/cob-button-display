@@ -41,7 +41,7 @@ namespace Display_test
             this.btnGrad = new System.Windows.Forms.Button();
             this.tlpTouch = new System.Windows.Forms.TableLayoutPanel();
             this.lblWelcome = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picTouch = new System.Windows.Forms.PictureBox();
             this.picCOB = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@ namespace Display_test
             this.btnDirectoryBack = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
             this.tlpTouch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTouch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
             this.tlpDirectory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -223,7 +223,7 @@ namespace Display_test
             this.tlpTouch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tlpTouch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tlpTouch.Controls.Add(this.lblWelcome, 0, 0);
-            this.tlpTouch.Controls.Add(this.pictureBox1, 1, 0);
+            this.tlpTouch.Controls.Add(this.picTouch, 1, 0);
             this.tlpTouch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpTouch.Location = new System.Drawing.Point(482, 601);
             this.tlpTouch.Name = "tlpTouch";
@@ -248,18 +248,18 @@ namespace Display_test
             this.lblWelcome.Text = "Touch Screen to Interact";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // picTouch
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(263, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 105);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.picTouch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picTouch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picTouch.Image = ((System.Drawing.Image)(resources.GetObject("picTouch.Image")));
+            this.picTouch.Location = new System.Drawing.Point(263, 20);
+            this.picTouch.Margin = new System.Windows.Forms.Padding(20);
+            this.picTouch.Name = "picTouch";
+            this.picTouch.Size = new System.Drawing.Size(122, 105);
+            this.picTouch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTouch.TabIndex = 15;
+            this.picTouch.TabStop = false;
             // 
             // picCOB
             // 
@@ -450,7 +450,7 @@ namespace Display_test
             this.tlpMain.PerformLayout();
             this.tlpTouch.ResumeLayout(false);
             this.tlpTouch.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTouch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             this.tlpDirectory.ResumeLayout(false);
             this.tlpDirectory.PerformLayout();
@@ -491,7 +491,7 @@ namespace Display_test
         private System.Windows.Forms.Button btnCentersInstitutes;
         private System.Windows.Forms.Button btnProfDev;
         private System.Windows.Forms.PictureBox picCOB;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picTouch;
         private System.Windows.Forms.TableLayoutPanel tlpMain;
         private Label lblDebug;
         private TableLayoutPanel tlpTouch;
