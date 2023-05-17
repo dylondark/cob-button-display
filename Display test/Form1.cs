@@ -296,8 +296,6 @@ namespace Display_test
         {
             writeStat(statCodes.Alumni);
             showWebPage("https://www.uakron.edu/cba/departments/marketing/alumni-stories");
-            this.ControlBox = false;
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
         private void btnExpBusiness_Click(object sender, EventArgs e)
