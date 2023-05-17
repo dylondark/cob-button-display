@@ -149,7 +149,7 @@ namespace Display_test
             this.btnHistory.Size = new System.Drawing.Size(322, 308);
             this.btnHistory.TabIndex = 37;
             this.btnHistory.UseVisualStyleBackColor = false;
-            this.btnHistory.Click += new System.EventHandler(this.btnSocialMedia_Click);
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // btnPartners
             // 
@@ -165,7 +165,7 @@ namespace Display_test
             this.btnPartners.Size = new System.Drawing.Size(322, 308);
             this.btnPartners.TabIndex = 36;
             this.btnPartners.UseVisualStyleBackColor = false;
-            this.btnPartners.Click += new System.EventHandler(this.btnExpBusiness_Click);
+            this.btnPartners.Click += new System.EventHandler(this.btnPartners_Click);
             // 
             // btnPrograms
             // 
@@ -181,7 +181,7 @@ namespace Display_test
             this.btnPrograms.Size = new System.Drawing.Size(322, 308);
             this.btnPrograms.TabIndex = 35;
             this.btnPrograms.UseVisualStyleBackColor = false;
-            this.btnPrograms.Click += new System.EventHandler(this.btnAlumni_Click);
+            this.btnPrograms.Click += new System.EventHandler(this.btnPrograms_Click);
             // 
             // picFisher
             // 

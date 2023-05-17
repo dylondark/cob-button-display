@@ -107,7 +107,7 @@ namespace Display_test
         public enum statCodes
         {
             PageClose,
-            Alumni, ExpBusiness, SocialMedia, // form1 buttons
+            Programs, Partners, History, // form1 buttons
             DebugOn, DebugOff, 
             Form1UrlChange,
             Back,
@@ -284,23 +284,23 @@ namespace Display_test
 
         #region "button clicks"
 
-        private void btnAlumni_Click(object sender, EventArgs e)
+        private void btnPrograms_Click(object sender, EventArgs e)
         {
-            writeStat(statCodes.Alumni);
+            writeStat(statCodes.Programs);
             showWebPage("https://www.uakron.edu/cba/fisher/");
             this.ControlBox = false;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
-        private void btnExpBusiness_Click(object sender, EventArgs e)
+        private void btnPartners_Click(object sender, EventArgs e)
         {
-            writeStat(statCodes.ExpBusiness);
+            writeStat(statCodes.Partners);
             showWebPage("https://www.uakron.edu/cba/fisher/partnerships");
         }
 
-        private void btnSocialMedia_Click(object sender, EventArgs e)
+        private void btnHistory_Click(object sender, EventArgs e)
         {
-            writeStat(statCodes.SocialMedia);
+            writeStat(statCodes.History);
             showWebPage("https://www.uakron.edu/cba/news-and-events/news-details.dot?newsId=7b7e11ca-c0fe-4321-a290-9fb6595a9f97");
         }
 
