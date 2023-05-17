@@ -120,7 +120,7 @@ namespace Display_test
             this.tableLayoutPanel1.Controls.Add(this.btnHistory, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnPartners, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnPrograms, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.picLogo, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.picLogo, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -187,13 +187,12 @@ namespace Display_test
             // 
             this.picLogo.BackColor = System.Drawing.Color.Transparent;
             this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tableLayoutPanel1.SetColumnSpan(this.picLogo, 2);
-            this.picLogo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picLogo.Image = global::Display_test.Properties.Resources.Fisher2;
-            this.picLogo.Location = new System.Drawing.Point(1036, 0);
+            this.picLogo.Location = new System.Drawing.Point(109, 531);
             this.picLogo.Margin = new System.Windows.Forms.Padding(0);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(334, 217);
+            this.picLogo.Size = new System.Drawing.Size(328, 218);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 34;
             this.picLogo.TabStop = false;
