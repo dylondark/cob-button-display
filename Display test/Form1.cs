@@ -117,7 +117,7 @@ namespace Display_test
             PageClose,
             Alumni, ExpBusiness, SocialMedia, // form1 buttons
             DebugOn, DebugOff, 
-            Form1UrlChange,
+            BrowserUrlChange,
             Back,
             ProgramStart
         }
@@ -445,7 +445,7 @@ namespace Display_test
         {
             Invoke(new Action(() =>
             {
-                writeStat(statCodes.Form1UrlChange, e.Address);
+                writeStat(statCodes.BrowserUrlChange, e.Address);
 
                 inActivityWindow.activityDetected("URL CHNG");
             }));
