@@ -288,8 +288,6 @@ namespace Display_test
         {
             writeStat(statCodes.Programs);
             showWebPage("https://www.uakron.edu/cba/fisher/academics");
-            this.ControlBox = false;
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
         private void btnPartners_Click(object sender, EventArgs e)
