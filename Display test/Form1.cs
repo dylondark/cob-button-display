@@ -119,7 +119,7 @@ namespace Display_test
             DebugOn, DebugOff, 
             BrowserUrlChange,
             Back,
-            ProgramStart
+            ProgramStart, ProgramClose, ProgramLostFocus, ProgramGainedFocus
         }
 
         // creates the stats file 'data.csv' in home user documents folder and sets up proper formatting
@@ -449,6 +449,24 @@ namespace Display_test
 
                 inActivityWindow.activityDetected("URL CHNG");
             }));
+        }
+
+        // detect program close
+        private void activity_event(object sender, FormClosedEventArgs e)
+        {
+                writeStat(statCodes.ProgramClose);
+        }
+
+        // detect form focus
+        private void activity_event_activated(object sender, EventArgs e)
+        {
+            writeStat(statCodes.ProgramGainedFocus);
+        }
+
+        // detect form lose focus
+        private void activity_event_deactivated(object sender, EventArgs e)
+        {
+            writeStat(statCodes.ProgramLostFocus);
         }
 
         #endregion
