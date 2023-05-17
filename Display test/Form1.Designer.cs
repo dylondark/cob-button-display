@@ -39,13 +39,13 @@ namespace Display_test
             this.btnHistory = new System.Windows.Forms.Button();
             this.btnPartners = new System.Windows.Forms.Button();
             this.btnPrograms = new System.Windows.Forms.Button();
-            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.picFisher = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTouch = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -120,7 +120,7 @@ namespace Display_test
             this.tableLayoutPanel1.Controls.Add(this.btnHistory, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnPartners, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnPrograms, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.picLogo, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.picFisher, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -183,19 +183,19 @@ namespace Display_test
             this.btnPrograms.UseVisualStyleBackColor = false;
             this.btnPrograms.Click += new System.EventHandler(this.btnAlumni_Click);
             // 
-            // picLogo
+            // picFisher
             // 
-            this.picLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picLogo.Image = global::Display_test.Properties.Resources.Fisher2;
-            this.picLogo.Location = new System.Drawing.Point(109, 531);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(0);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(328, 218);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 34;
-            this.picLogo.TabStop = false;
+            this.picFisher.BackColor = System.Drawing.Color.Transparent;
+            this.picFisher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picFisher.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picFisher.Image = global::Display_test.Properties.Resources.Fisher2;
+            this.picFisher.Location = new System.Drawing.Point(109, 531);
+            this.picFisher.Margin = new System.Windows.Forms.Padding(0);
+            this.picFisher.Name = "picFisher";
+            this.picFisher.Size = new System.Drawing.Size(328, 218);
+            this.picFisher.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picFisher.TabIndex = 34;
+            this.picFisher.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -280,7 +280,7 @@ namespace Display_test
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFisher)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -320,7 +320,7 @@ namespace Display_test
         private TableLayoutPanel tableLayoutPanel3;
         private Label lblTouch;
         private Button btnHome;
-        private PictureBox picLogo;
+        private PictureBox picFisher;
         private Button btnHistory;
         private Button btnPartners;
         private Button btnPrograms;
