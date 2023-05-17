@@ -114,7 +114,7 @@ namespace Display_test
             Directory, Undergraduate, Graduate, CentersInstitutes, ProfDev, ExecEd, // form1 buttons
             DebugOn, DebugOff,
             Staff, Faculty, Search, // directory buttons
-            Form1UrlChange, Form2UrlChange,
+            BrowserUrlChange,
             Back,
             ProgramStart
         }
@@ -490,7 +490,7 @@ namespace Display_test
         {
             Invoke(new Action(() =>
             {
-                writeStat(statCodes.Form1UrlChange, e.Address);
+                writeStat(statCodes.BrowserUrlChange, e.Address);
 
                 inActivityWindow.activityDetected("URL CHNG");
             }));
