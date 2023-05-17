@@ -121,7 +121,7 @@ namespace Display_test
             this.tableLayoutPanel1.Controls.Add(this.btnPartners, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnPrograms, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.picLogo, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -202,17 +202,18 @@ namespace Display_test
             // 
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel3, 3);
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel3.Controls.Add(this.lblTouch, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(519, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(437, 0);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(328, 217);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(492, 217);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // lblTouch
@@ -225,7 +226,7 @@ namespace Display_test
             this.lblTouch.Location = new System.Drawing.Point(0, 0);
             this.lblTouch.Margin = new System.Windows.Forms.Padding(0);
             this.lblTouch.Name = "lblTouch";
-            this.lblTouch.Size = new System.Drawing.Size(196, 217);
+            this.lblTouch.Size = new System.Drawing.Size(295, 217);
             this.lblTouch.TabIndex = 30;
             this.lblTouch.Text = "Touch Screen to Interact";
             this.lblTouch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -236,10 +237,10 @@ namespace Display_test
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::Display_test.Properties.Resources.touch;
-            this.pictureBox1.Location = new System.Drawing.Point(216, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(315, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 177);
+            this.pictureBox1.Size = new System.Drawing.Size(157, 177);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
