@@ -64,7 +64,7 @@ namespace Display_test
 
             Font labelFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold); ;
             lblTouch.Font = labelFont;
-            pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
+            picTouch.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
 
             Font socialFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor * 0.6f, FontStyle.Bold);
             lblIG.Font = socialFont;
@@ -79,7 +79,7 @@ namespace Display_test
             btnExpBusiness.Margin = buttonMargin;
             btnSocialMedia.Margin = buttonMargin;
 
-            pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
+            picTouch.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
             int picSize = Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor * 12f));
             picLogo.Size = new Size(picSize, picSize);
 

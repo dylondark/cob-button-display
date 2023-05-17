@@ -44,7 +44,7 @@ namespace Display_test
             this.lblHashtags = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTouch = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picTouch = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.picIG = new System.Windows.Forms.PictureBox();
             this.picTwitter = new System.Windows.Forms.PictureBox();
@@ -56,7 +56,7 @@ namespace Display_test
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTouch)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).BeginInit();
@@ -239,7 +239,7 @@ namespace Display_test
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel3.Controls.Add(this.lblTouch, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.picTouch, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(492, 37);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -264,19 +264,19 @@ namespace Display_test
             this.lblTouch.Text = "Touch Screen to Interact";
             this.lblTouch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // picTouch
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Display_test.Properties.Resources.touch;
-            this.pictureBox1.Location = new System.Drawing.Point(249, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 117);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.picTouch.BackColor = System.Drawing.Color.Transparent;
+            this.picTouch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picTouch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picTouch.Image = global::Display_test.Properties.Resources.touch;
+            this.picTouch.Location = new System.Drawing.Point(249, 20);
+            this.picTouch.Margin = new System.Windows.Forms.Padding(20);
+            this.picTouch.Name = "picTouch";
+            this.picTouch.Size = new System.Drawing.Size(114, 117);
+            this.picTouch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTouch.TabIndex = 5;
+            this.picTouch.TabStop = false;
             // 
             // tableLayoutPanel4
             // 
@@ -411,7 +411,7 @@ namespace Display_test
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTouch)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picIG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).EndInit();
@@ -446,7 +446,7 @@ namespace Display_test
         private CefSharp.WinForms.ChromiumWebBrowser chromium;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picTouch;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Label lblDebug;
         private TableLayoutPanel tableLayoutPanel2;
