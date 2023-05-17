@@ -44,11 +44,13 @@ namespace Display_test
             this.lblTouch = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picCOB = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -122,6 +124,7 @@ namespace Display_test
             this.tableLayoutPanel1.Controls.Add(this.btnPrograms, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.picFisher, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.picCOB, 5, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -252,6 +255,18 @@ namespace Display_test
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
+            // picCOB
+            // 
+            this.picCOB.BackColor = System.Drawing.Color.Transparent;
+            this.picCOB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picCOB.Image = global::Display_test.Properties.Resources.CBALogo2;
+            this.picCOB.Location = new System.Drawing.Point(932, 534);
+            this.picCOB.Name = "picCOB";
+            this.picCOB.Size = new System.Drawing.Size(322, 212);
+            this.picCOB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCOB.TabIndex = 38;
+            this.picCOB.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,6 +299,7 @@ namespace Display_test
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,6 +340,7 @@ namespace Display_test
         private Button btnHistory;
         private Button btnPartners;
         private Button btnPrograms;
+        private PictureBox picCOB;
         //private PictureBox pictureBox1;
     }
 }
