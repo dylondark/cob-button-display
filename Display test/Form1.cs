@@ -287,7 +287,7 @@ namespace Display_test
         private void btnAlumni_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.Alumni);
-            showWebPage("https://www.uakron.edu/cba/departments/marketing/alumni-stories");
+            showWebPage("https://www.uakron.edu/cba/fisher/");
             this.ControlBox = false;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
@@ -295,13 +295,13 @@ namespace Display_test
         private void btnExpBusiness_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.ExpBusiness);
-            showWebPage("https://www.uakron.edu/cba/outcomes/experiential-learning");
+            showWebPage("https://www.uakron.edu/cba/fisher/partnerships");
         }
 
         private void btnSocialMedia_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.SocialMedia);
-            showWebPage("https://keyhole.co/hashtag-tracking/media-wall/1JZR73/digitaldisplaysmarketing?page=1&perPage=25");
+            showWebPage("https://www.uakron.edu/cba/news-and-events/news-details.dot?newsId=7b7e11ca-c0fe-4321-a290-9fb6595a9f97");
         }
 
         private void btnHome_Click(object sender, EventArgs e)
