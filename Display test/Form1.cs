@@ -59,7 +59,7 @@ namespace Display_test
         // automatically scale certain ui elements like text and margin size based on screen resolution
         private void autoScale(object sender, EventArgs e)
         {
-            const int scaleFactor = 60; // based on the desired font size for the welcome text on a 4k display, everything else will scale accordingly with this
+            const int scaleFactor = 80; // based on the desired font size for the welcome text on a 4k display, everything else will scale accordingly with this
             float resFactor = Convert.ToSingle(this.Width) / 3840f; // this will be 1 at 4k
 
             Font labelFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold); ;
