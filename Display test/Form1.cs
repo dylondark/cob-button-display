@@ -76,7 +76,7 @@ namespace Display_test
             picFisher.Margin = picturePadding;
 
             // back buttons scaling
-            int buttonDim = Convert.ToInt32(scaleFactor * 4f * resFactor);
+            int buttonDim = Convert.ToInt32((scaleFactor - 20) * 4f * resFactor); // offset scale factor to keep buttons consistent
             btnBack.Width = buttonDim;
             btnBack.Height = buttonDim;
             btnHome.Width = buttonDim;
