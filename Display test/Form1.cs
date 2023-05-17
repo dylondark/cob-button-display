@@ -72,8 +72,6 @@ namespace Display_test
             btnHistory.Margin = buttonMargin;
 
             pictureBox1.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
-            int picSize = Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor * 12f));
-            picFisher.Size = new Size(picSize, picSize);
 
             // back buttons scaling
             int buttonDim = Convert.ToInt32(scaleFactor * 4f * resFactor);
