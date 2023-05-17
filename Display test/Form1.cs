@@ -287,7 +287,7 @@ namespace Display_test
         private void btnPrograms_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.Programs);
-            showWebPage("https://www.uakron.edu/cba/fisher/");
+            showWebPage("https://www.uakron.edu/cba/fisher/academics");
             this.ControlBox = false;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
