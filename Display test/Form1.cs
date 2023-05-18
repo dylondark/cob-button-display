@@ -346,6 +346,15 @@ namespace Display_test
             }
         }
 
+        private void btnPartnerBack_Click(object sender, EventArgs e)
+        {
+            tlpPartners.SendToBack();
+            btnPartnerBack.SendToBack();
+            writeStat(statCodes.Back, "lvl2-back");
+            currentPage = CurrentPage.HomePage;
+            inActivityWindow.stopTimer();
+        }
+
         #endregion
 
         #region "activity"

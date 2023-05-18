@@ -462,6 +462,7 @@ namespace Display_test
             this.btnPartnerBack.TabIndex = 18;
             this.btnPartnerBack.Text = "Back";
             this.btnPartnerBack.UseVisualStyleBackColor = false;
+            this.btnPartnerBack.Click += new System.EventHandler(this.btnPartnerBack_Click);
             // 
             // Form1
             // 
