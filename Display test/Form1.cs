@@ -65,6 +65,7 @@ namespace Display_test
             Font labelFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold); ;
             lblTouch.Font = labelFont;
             picTouch.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
+            lblPartners.Font = labelFont;
 
             Padding buttonMargin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
             btnPrograms.Margin = buttonMargin;

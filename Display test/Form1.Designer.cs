@@ -46,12 +46,14 @@ namespace Display_test
             this.picCOB = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tlpPartners = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPartners = new System.Windows.Forms.Label();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tlpTouch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picTouch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tlpPartners.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -278,6 +280,7 @@ namespace Display_test
             this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tlpPartners.Controls.Add(this.lblPartners, 2, 0);
             this.tlpPartners.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpPartners.Location = new System.Drawing.Point(0, 0);
             this.tlpPartners.Name = "tlpPartners";
@@ -290,6 +293,19 @@ namespace Display_test
             this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpPartners.Size = new System.Drawing.Size(1370, 749);
             this.tlpPartners.TabIndex = 16;
+            // 
+            // lblPartners
+            // 
+            this.lblPartners.BackColor = System.Drawing.Color.Transparent;
+            this.tlpPartners.SetColumnSpan(this.lblPartners, 3);
+            this.lblPartners.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPartners.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold);
+            this.lblPartners.Location = new System.Drawing.Point(482, 0);
+            this.lblPartners.Name = "lblPartners";
+            this.lblPartners.Size = new System.Drawing.Size(404, 149);
+            this.lblPartners.TabIndex = 0;
+            this.lblPartners.Text = "Our Partners";
+            this.lblPartners.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -327,6 +343,7 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picTouch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tlpPartners.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,6 +386,7 @@ namespace Display_test
         private Button btnPrograms;
         private PictureBox picCOB;
         private TableLayoutPanel tlpPartners;
+        private Label lblPartners;
         //private PictureBox pictureBox1;
     }
 }
