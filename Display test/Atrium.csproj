@@ -399,6 +399,33 @@
   <ItemGroup>
     <None Include="Resources\fishernewbg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OhioCAT-whiteborder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palmerholland.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mrisoftware.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hyland-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aircontrol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smucker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ritehite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penske.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
