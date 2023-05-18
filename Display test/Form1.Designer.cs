@@ -56,6 +56,7 @@ namespace Display_test
             this.btnPartner2 = new System.Windows.Forms.Button();
             this.btnPartner1 = new System.Windows.Forms.Button();
             this.lblPartners = new System.Windows.Forms.Label();
+            this.btnPartnerBack = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tlpTouch.SuspendLayout();
@@ -449,6 +450,19 @@ namespace Display_test
             this.lblPartners.Text = "Our Partners";
             this.lblPartners.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnPartnerBack
+            // 
+            this.btnPartnerBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPartnerBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnPartnerBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPartnerBack.Location = new System.Drawing.Point(485, 274);
+            this.btnPartnerBack.MinimumSize = new System.Drawing.Size(400, 200);
+            this.btnPartnerBack.Name = "btnPartnerBack";
+            this.btnPartnerBack.Size = new System.Drawing.Size(400, 200);
+            this.btnPartnerBack.TabIndex = 18;
+            this.btnPartnerBack.Text = "Back";
+            this.btnPartnerBack.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -457,6 +471,7 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btnPartnerBack);
             this.Controls.Add(this.tlpPartners);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
@@ -538,6 +553,7 @@ namespace Display_test
         private Button btnPartner3;
         private Button btnPartner2;
         private Button btnPartner1;
+        private Button btnPartnerBack;
         //private PictureBox pictureBox1;
     }
 }

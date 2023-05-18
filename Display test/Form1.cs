@@ -89,6 +89,12 @@ namespace Display_test
             btnBack.Top = buttonPos[1];
             btnHome.Left = buttonPos[0] - buttonDim;
             btnHome.Top = buttonPos[1];
+
+            // partner back button
+            btnPartnerBack.Width = Convert.ToInt32(scaleFactor * 8f * resFactor);
+            btnPartnerBack.Height = Convert.ToInt32(scaleFactor * 4f * resFactor);
+            btnPartnerBack.Left = this.Width - 20 - btnPartnerBack.Width;
+            btnPartnerBack.Top = this.Height - 20 - btnPartnerBack.Height;
         }
 
         // magic function that fixes repaint flicker
