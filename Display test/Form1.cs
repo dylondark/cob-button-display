@@ -91,8 +91,8 @@ namespace Display_test
             btnHome.Top = buttonPos[1];
 
             // partner back button
-            btnPartnerBack.Width = Convert.ToInt32(scaleFactor * 8f * resFactor);
-            btnPartnerBack.Height = Convert.ToInt32(scaleFactor * 4f * resFactor);
+            btnPartnerBack.Width = buttonDim;
+            btnPartnerBack.Height = buttonDim;
             btnPartnerBack.Left = this.Width - 20 - btnPartnerBack.Width;
             btnPartnerBack.Top = this.Height - 20 - btnPartnerBack.Height;
         }

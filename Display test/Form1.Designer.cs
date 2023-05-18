@@ -92,13 +92,13 @@ namespace Display_test
             // 
             this.btnPartnerBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPartnerBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnPartnerBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
+            this.btnPartnerBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPartnerBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartnerBack.Location = new System.Drawing.Point(485, 274);
-            this.btnPartnerBack.MinimumSize = new System.Drawing.Size(400, 200);
             this.btnPartnerBack.Name = "btnPartnerBack";
             this.btnPartnerBack.Size = new System.Drawing.Size(400, 200);
             this.btnPartnerBack.TabIndex = 18;
-            this.btnPartnerBack.Text = "Back";
             this.btnPartnerBack.UseVisualStyleBackColor = false;
             this.btnPartnerBack.Click += new System.EventHandler(this.btnPartnerBack_Click);
             // 
