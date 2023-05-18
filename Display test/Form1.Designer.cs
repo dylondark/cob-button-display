@@ -268,6 +268,8 @@ namespace Display_test
             // 
             // tlpPartners
             // 
+            this.tlpPartners.BackgroundImage = global::Display_test.Properties.Resources.fishernewbg;
+            this.tlpPartners.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tlpPartners.ColumnCount = 7;
             this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
