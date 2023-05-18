@@ -300,7 +300,10 @@ namespace Display_test
         private void btnPartners_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.Partners);
-            showWebPage("https://www.uakron.edu/cba/fisher/partnerships");
+            currentPage = CurrentPage.SecondLevelButtonsPage;
+            tlpPartners.BringToFront();
+            btnPartnerBack.BringToFront();
+            inActivityWindow.startTimer();
         }
 
         private void btnHistory_Click(object sender, EventArgs e)
