@@ -45,6 +45,7 @@ namespace Display_test
             this.picTouch = new System.Windows.Forms.PictureBox();
             this.picCOB = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tlpPartners = new System.Windows.Forms.TableLayoutPanel();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tlpTouch.SuspendLayout();
@@ -265,6 +266,20 @@ namespace Display_test
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
+            // tlpPartners
+            // 
+            this.tlpPartners.ColumnCount = 2;
+            this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpPartners.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpPartners.Location = new System.Drawing.Point(0, 0);
+            this.tlpPartners.Name = "tlpPartners";
+            this.tlpPartners.RowCount = 2;
+            this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpPartners.Size = new System.Drawing.Size(1370, 749);
+            this.tlpPartners.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,6 +288,7 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.tlpPartners);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
@@ -341,6 +357,7 @@ namespace Display_test
         private Button btnPartners;
         private Button btnPrograms;
         private PictureBox picCOB;
+        private TableLayoutPanel tlpPartners;
         //private PictureBox pictureBox1;
     }
 }
