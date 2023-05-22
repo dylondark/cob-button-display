@@ -149,8 +149,8 @@ namespace Display_test
             this.btnPartner9.Name = "btnPartner9";
             this.btnPartner9.Size = new System.Drawing.Size(322, 181);
             this.btnPartner9.TabIndex = 46;
-            this.btnPartner9.UseVisualStyleBackColor = false;
             this.btnPartner9.TabStop = false;
+            this.btnPartner9.UseVisualStyleBackColor = false;
             this.btnPartner9.Click += new System.EventHandler(this.btnPartner9_Click);
             // 
             // btnPartner8
@@ -166,8 +166,8 @@ namespace Display_test
             this.btnPartner8.Name = "btnPartner8";
             this.btnPartner8.Size = new System.Drawing.Size(322, 181);
             this.btnPartner8.TabIndex = 45;
-            this.btnPartner8.UseVisualStyleBackColor = false;
             this.btnPartner8.TabStop = false;
+            this.btnPartner8.UseVisualStyleBackColor = false;
             this.btnPartner8.Click += new System.EventHandler(this.btnPartner8_Click);
             // 
             // btnPartner7
@@ -184,8 +184,8 @@ namespace Display_test
             this.btnPartner7.Size = new System.Drawing.Size(322, 181);
             this.btnPartner7.TabIndex = 44;
             this.btnPartner7.TabStop = false;
-            this.btnPartner7.Click += new System.EventHandler(this.btnPartner7_Click);
             this.btnPartner7.UseVisualStyleBackColor = false;
+            this.btnPartner7.Click += new System.EventHandler(this.btnPartner7_Click);
             // 
             // btnPartner6
             // 
@@ -201,8 +201,8 @@ namespace Display_test
             this.btnPartner6.Size = new System.Drawing.Size(322, 181);
             this.btnPartner6.TabIndex = 43;
             this.btnPartner6.TabStop = false;
-            this.btnPartner6.Click += new System.EventHandler(this.btnPartner6_Click);
             this.btnPartner6.UseVisualStyleBackColor = false;
+            this.btnPartner6.Click += new System.EventHandler(this.btnPartner6_Click);
             // 
             // btnPartner5
             // 
@@ -218,8 +218,8 @@ namespace Display_test
             this.btnPartner5.Size = new System.Drawing.Size(322, 181);
             this.btnPartner5.TabIndex = 42;
             this.btnPartner5.TabStop = false;
-            this.btnPartner5.Click += new System.EventHandler(this.btnPartner5_Click);
             this.btnPartner5.UseVisualStyleBackColor = false;
+            this.btnPartner5.Click += new System.EventHandler(this.btnPartner5_Click);
             // 
             // btnPartner4
             // 
@@ -235,14 +235,14 @@ namespace Display_test
             this.btnPartner4.Size = new System.Drawing.Size(322, 181);
             this.btnPartner4.TabIndex = 41;
             this.btnPartner4.TabStop = false;
-            this.btnPartner4.Click += new System.EventHandler(this.btnPartner4_Click);
             this.btnPartner4.UseVisualStyleBackColor = false;
+            this.btnPartner4.Click += new System.EventHandler(this.btnPartner4_Click);
             // 
             // btnPartner3
             // 
             this.btnPartner3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnPartner3.BackColor = System.Drawing.Color.White;
-            this.btnPartner3.BackgroundImage = global::Display_test.Properties.Resources.palmerholland;
+            this.btnPartner3.BackgroundImage = global::Display_test.Properties.Resources.palmerholland_tp;
             this.btnPartner3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPartner3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -252,8 +252,8 @@ namespace Display_test
             this.btnPartner3.Size = new System.Drawing.Size(322, 181);
             this.btnPartner3.TabIndex = 40;
             this.btnPartner3.TabStop = false;
-            this.btnPartner3.Click += new System.EventHandler(this.btnPartner3_Click);
             this.btnPartner3.UseVisualStyleBackColor = false;
+            this.btnPartner3.Click += new System.EventHandler(this.btnPartner3_Click);
             // 
             // btnPartner2
             // 
@@ -269,14 +269,14 @@ namespace Display_test
             this.btnPartner2.Size = new System.Drawing.Size(322, 181);
             this.btnPartner2.TabIndex = 39;
             this.btnPartner2.TabStop = false;
-            this.btnPartner2.Click += new System.EventHandler(this.btnPartner2_Click);
             this.btnPartner2.UseVisualStyleBackColor = false;
+            this.btnPartner2.Click += new System.EventHandler(this.btnPartner2_Click);
             // 
             // btnPartner1
             // 
             this.btnPartner1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnPartner1.BackColor = System.Drawing.Color.White;
-            this.btnPartner1.BackgroundImage = global::Display_test.Properties.Resources.OhioCAT_whiteborder;
+            this.btnPartner1.BackgroundImage = global::Display_test.Properties.Resources.OhioCAT_whiteborder_tp;
             this.btnPartner1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPartner1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -286,8 +286,8 @@ namespace Display_test
             this.btnPartner1.Size = new System.Drawing.Size(322, 181);
             this.btnPartner1.TabIndex = 38;
             this.btnPartner1.TabStop = false;
-            this.btnPartner1.Click += new System.EventHandler(this.btnPartner1_Click);
             this.btnPartner1.UseVisualStyleBackColor = false;
+            this.btnPartner1.Click += new System.EventHandler(this.btnPartner1_Click);
             // 
             // lblPartners
             // 

@@ -426,6 +426,12 @@
   <ItemGroup>
     <None Include="Resources\penske.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OhioCAT-whiteborder-tp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palmerholland-tp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
