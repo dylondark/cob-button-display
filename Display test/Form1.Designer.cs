@@ -123,7 +123,7 @@ namespace Display_test
             this.tlpPartners.Controls.Add(this.btnPartner3, 3, 1);
             this.tlpPartners.Controls.Add(this.btnPartner2, 2, 1);
             this.tlpPartners.Controls.Add(this.btnPartner1, 1, 1);
-            this.tlpPartners.Controls.Add(this.lblPartners, 2, 0);
+            this.tlpPartners.Controls.Add(this.lblPartners, 1, 0);
             this.tlpPartners.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpPartners.Location = new System.Drawing.Point(0, 0);
             this.tlpPartners.Name = "tlpPartners";
@@ -292,13 +292,14 @@ namespace Display_test
             // lblPartners
             // 
             this.lblPartners.BackColor = System.Drawing.Color.Transparent;
+            this.tlpPartners.SetColumnSpan(this.lblPartners, 3);
             this.lblPartners.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPartners.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold);
-            this.lblPartners.Location = new System.Drawing.Point(522, 0);
+            this.lblPartners.Location = new System.Drawing.Point(194, 0);
             this.lblPartners.Name = "lblPartners";
-            this.lblPartners.Size = new System.Drawing.Size(322, 149);
+            this.lblPartners.Size = new System.Drawing.Size(978, 149);
             this.lblPartners.TabIndex = 0;
-            this.lblPartners.Text = "Our Partners";
+            this.lblPartners.Text = "Our Premiere Partners";
             this.lblPartners.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnHome
