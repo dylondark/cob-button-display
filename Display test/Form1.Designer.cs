@@ -89,7 +89,7 @@ namespace Display_test
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpMain.Size = new System.Drawing.Size(1370, 749);
+            this.tlpMain.Size = new System.Drawing.Size(1264, 681);
             this.tlpMain.TabIndex = 6;
             // 
             // btnProfDev
@@ -104,10 +104,10 @@ namespace Display_test
             this.btnProfDev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnProfDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfDev.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnProfDev.Location = new System.Drawing.Point(481, 338);
+            this.btnProfDev.Location = new System.Drawing.Point(444, 308);
             this.btnProfDev.Margin = new System.Windows.Forms.Padding(2);
             this.btnProfDev.Name = "btnProfDev";
-            this.btnProfDev.Size = new System.Drawing.Size(407, 258);
+            this.btnProfDev.Size = new System.Drawing.Size(375, 234);
             this.btnProfDev.TabIndex = 1;
             this.btnProfDev.UseVisualStyleBackColor = false;
             this.btnProfDev.Click += new System.EventHandler(this.ProfDev_Click);
@@ -125,9 +125,9 @@ namespace Display_test
             this.btnCentersInstitutes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCentersInstitutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCentersInstitutes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnCentersInstitutes.Location = new System.Drawing.Point(71, 339);
+            this.btnCentersInstitutes.Location = new System.Drawing.Point(66, 309);
             this.btnCentersInstitutes.Name = "btnCentersInstitutes";
-            this.btnCentersInstitutes.Size = new System.Drawing.Size(405, 256);
+            this.btnCentersInstitutes.Size = new System.Drawing.Size(373, 232);
             this.btnCentersInstitutes.TabIndex = 0;
             this.btnCentersInstitutes.UseVisualStyleBackColor = false;
             this.btnCentersInstitutes.Click += new System.EventHandler(this.CentersInstitutes_Click);
@@ -143,10 +143,10 @@ namespace Display_test
             this.btnExecEd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnExecEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExecEd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnExecEd.Location = new System.Drawing.Point(892, 338);
+            this.btnExecEd.Location = new System.Drawing.Point(823, 308);
             this.btnExecEd.Margin = new System.Windows.Forms.Padding(2);
             this.btnExecEd.Name = "btnExecEd";
-            this.btnExecEd.Size = new System.Drawing.Size(407, 258);
+            this.btnExecEd.Size = new System.Drawing.Size(375, 234);
             this.btnExecEd.TabIndex = 2;
             this.btnExecEd.UseVisualStyleBackColor = false;
             this.btnExecEd.Click += new System.EventHandler(this.ExecEd_Click);
@@ -164,10 +164,10 @@ namespace Display_test
             this.btnUndergrad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUndergrad.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUndergrad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnUndergrad.Location = new System.Drawing.Point(481, 76);
+            this.btnUndergrad.Location = new System.Drawing.Point(444, 70);
             this.btnUndergrad.Margin = new System.Windows.Forms.Padding(2);
             this.btnUndergrad.Name = "btnUndergrad";
-            this.btnUndergrad.Size = new System.Drawing.Size(407, 258);
+            this.btnUndergrad.Size = new System.Drawing.Size(375, 234);
             this.btnUndergrad.TabIndex = 9;
             this.btnUndergrad.UseVisualStyleBackColor = false;
             this.btnUndergrad.Click += new System.EventHandler(this.Undergrad_Click);
@@ -185,11 +185,11 @@ namespace Display_test
             this.btnDirectory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDirectory.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDirectory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnDirectory.Location = new System.Drawing.Point(71, 77);
+            this.btnDirectory.Location = new System.Drawing.Point(66, 71);
             this.btnDirectory.MaximumSize = new System.Drawing.Size(1300, 1250);
             this.btnDirectory.MinimumSize = new System.Drawing.Size(325, 200);
             this.btnDirectory.Name = "btnDirectory";
-            this.btnDirectory.Size = new System.Drawing.Size(405, 256);
+            this.btnDirectory.Size = new System.Drawing.Size(373, 232);
             this.btnDirectory.TabIndex = 8;
             this.btnDirectory.Text = "\r\n";
             this.btnDirectory.UseVisualStyleBackColor = false;
@@ -208,10 +208,10 @@ namespace Display_test
             this.btnGrad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGrad.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnGrad.Location = new System.Drawing.Point(892, 76);
+            this.btnGrad.Location = new System.Drawing.Point(823, 70);
             this.btnGrad.Margin = new System.Windows.Forms.Padding(2);
             this.btnGrad.Name = "btnGrad";
-            this.btnGrad.Size = new System.Drawing.Size(407, 258);
+            this.btnGrad.Size = new System.Drawing.Size(375, 234);
             this.btnGrad.TabIndex = 10;
             this.btnGrad.UseVisualStyleBackColor = false;
             this.btnGrad.Click += new System.EventHandler(this.Grad_Click);
@@ -225,11 +225,11 @@ namespace Display_test
             this.tlpTouch.Controls.Add(this.lblWelcome, 0, 0);
             this.tlpTouch.Controls.Add(this.picTouch, 1, 0);
             this.tlpTouch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpTouch.Location = new System.Drawing.Point(482, 601);
+            this.tlpTouch.Location = new System.Drawing.Point(445, 547);
             this.tlpTouch.Name = "tlpTouch";
             this.tlpTouch.RowCount = 1;
             this.tlpTouch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpTouch.Size = new System.Drawing.Size(405, 145);
+            this.tlpTouch.Size = new System.Drawing.Size(373, 131);
             this.tlpTouch.TabIndex = 15;
             // 
             // lblWelcome
@@ -243,7 +243,7 @@ namespace Display_test
             this.lblWelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblWelcome.Location = new System.Drawing.Point(3, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(237, 145);
+            this.lblWelcome.Size = new System.Drawing.Size(217, 131);
             this.lblWelcome.TabIndex = 14;
             this.lblWelcome.Text = "Touch Screen to Interact";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -253,10 +253,10 @@ namespace Display_test
             this.picTouch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picTouch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picTouch.Image = ((System.Drawing.Image)(resources.GetObject("picTouch.Image")));
-            this.picTouch.Location = new System.Drawing.Point(263, 20);
+            this.picTouch.Location = new System.Drawing.Point(243, 20);
             this.picTouch.Margin = new System.Windows.Forms.Padding(20);
             this.picTouch.Name = "picTouch";
-            this.picTouch.Size = new System.Drawing.Size(122, 105);
+            this.picTouch.Size = new System.Drawing.Size(110, 91);
             this.picTouch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picTouch.TabIndex = 15;
             this.picTouch.TabStop = false;
@@ -267,11 +267,11 @@ namespace Display_test
             this.picCOB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.picCOB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picCOB.Image = global::Display_test.Properties.Resources.re_sized;
-            this.picCOB.Location = new System.Drawing.Point(482, 3);
+            this.picCOB.Location = new System.Drawing.Point(445, 3);
             this.picCOB.MaximumSize = new System.Drawing.Size(900, 287);
             this.picCOB.MinimumSize = new System.Drawing.Size(157, 48);
             this.picCOB.Name = "picCOB";
-            this.picCOB.Size = new System.Drawing.Size(405, 68);
+            this.picCOB.Size = new System.Drawing.Size(373, 62);
             this.picCOB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCOB.TabIndex = 6;
             this.picCOB.TabStop = false;
@@ -285,7 +285,7 @@ namespace Display_test
             this.btnBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1250, 630);
+            this.btnBack.Location = new System.Drawing.Point(1130, 550);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(100, 100);
             this.btnBack.TabIndex = 3;
@@ -299,7 +299,7 @@ namespace Display_test
             this.btnHome.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Location = new System.Drawing.Point(1150, 630);
+            this.btnHome.Location = new System.Drawing.Point(1030, 550);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(100, 100);
             this.btnHome.TabIndex = 15;
@@ -345,7 +345,7 @@ namespace Display_test
             this.tlpDirectory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpDirectory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tlpDirectory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tlpDirectory.Size = new System.Drawing.Size(1370, 749);
+            this.tlpDirectory.Size = new System.Drawing.Size(1264, 681);
             this.tlpDirectory.TabIndex = 16;
             this.tlpDirectory.Click += new System.EventHandler(this.directoryActivity);
             // 
@@ -355,9 +355,9 @@ namespace Display_test
             this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStaff.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStaff.Location = new System.Drawing.Point(92, 190);
+            this.btnStaff.Location = new System.Drawing.Point(85, 173);
             this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(377, 368);
+            this.btnStaff.Size = new System.Drawing.Size(347, 334);
             this.btnStaff.TabIndex = 0;
             this.btnStaff.UseVisualStyleBackColor = true;
             this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
@@ -368,9 +368,9 @@ namespace Display_test
             this.btnFaculty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFaculty.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnFaculty.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFaculty.Location = new System.Drawing.Point(495, 190);
+            this.btnFaculty.Location = new System.Drawing.Point(456, 173);
             this.btnFaculty.Name = "btnFaculty";
-            this.btnFaculty.Size = new System.Drawing.Size(377, 368);
+            this.btnFaculty.Size = new System.Drawing.Size(347, 334);
             this.btnFaculty.TabIndex = 1;
             this.btnFaculty.UseVisualStyleBackColor = true;
             this.btnFaculty.Click += new System.EventHandler(this.btnFaculty_Click);
@@ -381,9 +381,9 @@ namespace Display_test
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(898, 190);
+            this.btnSearch.Location = new System.Drawing.Point(827, 173);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(377, 368);
+            this.btnSearch.Size = new System.Drawing.Size(347, 334);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -395,9 +395,9 @@ namespace Display_test
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tlpDirectory.SetColumnSpan(this.pictureBox2, 2);
             this.pictureBox2.Image = global::Display_test.Properties.Resources.re_sized;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 638);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 581);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(466, 108);
+            this.pictureBox2.Size = new System.Drawing.Size(429, 97);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -407,7 +407,7 @@ namespace Display_test
             this.btnDirectoryBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDirectoryBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
             this.btnDirectoryBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDirectoryBack.Location = new System.Drawing.Point(485, 274);
+            this.btnDirectoryBack.Location = new System.Drawing.Point(379, 206);
             this.btnDirectoryBack.MinimumSize = new System.Drawing.Size(400, 200);
             this.btnDirectoryBack.Name = "btnDirectoryBack";
             this.btnDirectoryBack.Size = new System.Drawing.Size(400, 200);
@@ -423,7 +423,7 @@ namespace Display_test
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
