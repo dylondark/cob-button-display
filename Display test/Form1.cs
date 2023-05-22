@@ -570,7 +570,6 @@ namespace Display_test
                 currentPage = CurrentPage.HomePage;
             }
             lblDebug.BringToFront();
-            inActivityWindow.stopTimer();
 
             // destroy chromium browser
             Controls.Remove(chromium);
