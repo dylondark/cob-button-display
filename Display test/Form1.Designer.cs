@@ -309,7 +309,7 @@ namespace Display_test
             this.btnHome.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Location = new System.Drawing.Point(1150, 630);
+            this.btnHome.Location = new System.Drawing.Point(1030, 550);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(100, 100);
             this.btnHome.TabIndex = 15;
@@ -323,7 +323,7 @@ namespace Display_test
             this.btnBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1250, 630);
+            this.btnBack.Location = new System.Drawing.Point(1130, 550);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(100, 100);
             this.btnBack.TabIndex = 3;
@@ -359,7 +359,7 @@ namespace Display_test
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
-            this.tlpMain.Size = new System.Drawing.Size(1370, 749);
+            this.tlpMain.Size = new System.Drawing.Size(1264, 681);
             this.tlpMain.TabIndex = 6;
             // 
             // btnHistory
@@ -371,9 +371,9 @@ namespace Display_test
             this.btnHistory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnHistory.Location = new System.Drawing.Point(932, 220);
+            this.btnHistory.Location = new System.Drawing.Point(860, 200);
             this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(322, 308);
+            this.btnHistory.Size = new System.Drawing.Size(297, 280);
             this.btnHistory.TabIndex = 37;
             this.btnHistory.UseVisualStyleBackColor = false;
             this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
@@ -387,9 +387,9 @@ namespace Display_test
             this.btnPartners.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartners.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartners.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartners.Location = new System.Drawing.Point(522, 220);
+            this.btnPartners.Location = new System.Drawing.Point(482, 200);
             this.btnPartners.Name = "btnPartners";
-            this.btnPartners.Size = new System.Drawing.Size(322, 308);
+            this.btnPartners.Size = new System.Drawing.Size(297, 280);
             this.btnPartners.TabIndex = 36;
             this.btnPartners.UseVisualStyleBackColor = false;
             this.btnPartners.Click += new System.EventHandler(this.btnPartners_Click);
@@ -403,9 +403,9 @@ namespace Display_test
             this.btnPrograms.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPrograms.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrograms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPrograms.Location = new System.Drawing.Point(112, 220);
+            this.btnPrograms.Location = new System.Drawing.Point(104, 200);
             this.btnPrograms.Name = "btnPrograms";
-            this.btnPrograms.Size = new System.Drawing.Size(322, 308);
+            this.btnPrograms.Size = new System.Drawing.Size(297, 280);
             this.btnPrograms.TabIndex = 35;
             this.btnPrograms.UseVisualStyleBackColor = false;
             this.btnPrograms.Click += new System.EventHandler(this.btnPrograms_Click);
@@ -416,10 +416,10 @@ namespace Display_test
             this.picFisher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picFisher.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picFisher.Image = global::Display_test.Properties.Resources.Fisher2;
-            this.picFisher.Location = new System.Drawing.Point(109, 531);
+            this.picFisher.Location = new System.Drawing.Point(101, 483);
             this.picFisher.Margin = new System.Windows.Forms.Padding(0);
             this.picFisher.Name = "picFisher";
-            this.picFisher.Size = new System.Drawing.Size(328, 218);
+            this.picFisher.Size = new System.Drawing.Size(303, 198);
             this.picFisher.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFisher.TabIndex = 34;
             this.picFisher.TabStop = false;
@@ -434,12 +434,12 @@ namespace Display_test
             this.tlpTouch.Controls.Add(this.lblTouch, 0, 0);
             this.tlpTouch.Controls.Add(this.picTouch, 1, 0);
             this.tlpTouch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpTouch.Location = new System.Drawing.Point(437, 0);
+            this.tlpTouch.Location = new System.Drawing.Point(404, 0);
             this.tlpTouch.Margin = new System.Windows.Forms.Padding(0);
             this.tlpTouch.Name = "tlpTouch";
             this.tlpTouch.RowCount = 1;
             this.tlpTouch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpTouch.Size = new System.Drawing.Size(492, 217);
+            this.tlpTouch.Size = new System.Drawing.Size(453, 197);
             this.tlpTouch.TabIndex = 7;
             // 
             // lblTouch
@@ -452,7 +452,7 @@ namespace Display_test
             this.lblTouch.Location = new System.Drawing.Point(0, 0);
             this.lblTouch.Margin = new System.Windows.Forms.Padding(0);
             this.lblTouch.Name = "lblTouch";
-            this.lblTouch.Size = new System.Drawing.Size(295, 217);
+            this.lblTouch.Size = new System.Drawing.Size(271, 197);
             this.lblTouch.TabIndex = 30;
             this.lblTouch.Text = "Touch Screen to Interact";
             this.lblTouch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -463,10 +463,10 @@ namespace Display_test
             this.picTouch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picTouch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picTouch.Image = global::Display_test.Properties.Resources.touch;
-            this.picTouch.Location = new System.Drawing.Point(315, 20);
+            this.picTouch.Location = new System.Drawing.Point(291, 20);
             this.picTouch.Margin = new System.Windows.Forms.Padding(20);
             this.picTouch.Name = "picTouch";
-            this.picTouch.Size = new System.Drawing.Size(157, 177);
+            this.picTouch.Size = new System.Drawing.Size(142, 157);
             this.picTouch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picTouch.TabIndex = 5;
             this.picTouch.TabStop = false;
@@ -476,9 +476,9 @@ namespace Display_test
             this.picCOB.BackColor = System.Drawing.Color.Transparent;
             this.picCOB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picCOB.Image = global::Display_test.Properties.Resources.CBALogo2;
-            this.picCOB.Location = new System.Drawing.Point(932, 534);
+            this.picCOB.Location = new System.Drawing.Point(860, 486);
             this.picCOB.Name = "picCOB";
-            this.picCOB.Size = new System.Drawing.Size(322, 212);
+            this.picCOB.Size = new System.Drawing.Size(297, 192);
             this.picCOB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCOB.TabIndex = 38;
             this.picCOB.TabStop = false;
@@ -499,9 +499,9 @@ namespace Display_test
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnPartnerBack);
             this.Controls.Add(this.tlpPartners);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
