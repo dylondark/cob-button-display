@@ -540,7 +540,8 @@ namespace Display_test
         void showWebPage(String url)
         {
             initBrowser();   
-            currentPage = CurrentPage.FirstLevelWebpage;
+            if (currentPage == CurrentPage.HomePage)
+                currentPage = CurrentPage.FirstLevelWebpage;
             chromium.Load(url);
             firstAddr = url;
             chromium.BringToFront();
@@ -557,7 +558,17 @@ namespace Display_test
             writeStat(statCodes.PageClose, auto ? "auto" : "back");
             btnHome.SendToBack();
             btnBack.SendToBack();
-            tlpMain.BringToFront();
+            if (currentPage == CurrentPage.SecondLevelButtonsPage && !auto)
+            {
+                tlpPartners.BringToFront(); 
+                btnPartnerBack.BringToFront();
+            }
+            else
+            {
+                inActivityWindow.stopTimer();
+                tlpMain.BringToFront();
+                currentPage = CurrentPage.HomePage;
+            }
             lblDebug.BringToFront();
             inActivityWindow.stopTimer();
 
