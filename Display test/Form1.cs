@@ -115,6 +115,7 @@ namespace Display_test
         {
             PageClose,
             Programs, Partners, History,
+            Partner1, Partner2, Partner3, Partner4, Partner5, Partner6, Partner7, Partner8, Partner9,
             DebugOn, DebugOff, 
             BrowserUrlChange,
             Back,
@@ -360,47 +361,55 @@ namespace Display_test
 
         private void btnPartner1_Click(object sender, EventArgs e)
         {
-            // writestat
+            writeStat(statCodes.Partner1);
             showWebPage("https://www.ohiocat.com/");
         }
 
         private void btnPartner2_Click(object sender, EventArgs e)
         {
+            writeStat(statCodes.Partner2);
             showWebPage("https://www.parker.com/us/en/home.html");
         }
 
         private void btnPartner3_Click(object sender, EventArgs e)
         {
+            writeStat(statCodes.Partner3);
             showWebPage("https://www.palmerholland.com/");
         }
 
         private void btnPartner4_Click(object sender, EventArgs e)
         {
+            writeStat(statCodes.Partner4);
             showWebPage("https://www.mrisoftware.com/");
         }
 
         private void btnPartner5_Click(object sender, EventArgs e)
         {
+            writeStat(statCodes.Partner5);
             showWebPage("https://www.hyland.com/en");
         }
 
         private void btnPartner6_Click(object sender, EventArgs e)
         {
+            writeStat(statCodes.Partner6);
             showWebPage("https://www.aircontrolproducts.com/");
         }
 
         private void btnPartner7_Click(object sender, EventArgs e)
         {
+            writeStat(statCodes.Partner7);
             showWebPage("https://www.jmsmucker.com/");
         }
 
         private void btnPartner8_Click(object sender, EventArgs e)
         {
+            writeStat(statCodes.Partner8);
             showWebPage("https://www.ritehite.com/en/am");
         }
 
         private void btnPartner9_Click(object sender, EventArgs e)
         {
+            writeStat(statCodes.Partner9);
             showWebPage("https://www.pensketruckrental.com/");
         }
 
