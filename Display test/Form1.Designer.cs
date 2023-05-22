@@ -93,7 +93,7 @@ namespace Display_test
             this.btnHome.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Location = new System.Drawing.Point(1150, 630);
+            this.btnHome.Location = new System.Drawing.Point(1030, 550);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(100, 100);
             this.btnHome.TabIndex = 15;
@@ -107,7 +107,7 @@ namespace Display_test
             this.btnBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1250, 630);
+            this.btnBack.Location = new System.Drawing.Point(1130, 550);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(100, 100);
             this.btnBack.TabIndex = 3;
@@ -147,7 +147,7 @@ namespace Display_test
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
             this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpMain.Size = new System.Drawing.Size(1370, 749);
+            this.tlpMain.Size = new System.Drawing.Size(1264, 681);
             this.tlpMain.TabIndex = 6;
             // 
             // btnSocialMedia
@@ -160,9 +160,9 @@ namespace Display_test
             this.btnSocialMedia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSocialMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSocialMedia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnSocialMedia.Location = new System.Drawing.Point(878, 353);
+            this.btnSocialMedia.Location = new System.Drawing.Point(810, 322);
             this.btnSocialMedia.Name = "btnSocialMedia";
-            this.btnSocialMedia.Size = new System.Drawing.Size(377, 293);
+            this.btnSocialMedia.Size = new System.Drawing.Size(347, 266);
             this.btnSocialMedia.TabIndex = 37;
             this.btnSocialMedia.UseVisualStyleBackColor = false;
             this.btnSocialMedia.Click += new System.EventHandler(this.btnSocialMedia_Click);
@@ -177,9 +177,9 @@ namespace Display_test
             this.btnExpBusiness.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnExpBusiness.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpBusiness.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnExpBusiness.Location = new System.Drawing.Point(495, 353);
+            this.btnExpBusiness.Location = new System.Drawing.Point(457, 322);
             this.btnExpBusiness.Name = "btnExpBusiness";
-            this.btnExpBusiness.Size = new System.Drawing.Size(377, 293);
+            this.btnExpBusiness.Size = new System.Drawing.Size(347, 266);
             this.btnExpBusiness.TabIndex = 36;
             this.btnExpBusiness.UseVisualStyleBackColor = false;
             this.btnExpBusiness.Click += new System.EventHandler(this.btnExpBusiness_Click);
@@ -194,9 +194,9 @@ namespace Display_test
             this.btnAlumni.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAlumni.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlumni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAlumni.Location = new System.Drawing.Point(112, 353);
+            this.btnAlumni.Location = new System.Drawing.Point(104, 322);
             this.btnAlumni.Name = "btnAlumni";
-            this.btnAlumni.Size = new System.Drawing.Size(377, 293);
+            this.btnAlumni.Size = new System.Drawing.Size(347, 266);
             this.btnAlumni.TabIndex = 35;
             this.btnAlumni.UseVisualStyleBackColor = false;
             this.btnAlumni.Click += new System.EventHandler(this.btnAlumni_Click);
@@ -208,10 +208,10 @@ namespace Display_test
             this.tlpMain.SetColumnSpan(this.picLogo, 2);
             this.picLogo.Dock = System.Windows.Forms.DockStyle.Right;
             this.picLogo.Image = global::Display_test.Properties.Resources.marketinglogo;
-            this.picLogo.Location = new System.Drawing.Point(1036, 37);
+            this.picLogo.Location = new System.Drawing.Point(930, 34);
             this.picLogo.Margin = new System.Windows.Forms.Padding(0);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(334, 157);
+            this.picLogo.Size = new System.Drawing.Size(334, 143);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 34;
             this.picLogo.TabStop = false;
@@ -223,10 +223,10 @@ namespace Display_test
             this.lblHashtags.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblHashtags.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHashtags.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblHashtags.Location = new System.Drawing.Point(3, 652);
+            this.lblHashtags.Location = new System.Drawing.Point(3, 594);
             this.lblHashtags.Margin = new System.Windows.Forms.Padding(3);
             this.lblHashtags.Name = "lblHashtags";
-            this.lblHashtags.Size = new System.Drawing.Size(1364, 46);
+            this.lblHashtags.Size = new System.Drawing.Size(1258, 41);
             this.lblHashtags.TabIndex = 33;
             this.lblHashtags.Text = "#theuniversityofakron    #zips    #uakronbusiness    #experiencebusiness    #uakr" +
     "onmarketing";
@@ -241,12 +241,12 @@ namespace Display_test
             this.tlpTouch.Controls.Add(this.lblTouch, 0, 0);
             this.tlpTouch.Controls.Add(this.picTouch, 1, 0);
             this.tlpTouch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpTouch.Location = new System.Drawing.Point(492, 37);
+            this.tlpTouch.Location = new System.Drawing.Point(454, 34);
             this.tlpTouch.Margin = new System.Windows.Forms.Padding(0);
             this.tlpTouch.Name = "tlpTouch";
             this.tlpTouch.RowCount = 1;
             this.tlpTouch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpTouch.Size = new System.Drawing.Size(383, 157);
+            this.tlpTouch.Size = new System.Drawing.Size(353, 143);
             this.tlpTouch.TabIndex = 7;
             // 
             // lblTouch
@@ -259,7 +259,7 @@ namespace Display_test
             this.lblTouch.Location = new System.Drawing.Point(0, 0);
             this.lblTouch.Margin = new System.Windows.Forms.Padding(0);
             this.lblTouch.Name = "lblTouch";
-            this.lblTouch.Size = new System.Drawing.Size(229, 157);
+            this.lblTouch.Size = new System.Drawing.Size(211, 143);
             this.lblTouch.TabIndex = 30;
             this.lblTouch.Text = "Touch Screen to Interact";
             this.lblTouch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -270,10 +270,10 @@ namespace Display_test
             this.picTouch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picTouch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picTouch.Image = global::Display_test.Properties.Resources.touch;
-            this.picTouch.Location = new System.Drawing.Point(249, 20);
+            this.picTouch.Location = new System.Drawing.Point(231, 20);
             this.picTouch.Margin = new System.Windows.Forms.Padding(20);
             this.picTouch.Name = "picTouch";
-            this.picTouch.Size = new System.Drawing.Size(114, 117);
+            this.picTouch.Size = new System.Drawing.Size(102, 103);
             this.picTouch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picTouch.TabIndex = 5;
             this.picTouch.TabStop = false;
@@ -292,14 +292,14 @@ namespace Display_test
             this.tlpHandles.Controls.Add(this.lblTwitter, 1, 1);
             this.tlpHandles.Controls.Add(this.lblFB, 1, 2);
             this.tlpHandles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpHandles.Location = new System.Drawing.Point(0, 37);
+            this.tlpHandles.Location = new System.Drawing.Point(0, 34);
             this.tlpHandles.Margin = new System.Windows.Forms.Padding(0);
             this.tlpHandles.Name = "tlpHandles";
             this.tlpHandles.RowCount = 3;
             this.tlpHandles.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tlpHandles.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tlpHandles.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
-            this.tlpHandles.Size = new System.Drawing.Size(492, 157);
+            this.tlpHandles.Size = new System.Drawing.Size(454, 143);
             this.tlpHandles.TabIndex = 27;
             // 
             // picIG
@@ -309,7 +309,7 @@ namespace Display_test
             this.picIG.Location = new System.Drawing.Point(10, 10);
             this.picIG.Margin = new System.Windows.Forms.Padding(10);
             this.picIG.Name = "picIG";
-            this.picIG.Size = new System.Drawing.Size(39, 31);
+            this.picIG.Size = new System.Drawing.Size(34, 27);
             this.picIG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picIG.TabIndex = 0;
             this.picIG.TabStop = false;
@@ -318,9 +318,9 @@ namespace Display_test
             // 
             this.picTwitter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picTwitter.Image = global::Display_test.Properties.Resources.twitter;
-            this.picTwitter.Location = new System.Drawing.Point(3, 54);
+            this.picTwitter.Location = new System.Drawing.Point(3, 50);
             this.picTwitter.Name = "picTwitter";
-            this.picTwitter.Size = new System.Drawing.Size(53, 45);
+            this.picTwitter.Size = new System.Drawing.Size(48, 41);
             this.picTwitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picTwitter.TabIndex = 1;
             this.picTwitter.TabStop = false;
@@ -329,10 +329,10 @@ namespace Display_test
             // 
             this.picFB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picFB.Image = global::Display_test.Properties.Resources.facebook;
-            this.picFB.Location = new System.Drawing.Point(10, 112);
+            this.picFB.Location = new System.Drawing.Point(10, 104);
             this.picFB.Margin = new System.Windows.Forms.Padding(10);
             this.picFB.Name = "picFB";
-            this.picFB.Size = new System.Drawing.Size(39, 35);
+            this.picFB.Size = new System.Drawing.Size(34, 29);
             this.picFB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFB.TabIndex = 2;
             this.picFB.TabStop = false;
@@ -341,9 +341,9 @@ namespace Display_test
             // 
             this.lblIG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblIG.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIG.Location = new System.Drawing.Point(62, 0);
+            this.lblIG.Location = new System.Drawing.Point(57, 0);
             this.lblIG.Name = "lblIG";
-            this.lblIG.Size = new System.Drawing.Size(427, 51);
+            this.lblIG.Size = new System.Drawing.Size(394, 47);
             this.lblIG.TabIndex = 3;
             this.lblIG.Text = "@uakronmarketing @fishersalesua @uakronama";
             this.lblIG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -352,9 +352,9 @@ namespace Display_test
             // 
             this.lblTwitter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTwitter.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTwitter.Location = new System.Drawing.Point(62, 51);
+            this.lblTwitter.Location = new System.Drawing.Point(57, 47);
             this.lblTwitter.Name = "lblTwitter";
-            this.lblTwitter.Size = new System.Drawing.Size(427, 51);
+            this.lblTwitter.Size = new System.Drawing.Size(394, 47);
             this.lblTwitter.TabIndex = 4;
             this.lblTwitter.Text = "@uakronmarketing @uakronbusiness @TaylorInst";
             this.lblTwitter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -363,9 +363,9 @@ namespace Display_test
             // 
             this.lblFB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblFB.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFB.Location = new System.Drawing.Point(62, 102);
+            this.lblFB.Location = new System.Drawing.Point(57, 94);
             this.lblFB.Name = "lblFB";
-            this.lblFB.Size = new System.Drawing.Size(427, 55);
+            this.lblFB.Size = new System.Drawing.Size(394, 49);
             this.lblFB.TabIndex = 5;
             this.lblFB.Text = "@uakronmarketing";
             this.lblFB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -385,7 +385,7 @@ namespace Display_test
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
