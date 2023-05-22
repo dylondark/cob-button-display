@@ -358,6 +358,52 @@ namespace Display_test
             inActivityWindow.stopTimer();
         }
 
+        private void btnPartner1_Click(object sender, EventArgs e)
+        {
+            // writestat
+            showWebPage("https://www.ohiocat.com/");
+        }
+
+        private void btnPartner2_Click(object sender, EventArgs e)
+        {
+            showWebPage("https://www.parker.com/us/en/home.html");
+        }
+
+        private void btnPartner3_Click(object sender, EventArgs e)
+        {
+            showWebPage("https://www.palmerholland.com/");
+        }
+
+        private void btnPartner4_Click(object sender, EventArgs e)
+        {
+            showWebPage("https://www.mrisoftware.com/");
+        }
+
+        private void btnPartner5_Click(object sender, EventArgs e)
+        {
+            showWebPage("https://www.hyland.com/en");
+        }
+
+        private void btnPartner6_Click(object sender, EventArgs e)
+        {
+            showWebPage("https://www.aircontrolproducts.com/");
+        }
+
+        private void btnPartner7_Click(object sender, EventArgs e)
+        {
+            showWebPage("https://www.jmsmucker.com/");
+        }
+
+        private void btnPartner8_Click(object sender, EventArgs e)
+        {
+            showWebPage("https://www.ritehite.com/en/am");
+        }
+
+        private void btnPartner9_Click(object sender, EventArgs e)
+        {
+            showWebPage("https://www.pensketruckrental.com/");
+        }
+
         #endregion
 
         #region "activity"

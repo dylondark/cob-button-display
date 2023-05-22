@@ -159,6 +159,7 @@ namespace Display_test
             this.btnPartner9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPartner9.TabIndex = 46;
             this.btnPartner9.TabStop = false;
+            this.btnPartner9.Click += new System.EventHandler(this.btnPartner9_Click);
             // 
             // btnPartner8
             // 
@@ -174,6 +175,7 @@ namespace Display_test
             this.btnPartner8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPartner8.TabIndex = 45;
             this.btnPartner8.TabStop = false;
+            this.btnPartner8.Click += new System.EventHandler(this.btnPartner8_Click);
             // 
             // btnPartner7
             // 
@@ -189,6 +191,7 @@ namespace Display_test
             this.btnPartner7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPartner7.TabIndex = 44;
             this.btnPartner7.TabStop = false;
+            this.btnPartner7.Click += new System.EventHandler(this.btnPartner7_Click);
             // 
             // btnPartner6
             // 
@@ -204,6 +207,7 @@ namespace Display_test
             this.btnPartner6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPartner6.TabIndex = 43;
             this.btnPartner6.TabStop = false;
+            this.btnPartner6.Click += new System.EventHandler(this.btnPartner6_Click);
             // 
             // btnPartner5
             // 
@@ -219,6 +223,7 @@ namespace Display_test
             this.btnPartner5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPartner5.TabIndex = 42;
             this.btnPartner5.TabStop = false;
+            this.btnPartner5.Click += new System.EventHandler(this.btnPartner5_Click);
             // 
             // btnPartner4
             // 
@@ -234,6 +239,7 @@ namespace Display_test
             this.btnPartner4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPartner4.TabIndex = 41;
             this.btnPartner4.TabStop = false;
+            this.btnPartner4.Click += new System.EventHandler(this.btnPartner4_Click);
             // 
             // btnPartner3
             // 
@@ -249,6 +255,7 @@ namespace Display_test
             this.btnPartner3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPartner3.TabIndex = 40;
             this.btnPartner3.TabStop = false;
+            this.btnPartner3.Click += new System.EventHandler(this.btnPartner3_Click);
             // 
             // btnPartner2
             // 
@@ -264,6 +271,7 @@ namespace Display_test
             this.btnPartner2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPartner2.TabIndex = 39;
             this.btnPartner2.TabStop = false;
+            this.btnPartner2.Click += new System.EventHandler(this.btnPartner2_Click);
             // 
             // btnPartner1
             // 
@@ -279,6 +287,7 @@ namespace Display_test
             this.btnPartner1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPartner1.TabIndex = 38;
             this.btnPartner1.TabStop = false;
+            this.btnPartner1.Click += new System.EventHandler(this.btnPartner1_Click);
             // 
             // lblPartners
             // 
