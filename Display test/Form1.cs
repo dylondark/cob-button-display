@@ -77,14 +77,15 @@ namespace Display_test
             picFisher.Margin = picturePadding;
 
             // back buttons scaling
-            int buttonDim = Convert.ToInt32((scaleFactor - 20) * 4f * resFactor); // offset scale factor to keep buttons consistent
+            int buttonDim = Convert.ToInt32((scaleFactor - 20) * 3f * resFactor); // offset scale factor to keep buttons consistent
             btnBack.Width = buttonDim;
             btnBack.Height = buttonDim;
             btnHome.Width = buttonDim;
             btnHome.Height = buttonDim;
 
             // back button positions
-            int[] buttonPos = new int[] {this.Width - 20 - buttonDim, this.Height - 20 - buttonDim};
+            int edgeDistance = Convert.ToInt32((scaleFactor - 20) * 2f * resFactor); // distance in pixels from edges of screen for back buttons
+            int[] buttonPos = new int[] {this.Width - edgeDistance - buttonDim, this.Height - edgeDistance - buttonDim};
             btnBack.Left = buttonPos[0];
             btnBack.Top = buttonPos[1];
             btnHome.Left = buttonPos[0] - buttonDim;
@@ -93,8 +94,8 @@ namespace Display_test
             // partner back button
             btnPartnerBack.Width = buttonDim;
             btnPartnerBack.Height = buttonDim;
-            btnPartnerBack.Left = this.Width - 20 - btnPartnerBack.Width;
-            btnPartnerBack.Top = this.Height - 20 - btnPartnerBack.Height;
+            btnPartnerBack.Left = this.Width - edgeDistance - btnPartnerBack.Width;
+            btnPartnerBack.Top = this.Height - edgeDistance - btnPartnerBack.Height;
         }
 
         // magic function that fixes repaint flicker
