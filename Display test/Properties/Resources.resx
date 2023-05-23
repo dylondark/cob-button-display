@@ -118,26 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="historybutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\History3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MicrosoftTeams-image (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (4)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="instagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\instagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PD Picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PD Picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Black and white history1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Black and white history1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="marketinglogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (39).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MicrosoftTeams-image-rs2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MicrosoftTeams-image-rs2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ritehite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ritehite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +178,8 @@
   <data name="Fisherlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fisherlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="undergraduate3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\undergraduate3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aircontrol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aircontrol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Partners" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Partners.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,14 +193,17 @@
   <data name="Graduate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graduate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="penske" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\penske.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="alumni_spotlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alumni spotlight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="backbutton_grayed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backbutton_grayed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="parker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\parker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="homebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\homebutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MicrosoftTeams-image-rs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image-rs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,8 +226,14 @@
   <data name="News and Events2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\News and Events2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PD Picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PD Picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OhioCAT_whiteborder_tp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OhioCAT-whiteborder-tp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add a heading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add a heading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ritehite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ritehite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fisher" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fisher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,14 +244,17 @@
   <data name="semitransparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\semitransparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aircontrol" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aircontrol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backgroundFisher (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundFisher (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="social_media" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\social media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Partners1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Partners1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fisher2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fisher2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Graduate2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Graduate2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -264,6 +267,9 @@
   </data>
   <data name="Executive Education" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Executive Education.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="palmerholland_tp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\palmerholland-tp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UAWordmark_gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UAWordmark_gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,12 +286,6 @@
   <data name="TopText4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TopText4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CBALogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CBALogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="re-sized" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\re-sized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MicrosoftTeams-image (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -301,6 +301,9 @@
   <data name="touch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="instagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\instagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Add a heading (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Add a heading (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -310,11 +313,17 @@
   <data name="twitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\twitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="undergraduate3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undergraduate3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MicrosoftTeams-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MicrosoftTeams-image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="History" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\History.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Top Text3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Top Text3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="undergraduate2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\undergraduate2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,29 +343,29 @@
   <data name="marketing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marketing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Top Text3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Top Text3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="historybutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\History3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hyland-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hyland-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backgroundFisher (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backgroundFisher (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="re-sized" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\re-sized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="backgroundFisher (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgroundFisher (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Add a heading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add a heading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MicrosoftTeams-image-rs2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MicrosoftTeams-image-rs2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fisher2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fisher2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="parker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="news and events" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\news and events.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="homebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\homebutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CBALogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CBALogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="polsky" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\polsky.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -370,13 +379,7 @@
   <data name="mrisoftware" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mrisoftware.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="penske" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\penske.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OhioCAT_whiteborder_tp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OhioCAT-whiteborder-tp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="palmerholland_tp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\palmerholland-tp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fisherpartnerbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fisherpartnerbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

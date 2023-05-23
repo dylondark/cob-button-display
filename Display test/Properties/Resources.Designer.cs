@@ -403,6 +403,16 @@ namespace Display_test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fisherpartnerbg {
+            get {
+                object obj = ResourceManager.GetObject("fisherpartnerbg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Graduate {
             get {
                 object obj = ResourceManager.GetObject("Graduate", resourceCulture);

@@ -104,7 +104,7 @@ namespace Display_test
             // 
             // tlpPartners
             // 
-            this.tlpPartners.BackgroundImage = global::Display_test.Properties.Resources.fishernewbg;
+            this.tlpPartners.BackgroundImage = global::Display_test.Properties.Resources.fisherpartnerbg;
             this.tlpPartners.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tlpPartners.ColumnCount = 5;
             this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
@@ -133,7 +133,7 @@ namespace Display_test
             this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tlpPartners.Size = new System.Drawing.Size(1370, 749);
+            this.tlpPartners.Size = new System.Drawing.Size(1264, 681);
             this.tlpPartners.TabIndex = 16;
             // 
             // btnPartner9
@@ -145,9 +145,9 @@ namespace Display_test
             this.btnPartner9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartner9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartner9.Location = new System.Drawing.Point(850, 526);
+            this.btnPartner9.Location = new System.Drawing.Point(785, 479);
             this.btnPartner9.Name = "btnPartner9";
-            this.btnPartner9.Size = new System.Drawing.Size(322, 181);
+            this.btnPartner9.Size = new System.Drawing.Size(297, 164);
             this.btnPartner9.TabIndex = 46;
             this.btnPartner9.TabStop = false;
             this.btnPartner9.UseVisualStyleBackColor = false;
@@ -162,9 +162,9 @@ namespace Display_test
             this.btnPartner8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner8.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartner8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartner8.Location = new System.Drawing.Point(522, 526);
+            this.btnPartner8.Location = new System.Drawing.Point(482, 479);
             this.btnPartner8.Name = "btnPartner8";
-            this.btnPartner8.Size = new System.Drawing.Size(322, 181);
+            this.btnPartner8.Size = new System.Drawing.Size(297, 164);
             this.btnPartner8.TabIndex = 45;
             this.btnPartner8.TabStop = false;
             this.btnPartner8.UseVisualStyleBackColor = false;
@@ -179,9 +179,9 @@ namespace Display_test
             this.btnPartner7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartner7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartner7.Location = new System.Drawing.Point(194, 526);
+            this.btnPartner7.Location = new System.Drawing.Point(179, 479);
             this.btnPartner7.Name = "btnPartner7";
-            this.btnPartner7.Size = new System.Drawing.Size(322, 181);
+            this.btnPartner7.Size = new System.Drawing.Size(297, 164);
             this.btnPartner7.TabIndex = 44;
             this.btnPartner7.TabStop = false;
             this.btnPartner7.UseVisualStyleBackColor = false;
@@ -196,9 +196,9 @@ namespace Display_test
             this.btnPartner6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartner6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartner6.Location = new System.Drawing.Point(850, 339);
+            this.btnPartner6.Location = new System.Drawing.Point(785, 309);
             this.btnPartner6.Name = "btnPartner6";
-            this.btnPartner6.Size = new System.Drawing.Size(322, 181);
+            this.btnPartner6.Size = new System.Drawing.Size(297, 164);
             this.btnPartner6.TabIndex = 43;
             this.btnPartner6.TabStop = false;
             this.btnPartner6.UseVisualStyleBackColor = false;
@@ -213,9 +213,9 @@ namespace Display_test
             this.btnPartner5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartner5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartner5.Location = new System.Drawing.Point(522, 339);
+            this.btnPartner5.Location = new System.Drawing.Point(482, 309);
             this.btnPartner5.Name = "btnPartner5";
-            this.btnPartner5.Size = new System.Drawing.Size(322, 181);
+            this.btnPartner5.Size = new System.Drawing.Size(297, 164);
             this.btnPartner5.TabIndex = 42;
             this.btnPartner5.TabStop = false;
             this.btnPartner5.UseVisualStyleBackColor = false;
@@ -230,9 +230,9 @@ namespace Display_test
             this.btnPartner4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartner4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartner4.Location = new System.Drawing.Point(194, 339);
+            this.btnPartner4.Location = new System.Drawing.Point(179, 309);
             this.btnPartner4.Name = "btnPartner4";
-            this.btnPartner4.Size = new System.Drawing.Size(322, 181);
+            this.btnPartner4.Size = new System.Drawing.Size(297, 164);
             this.btnPartner4.TabIndex = 41;
             this.btnPartner4.TabStop = false;
             this.btnPartner4.UseVisualStyleBackColor = false;
@@ -247,9 +247,9 @@ namespace Display_test
             this.btnPartner3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartner3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartner3.Location = new System.Drawing.Point(850, 152);
+            this.btnPartner3.Location = new System.Drawing.Point(785, 139);
             this.btnPartner3.Name = "btnPartner3";
-            this.btnPartner3.Size = new System.Drawing.Size(322, 181);
+            this.btnPartner3.Size = new System.Drawing.Size(297, 164);
             this.btnPartner3.TabIndex = 40;
             this.btnPartner3.TabStop = false;
             this.btnPartner3.UseVisualStyleBackColor = false;
@@ -264,9 +264,9 @@ namespace Display_test
             this.btnPartner2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartner2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartner2.Location = new System.Drawing.Point(522, 152);
+            this.btnPartner2.Location = new System.Drawing.Point(482, 139);
             this.btnPartner2.Name = "btnPartner2";
-            this.btnPartner2.Size = new System.Drawing.Size(322, 181);
+            this.btnPartner2.Size = new System.Drawing.Size(297, 164);
             this.btnPartner2.TabIndex = 39;
             this.btnPartner2.TabStop = false;
             this.btnPartner2.UseVisualStyleBackColor = false;
@@ -281,9 +281,9 @@ namespace Display_test
             this.btnPartner1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPartner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPartner1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartner1.Location = new System.Drawing.Point(194, 152);
+            this.btnPartner1.Location = new System.Drawing.Point(179, 139);
             this.btnPartner1.Name = "btnPartner1";
-            this.btnPartner1.Size = new System.Drawing.Size(322, 181);
+            this.btnPartner1.Size = new System.Drawing.Size(297, 164);
             this.btnPartner1.TabIndex = 38;
             this.btnPartner1.TabStop = false;
             this.btnPartner1.UseVisualStyleBackColor = false;
@@ -295,9 +295,9 @@ namespace Display_test
             this.tlpPartners.SetColumnSpan(this.lblPartners, 3);
             this.lblPartners.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPartners.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold);
-            this.lblPartners.Location = new System.Drawing.Point(194, 0);
+            this.lblPartners.Location = new System.Drawing.Point(179, 0);
             this.lblPartners.Name = "lblPartners";
-            this.lblPartners.Size = new System.Drawing.Size(978, 149);
+            this.lblPartners.Size = new System.Drawing.Size(903, 136);
             this.lblPartners.TabIndex = 0;
             this.lblPartners.Text = "Our Premiere Partners";
             this.lblPartners.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -499,9 +499,9 @@ namespace Display_test
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.btnPartnerBack);
             this.Controls.Add(this.tlpPartners);
-            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
