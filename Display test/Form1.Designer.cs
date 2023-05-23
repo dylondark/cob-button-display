@@ -381,6 +381,7 @@ namespace Display_test
             this.btnMove.Size = new System.Drawing.Size(50, 50);
             this.btnMove.TabIndex = 19;
             this.btnMove.UseVisualStyleBackColor = false;
+            this.btnMove.Click += new System.EventHandler(this.btnMove_Click);
             // 
             // Form1
             // 

@@ -30,7 +30,7 @@ namespace Display_test
         private bool debugEnabled = false;
         private string backAddr = "";
         private string firstAddr = "";
-
+        private bool buttonsRight = true;
         private Timer timerRef;
         private string statsFile;
         private object statsLock = new object();
@@ -104,6 +104,8 @@ namespace Display_test
             btnMove.Height = buttonDim / 2;
             btnMove.Left = this.Width - edgeDistance - btnMove.Width;
             btnMove.Top = this.Height - edgeDistance - btnMove.Height - buttonDim;
+            buttonsRight = true; // autoscale will always set the buttons back to the right. lazy, but how often will the resolution be dynamically changing on the actual displays
+            btnMove.BackgroundImage = Properties.Resources.leftarrow;
         }
 
         // magic function that fixes repaint flicker
@@ -352,6 +354,33 @@ namespace Display_test
                  */
                 if (!chromium.IsLoading)
                     closeWebpage();
+            }
+        }
+
+        // handles buttons moving left or right after clicking btnmove
+        private void btnMove_Click(object sender, EventArgs e)
+        {
+            int edgeDistance;
+            int buttonDim = btnBack.Width;
+            if (buttonsRight)
+            {
+                // move left
+                edgeDistance = this.Width - btnBack.Left - buttonDim;
+                btnMove.Left = edgeDistance;
+                btnBack.Left = edgeDistance + buttonDim;
+                btnHome.Left = edgeDistance;
+                buttonsRight = false;
+                btnMove.BackgroundImage = Properties.Resources.rightarrow;
+            }
+            else
+            {
+                // move right
+                edgeDistance = btnHome.Left;
+                btnMove.Left = this.Width - edgeDistance - (buttonDim / 2);
+                btnBack.Left = this.Width - edgeDistance - buttonDim;
+                btnHome.Left = this.Width - edgeDistance - (buttonDim * 2);
+                buttonsRight = true;
+                btnMove.BackgroundImage = Properties.Resources.leftarrow;
             }
         }
 
