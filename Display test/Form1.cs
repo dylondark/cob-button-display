@@ -49,6 +49,7 @@ namespace Display_test
             lblDebug.Hide();
             btnHome.SendToBack();
             btnBack.SendToBack();
+            btnMove.SendToBack();
             lblDebug.Text = "";
 
             FormBorderStyle = FormBorderStyle.None;
@@ -548,6 +549,7 @@ namespace Display_test
             chromium.BringToFront();
             btnBack.BringToFront();
             btnHome.BringToFront();
+            btnMove.BringToFront();
             tlpMain.SendToBack();
 
             inActivityWindow.startTimer();
@@ -559,6 +561,7 @@ namespace Display_test
             writeStat(statCodes.PageClose, auto ? "auto" : "back");
             btnHome.SendToBack();
             btnBack.SendToBack();
+            btnMove.SendToBack();
             if (currentPage == CurrentPage.SecondLevelButtonsPage && !auto)
             {
                 tlpPartners.BringToFront(); 
