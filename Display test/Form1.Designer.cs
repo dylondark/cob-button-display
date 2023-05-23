@@ -497,7 +497,7 @@ namespace Display_test
             // 
             this.btnMove.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnMove.BackColor = System.Drawing.Color.Silver;
-            this.btnMove.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
+            this.btnMove.BackgroundImage = global::Display_test.Properties.Resources.leftarrow;
             this.btnMove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMove.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMove.Location = new System.Drawing.Point(1180, 500);
