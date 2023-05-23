@@ -543,6 +543,10 @@ namespace Display_test
             }
 
             backAddr = "";
+
+            // reset buttons to right
+            if (!buttonsRight)
+                btnMove_Click(null, null);
         }
 
         // called when inactivity timer has reached limit
