@@ -500,13 +500,13 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.btnPartnerBack);
-            this.Controls.Add(this.tlpPartners);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tlpMain);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.tlpPartners);
+            this.Controls.Add(this.btnPartnerBack);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
