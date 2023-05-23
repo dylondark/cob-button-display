@@ -433,6 +433,15 @@ namespace Display_test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap leftarrow {
+            get {
+                object obj = ResourceManager.GetObject("leftarrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MicrosoftTeams_image {
             get {
                 object obj = ResourceManager.GetObject("MicrosoftTeams-image", resourceCulture);
@@ -609,7 +618,19 @@ namespace Display_test.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rightarrow
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("rightarrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
