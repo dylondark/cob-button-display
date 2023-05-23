@@ -33,18 +33,7 @@ namespace Display_test
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblDebug = new System.Windows.Forms.Label();
-            this.btnPartnerBack = new System.Windows.Forms.Button();
-            this.tlpPartners = new System.Windows.Forms.TableLayoutPanel();
-            this.btnPartner9 = new System.Windows.Forms.Button();
-            this.btnPartner8 = new System.Windows.Forms.Button();
-            this.btnPartner7 = new System.Windows.Forms.Button();
-            this.btnPartner6 = new System.Windows.Forms.Button();
-            this.btnPartner5 = new System.Windows.Forms.Button();
-            this.btnPartner4 = new System.Windows.Forms.Button();
-            this.btnPartner3 = new System.Windows.Forms.Button();
-            this.btnPartner2 = new System.Windows.Forms.Button();
-            this.btnPartner1 = new System.Windows.Forms.Button();
-            this.lblPartners = new System.Windows.Forms.Label();
+            this.btnMove = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
@@ -56,15 +45,24 @@ namespace Display_test
             this.lblTouch = new System.Windows.Forms.Label();
             this.picTouch = new System.Windows.Forms.PictureBox();
             this.picCOB = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnMove = new System.Windows.Forms.Button();
-            this.tlpPartners.SuspendLayout();
+            this.tlpPartners = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPartner9 = new System.Windows.Forms.Button();
+            this.btnPartner8 = new System.Windows.Forms.Button();
+            this.btnPartner7 = new System.Windows.Forms.Button();
+            this.btnPartner6 = new System.Windows.Forms.Button();
+            this.btnPartner5 = new System.Windows.Forms.Button();
+            this.btnPartner4 = new System.Windows.Forms.Button();
+            this.btnPartner3 = new System.Windows.Forms.Button();
+            this.btnPartner2 = new System.Windows.Forms.Button();
+            this.btnPartner1 = new System.Windows.Forms.Button();
+            this.lblPartners = new System.Windows.Forms.Label();
+            this.btnPartnerBack = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tlpTouch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picTouch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tlpPartners.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -89,19 +87,200 @@ namespace Display_test
             this.lblDebug.Text = "Debug";
             this.lblDebug.Visible = false;
             // 
-            // btnPartnerBack
+            // btnMove
             // 
-            this.btnPartnerBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPartnerBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnPartnerBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
-            this.btnPartnerBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPartnerBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPartnerBack.Location = new System.Drawing.Point(485, 274);
-            this.btnPartnerBack.Name = "btnPartnerBack";
-            this.btnPartnerBack.Size = new System.Drawing.Size(400, 200);
-            this.btnPartnerBack.TabIndex = 18;
-            this.btnPartnerBack.UseVisualStyleBackColor = false;
-            this.btnPartnerBack.Click += new System.EventHandler(this.btnPartnerBack_Click);
+            this.btnMove.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMove.BackColor = System.Drawing.Color.Silver;
+            this.btnMove.BackgroundImage = global::Display_test.Properties.Resources.leftarrow;
+            this.btnMove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMove.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMove.Location = new System.Drawing.Point(1180, 500);
+            this.btnMove.Name = "btnMove";
+            this.btnMove.Size = new System.Drawing.Size(50, 50);
+            this.btnMove.TabIndex = 19;
+            this.btnMove.UseVisualStyleBackColor = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnHome.BackColor = System.Drawing.Color.Silver;
+            this.btnHome.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Location = new System.Drawing.Point(1030, 550);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(100, 100);
+            this.btnHome.TabIndex = 15;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBack.BackColor = System.Drawing.Color.Silver;
+            this.btnBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1130, 550);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(100, 100);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // tlpMain
+            // 
+            this.tlpMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tlpMain.BackgroundImage = global::Display_test.Properties.Resources.fishernewbg;
+            this.tlpMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tlpMain.ColumnCount = 7;
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tlpMain.Controls.Add(this.btnHistory, 5, 1);
+            this.tlpMain.Controls.Add(this.btnPartners, 3, 1);
+            this.tlpMain.Controls.Add(this.btnPrograms, 1, 1);
+            this.tlpMain.Controls.Add(this.picFisher, 1, 2);
+            this.tlpMain.Controls.Add(this.tlpTouch, 2, 0);
+            this.tlpMain.Controls.Add(this.picCOB, 5, 2);
+            this.tlpMain.Location = new System.Drawing.Point(0, 0);
+            this.tlpMain.Margin = new System.Windows.Forms.Padding(0);
+            this.tlpMain.Name = "tlpMain";
+            this.tlpMain.RowCount = 3;
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42F));
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
+            this.tlpMain.Size = new System.Drawing.Size(1264, 681);
+            this.tlpMain.TabIndex = 6;
+            // 
+            // btnHistory
+            // 
+            this.btnHistory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnHistory.BackgroundImage = global::Display_test.Properties.Resources.historybutton;
+            this.btnHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnHistory.Location = new System.Drawing.Point(860, 200);
+            this.btnHistory.Name = "btnHistory";
+            this.btnHistory.Size = new System.Drawing.Size(297, 280);
+            this.btnHistory.TabIndex = 37;
+            this.btnHistory.UseVisualStyleBackColor = false;
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
+            // 
+            // btnPartners
+            // 
+            this.btnPartners.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPartners.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnPartners.BackgroundImage = global::Display_test.Properties.Resources.partnersbutton;
+            this.btnPartners.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPartners.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPartners.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPartners.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPartners.Location = new System.Drawing.Point(482, 200);
+            this.btnPartners.Name = "btnPartners";
+            this.btnPartners.Size = new System.Drawing.Size(297, 280);
+            this.btnPartners.TabIndex = 36;
+            this.btnPartners.UseVisualStyleBackColor = false;
+            this.btnPartners.Click += new System.EventHandler(this.btnPartners_Click);
+            // 
+            // btnPrograms
+            // 
+            this.btnPrograms.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPrograms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnPrograms.BackgroundImage = global::Display_test.Properties.Resources.programsbutton;
+            this.btnPrograms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPrograms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPrograms.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrograms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPrograms.Location = new System.Drawing.Point(104, 200);
+            this.btnPrograms.Name = "btnPrograms";
+            this.btnPrograms.Size = new System.Drawing.Size(297, 280);
+            this.btnPrograms.TabIndex = 35;
+            this.btnPrograms.UseVisualStyleBackColor = false;
+            this.btnPrograms.Click += new System.EventHandler(this.btnPrograms_Click);
+            // 
+            // picFisher
+            // 
+            this.picFisher.BackColor = System.Drawing.Color.Transparent;
+            this.picFisher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picFisher.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picFisher.Image = global::Display_test.Properties.Resources.Fisher2;
+            this.picFisher.Location = new System.Drawing.Point(101, 483);
+            this.picFisher.Margin = new System.Windows.Forms.Padding(0);
+            this.picFisher.Name = "picFisher";
+            this.picFisher.Size = new System.Drawing.Size(303, 198);
+            this.picFisher.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picFisher.TabIndex = 34;
+            this.picFisher.TabStop = false;
+            // 
+            // tlpTouch
+            // 
+            this.tlpTouch.BackColor = System.Drawing.Color.Transparent;
+            this.tlpTouch.ColumnCount = 2;
+            this.tlpMain.SetColumnSpan(this.tlpTouch, 3);
+            this.tlpTouch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tlpTouch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tlpTouch.Controls.Add(this.lblTouch, 0, 0);
+            this.tlpTouch.Controls.Add(this.picTouch, 1, 0);
+            this.tlpTouch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpTouch.Location = new System.Drawing.Point(404, 0);
+            this.tlpTouch.Margin = new System.Windows.Forms.Padding(0);
+            this.tlpTouch.Name = "tlpTouch";
+            this.tlpTouch.RowCount = 1;
+            this.tlpTouch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpTouch.Size = new System.Drawing.Size(453, 197);
+            this.tlpTouch.TabIndex = 7;
+            // 
+            // lblTouch
+            // 
+            this.lblTouch.BackColor = System.Drawing.Color.Transparent;
+            this.lblTouch.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblTouch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTouch.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTouch.ForeColor = System.Drawing.Color.Black;
+            this.lblTouch.Location = new System.Drawing.Point(0, 0);
+            this.lblTouch.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTouch.Name = "lblTouch";
+            this.lblTouch.Size = new System.Drawing.Size(271, 197);
+            this.lblTouch.TabIndex = 30;
+            this.lblTouch.Text = "Touch Screen to Interact";
+            this.lblTouch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picTouch
+            // 
+            this.picTouch.BackColor = System.Drawing.Color.Transparent;
+            this.picTouch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picTouch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picTouch.Image = global::Display_test.Properties.Resources.touch;
+            this.picTouch.Location = new System.Drawing.Point(291, 20);
+            this.picTouch.Margin = new System.Windows.Forms.Padding(20);
+            this.picTouch.Name = "picTouch";
+            this.picTouch.Size = new System.Drawing.Size(142, 157);
+            this.picTouch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picTouch.TabIndex = 5;
+            this.picTouch.TabStop = false;
+            // 
+            // picCOB
+            // 
+            this.picCOB.BackColor = System.Drawing.Color.Transparent;
+            this.picCOB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picCOB.Image = global::Display_test.Properties.Resources.CBALogo2;
+            this.picCOB.Location = new System.Drawing.Point(860, 486);
+            this.picCOB.Name = "picCOB";
+            this.picCOB.Size = new System.Drawing.Size(297, 192);
+            this.picCOB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCOB.TabIndex = 38;
+            this.picCOB.TabStop = false;
+            this.picCOB.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // tlpPartners
             // 
@@ -303,208 +482,19 @@ namespace Display_test
             this.lblPartners.Text = "Our Premiere Partners";
             this.lblPartners.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnHome
+            // btnPartnerBack
             // 
-            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnHome.BackColor = System.Drawing.Color.Silver;
-            this.btnHome.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
-            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Location = new System.Drawing.Point(1030, 550);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(100, 100);
-            this.btnHome.TabIndex = 15;
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBack.BackColor = System.Drawing.Color.Silver;
-            this.btnBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1130, 550);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(100, 100);
-            this.btnBack.TabIndex = 3;
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // tlpMain
-            // 
-            this.tlpMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tlpMain.BackgroundImage = global::Display_test.Properties.Resources.fishernewbg;
-            this.tlpMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tlpMain.ColumnCount = 7;
-            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tlpMain.Controls.Add(this.btnHistory, 5, 1);
-            this.tlpMain.Controls.Add(this.btnPartners, 3, 1);
-            this.tlpMain.Controls.Add(this.btnPrograms, 1, 1);
-            this.tlpMain.Controls.Add(this.picFisher, 1, 2);
-            this.tlpMain.Controls.Add(this.tlpTouch, 2, 0);
-            this.tlpMain.Controls.Add(this.picCOB, 5, 2);
-            this.tlpMain.Location = new System.Drawing.Point(0, 0);
-            this.tlpMain.Margin = new System.Windows.Forms.Padding(0);
-            this.tlpMain.Name = "tlpMain";
-            this.tlpMain.RowCount = 3;
-            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
-            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42F));
-            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
-            this.tlpMain.Size = new System.Drawing.Size(1264, 681);
-            this.tlpMain.TabIndex = 6;
-            // 
-            // btnHistory
-            // 
-            this.btnHistory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnHistory.BackgroundImage = global::Display_test.Properties.Resources.historybutton;
-            this.btnHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnHistory.Location = new System.Drawing.Point(860, 200);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(297, 280);
-            this.btnHistory.TabIndex = 37;
-            this.btnHistory.UseVisualStyleBackColor = false;
-            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
-            // 
-            // btnPartners
-            // 
-            this.btnPartners.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPartners.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnPartners.BackgroundImage = global::Display_test.Properties.Resources.partnersbutton;
-            this.btnPartners.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPartners.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPartners.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPartners.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPartners.Location = new System.Drawing.Point(482, 200);
-            this.btnPartners.Name = "btnPartners";
-            this.btnPartners.Size = new System.Drawing.Size(297, 280);
-            this.btnPartners.TabIndex = 36;
-            this.btnPartners.UseVisualStyleBackColor = false;
-            this.btnPartners.Click += new System.EventHandler(this.btnPartners_Click);
-            // 
-            // btnPrograms
-            // 
-            this.btnPrograms.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPrograms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnPrograms.BackgroundImage = global::Display_test.Properties.Resources.programsbutton;
-            this.btnPrograms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPrograms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPrograms.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrograms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPrograms.Location = new System.Drawing.Point(104, 200);
-            this.btnPrograms.Name = "btnPrograms";
-            this.btnPrograms.Size = new System.Drawing.Size(297, 280);
-            this.btnPrograms.TabIndex = 35;
-            this.btnPrograms.UseVisualStyleBackColor = false;
-            this.btnPrograms.Click += new System.EventHandler(this.btnPrograms_Click);
-            // 
-            // picFisher
-            // 
-            this.picFisher.BackColor = System.Drawing.Color.Transparent;
-            this.picFisher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picFisher.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picFisher.Image = global::Display_test.Properties.Resources.Fisher2;
-            this.picFisher.Location = new System.Drawing.Point(101, 483);
-            this.picFisher.Margin = new System.Windows.Forms.Padding(0);
-            this.picFisher.Name = "picFisher";
-            this.picFisher.Size = new System.Drawing.Size(303, 198);
-            this.picFisher.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picFisher.TabIndex = 34;
-            this.picFisher.TabStop = false;
-            // 
-            // tlpTouch
-            // 
-            this.tlpTouch.BackColor = System.Drawing.Color.Transparent;
-            this.tlpTouch.ColumnCount = 2;
-            this.tlpMain.SetColumnSpan(this.tlpTouch, 3);
-            this.tlpTouch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tlpTouch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tlpTouch.Controls.Add(this.lblTouch, 0, 0);
-            this.tlpTouch.Controls.Add(this.picTouch, 1, 0);
-            this.tlpTouch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpTouch.Location = new System.Drawing.Point(404, 0);
-            this.tlpTouch.Margin = new System.Windows.Forms.Padding(0);
-            this.tlpTouch.Name = "tlpTouch";
-            this.tlpTouch.RowCount = 1;
-            this.tlpTouch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpTouch.Size = new System.Drawing.Size(453, 197);
-            this.tlpTouch.TabIndex = 7;
-            // 
-            // lblTouch
-            // 
-            this.lblTouch.BackColor = System.Drawing.Color.Transparent;
-            this.lblTouch.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lblTouch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTouch.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTouch.ForeColor = System.Drawing.Color.Black;
-            this.lblTouch.Location = new System.Drawing.Point(0, 0);
-            this.lblTouch.Margin = new System.Windows.Forms.Padding(0);
-            this.lblTouch.Name = "lblTouch";
-            this.lblTouch.Size = new System.Drawing.Size(271, 197);
-            this.lblTouch.TabIndex = 30;
-            this.lblTouch.Text = "Touch Screen to Interact";
-            this.lblTouch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picTouch
-            // 
-            this.picTouch.BackColor = System.Drawing.Color.Transparent;
-            this.picTouch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picTouch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picTouch.Image = global::Display_test.Properties.Resources.touch;
-            this.picTouch.Location = new System.Drawing.Point(291, 20);
-            this.picTouch.Margin = new System.Windows.Forms.Padding(20);
-            this.picTouch.Name = "picTouch";
-            this.picTouch.Size = new System.Drawing.Size(142, 157);
-            this.picTouch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTouch.TabIndex = 5;
-            this.picTouch.TabStop = false;
-            // 
-            // picCOB
-            // 
-            this.picCOB.BackColor = System.Drawing.Color.Transparent;
-            this.picCOB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picCOB.Image = global::Display_test.Properties.Resources.CBALogo2;
-            this.picCOB.Location = new System.Drawing.Point(860, 486);
-            this.picCOB.Name = "picCOB";
-            this.picCOB.Size = new System.Drawing.Size(297, 192);
-            this.picCOB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCOB.TabIndex = 38;
-            this.picCOB.TabStop = false;
-            this.picCOB.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnMove
-            // 
-            this.btnMove.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnMove.BackColor = System.Drawing.Color.Silver;
-            this.btnMove.BackgroundImage = global::Display_test.Properties.Resources.leftarrow;
-            this.btnMove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMove.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMove.Location = new System.Drawing.Point(1180, 500);
-            this.btnMove.Name = "btnMove";
-            this.btnMove.Size = new System.Drawing.Size(50, 50);
-            this.btnMove.TabIndex = 19;
-            this.btnMove.UseVisualStyleBackColor = false;
+            this.btnPartnerBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPartnerBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnPartnerBack.BackgroundImage = global::Display_test.Properties.Resources.backbutton;
+            this.btnPartnerBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPartnerBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPartnerBack.Location = new System.Drawing.Point(485, 274);
+            this.btnPartnerBack.Name = "btnPartnerBack";
+            this.btnPartnerBack.Size = new System.Drawing.Size(400, 200);
+            this.btnPartnerBack.TabIndex = 18;
+            this.btnPartnerBack.UseVisualStyleBackColor = false;
+            this.btnPartnerBack.Click += new System.EventHandler(this.btnPartnerBack_Click);
             // 
             // Form1
             // 
@@ -519,7 +509,6 @@ namespace Display_test
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tlpMain);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.tlpPartners);
             this.Controls.Add(this.btnPartnerBack);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
@@ -538,13 +527,12 @@ namespace Display_test
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.activity_event);
             this.Resize += new System.EventHandler(this.autoScale);
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
-            this.tlpPartners.ResumeLayout(false);
             this.tlpMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).EndInit();
             this.tlpTouch.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picTouch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tlpPartners.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -572,7 +560,6 @@ namespace Display_test
         }
 
         private CefSharp.WinForms.ChromiumWebBrowser chromium;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.PictureBox picTouch;
         private System.Windows.Forms.TableLayoutPanel tlpMain;
