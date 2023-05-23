@@ -74,14 +74,15 @@ namespace Display_test
             btnUndergrad.Margin = buttonMargin;
 
             // back buttons scaling
-            int buttonDim = Convert.ToInt32(scaleFactor * 4f * resFactor);
+            int buttonDim = Convert.ToInt32(scaleFactor * 3f * resFactor); 
             btnBack.Width = buttonDim;
             btnBack.Height = buttonDim;
             btnHome.Width = buttonDim;
             btnHome.Height = buttonDim;
 
             // back button positions
-            int[] buttonPos = new int[] {this.Width - 20 - buttonDim, this.Height - 20 - buttonDim};
+            int edgeDistance = Convert.ToInt32((scaleFactor - 20) * 2f * resFactor); // distance in pixels from edges of screen for back buttons
+            int[] buttonPos = new int[] {this.Width - edgeDistance - buttonDim, this.Height - edgeDistance - buttonDim};
             btnBack.Left = buttonPos[0];
             btnBack.Top = buttonPos[1];
             btnHome.Left = buttonPos[0] - buttonDim;
