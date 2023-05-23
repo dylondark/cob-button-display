@@ -97,6 +97,12 @@ namespace Display_test
             btnPartnerBack.Height = buttonDim;
             btnPartnerBack.Left = this.Width - edgeDistance - btnPartnerBack.Width;
             btnPartnerBack.Top = this.Height - edgeDistance - btnPartnerBack.Height;
+
+            // move button
+            btnMove.Width = buttonDim / 2;
+            btnMove.Height = buttonDim / 2;
+            btnMove.Left = this.Width - edgeDistance - btnMove.Width;
+            btnMove.Top = this.Height - edgeDistance - btnMove.Height - buttonDim;
         }
 
         // magic function that fixes repaint flicker
