@@ -53,6 +53,7 @@ namespace Display_test
             this.lblTwitter = new System.Windows.Forms.Label();
             this.lblFB = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnMove = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.tlpTouch.SuspendLayout();
@@ -378,6 +379,19 @@ namespace Display_test
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
+            // btnMove
+            // 
+            this.btnMove.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMove.BackColor = System.Drawing.Color.Silver;
+            this.btnMove.BackgroundImage = global::Display_test.Properties.Resources.homebutton;
+            this.btnMove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMove.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMove.Location = new System.Drawing.Point(1180, 500);
+            this.btnMove.Name = "btnMove";
+            this.btnMove.Size = new System.Drawing.Size(50, 50);
+            this.btnMove.TabIndex = 19;
+            this.btnMove.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -386,6 +400,7 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnMove);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
@@ -465,6 +480,7 @@ namespace Display_test
         private Button btnSocialMedia;
         private Button btnExpBusiness;
         private Button btnAlumni;
+        private Button btnMove;
         //private PictureBox pictureBox1;
     }
 }
