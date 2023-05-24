@@ -21,7 +21,7 @@ namespace Display_test
     {
         private CurrentPage currentPage;
 
-        private int inactivityCheckDuration = 60000;//milliseconds
+        private int inactivityCheckDuration = 120000;//milliseconds
         // keep the same inactivity window, reshowing it when needed.
         // This way when normal activity is detected after its shown, they dont need to still click Yes we can force it.
         private InActivityWindow inActivityWindow; 
