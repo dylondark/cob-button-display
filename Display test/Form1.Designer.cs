@@ -50,7 +50,6 @@ namespace Display_test
             this.btnStaff = new System.Windows.Forms.Button();
             this.btnFaculty = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnDirectoryBack = new System.Windows.Forms.Button();
             this.btnMove = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
@@ -58,7 +57,6 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picTouch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
             this.tlpDirectory.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpMain
@@ -337,7 +335,6 @@ namespace Display_test
             this.tlpDirectory.Controls.Add(this.btnStaff, 1, 1);
             this.tlpDirectory.Controls.Add(this.btnFaculty, 3, 1);
             this.tlpDirectory.Controls.Add(this.btnSearch, 5, 1);
-            this.tlpDirectory.Controls.Add(this.pictureBox2, 0, 3);
             this.tlpDirectory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpDirectory.Location = new System.Drawing.Point(0, 0);
             this.tlpDirectory.Name = "tlpDirectory";
@@ -388,20 +385,6 @@ namespace Display_test
             this.btnSearch.TabIndex = 2;
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tlpDirectory.SetColumnSpan(this.pictureBox2, 2);
-            this.pictureBox2.Image = global::Display_test.Properties.Resources.re_sized;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 581);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(429, 97);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
             // 
             // btnDirectoryBack
             // 
@@ -468,8 +451,6 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picTouch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             this.tlpDirectory.ResumeLayout(false);
-            this.tlpDirectory.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -515,7 +496,6 @@ namespace Display_test
         private Button btnStaff;
         private Button btnFaculty;
         private Button btnSearch;
-        private PictureBox pictureBox2;
         private Button btnDirectoryBack;
         private Button btnMove;
     }
