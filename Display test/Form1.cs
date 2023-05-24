@@ -363,6 +363,7 @@ namespace Display_test
         // handles buttons moving left or right after clicking btnmove
         private void btnMove_Click(object sender, EventArgs e)
         {
+            inActivityWindow.activityDetected("BTNMOVE");
             int edgeDistance;
             int buttonDim = btnBack.Width;
             if (buttonsRight)
