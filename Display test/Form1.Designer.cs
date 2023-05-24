@@ -52,7 +52,6 @@ namespace Display_test
             this.lblIG = new System.Windows.Forms.Label();
             this.lblTwitter = new System.Windows.Forms.Label();
             this.lblFB = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnMove = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -62,7 +61,6 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picIG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -371,14 +369,6 @@ namespace Display_test
             this.lblFB.Text = "@uakronmarketing";
             this.lblFB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
-            // 
             // btnMove
             // 
             this.btnMove.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -405,7 +395,6 @@ namespace Display_test
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tlpMain);
-            this.Controls.Add(this.pictureBox2);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
@@ -431,7 +420,6 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picIG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,7 +447,6 @@ namespace Display_test
         }
 
         private CefSharp.WinForms.ChromiumWebBrowser chromium;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.PictureBox picTouch;
         private System.Windows.Forms.TableLayoutPanel tlpMain;
