@@ -15,6 +15,7 @@ namespace Display_test
         public Func<string, Task> WriteDebug;
         Timer activityTimer;
 
+        // constructor
         public InActivityWindow(OnInactivityDetected onInactivityDetected,
             Timer timerRef, Func<string, Task> writeDebug, int width)
         {
@@ -32,6 +33,7 @@ namespace Display_test
             this.CenterToParent();
         }
 
+        // when activity detected reset timer and display to debug label
         public void activityDetected(string m = "")
         {
             WriteDebug("ACTDET " + m);
@@ -75,7 +77,7 @@ namespace Display_test
             thisParent.writeStat(Form1.statCodes.IAWClosed);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnYes_Click(object sender, EventArgs e)
         {
             WriteDebug("BTN CLICK");
             this.DialogResult = DialogResult.Yes;
@@ -94,7 +96,7 @@ namespace Display_test
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void lblText_Click(object sender, EventArgs e)
         {
             WriteDebug("LBL CLICK");
             this.DialogResult = DialogResult.Yes;
@@ -122,19 +124,20 @@ namespace Display_test
             this.Close();
         }
 
+        // automatically scale window based on width input in constructor
         private void autoScale(object sender, EventArgs e)
         {
             const int scaleFactor = 60; // based on the desired font size for the label text on a 4k display
             float resFactor = Convert.ToSingle(this.Width) / 960f; // this will be 1 at 4k assuming the input width is 960 (3840 / 4)
 
             Font labelFont = new Font(new FontFamily("Microsoft Sans Serif"), scaleFactor * resFactor, FontStyle.Bold);
-            label1.Font = labelFont;
+            lblText.Font = labelFont;
 
-            button1.Width = (int)(this.Width / 2.5f);
-            button1.Height = (int)(this.Height / 5f);
-            button1.Left = (this.Width / 2) - (button1.Width / 2);
-            button1.Top = (int)((this.Height / 2) / 2.5f) - (button1.Height / 2);
-            button1.Font = new Font(new FontFamily("Microsoft Sans Serif"), scaleFactor * resFactor * 0.5f, FontStyle.Bold);
+            btnYes.Width = (int)(this.Width / 2.5f);
+            btnYes.Height = (int)(this.Height / 5f);
+            btnYes.Left = (this.Width / 2) - (btnYes.Width / 2);
+            btnYes.Top = (int)((this.Height / 2) / 2.5f) - (btnYes.Height / 2);
+            btnYes.Font = new Font(new FontFamily("Microsoft Sans Serif"), scaleFactor * resFactor * 0.5f, FontStyle.Bold);
         }
     }
 }
