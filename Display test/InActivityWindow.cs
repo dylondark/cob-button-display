@@ -9,7 +9,7 @@ namespace Display_test
     {
         Timer timeChecker;
 
-        const int timerInterval = 10000;
+        const int timerInterval = 20000; // milliseconds window will show before closing
         public OnInactivityDetected onInactivity;
         public Func<string, Task> WriteDebug;
         Timer activityTimer;
