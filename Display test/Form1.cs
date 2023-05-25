@@ -61,31 +61,31 @@ namespace Display_test
         private void autoScale(object sender, EventArgs e)
         {
             const int scaleFactor = 80; // based on the desired font size for the welcome text on a 4k display, everything else will scale accordingly with this
-            float resFactor = Convert.ToSingle(this.Width) / 3840f; // this will be 1 at 4k
+            float resFactor = (float)(this.Width) / 3840f; // this will be 1 at 4k
 
-            Font labelFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold); ;
+            Font labelFont = new Font(new FontFamily("Calibri"), scaleFactor * resFactor, FontStyle.Bold);
             lblTouch.Font = labelFont;
-            picTouch.Margin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
+            picTouch.Margin = new Padding((int)(Math.Ceiling(scaleFactor * resFactor)));
             lblPartners.Font = labelFont;
 
-            Padding buttonMargin = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
+            Padding buttonMargin = new Padding((int)(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
             btnPrograms.Margin = buttonMargin;
             btnPartners.Margin = buttonMargin;
             btnHistory.Margin = buttonMargin;
 
-            Padding picturePadding = new Padding(Convert.ToInt32(Math.Ceiling(scaleFactor * resFactor)));
+            Padding picturePadding = new Padding((int)(Math.Ceiling(scaleFactor * resFactor)));
             picTouch.Margin = picturePadding;
             picFisher.Margin = picturePadding;
 
             // back buttons scaling
-            int buttonDim = Convert.ToInt32((scaleFactor - 20) * 3f * resFactor); // offset scale factor to keep buttons consistent
+            int buttonDim = (int)((scaleFactor - 20) * 3f * resFactor); // offset scale factor to keep buttons consistent
             btnBack.Width = buttonDim;
             btnBack.Height = buttonDim;
             btnHome.Width = buttonDim;
             btnHome.Height = buttonDim;
 
             // back button positions
-            int edgeDistance = Convert.ToInt32((scaleFactor - 20) * 2f * resFactor); // distance in pixels from edges of screen for back buttons
+            int edgeDistance = (int)((scaleFactor - 20) * 2f * resFactor); // distance in pixels from edges of screen for back buttons
             int[] buttonPos = new int[] {this.Width - edgeDistance - buttonDim, this.Height - edgeDistance - buttonDim};
             btnBack.Left = buttonPos[0];
             btnBack.Top = buttonPos[1];
