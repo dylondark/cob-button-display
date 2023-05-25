@@ -82,7 +82,7 @@ namespace Display_test
             btnHome.Height = buttonDim;
 
             // back button positions
-            int edgeDistance = Convert.ToInt32((scaleFactor - 20) * 2f * resFactor); // distance in pixels from edges of screen for back buttons
+            int edgeDistance = Convert.ToInt32(scaleFactor * 2f * resFactor); // distance in pixels from edges of screen for back buttons
             int[] buttonPos = new int[] {this.Width - edgeDistance - buttonDim, this.Height - edgeDistance - buttonDim};
             btnBack.Left = buttonPos[0];
             btnBack.Top = buttonPos[1];
