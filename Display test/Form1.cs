@@ -42,7 +42,7 @@ namespace Display_test
             timerRef = new Timer();
             timerRef.Interval = inactivityCheckDuration;
             timerRef.Tick += new EventHandler(onTimerTick);
-            inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
+            inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble, this.Width / 4);
 
             setupStats();
             InitializeComponent();
@@ -466,7 +466,7 @@ namespace Display_test
             inActivityWindow.stopTimer();
             DialogResult result = DialogResult.None;
 
-            inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble);
+            inActivityWindow = new InActivityWindow(closeWebpageAuto, timerRef, DebugIfAble, this.Width / 4);
             result = inActivityWindow.ShowDialog(this);
 
             if (result == DialogResult.Yes)
