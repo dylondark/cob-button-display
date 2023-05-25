@@ -126,7 +126,8 @@ namespace Display_test
             Staff, Faculty, Search, // directory buttons
             BrowserUrlChange,
             Back,
-            ProgramStart, ProgramClose, ProgramLostFocus, ProgramGainedFocus
+            ProgramStart, ProgramClose, ProgramLostFocus, ProgramGainedFocus,
+            IAWOpened, IAWClosed // inactivitywindow
         }
 
         // creates the stats file 'data.csv' in home user documents folder and sets up proper formatting
@@ -537,7 +538,7 @@ namespace Display_test
         // detect program close
         private void activity_event(object sender, FormClosedEventArgs e)
         {
-                writeStat(statCodes.ProgramClose);
+            writeStat(statCodes.ProgramClose);
         }
 
         // detect form focus
