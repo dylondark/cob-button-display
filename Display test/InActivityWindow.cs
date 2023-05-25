@@ -64,11 +64,15 @@ namespace Display_test
             timeChecker.Stop();
             timeChecker.Start();
             this.CenterToParent();
+            Form1 thisParent = (Form1)this.Owner;
+            thisParent.writeStat(Form1.statCodes.IAWOpened);
         }
 
         void onFormClosed(object obj, EventArgs args)
         {
             timeChecker.Stop();
+            Form1 thisParent = (Form1)this.Owner;
+            thisParent.writeStat(Form1.statCodes.IAWClosed);
         }
 
         private void button1_Click(object sender, EventArgs e)
