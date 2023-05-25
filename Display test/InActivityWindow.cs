@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,8 +15,8 @@ namespace Display_test
         public Func<string, Task> WriteDebug;
         Timer activityTimer;
 
-        public InActivityWindow(OnInactivityDetected onInactivityDetected, 
-            Timer timerRef, Func<string, Task> writeDebug)
+        public InActivityWindow(OnInactivityDetected onInactivityDetected,
+            Timer timerRef, Func<string, Task> writeDebug, int width)
         {
             InitializeComponent();
             activityTimer = timerRef;
@@ -26,6 +27,8 @@ namespace Display_test
             this.FormClosed += new FormClosedEventHandler(onFormClosed);
             this.onInactivity = onInactivityDetected;
             this.WriteDebug = writeDebug;
+            this.Width = width;
+            this.Height = width / 2;
             this.CenterToParent();
         }
 
@@ -37,7 +40,7 @@ namespace Display_test
             activityTimer.Stop();
             activityTimer.Start();
 
-            if(timeChecker.Enabled)
+            if (timeChecker.Enabled)
             {
                 this.DialogResult = DialogResult.Yes;
                 this.Close();
@@ -98,7 +101,7 @@ namespace Display_test
         {
 
         }
-        
+
         private void InActivityWindow_Click(object sender, EventArgs e)
         {
             WriteDebug("IAW CLICK");
@@ -113,6 +116,21 @@ namespace Display_test
             // If they click the window at all (even if they miss the button), they're not inactive.
             this.DialogResult = DialogResult.Yes;
             this.Close();
+        }
+
+        private void autoScale(object sender, EventArgs e)
+        {
+            const int scaleFactor = 60; // based on the desired font size for the label text on a 4k display
+            float resFactor = Convert.ToSingle(this.Width) / 960f; // this will be 1 at 4k assuming the input width is 960 (3840 / 4)
+
+            Font labelFont = new Font(new FontFamily("Microsoft Sans Serif"), scaleFactor * resFactor, FontStyle.Bold);
+            label1.Font = labelFont;
+
+            button1.Width = (int)(this.Width / 2.5f);
+            button1.Height = (int)(this.Height / 5f);
+            button1.Left = (this.Width / 2) - (button1.Width / 2);
+            button1.Top = (int)((this.Height / 2) / 2.5f) - (button1.Height / 2);
+            button1.Font = new Font(new FontFamily("Microsoft Sans Serif"), scaleFactor * resFactor * 0.5f, FontStyle.Bold);
         }
     }
 }
