@@ -399,6 +399,12 @@ namespace Display_test
             inActivityWindow.stopTimer();
         }
 
+        private void btnPremiere_Click(object sender, EventArgs e)
+        {
+            tlpPremiere.BringToFront();
+            btnPartnerBack.BringToFront();
+        }
+
         private void btnPartner1_Click(object sender, EventArgs e)
         {
             writeStat(statCodes.Partner1);

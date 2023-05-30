@@ -554,6 +554,7 @@ namespace Display_test
             this.btnPremiere.TabIndex = 35;
             this.btnPremiere.Text = "Premiere Partners";
             this.btnPremiere.UseVisualStyleBackColor = false;
+            this.btnPremiere.Click += new System.EventHandler(this.btnPremiere_Click);
             // 
             // Form1
             // 
