@@ -404,12 +404,14 @@ namespace Display_test
         {
             tlpPremiere.BringToFront();
             btnPartnerBack.BringToFront();
+            lblDebug.BringToFront();
         }
         
         private void btnAdvisory_Click(object sender, EventArgs e)
         {
             tlpAdvisory.BringToFront();
             btnPartnerBack.BringToFront();
+            lblDebug.BringToFront();
         }
 
         private void btnPartner1_Click(object sender, EventArgs e)
