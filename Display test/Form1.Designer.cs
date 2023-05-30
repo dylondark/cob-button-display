@@ -550,6 +550,7 @@ namespace Display_test
             this.btnAdvisory.TabIndex = 36;
             this.btnAdvisory.Text = "Advisory Level Corporate Partners";
             this.btnAdvisory.UseVisualStyleBackColor = false;
+            this.btnAdvisory.Click += new System.EventHandler(this.btnAdvisory_Click);
             // 
             // btnPremiere
             // 
@@ -753,7 +754,6 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.tlpAdvisory);
             this.Controls.Add(this.btnMove);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
@@ -762,6 +762,7 @@ namespace Display_test
             this.Controls.Add(this.tlpPremiere);
             this.Controls.Add(this.btnPartnerBack);
             this.Controls.Add(this.tlpPartnerMenu);
+            this.Controls.Add(this.tlpAdvisory);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";

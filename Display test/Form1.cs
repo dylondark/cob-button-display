@@ -393,6 +393,7 @@ namespace Display_test
         {
             tlpPremiere.SendToBack();
             tlpPartnerMenu.SendToBack();
+            tlpAdvisory.SendToBack();
             btnPartnerBack.SendToBack();
             writeStat(statCodes.Back, "lvl2-back");
             currentPage = CurrentPage.HomePage;
@@ -402,6 +403,12 @@ namespace Display_test
         private void btnPremiere_Click(object sender, EventArgs e)
         {
             tlpPremiere.BringToFront();
+            btnPartnerBack.BringToFront();
+        }
+        
+        private void btnAdvisory_Click(object sender, EventArgs e)
+        {
+            tlpAdvisory.BringToFront();
             btnPartnerBack.BringToFront();
         }
 
