@@ -61,6 +61,18 @@ namespace Display_test
             this.btnAdvisory = new System.Windows.Forms.Button();
             this.btnPremiere = new System.Windows.Forms.Button();
             this.tlpAdvisory = new System.Windows.Forms.TableLayoutPanel();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -70,18 +82,6 @@ namespace Display_test
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tlpTouch.SuspendLayout();
@@ -619,15 +619,205 @@ namespace Display_test
             this.tlpAdvisory.Location = new System.Drawing.Point(0, 0);
             this.tlpAdvisory.Name = "tlpAdvisory";
             this.tlpAdvisory.RowCount = 5;
-            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.52632F));
-            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.31579F));
-            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.31579F));
-            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.31579F));
-            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.52632F));
-            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.7835F));
+            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.47766F));
+            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.47766F));
+            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.47766F));
+            this.tlpAdvisory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.7835F));
             this.tlpAdvisory.Size = new System.Drawing.Size(1264, 681);
             this.tlpAdvisory.TabIndex = 21;
+            // 
+            // button21
+            // 
+            this.button21.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button21.BackColor = System.Drawing.Color.White;
+            this.button21.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button21.Location = new System.Drawing.Point(1008, 124);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(144, 140);
+            this.button21.TabIndex = 58;
+            this.button21.TabStop = false;
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            this.button20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button20.BackColor = System.Drawing.Color.White;
+            this.button20.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button20.Location = new System.Drawing.Point(1008, 416);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(144, 140);
+            this.button20.TabIndex = 57;
+            this.button20.TabStop = false;
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // button19
+            // 
+            this.button19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button19.BackColor = System.Drawing.Color.White;
+            this.button19.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button19.Location = new System.Drawing.Point(1008, 270);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(144, 140);
+            this.button19.TabIndex = 56;
+            this.button19.TabStop = false;
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // button18
+            // 
+            this.button18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button18.BackColor = System.Drawing.Color.White;
+            this.button18.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button18.Location = new System.Drawing.Point(558, 416);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(144, 140);
+            this.button18.TabIndex = 55;
+            this.button18.TabStop = false;
+            this.button18.UseVisualStyleBackColor = false;
+            // 
+            // button17
+            // 
+            this.button17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button17.BackColor = System.Drawing.Color.White;
+            this.button17.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button17.Location = new System.Drawing.Point(708, 270);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(144, 140);
+            this.button17.TabIndex = 54;
+            this.button17.TabStop = false;
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            this.button16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button16.BackColor = System.Drawing.Color.White;
+            this.button16.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button16.Location = new System.Drawing.Point(558, 270);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(144, 140);
+            this.button16.TabIndex = 53;
+            this.button16.TabStop = false;
+            this.button16.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button15.BackColor = System.Drawing.Color.White;
+            this.button15.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button15.Location = new System.Drawing.Point(858, 270);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(144, 140);
+            this.button15.TabIndex = 52;
+            this.button15.TabStop = false;
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            this.button14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button14.BackColor = System.Drawing.Color.White;
+            this.button14.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button14.Location = new System.Drawing.Point(858, 124);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(144, 140);
+            this.button14.TabIndex = 51;
+            this.button14.TabStop = false;
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button13.BackColor = System.Drawing.Color.White;
+            this.button13.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button13.Location = new System.Drawing.Point(708, 124);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(144, 140);
+            this.button13.TabIndex = 50;
+            this.button13.TabStop = false;
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button12.BackColor = System.Drawing.Color.White;
+            this.button12.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button12.Location = new System.Drawing.Point(708, 416);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(144, 140);
+            this.button12.TabIndex = 49;
+            this.button12.TabStop = false;
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button11.BackColor = System.Drawing.Color.White;
+            this.button11.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button11.Location = new System.Drawing.Point(858, 416);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(144, 140);
+            this.button11.TabIndex = 48;
+            this.button11.TabStop = false;
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button10.BackColor = System.Drawing.Color.White;
+            this.button10.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.button10.Location = new System.Drawing.Point(558, 124);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(144, 140);
+            this.button10.TabIndex = 47;
+            this.button10.TabStop = false;
+            this.button10.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -638,9 +828,9 @@ namespace Display_test
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button1.Location = new System.Drawing.Point(408, 432);
+            this.button1.Location = new System.Drawing.Point(408, 416);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 173);
+            this.button1.Size = new System.Drawing.Size(144, 140);
             this.button1.TabIndex = 46;
             this.button1.TabStop = false;
             this.button1.UseVisualStyleBackColor = false;
@@ -654,9 +844,9 @@ namespace Display_test
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button2.Location = new System.Drawing.Point(258, 432);
+            this.button2.Location = new System.Drawing.Point(258, 416);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 173);
+            this.button2.Size = new System.Drawing.Size(144, 140);
             this.button2.TabIndex = 45;
             this.button2.TabStop = false;
             this.button2.UseVisualStyleBackColor = false;
@@ -670,9 +860,9 @@ namespace Display_test
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button3.Location = new System.Drawing.Point(108, 432);
+            this.button3.Location = new System.Drawing.Point(108, 416);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 173);
+            this.button3.Size = new System.Drawing.Size(144, 140);
             this.button3.TabIndex = 44;
             this.button3.TabStop = false;
             this.button3.UseVisualStyleBackColor = false;
@@ -686,9 +876,9 @@ namespace Display_test
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button4.Location = new System.Drawing.Point(408, 253);
+            this.button4.Location = new System.Drawing.Point(408, 270);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(144, 173);
+            this.button4.Size = new System.Drawing.Size(144, 140);
             this.button4.TabIndex = 43;
             this.button4.TabStop = false;
             this.button4.UseVisualStyleBackColor = false;
@@ -702,9 +892,9 @@ namespace Display_test
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button5.Location = new System.Drawing.Point(258, 253);
+            this.button5.Location = new System.Drawing.Point(258, 270);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(144, 173);
+            this.button5.Size = new System.Drawing.Size(144, 140);
             this.button5.TabIndex = 42;
             this.button5.TabStop = false;
             this.button5.UseVisualStyleBackColor = false;
@@ -718,9 +908,9 @@ namespace Display_test
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button6.Location = new System.Drawing.Point(108, 253);
+            this.button6.Location = new System.Drawing.Point(108, 270);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(144, 173);
+            this.button6.Size = new System.Drawing.Size(144, 140);
             this.button6.TabIndex = 41;
             this.button6.TabStop = false;
             this.button6.UseVisualStyleBackColor = false;
@@ -734,9 +924,9 @@ namespace Display_test
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button7.Location = new System.Drawing.Point(408, 74);
+            this.button7.Location = new System.Drawing.Point(408, 124);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(144, 173);
+            this.button7.Size = new System.Drawing.Size(144, 140);
             this.button7.TabIndex = 40;
             this.button7.TabStop = false;
             this.button7.UseVisualStyleBackColor = false;
@@ -750,9 +940,9 @@ namespace Display_test
             this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button8.Location = new System.Drawing.Point(258, 74);
+            this.button8.Location = new System.Drawing.Point(258, 124);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(144, 173);
+            this.button8.Size = new System.Drawing.Size(144, 140);
             this.button8.TabIndex = 39;
             this.button8.TabStop = false;
             this.button8.UseVisualStyleBackColor = false;
@@ -766,204 +956,12 @@ namespace Display_test
             this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button9.Location = new System.Drawing.Point(108, 74);
+            this.button9.Location = new System.Drawing.Point(108, 124);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(144, 173);
+            this.button9.Size = new System.Drawing.Size(144, 140);
             this.button9.TabIndex = 38;
             this.button9.TabStop = false;
             this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button10.BackColor = System.Drawing.Color.White;
-            this.button10.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button10.Location = new System.Drawing.Point(558, 74);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(144, 173);
-            this.button10.TabIndex = 47;
-            this.button10.TabStop = false;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button11.BackColor = System.Drawing.Color.White;
-            this.button11.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button11.Location = new System.Drawing.Point(858, 432);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(144, 173);
-            this.button11.TabIndex = 48;
-            this.button11.TabStop = false;
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button12.BackColor = System.Drawing.Color.White;
-            this.button12.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button12.Location = new System.Drawing.Point(708, 432);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(144, 173);
-            this.button12.TabIndex = 49;
-            this.button12.TabStop = false;
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button13.BackColor = System.Drawing.Color.White;
-            this.button13.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button13.Location = new System.Drawing.Point(708, 74);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(144, 173);
-            this.button13.TabIndex = 50;
-            this.button13.TabStop = false;
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button14.BackColor = System.Drawing.Color.White;
-            this.button14.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button14.Location = new System.Drawing.Point(858, 74);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(144, 173);
-            this.button14.TabIndex = 51;
-            this.button14.TabStop = false;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button15.BackColor = System.Drawing.Color.White;
-            this.button15.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button15.Location = new System.Drawing.Point(858, 253);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(144, 173);
-            this.button15.TabIndex = 52;
-            this.button15.TabStop = false;
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button16.BackColor = System.Drawing.Color.White;
-            this.button16.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button16.Location = new System.Drawing.Point(558, 253);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(144, 173);
-            this.button16.TabIndex = 53;
-            this.button16.TabStop = false;
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            this.button17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button17.BackColor = System.Drawing.Color.White;
-            this.button17.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button17.Location = new System.Drawing.Point(708, 253);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(144, 173);
-            this.button17.TabIndex = 54;
-            this.button17.TabStop = false;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button18.BackColor = System.Drawing.Color.White;
-            this.button18.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button18.Location = new System.Drawing.Point(558, 432);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(144, 173);
-            this.button18.TabIndex = 55;
-            this.button18.TabStop = false;
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button19
-            // 
-            this.button19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button19.BackColor = System.Drawing.Color.White;
-            this.button19.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button19.Location = new System.Drawing.Point(1008, 253);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(144, 173);
-            this.button19.TabIndex = 56;
-            this.button19.TabStop = false;
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button20.BackColor = System.Drawing.Color.White;
-            this.button20.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button20.Location = new System.Drawing.Point(1008, 432);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(144, 173);
-            this.button20.TabIndex = 57;
-            this.button20.TabStop = false;
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // button21
-            // 
-            this.button21.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button21.BackColor = System.Drawing.Color.White;
-            this.button21.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button21.Location = new System.Drawing.Point(1008, 74);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(144, 173);
-            this.button21.TabIndex = 58;
-            this.button21.TabStop = false;
-            this.button21.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -973,7 +971,6 @@ namespace Display_test
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.tlpAdvisory);
             this.Controls.Add(this.btnMove);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnBack);
@@ -982,6 +979,7 @@ namespace Display_test
             this.Controls.Add(this.tlpPremiere);
             this.Controls.Add(this.btnPartnerBack);
             this.Controls.Add(this.tlpPartnerMenu);
+            this.Controls.Add(this.tlpAdvisory);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
