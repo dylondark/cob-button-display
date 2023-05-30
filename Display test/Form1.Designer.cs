@@ -45,7 +45,7 @@ namespace Display_test
             this.lblTouch = new System.Windows.Forms.Label();
             this.picTouch = new System.Windows.Forms.PictureBox();
             this.picCOB = new System.Windows.Forms.PictureBox();
-            this.tlpPartners = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpPremiere = new System.Windows.Forms.TableLayoutPanel();
             this.btnPartner9 = new System.Windows.Forms.Button();
             this.btnPartner8 = new System.Windows.Forms.Button();
             this.btnPartner7 = new System.Windows.Forms.Button();
@@ -62,7 +62,7 @@ namespace Display_test
             this.tlpTouch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picTouch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
-            this.tlpPartners.SuspendLayout();
+            this.tlpPremiere.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -283,39 +283,39 @@ namespace Display_test
             this.picCOB.TabStop = false;
             this.picCOB.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // tlpPartners
+            // tlpPremiere
             // 
-            this.tlpPartners.BackgroundImage = global::Display_test.Properties.Resources.fisherpartnerbg;
-            this.tlpPartners.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tlpPartners.ColumnCount = 5;
-            this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpPartners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpPartners.Controls.Add(this.btnPartner9, 3, 3);
-            this.tlpPartners.Controls.Add(this.btnPartner8, 2, 3);
-            this.tlpPartners.Controls.Add(this.btnPartner7, 1, 3);
-            this.tlpPartners.Controls.Add(this.btnPartner6, 3, 2);
-            this.tlpPartners.Controls.Add(this.btnPartner5, 2, 2);
-            this.tlpPartners.Controls.Add(this.btnPartner4, 1, 2);
-            this.tlpPartners.Controls.Add(this.btnPartner3, 3, 1);
-            this.tlpPartners.Controls.Add(this.btnPartner2, 2, 1);
-            this.tlpPartners.Controls.Add(this.btnPartner1, 1, 1);
-            this.tlpPartners.Controls.Add(this.lblPartners, 1, 0);
-            this.tlpPartners.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpPartners.Location = new System.Drawing.Point(0, 0);
-            this.tlpPartners.Name = "tlpPartners";
-            this.tlpPartners.RowCount = 5;
-            this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpPartners.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tlpPartners.Size = new System.Drawing.Size(1264, 681);
-            this.tlpPartners.TabIndex = 16;
+            this.tlpPremiere.BackgroundImage = global::Display_test.Properties.Resources.fisherpartnerbg;
+            this.tlpPremiere.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tlpPremiere.ColumnCount = 5;
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpPremiere.Controls.Add(this.btnPartner9, 3, 3);
+            this.tlpPremiere.Controls.Add(this.btnPartner8, 2, 3);
+            this.tlpPremiere.Controls.Add(this.btnPartner7, 1, 3);
+            this.tlpPremiere.Controls.Add(this.btnPartner6, 3, 2);
+            this.tlpPremiere.Controls.Add(this.btnPartner5, 2, 2);
+            this.tlpPremiere.Controls.Add(this.btnPartner4, 1, 2);
+            this.tlpPremiere.Controls.Add(this.btnPartner3, 3, 1);
+            this.tlpPremiere.Controls.Add(this.btnPartner2, 2, 1);
+            this.tlpPremiere.Controls.Add(this.btnPartner1, 1, 1);
+            this.tlpPremiere.Controls.Add(this.lblPartners, 1, 0);
+            this.tlpPremiere.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpPremiere.Location = new System.Drawing.Point(0, 0);
+            this.tlpPremiere.Name = "tlpPremiere";
+            this.tlpPremiere.RowCount = 5;
+            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpPremiere.Size = new System.Drawing.Size(1264, 681);
+            this.tlpPremiere.TabIndex = 16;
             // 
             // btnPartner9
             // 
@@ -473,7 +473,7 @@ namespace Display_test
             // lblPartners
             // 
             this.lblPartners.BackColor = System.Drawing.Color.Transparent;
-            this.tlpPartners.SetColumnSpan(this.lblPartners, 3);
+            this.tlpPremiere.SetColumnSpan(this.lblPartners, 3);
             this.lblPartners.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPartners.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold);
             this.lblPartners.Location = new System.Drawing.Point(179, 0);
@@ -510,7 +510,7 @@ namespace Display_test
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tlpMain);
-            this.Controls.Add(this.tlpPartners);
+            this.Controls.Add(this.tlpPremiere);
             this.Controls.Add(this.btnPartnerBack);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
@@ -533,7 +533,7 @@ namespace Display_test
             this.tlpTouch.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picTouch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
-            this.tlpPartners.ResumeLayout(false);
+            this.tlpPremiere.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -574,7 +574,7 @@ namespace Display_test
         private Button btnPartners;
         private Button btnPrograms;
         private PictureBox picCOB;
-        private TableLayoutPanel tlpPartners;
+        private TableLayoutPanel tlpPremiere;
         private Label lblPartners;
         private Button btnPartner9;
         private Button btnPartner8;

@@ -313,7 +313,7 @@ namespace Display_test
         {
             writeStat(statCodes.Partners);
             currentPage = CurrentPage.SecondLevelButtonsPage;
-            tlpPartners.BringToFront();
+            tlpPremiere.BringToFront();
             btnPartnerBack.BringToFront();
             inActivityWindow.startTimer();
         }
@@ -391,7 +391,7 @@ namespace Display_test
 
         private void btnPartnerBack_Click(object sender, EventArgs e)
         {
-            tlpPartners.SendToBack();
+            tlpPremiere.SendToBack();
             btnPartnerBack.SendToBack();
             writeStat(statCodes.Back, "lvl2-back");
             currentPage = CurrentPage.HomePage;
@@ -601,7 +601,7 @@ namespace Display_test
             btnMove.SendToBack();
             if (currentPage == CurrentPage.SecondLevelButtonsPage && !auto)
             {
-                tlpPartners.BringToFront(); 
+                tlpPremiere.BringToFront(); 
                 btnPartnerBack.BringToFront();
             }
             else
