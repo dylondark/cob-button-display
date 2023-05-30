@@ -58,8 +58,8 @@ namespace Display_test
             this.lblPartners = new System.Windows.Forms.Label();
             this.btnPartnerBack = new System.Windows.Forms.Button();
             this.tlpPartnerMenu = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAdvisory = new System.Windows.Forms.Button();
+            this.btnPremiere = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tlpTouch.SuspendLayout();
@@ -512,8 +512,8 @@ namespace Display_test
             this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
             this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
             this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPartnerMenu.Controls.Add(this.button2, 3, 1);
-            this.tlpPartnerMenu.Controls.Add(this.button3, 1, 1);
+            this.tlpPartnerMenu.Controls.Add(this.btnAdvisory, 3, 1);
+            this.tlpPartnerMenu.Controls.Add(this.btnPremiere, 1, 1);
             this.tlpPartnerMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpPartnerMenu.Location = new System.Drawing.Point(0, 0);
             this.tlpPartnerMenu.Margin = new System.Windows.Forms.Padding(0);
@@ -525,35 +525,35 @@ namespace Display_test
             this.tlpPartnerMenu.Size = new System.Drawing.Size(1264, 681);
             this.tlpPartnerMenu.TabIndex = 20;
             // 
-            // button2
+            // btnAdvisory
             // 
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.button2.BackgroundImage = global::Display_test.Properties.Resources.partnersbutton;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button2.Location = new System.Drawing.Point(709, 200);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(297, 280);
-            this.button2.TabIndex = 36;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAdvisory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnAdvisory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdvisory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisory.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisory.Location = new System.Drawing.Point(709, 200);
+            this.btnAdvisory.Name = "btnAdvisory";
+            this.btnAdvisory.Size = new System.Drawing.Size(297, 280);
+            this.btnAdvisory.TabIndex = 36;
+            this.btnAdvisory.Text = "Advisory Level Corporate Partners";
+            this.btnAdvisory.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnPremiere
             // 
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.button3.BackgroundImage = global::Display_test.Properties.Resources.programsbutton;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.button3.Location = new System.Drawing.Point(255, 200);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(297, 280);
-            this.button3.TabIndex = 35;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnPremiere.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremiere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnPremiere.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPremiere.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremiere.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremiere.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremiere.Location = new System.Drawing.Point(255, 200);
+            this.btnPremiere.Name = "btnPremiere";
+            this.btnPremiere.Size = new System.Drawing.Size(297, 280);
+            this.btnPremiere.TabIndex = 35;
+            this.btnPremiere.Text = "Premiere Partners";
+            this.btnPremiere.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -648,8 +648,8 @@ namespace Display_test
         private Button btnPartnerBack;
         private Button btnMove;
         private TableLayoutPanel tlpPartnerMenu;
-        private Button button2;
-        private Button button3;
+        private Button btnAdvisory;
+        private Button btnPremiere;
         //private PictureBox pictureBox1;
     }
 }
