@@ -16,7 +16,7 @@ using System.Windows.Forms;
 
 namespace Display_test
 {
-    public enum CurrentPage {  HomePage, FirstLevelWebpage, SecondLevelButtonsPage }
+    public enum CurrentPage {  HomePage, FirstLevelWebpage, SecondLevelButtonsPage, ThirdLevelButtonsPage }
     public partial class Form1 : Form
     {
         private CurrentPage currentPage;
@@ -391,13 +391,25 @@ namespace Display_test
 
         private void btnPartnerBack_Click(object sender, EventArgs e)
         {
-            tlpPremiere.SendToBack();
-            tlpPartnerMenu.SendToBack();
-            tlpAdvisory.SendToBack();
-            btnPartnerBack.SendToBack();
-            writeStat(statCodes.Back, "lvl2-back");
-            currentPage = CurrentPage.HomePage;
-            inActivityWindow.stopTimer();
+            if (currentPage == CurrentPage.SecondLevelButtonsPage)
+            {
+                tlpPremiere.SendToBack();
+                tlpPartnerMenu.SendToBack();
+                tlpAdvisory.SendToBack();
+                btnPartnerBack.SendToBack();
+                writeStat(statCodes.Back, "lvl2-back");
+                currentPage = CurrentPage.HomePage;
+                inActivityWindow.stopTimer();
+            }
+           else if (currentPage == CurrentPage.ThirdLevelButtonsPage)
+            {
+                tlpPremiere.SendToBack();
+                tlpAdvisory.SendToBack();
+                tlpPartnerMenu.BringToFront();
+                btnPartnerBack.BringToFront();
+                inActivityWindow.activityDetected("3LVLBACK");
+                currentPage = CurrentPage.SecondLevelButtonsPage;
+            }
         }
 
         private void btnPremiere_Click(object sender, EventArgs e)
@@ -406,14 +418,16 @@ namespace Display_test
             tlpPremiere.BringToFront();
             btnPartnerBack.BringToFront();
             lblDebug.BringToFront();
+            currentPage = CurrentPage.ThirdLevelButtonsPage;
         }
-        
+
         private void btnAdvisory_Click(object sender, EventArgs e)
         {
             inActivityWindow.activityDetected("ADVISORY");
             tlpAdvisory.BringToFront();
             btnPartnerBack.BringToFront();
             lblDebug.BringToFront();
+            currentPage = CurrentPage.ThirdLevelButtonsPage;
         }
 
         private void btnPartner1_Click(object sender, EventArgs e)
@@ -617,10 +631,10 @@ namespace Display_test
             btnHome.SendToBack();
             btnBack.SendToBack();
             btnMove.SendToBack();
-            if (currentPage == CurrentPage.SecondLevelButtonsPage && !auto)
+            if (currentPage == CurrentPage.ThirdLevelButtonsPage && !auto)
             {
-                tlpPremiere.BringToFront(); 
                 btnPartnerBack.BringToFront();
+                inActivityWindow.activityDetected("3LVLCLOSE");
             }
             else
             {
