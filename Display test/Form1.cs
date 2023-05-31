@@ -67,11 +67,14 @@ namespace Display_test
             lblTouch.Font = labelFont;
             picTouch.Margin = new Padding((int)(Math.Ceiling(scaleFactor * resFactor)));
             lblPremiere.Font = labelFont;
+            lblAdvisory.Font = labelFont;
 
             Padding buttonMargin = new Padding((int)(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
             btnPrograms.Margin = buttonMargin;
             btnPartners.Margin = buttonMargin;
             btnHistory.Margin = buttonMargin;
+            btnPremiere.Margin = buttonMargin;
+            btnAdvisory.Margin = buttonMargin;
 
             Padding picturePadding = new Padding((int)(Math.Ceiling(scaleFactor * resFactor)));
             picTouch.Margin = picturePadding;
