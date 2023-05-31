@@ -435,6 +435,60 @@
   <ItemGroup>
     <None Include="Resources\rightarrow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accurategroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cintas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ced.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dearing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fedex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gbs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hickoryharvest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hillcrest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merlo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parkplace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powergraphics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suntrol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trexon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
