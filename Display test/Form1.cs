@@ -402,6 +402,7 @@ namespace Display_test
 
         private void btnPremiere_Click(object sender, EventArgs e)
         {
+            inActivityWindow.activityDetected("PREMIERE");
             tlpPremiere.BringToFront();
             btnPartnerBack.BringToFront();
             lblDebug.BringToFront();
@@ -409,6 +410,7 @@ namespace Display_test
         
         private void btnAdvisory_Click(object sender, EventArgs e)
         {
+            inActivityWindow.activityDetected("ADVISORY");
             tlpAdvisory.BringToFront();
             btnPartnerBack.BringToFront();
             lblDebug.BringToFront();
