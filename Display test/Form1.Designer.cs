@@ -61,6 +61,7 @@ namespace Display_test
             this.btnAdvisory = new System.Windows.Forms.Button();
             this.btnPremiere = new System.Windows.Forms.Button();
             this.tlpAdvisory = new System.Windows.Forms.TableLayoutPanel();
+            this.lblAdvisory = new System.Windows.Forms.Label();
             this.btnAdvisoryPartner7 = new System.Windows.Forms.Button();
             this.btnAdvisoryPartner21 = new System.Windows.Forms.Button();
             this.btnAdvisoryPartner14 = new System.Windows.Forms.Button();
@@ -82,7 +83,6 @@ namespace Display_test
             this.btnAdvisoryPartner3 = new System.Windows.Forms.Button();
             this.btnAdvisoryPartner2 = new System.Windows.Forms.Button();
             this.btnAdvisoryPartner1 = new System.Windows.Forms.Button();
-            this.lblAdvisory = new System.Windows.Forms.Label();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tlpTouch.SuspendLayout();
@@ -629,342 +629,6 @@ namespace Display_test
             this.tlpAdvisory.Size = new System.Drawing.Size(1264, 681);
             this.tlpAdvisory.TabIndex = 21;
             // 
-            // btnAdvisoryPartner7
-            // 
-            this.btnAdvisoryPartner7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner7.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner7.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner7.Location = new System.Drawing.Point(1008, 155);
-            this.btnAdvisoryPartner7.Name = "btnAdvisoryPartner7";
-            this.btnAdvisoryPartner7.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner7.TabIndex = 58;
-            this.btnAdvisoryPartner7.TabStop = false;
-            this.btnAdvisoryPartner7.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner21
-            // 
-            this.btnAdvisoryPartner21.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner21.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner21.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner21.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner21.Location = new System.Drawing.Point(1008, 481);
-            this.btnAdvisoryPartner21.Name = "btnAdvisoryPartner21";
-            this.btnAdvisoryPartner21.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner21.TabIndex = 57;
-            this.btnAdvisoryPartner21.TabStop = false;
-            this.btnAdvisoryPartner21.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner14
-            // 
-            this.btnAdvisoryPartner14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner14.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner14.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner14.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner14.Location = new System.Drawing.Point(1008, 318);
-            this.btnAdvisoryPartner14.Name = "btnAdvisoryPartner14";
-            this.btnAdvisoryPartner14.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner14.TabIndex = 56;
-            this.btnAdvisoryPartner14.TabStop = false;
-            this.btnAdvisoryPartner14.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner18
-            // 
-            this.btnAdvisoryPartner18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner18.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner18.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner18.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner18.Location = new System.Drawing.Point(558, 481);
-            this.btnAdvisoryPartner18.Name = "btnAdvisoryPartner18";
-            this.btnAdvisoryPartner18.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner18.TabIndex = 55;
-            this.btnAdvisoryPartner18.TabStop = false;
-            this.btnAdvisoryPartner18.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner12
-            // 
-            this.btnAdvisoryPartner12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner12.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner12.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner12.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner12.Location = new System.Drawing.Point(708, 318);
-            this.btnAdvisoryPartner12.Name = "btnAdvisoryPartner12";
-            this.btnAdvisoryPartner12.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner12.TabIndex = 54;
-            this.btnAdvisoryPartner12.TabStop = false;
-            this.btnAdvisoryPartner12.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner11
-            // 
-            this.btnAdvisoryPartner11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner11.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner11.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner11.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner11.Location = new System.Drawing.Point(558, 318);
-            this.btnAdvisoryPartner11.Name = "btnAdvisoryPartner11";
-            this.btnAdvisoryPartner11.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner11.TabIndex = 53;
-            this.btnAdvisoryPartner11.TabStop = false;
-            this.btnAdvisoryPartner11.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner13
-            // 
-            this.btnAdvisoryPartner13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner13.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner13.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner13.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner13.Location = new System.Drawing.Point(858, 318);
-            this.btnAdvisoryPartner13.Name = "btnAdvisoryPartner13";
-            this.btnAdvisoryPartner13.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner13.TabIndex = 52;
-            this.btnAdvisoryPartner13.TabStop = false;
-            this.btnAdvisoryPartner13.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner6
-            // 
-            this.btnAdvisoryPartner6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner6.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner6.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner6.Location = new System.Drawing.Point(858, 155);
-            this.btnAdvisoryPartner6.Name = "btnAdvisoryPartner6";
-            this.btnAdvisoryPartner6.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner6.TabIndex = 51;
-            this.btnAdvisoryPartner6.TabStop = false;
-            this.btnAdvisoryPartner6.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner5
-            // 
-            this.btnAdvisoryPartner5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner5.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner5.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner5.Location = new System.Drawing.Point(708, 155);
-            this.btnAdvisoryPartner5.Name = "btnAdvisoryPartner5";
-            this.btnAdvisoryPartner5.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner5.TabIndex = 50;
-            this.btnAdvisoryPartner5.TabStop = false;
-            this.btnAdvisoryPartner5.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner19
-            // 
-            this.btnAdvisoryPartner19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner19.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner19.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner19.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner19.Location = new System.Drawing.Point(708, 481);
-            this.btnAdvisoryPartner19.Name = "btnAdvisoryPartner19";
-            this.btnAdvisoryPartner19.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner19.TabIndex = 49;
-            this.btnAdvisoryPartner19.TabStop = false;
-            this.btnAdvisoryPartner19.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner20
-            // 
-            this.btnAdvisoryPartner20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner20.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner20.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner20.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner20.Location = new System.Drawing.Point(858, 481);
-            this.btnAdvisoryPartner20.Name = "btnAdvisoryPartner20";
-            this.btnAdvisoryPartner20.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner20.TabIndex = 48;
-            this.btnAdvisoryPartner20.TabStop = false;
-            this.btnAdvisoryPartner20.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner4
-            // 
-            this.btnAdvisoryPartner4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner4.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner4.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner4.Location = new System.Drawing.Point(558, 155);
-            this.btnAdvisoryPartner4.Name = "btnAdvisoryPartner4";
-            this.btnAdvisoryPartner4.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner4.TabIndex = 47;
-            this.btnAdvisoryPartner4.TabStop = false;
-            this.btnAdvisoryPartner4.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner17
-            // 
-            this.btnAdvisoryPartner17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner17.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner17.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnAdvisoryPartner17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner17.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner17.Location = new System.Drawing.Point(408, 481);
-            this.btnAdvisoryPartner17.Name = "btnAdvisoryPartner17";
-            this.btnAdvisoryPartner17.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner17.TabIndex = 46;
-            this.btnAdvisoryPartner17.TabStop = false;
-            this.btnAdvisoryPartner17.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner16
-            // 
-            this.btnAdvisoryPartner16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner16.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner16.BackgroundImage = global::Display_test.Properties.Resources.ritehite;
-            this.btnAdvisoryPartner16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner16.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner16.Location = new System.Drawing.Point(258, 481);
-            this.btnAdvisoryPartner16.Name = "btnAdvisoryPartner16";
-            this.btnAdvisoryPartner16.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner16.TabIndex = 45;
-            this.btnAdvisoryPartner16.TabStop = false;
-            this.btnAdvisoryPartner16.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner15
-            // 
-            this.btnAdvisoryPartner15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner15.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner15.BackgroundImage = global::Display_test.Properties.Resources.smucker;
-            this.btnAdvisoryPartner15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner15.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner15.Location = new System.Drawing.Point(108, 481);
-            this.btnAdvisoryPartner15.Name = "btnAdvisoryPartner15";
-            this.btnAdvisoryPartner15.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner15.TabIndex = 44;
-            this.btnAdvisoryPartner15.TabStop = false;
-            this.btnAdvisoryPartner15.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner10
-            // 
-            this.btnAdvisoryPartner10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner10.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner10.BackgroundImage = global::Display_test.Properties.Resources.aircontrol;
-            this.btnAdvisoryPartner10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner10.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner10.Location = new System.Drawing.Point(408, 318);
-            this.btnAdvisoryPartner10.Name = "btnAdvisoryPartner10";
-            this.btnAdvisoryPartner10.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner10.TabIndex = 43;
-            this.btnAdvisoryPartner10.TabStop = false;
-            this.btnAdvisoryPartner10.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner9
-            // 
-            this.btnAdvisoryPartner9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner9.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner9.BackgroundImage = global::Display_test.Properties.Resources.hyland_logo;
-            this.btnAdvisoryPartner9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner9.Location = new System.Drawing.Point(258, 318);
-            this.btnAdvisoryPartner9.Name = "btnAdvisoryPartner9";
-            this.btnAdvisoryPartner9.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner9.TabIndex = 42;
-            this.btnAdvisoryPartner9.TabStop = false;
-            this.btnAdvisoryPartner9.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner8
-            // 
-            this.btnAdvisoryPartner8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner8.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner8.BackgroundImage = global::Display_test.Properties.Resources.mrisoftware;
-            this.btnAdvisoryPartner8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner8.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner8.Location = new System.Drawing.Point(108, 318);
-            this.btnAdvisoryPartner8.Name = "btnAdvisoryPartner8";
-            this.btnAdvisoryPartner8.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner8.TabIndex = 41;
-            this.btnAdvisoryPartner8.TabStop = false;
-            this.btnAdvisoryPartner8.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner3
-            // 
-            this.btnAdvisoryPartner3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner3.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner3.BackgroundImage = global::Display_test.Properties.Resources.palmerholland_tp;
-            this.btnAdvisoryPartner3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner3.Location = new System.Drawing.Point(408, 155);
-            this.btnAdvisoryPartner3.Name = "btnAdvisoryPartner3";
-            this.btnAdvisoryPartner3.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner3.TabIndex = 40;
-            this.btnAdvisoryPartner3.TabStop = false;
-            this.btnAdvisoryPartner3.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner2
-            // 
-            this.btnAdvisoryPartner2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner2.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner2.BackgroundImage = global::Display_test.Properties.Resources.parker;
-            this.btnAdvisoryPartner2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner2.Location = new System.Drawing.Point(258, 155);
-            this.btnAdvisoryPartner2.Name = "btnAdvisoryPartner2";
-            this.btnAdvisoryPartner2.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner2.TabIndex = 39;
-            this.btnAdvisoryPartner2.TabStop = false;
-            this.btnAdvisoryPartner2.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvisoryPartner1
-            // 
-            this.btnAdvisoryPartner1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisoryPartner1.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner1.BackgroundImage = global::Display_test.Properties.Resources.OhioCAT_whiteborder_tp;
-            this.btnAdvisoryPartner1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAdvisoryPartner1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisoryPartner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisoryPartner1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisoryPartner1.Location = new System.Drawing.Point(108, 155);
-            this.btnAdvisoryPartner1.Name = "btnAdvisoryPartner1";
-            this.btnAdvisoryPartner1.Size = new System.Drawing.Size(144, 157);
-            this.btnAdvisoryPartner1.TabIndex = 38;
-            this.btnAdvisoryPartner1.TabStop = false;
-            this.btnAdvisoryPartner1.UseVisualStyleBackColor = false;
-            // 
             // lblAdvisory
             // 
             this.lblAdvisory.BackColor = System.Drawing.Color.Transparent;
@@ -973,10 +637,343 @@ namespace Display_test
             this.lblAdvisory.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold);
             this.lblAdvisory.Location = new System.Drawing.Point(258, 0);
             this.lblAdvisory.Name = "lblAdvisory";
-            this.lblAdvisory.Size = new System.Drawing.Size(744, 152);
+            this.lblAdvisory.Size = new System.Drawing.Size(744, 145);
             this.lblAdvisory.TabIndex = 59;
             this.lblAdvisory.Text = "Our Advisory Corporate Partners";
             this.lblAdvisory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAdvisoryPartner7
+            // 
+            this.btnAdvisoryPartner7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner7.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner7.BackgroundImage = global::Display_test.Properties.Resources.hickoryharvest;
+            this.btnAdvisoryPartner7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner7.Location = new System.Drawing.Point(1008, 148);
+            this.btnAdvisoryPartner7.Name = "btnAdvisoryPartner7";
+            this.btnAdvisoryPartner7.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner7.TabIndex = 58;
+            this.btnAdvisoryPartner7.TabStop = false;
+            this.btnAdvisoryPartner7.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner21
+            // 
+            this.btnAdvisoryPartner21.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner21.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner21.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner21.Location = new System.Drawing.Point(1008, 460);
+            this.btnAdvisoryPartner21.Name = "btnAdvisoryPartner21";
+            this.btnAdvisoryPartner21.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner21.TabIndex = 57;
+            this.btnAdvisoryPartner21.TabStop = false;
+            this.btnAdvisoryPartner21.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner14
+            // 
+            this.btnAdvisoryPartner14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner14.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner14.BackgroundImage = global::Display_test.Properties.Resources.sm;
+            this.btnAdvisoryPartner14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner14.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner14.Location = new System.Drawing.Point(1008, 304);
+            this.btnAdvisoryPartner14.Name = "btnAdvisoryPartner14";
+            this.btnAdvisoryPartner14.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner14.TabIndex = 56;
+            this.btnAdvisoryPartner14.TabStop = false;
+            this.btnAdvisoryPartner14.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner18
+            // 
+            this.btnAdvisoryPartner18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner18.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner18.BackgroundImage = global::Display_test.Properties.Resources.svn;
+            this.btnAdvisoryPartner18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner18.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner18.Location = new System.Drawing.Point(558, 460);
+            this.btnAdvisoryPartner18.Name = "btnAdvisoryPartner18";
+            this.btnAdvisoryPartner18.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner18.TabIndex = 55;
+            this.btnAdvisoryPartner18.TabStop = false;
+            this.btnAdvisoryPartner18.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner12
+            // 
+            this.btnAdvisoryPartner12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner12.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner12.BackgroundImage = global::Display_test.Properties.Resources.powergraphics;
+            this.btnAdvisoryPartner12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner12.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner12.Location = new System.Drawing.Point(708, 304);
+            this.btnAdvisoryPartner12.Name = "btnAdvisoryPartner12";
+            this.btnAdvisoryPartner12.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner12.TabIndex = 54;
+            this.btnAdvisoryPartner12.TabStop = false;
+            this.btnAdvisoryPartner12.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner11
+            // 
+            this.btnAdvisoryPartner11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner11.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner11.BackgroundImage = global::Display_test.Properties.Resources.parkplace;
+            this.btnAdvisoryPartner11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner11.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner11.Location = new System.Drawing.Point(558, 304);
+            this.btnAdvisoryPartner11.Name = "btnAdvisoryPartner11";
+            this.btnAdvisoryPartner11.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner11.TabIndex = 53;
+            this.btnAdvisoryPartner11.TabStop = false;
+            this.btnAdvisoryPartner11.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner13
+            // 
+            this.btnAdvisoryPartner13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner13.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner13.BackgroundImage = global::Display_test.Properties.Resources.rocket;
+            this.btnAdvisoryPartner13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner13.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner13.Location = new System.Drawing.Point(858, 304);
+            this.btnAdvisoryPartner13.Name = "btnAdvisoryPartner13";
+            this.btnAdvisoryPartner13.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner13.TabIndex = 52;
+            this.btnAdvisoryPartner13.TabStop = false;
+            this.btnAdvisoryPartner13.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner6
+            // 
+            this.btnAdvisoryPartner6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner6.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner6.BackgroundImage = global::Display_test.Properties.Resources.gms;
+            this.btnAdvisoryPartner6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner6.Location = new System.Drawing.Point(858, 148);
+            this.btnAdvisoryPartner6.Name = "btnAdvisoryPartner6";
+            this.btnAdvisoryPartner6.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner6.TabIndex = 51;
+            this.btnAdvisoryPartner6.TabStop = false;
+            this.btnAdvisoryPartner6.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner5
+            // 
+            this.btnAdvisoryPartner5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner5.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner5.BackgroundImage = global::Display_test.Properties.Resources.fedex;
+            this.btnAdvisoryPartner5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner5.Location = new System.Drawing.Point(708, 148);
+            this.btnAdvisoryPartner5.Name = "btnAdvisoryPartner5";
+            this.btnAdvisoryPartner5.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner5.TabIndex = 50;
+            this.btnAdvisoryPartner5.TabStop = false;
+            this.btnAdvisoryPartner5.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner19
+            // 
+            this.btnAdvisoryPartner19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner19.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner19.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner19.Location = new System.Drawing.Point(708, 460);
+            this.btnAdvisoryPartner19.Name = "btnAdvisoryPartner19";
+            this.btnAdvisoryPartner19.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner19.TabIndex = 49;
+            this.btnAdvisoryPartner19.TabStop = false;
+            this.btnAdvisoryPartner19.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner20
+            // 
+            this.btnAdvisoryPartner20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner20.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner20.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner20.Location = new System.Drawing.Point(858, 460);
+            this.btnAdvisoryPartner20.Name = "btnAdvisoryPartner20";
+            this.btnAdvisoryPartner20.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner20.TabIndex = 48;
+            this.btnAdvisoryPartner20.TabStop = false;
+            this.btnAdvisoryPartner20.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner4
+            // 
+            this.btnAdvisoryPartner4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner4.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner4.BackgroundImage = global::Display_test.Properties.Resources.dearing;
+            this.btnAdvisoryPartner4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner4.Location = new System.Drawing.Point(558, 148);
+            this.btnAdvisoryPartner4.Name = "btnAdvisoryPartner4";
+            this.btnAdvisoryPartner4.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner4.TabIndex = 47;
+            this.btnAdvisoryPartner4.TabStop = false;
+            this.btnAdvisoryPartner4.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner17
+            // 
+            this.btnAdvisoryPartner17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner17.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner17.BackgroundImage = global::Display_test.Properties.Resources.trexon;
+            this.btnAdvisoryPartner17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner17.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner17.Location = new System.Drawing.Point(408, 460);
+            this.btnAdvisoryPartner17.Name = "btnAdvisoryPartner17";
+            this.btnAdvisoryPartner17.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner17.TabIndex = 46;
+            this.btnAdvisoryPartner17.TabStop = false;
+            this.btnAdvisoryPartner17.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner16
+            // 
+            this.btnAdvisoryPartner16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner16.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner16.BackgroundImage = global::Display_test.Properties.Resources.gbs;
+            this.btnAdvisoryPartner16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner16.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner16.Location = new System.Drawing.Point(258, 460);
+            this.btnAdvisoryPartner16.Name = "btnAdvisoryPartner16";
+            this.btnAdvisoryPartner16.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner16.TabIndex = 45;
+            this.btnAdvisoryPartner16.TabStop = false;
+            this.btnAdvisoryPartner16.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner15
+            // 
+            this.btnAdvisoryPartner15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner15.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner15.BackgroundImage = global::Display_test.Properties.Resources.suntrol;
+            this.btnAdvisoryPartner15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner15.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner15.Location = new System.Drawing.Point(108, 460);
+            this.btnAdvisoryPartner15.Name = "btnAdvisoryPartner15";
+            this.btnAdvisoryPartner15.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner15.TabIndex = 44;
+            this.btnAdvisoryPartner15.TabStop = false;
+            this.btnAdvisoryPartner15.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner10
+            // 
+            this.btnAdvisoryPartner10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner10.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner10.BackgroundImage = global::Display_test.Properties.Resources.oec;
+            this.btnAdvisoryPartner10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner10.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner10.Location = new System.Drawing.Point(408, 304);
+            this.btnAdvisoryPartner10.Name = "btnAdvisoryPartner10";
+            this.btnAdvisoryPartner10.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner10.TabIndex = 43;
+            this.btnAdvisoryPartner10.TabStop = false;
+            this.btnAdvisoryPartner10.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner9
+            // 
+            this.btnAdvisoryPartner9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner9.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner9.BackgroundImage = global::Display_test.Properties.Resources.merlo;
+            this.btnAdvisoryPartner9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner9.Location = new System.Drawing.Point(258, 304);
+            this.btnAdvisoryPartner9.Name = "btnAdvisoryPartner9";
+            this.btnAdvisoryPartner9.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner9.TabIndex = 42;
+            this.btnAdvisoryPartner9.TabStop = false;
+            this.btnAdvisoryPartner9.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner8
+            // 
+            this.btnAdvisoryPartner8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner8.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner8.BackgroundImage = global::Display_test.Properties.Resources.hillcrest;
+            this.btnAdvisoryPartner8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner8.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner8.Location = new System.Drawing.Point(108, 304);
+            this.btnAdvisoryPartner8.Name = "btnAdvisoryPartner8";
+            this.btnAdvisoryPartner8.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner8.TabIndex = 41;
+            this.btnAdvisoryPartner8.TabStop = false;
+            this.btnAdvisoryPartner8.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner3
+            // 
+            this.btnAdvisoryPartner3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner3.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner3.BackgroundImage = global::Display_test.Properties.Resources.ced;
+            this.btnAdvisoryPartner3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner3.Location = new System.Drawing.Point(408, 148);
+            this.btnAdvisoryPartner3.Name = "btnAdvisoryPartner3";
+            this.btnAdvisoryPartner3.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner3.TabIndex = 40;
+            this.btnAdvisoryPartner3.TabStop = false;
+            this.btnAdvisoryPartner3.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner2
+            // 
+            this.btnAdvisoryPartner2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner2.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner2.BackgroundImage = global::Display_test.Properties.Resources.cintas;
+            this.btnAdvisoryPartner2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner2.Location = new System.Drawing.Point(258, 148);
+            this.btnAdvisoryPartner2.Name = "btnAdvisoryPartner2";
+            this.btnAdvisoryPartner2.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner2.TabIndex = 39;
+            this.btnAdvisoryPartner2.TabStop = false;
+            this.btnAdvisoryPartner2.UseVisualStyleBackColor = false;
+            // 
+            // btnAdvisoryPartner1
+            // 
+            this.btnAdvisoryPartner1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisoryPartner1.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner1.BackgroundImage = global::Display_test.Properties.Resources.accurategroup;
+            this.btnAdvisoryPartner1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdvisoryPartner1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisoryPartner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisoryPartner1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisoryPartner1.Location = new System.Drawing.Point(108, 148);
+            this.btnAdvisoryPartner1.Name = "btnAdvisoryPartner1";
+            this.btnAdvisoryPartner1.Size = new System.Drawing.Size(144, 150);
+            this.btnAdvisoryPartner1.TabIndex = 38;
+            this.btnAdvisoryPartner1.TabStop = false;
+            this.btnAdvisoryPartner1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -993,8 +990,8 @@ namespace Display_test
             this.Controls.Add(this.tlpMain);
             this.Controls.Add(this.btnPartnerBack);
             this.Controls.Add(this.tlpPartnerMenu);
-            this.Controls.Add(this.tlpAdvisory);
             this.Controls.Add(this.tlpPremiere);
+            this.Controls.Add(this.tlpAdvisory);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
