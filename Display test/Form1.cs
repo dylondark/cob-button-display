@@ -433,58 +433,94 @@ namespace Display_test
             currentPage = CurrentPage.ThirdLevelButtonsPage;
         }
 
-        private void btnPartner1_Click(object sender, EventArgs e)
+        private void partnerButton_Click(object sender, EventArgs e)
         {
-            writeStat(statCodes.Partner1);
-            showWebPage("https://www.ohiocat.com/");
-        }
+            switch (((Button)sender).Name)
+            {
+                case "btnAdvisoryPartner1":
+                    showWebPage("https://www.accurategroup.com/");
+                    break;
+                case "btnAdvisoryPartner2":
+                    showWebPage("https://www.cintas.com/");
+                    break;
+                case "btnAdvisoryPartner3":
+                    showWebPage("https://cedsunbelt.com/");
+                    break;
+                case "btnAdvisoryPartner4":
+                    showWebPage("https://www.dearingcomp.com/");
+                    break;
+                case "btnAdvisoryPartner5":
+                    showWebPage("https://www.fedex.com/en-us/home.html");
+                    break;
+                case "btnAdvisoryPartner6":
+                    showWebPage("https://www.groupmgmt.com/");
+                    break;
+                case "btnAdvisoryPartner7":
+                    showWebPage("https://www.hickoryharvest.com/");
+                    break;
+                case "btnAdvisoryPartner8":
+                    showWebPage("https://www.hillcrestfoods.com/");
+                    break;
+                case "btnAdvisoryPartner9":
+                    showWebPage("http://www.merloenergy.com/");
+                    break;
+                case "btnAdvisoryPartner10":
+                    showWebPage("https://oeconnection.com/");
+                    break;
+                case "btnAdvisoryPartner11":
+                    showWebPage("https://www.parkplacetechnologies.com/");
+                    break;
+                case "btnAdvisoryPartner12":
+                    showWebPage("https://powergraphics.biz/");
+                    break;
+                case "btnAdvisoryPartner13":
+                    showWebPage("https://www.rocketmortgage.com/");
+                    break;
+                case "btnAdvisoryPartner14":
+                    showWebPage("https://www.searchmasters.com/");
+                    break;
+                case "btnAdvisoryPartner15":
+                    showWebPage("https://www.suntrol.com/");
+                    break;
+                case "btnAdvisoryPartner16":
+                    showWebPage("https://www.gbscorp.com/");
+                    break;
+                case "btnAdvisoryPartner17":
+                    showWebPage("https://www.tpcwire.com/");
+                    break;
+                case "btnAdvisoryPartner18":
+                    showWebPage("https://svn.com/");
+                    break;
+                case "btnPremierePartner1":
+                    showWebPage("https://www.ohiocat.com/");
+                    break;
+                case "btnPremierePartner2":
+                    showWebPage("https://www.parker.com/us/en/home.html");
+                    break;
+                case "btnPremierePartner3":
+                    showWebPage("https://www.palmerholland.com/");
+                    break;
+                case "btnPremierePartner4":
+                    showWebPage("https://www.mrisoftware.com/");
+                    break;
+                case "btnPremierePartner5":
+                    showWebPage("https://www.hyland.com/en");
+                    break;
+                case "btnPremierePartner6":
+                    showWebPage("https://www.aircontrolproducts.com/");
+                    break;
+                case "btnPremierePartner7":
+                    showWebPage("https://www.jmsmucker.com/");
+                    break;
+                case "btnPremierePartner8":
+                    showWebPage("https://www.ritehite.com/en/am");
+                    break;
+                case "btnPremierePartner9":
+                    showWebPage("https://www.pensketruckrental.com/");
+                    break;
 
-        private void btnPartner2_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Partner2);
-            showWebPage("https://www.parker.com/us/en/home.html");
-        }
+            }
 
-        private void btnPartner3_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Partner3);
-            showWebPage("https://www.palmerholland.com/");
-        }
-
-        private void btnPartner4_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Partner4);
-            showWebPage("https://www.mrisoftware.com/");
-        }
-
-        private void btnPartner5_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Partner5);
-            showWebPage("https://www.hyland.com/en");
-        }
-
-        private void btnPartner6_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Partner6);
-            showWebPage("https://www.aircontrolproducts.com/");
-        }
-
-        private void btnPartner7_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Partner7);
-            showWebPage("https://www.jmsmucker.com/");
-        }
-
-        private void btnPartner8_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Partner8);
-            showWebPage("https://www.ritehite.com/en/am");
-        }
-
-        private void btnPartner9_Click(object sender, EventArgs e)
-        {
-            writeStat(statCodes.Partner9);
-            showWebPage("https://www.pensketruckrental.com/");
         }
 
         #endregion

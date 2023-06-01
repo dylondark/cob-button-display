@@ -360,7 +360,7 @@ namespace Display_test
             this.btnPremierePartner9.TabIndex = 46;
             this.btnPremierePartner9.TabStop = false;
             this.btnPremierePartner9.UseVisualStyleBackColor = false;
-            this.btnPremierePartner9.Click += new System.EventHandler(this.btnPartner9_Click);
+            this.btnPremierePartner9.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnPremierePartner8
             // 
@@ -377,7 +377,7 @@ namespace Display_test
             this.btnPremierePartner8.TabIndex = 45;
             this.btnPremierePartner8.TabStop = false;
             this.btnPremierePartner8.UseVisualStyleBackColor = false;
-            this.btnPremierePartner8.Click += new System.EventHandler(this.btnPartner8_Click);
+            this.btnPremierePartner8.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnPremierePartner7
             // 
@@ -394,7 +394,7 @@ namespace Display_test
             this.btnPremierePartner7.TabIndex = 44;
             this.btnPremierePartner7.TabStop = false;
             this.btnPremierePartner7.UseVisualStyleBackColor = false;
-            this.btnPremierePartner7.Click += new System.EventHandler(this.btnPartner7_Click);
+            this.btnPremierePartner7.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnPremierePartner6
             // 
@@ -411,7 +411,7 @@ namespace Display_test
             this.btnPremierePartner6.TabIndex = 43;
             this.btnPremierePartner6.TabStop = false;
             this.btnPremierePartner6.UseVisualStyleBackColor = false;
-            this.btnPremierePartner6.Click += new System.EventHandler(this.btnPartner6_Click);
+            this.btnPremierePartner6.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnPremierePartner5
             // 
@@ -428,7 +428,7 @@ namespace Display_test
             this.btnPremierePartner5.TabIndex = 42;
             this.btnPremierePartner5.TabStop = false;
             this.btnPremierePartner5.UseVisualStyleBackColor = false;
-            this.btnPremierePartner5.Click += new System.EventHandler(this.btnPartner5_Click);
+            this.btnPremierePartner5.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnPremierePartner4
             // 
@@ -445,7 +445,7 @@ namespace Display_test
             this.btnPremierePartner4.TabIndex = 41;
             this.btnPremierePartner4.TabStop = false;
             this.btnPremierePartner4.UseVisualStyleBackColor = false;
-            this.btnPremierePartner4.Click += new System.EventHandler(this.btnPartner4_Click);
+            this.btnPremierePartner4.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnPremierePartner3
             // 
@@ -462,7 +462,7 @@ namespace Display_test
             this.btnPremierePartner3.TabIndex = 40;
             this.btnPremierePartner3.TabStop = false;
             this.btnPremierePartner3.UseVisualStyleBackColor = false;
-            this.btnPremierePartner3.Click += new System.EventHandler(this.btnPartner3_Click);
+            this.btnPremierePartner3.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnPremierePartner2
             // 
@@ -479,7 +479,7 @@ namespace Display_test
             this.btnPremierePartner2.TabIndex = 39;
             this.btnPremierePartner2.TabStop = false;
             this.btnPremierePartner2.UseVisualStyleBackColor = false;
-            this.btnPremierePartner2.Click += new System.EventHandler(this.btnPartner2_Click);
+            this.btnPremierePartner2.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnPremierePartner1
             // 
@@ -496,7 +496,7 @@ namespace Display_test
             this.btnPremierePartner1.TabIndex = 38;
             this.btnPremierePartner1.TabStop = false;
             this.btnPremierePartner1.UseVisualStyleBackColor = false;
-            this.btnPremierePartner1.Click += new System.EventHandler(this.btnPartner1_Click);
+            this.btnPremierePartner1.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // lblPremiere
             // 
@@ -657,6 +657,7 @@ namespace Display_test
             this.btnAdvisoryPartner7.TabIndex = 58;
             this.btnAdvisoryPartner7.TabStop = false;
             this.btnAdvisoryPartner7.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner7.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner21
             // 
@@ -688,6 +689,7 @@ namespace Display_test
             this.btnAdvisoryPartner14.TabIndex = 56;
             this.btnAdvisoryPartner14.TabStop = false;
             this.btnAdvisoryPartner14.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner14.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner18
             // 
@@ -704,6 +706,7 @@ namespace Display_test
             this.btnAdvisoryPartner18.TabIndex = 55;
             this.btnAdvisoryPartner18.TabStop = false;
             this.btnAdvisoryPartner18.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner18.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner12
             // 
@@ -720,6 +723,7 @@ namespace Display_test
             this.btnAdvisoryPartner12.TabIndex = 54;
             this.btnAdvisoryPartner12.TabStop = false;
             this.btnAdvisoryPartner12.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner12.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner11
             // 
@@ -736,6 +740,7 @@ namespace Display_test
             this.btnAdvisoryPartner11.TabIndex = 53;
             this.btnAdvisoryPartner11.TabStop = false;
             this.btnAdvisoryPartner11.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner11.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner13
             // 
@@ -752,6 +757,7 @@ namespace Display_test
             this.btnAdvisoryPartner13.TabIndex = 52;
             this.btnAdvisoryPartner13.TabStop = false;
             this.btnAdvisoryPartner13.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner13.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner6
             // 
@@ -768,6 +774,7 @@ namespace Display_test
             this.btnAdvisoryPartner6.TabIndex = 51;
             this.btnAdvisoryPartner6.TabStop = false;
             this.btnAdvisoryPartner6.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner6.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner5
             // 
@@ -784,6 +791,7 @@ namespace Display_test
             this.btnAdvisoryPartner5.TabIndex = 50;
             this.btnAdvisoryPartner5.TabStop = false;
             this.btnAdvisoryPartner5.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner5.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner19
             // 
@@ -830,6 +838,7 @@ namespace Display_test
             this.btnAdvisoryPartner4.TabIndex = 47;
             this.btnAdvisoryPartner4.TabStop = false;
             this.btnAdvisoryPartner4.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner4.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner17
             // 
@@ -846,6 +855,7 @@ namespace Display_test
             this.btnAdvisoryPartner17.TabIndex = 46;
             this.btnAdvisoryPartner17.TabStop = false;
             this.btnAdvisoryPartner17.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner17.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner16
             // 
@@ -862,6 +872,7 @@ namespace Display_test
             this.btnAdvisoryPartner16.TabIndex = 45;
             this.btnAdvisoryPartner16.TabStop = false;
             this.btnAdvisoryPartner16.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner16.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner15
             // 
@@ -878,6 +889,7 @@ namespace Display_test
             this.btnAdvisoryPartner15.TabIndex = 44;
             this.btnAdvisoryPartner15.TabStop = false;
             this.btnAdvisoryPartner15.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner15.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner10
             // 
@@ -894,6 +906,7 @@ namespace Display_test
             this.btnAdvisoryPartner10.TabIndex = 43;
             this.btnAdvisoryPartner10.TabStop = false;
             this.btnAdvisoryPartner10.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner10.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner9
             // 
@@ -910,6 +923,7 @@ namespace Display_test
             this.btnAdvisoryPartner9.TabIndex = 42;
             this.btnAdvisoryPartner9.TabStop = false;
             this.btnAdvisoryPartner9.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner9.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner8
             // 
@@ -926,6 +940,7 @@ namespace Display_test
             this.btnAdvisoryPartner8.TabIndex = 41;
             this.btnAdvisoryPartner8.TabStop = false;
             this.btnAdvisoryPartner8.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner8.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner3
             // 
@@ -942,6 +957,7 @@ namespace Display_test
             this.btnAdvisoryPartner3.TabIndex = 40;
             this.btnAdvisoryPartner3.TabStop = false;
             this.btnAdvisoryPartner3.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner3.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner2
             // 
@@ -958,6 +974,7 @@ namespace Display_test
             this.btnAdvisoryPartner2.TabIndex = 39;
             this.btnAdvisoryPartner2.TabStop = false;
             this.btnAdvisoryPartner2.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner2.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner1
             // 
@@ -974,6 +991,7 @@ namespace Display_test
             this.btnAdvisoryPartner1.TabIndex = 38;
             this.btnAdvisoryPartner1.TabStop = false;
             this.btnAdvisoryPartner1.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner1.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // Form1
             // 
@@ -990,8 +1008,8 @@ namespace Display_test
             this.Controls.Add(this.tlpMain);
             this.Controls.Add(this.btnPartnerBack);
             this.Controls.Add(this.tlpPartnerMenu);
-            this.Controls.Add(this.tlpPremiere);
             this.Controls.Add(this.tlpAdvisory);
+            this.Controls.Add(this.tlpPremiere);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
