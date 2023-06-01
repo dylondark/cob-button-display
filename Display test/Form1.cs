@@ -128,7 +128,6 @@ namespace Display_test
         {
             PageClose,
             Programs, Partners, History,
-            Partner1, Partner2, Partner3, Partner4, Partner5, Partner6, Partner7, Partner8, Partner9,
             DebugOn, DebugOff, 
             BrowserUrlChange,
             Back,
