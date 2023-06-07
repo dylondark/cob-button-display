@@ -508,7 +508,7 @@ namespace Display_test
             this.lblPremiere.Name = "lblPremiere";
             this.lblPremiere.Size = new System.Drawing.Size(903, 136);
             this.lblPremiere.TabIndex = 0;
-            this.lblPremiere.Text = "Our Premiere Partners";
+            this.lblPremiere.Text = "Premiere Corporate Partners";
             this.lblPremiere.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnPartnerBack
@@ -639,7 +639,7 @@ namespace Display_test
             this.lblAdvisory.Name = "lblAdvisory";
             this.lblAdvisory.Size = new System.Drawing.Size(744, 145);
             this.lblAdvisory.TabIndex = 59;
-            this.lblAdvisory.Text = "Our Advisory Corporate Partners";
+            this.lblAdvisory.Text = "Advisory Corporate Partners";
             this.lblAdvisory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnAdvisoryPartner7
