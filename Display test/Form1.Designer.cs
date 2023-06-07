@@ -33,6 +33,10 @@ namespace Display_test
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblDebug = new System.Windows.Forms.Label();
+            this.tlpPartnerMenu = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPartnerMenu = new System.Windows.Forms.Label();
+            this.btnAdvisory = new System.Windows.Forms.Button();
+            this.btnPremiere = new System.Windows.Forms.Button();
             this.btnMove = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
@@ -45,21 +49,7 @@ namespace Display_test
             this.lblTouch = new System.Windows.Forms.Label();
             this.picTouch = new System.Windows.Forms.PictureBox();
             this.picCOB = new System.Windows.Forms.PictureBox();
-            this.tlpPremiere = new System.Windows.Forms.TableLayoutPanel();
-            this.btnPremierePartner9 = new System.Windows.Forms.Button();
-            this.btnPremierePartner8 = new System.Windows.Forms.Button();
-            this.btnPremierePartner7 = new System.Windows.Forms.Button();
-            this.btnPremierePartner6 = new System.Windows.Forms.Button();
-            this.btnPremierePartner5 = new System.Windows.Forms.Button();
-            this.btnPremierePartner4 = new System.Windows.Forms.Button();
-            this.btnPremierePartner3 = new System.Windows.Forms.Button();
-            this.btnPremierePartner2 = new System.Windows.Forms.Button();
-            this.btnPremierePartner1 = new System.Windows.Forms.Button();
-            this.lblPremiere = new System.Windows.Forms.Label();
             this.btnPartnerBack = new System.Windows.Forms.Button();
-            this.tlpPartnerMenu = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAdvisory = new System.Windows.Forms.Button();
-            this.btnPremiere = new System.Windows.Forms.Button();
             this.tlpAdvisory = new System.Windows.Forms.TableLayoutPanel();
             this.lblAdvisory = new System.Windows.Forms.Label();
             this.btnAdvisoryPartner7 = new System.Windows.Forms.Button();
@@ -83,14 +73,25 @@ namespace Display_test
             this.btnAdvisoryPartner3 = new System.Windows.Forms.Button();
             this.btnAdvisoryPartner2 = new System.Windows.Forms.Button();
             this.btnAdvisoryPartner1 = new System.Windows.Forms.Button();
+            this.tlpPremiere = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPremierePartner9 = new System.Windows.Forms.Button();
+            this.btnPremierePartner8 = new System.Windows.Forms.Button();
+            this.btnPremierePartner7 = new System.Windows.Forms.Button();
+            this.btnPremierePartner6 = new System.Windows.Forms.Button();
+            this.btnPremierePartner5 = new System.Windows.Forms.Button();
+            this.btnPremierePartner4 = new System.Windows.Forms.Button();
+            this.btnPremierePartner3 = new System.Windows.Forms.Button();
+            this.btnPremierePartner2 = new System.Windows.Forms.Button();
+            this.btnPremierePartner1 = new System.Windows.Forms.Button();
+            this.lblPremiere = new System.Windows.Forms.Label();
+            this.tlpPartnerMenu.SuspendLayout();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tlpTouch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picTouch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
-            this.tlpPremiere.SuspendLayout();
-            this.tlpPartnerMenu.SuspendLayout();
             this.tlpAdvisory.SuspendLayout();
+            this.tlpPremiere.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -114,6 +115,76 @@ namespace Display_test
             this.lblDebug.TabIndex = 13;
             this.lblDebug.Text = "Debug";
             this.lblDebug.Visible = false;
+            // 
+            // tlpPartnerMenu
+            // 
+            this.tlpPartnerMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tlpPartnerMenu.BackgroundImage = global::Display_test.Properties.Resources.fishernewbg;
+            this.tlpPartnerMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tlpPartnerMenu.ColumnCount = 5;
+            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpPartnerMenu.Controls.Add(this.lblPartnerMenu, 1, 0);
+            this.tlpPartnerMenu.Controls.Add(this.btnAdvisory, 3, 1);
+            this.tlpPartnerMenu.Controls.Add(this.btnPremiere, 1, 1);
+            this.tlpPartnerMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpPartnerMenu.Location = new System.Drawing.Point(0, 0);
+            this.tlpPartnerMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.tlpPartnerMenu.Name = "tlpPartnerMenu";
+            this.tlpPartnerMenu.RowCount = 3;
+            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
+            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42F));
+            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
+            this.tlpPartnerMenu.Size = new System.Drawing.Size(1264, 681);
+            this.tlpPartnerMenu.TabIndex = 20;
+            // 
+            // lblPartnerMenu
+            // 
+            this.lblPartnerMenu.BackColor = System.Drawing.Color.Transparent;
+            this.tlpPartnerMenu.SetColumnSpan(this.lblPartnerMenu, 3);
+            this.lblPartnerMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPartnerMenu.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold);
+            this.lblPartnerMenu.Location = new System.Drawing.Point(255, 0);
+            this.lblPartnerMenu.Name = "lblPartnerMenu";
+            this.lblPartnerMenu.Size = new System.Drawing.Size(751, 197);
+            this.lblPartnerMenu.TabIndex = 37;
+            this.lblPartnerMenu.Text = "Corporate Partners";
+            this.lblPartnerMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAdvisory
+            // 
+            this.btnAdvisory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnAdvisory.BackgroundImage = global::Display_test.Properties.Resources.advisorybutton;
+            this.btnAdvisory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdvisory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisory.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisory.Location = new System.Drawing.Point(709, 200);
+            this.btnAdvisory.Name = "btnAdvisory";
+            this.btnAdvisory.Size = new System.Drawing.Size(297, 280);
+            this.btnAdvisory.TabIndex = 36;
+            this.btnAdvisory.UseVisualStyleBackColor = false;
+            this.btnAdvisory.Click += new System.EventHandler(this.btnAdvisory_Click);
+            // 
+            // btnPremiere
+            // 
+            this.btnPremiere.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremiere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnPremiere.BackgroundImage = global::Display_test.Properties.Resources.premierebutton;
+            this.btnPremiere.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPremiere.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremiere.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremiere.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremiere.Location = new System.Drawing.Point(255, 200);
+            this.btnPremiere.Name = "btnPremiere";
+            this.btnPremiere.Size = new System.Drawing.Size(297, 280);
+            this.btnPremiere.TabIndex = 35;
+            this.btnPremiere.UseVisualStyleBackColor = false;
+            this.btnPremiere.Click += new System.EventHandler(this.btnPremiere_Click);
             // 
             // btnMove
             // 
@@ -311,206 +382,6 @@ namespace Display_test
             this.picCOB.TabStop = false;
             this.picCOB.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // tlpPremiere
-            // 
-            this.tlpPremiere.BackgroundImage = global::Display_test.Properties.Resources.fisherpartnerbg;
-            this.tlpPremiere.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tlpPremiere.ColumnCount = 5;
-            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpPremiere.Controls.Add(this.btnPremierePartner9, 3, 3);
-            this.tlpPremiere.Controls.Add(this.btnPremierePartner8, 2, 3);
-            this.tlpPremiere.Controls.Add(this.btnPremierePartner7, 1, 3);
-            this.tlpPremiere.Controls.Add(this.btnPremierePartner6, 3, 2);
-            this.tlpPremiere.Controls.Add(this.btnPremierePartner5, 2, 2);
-            this.tlpPremiere.Controls.Add(this.btnPremierePartner4, 1, 2);
-            this.tlpPremiere.Controls.Add(this.btnPremierePartner3, 3, 1);
-            this.tlpPremiere.Controls.Add(this.btnPremierePartner2, 2, 1);
-            this.tlpPremiere.Controls.Add(this.btnPremierePartner1, 1, 1);
-            this.tlpPremiere.Controls.Add(this.lblPremiere, 1, 0);
-            this.tlpPremiere.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpPremiere.Location = new System.Drawing.Point(0, 0);
-            this.tlpPremiere.Name = "tlpPremiere";
-            this.tlpPremiere.RowCount = 5;
-            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tlpPremiere.Size = new System.Drawing.Size(1264, 681);
-            this.tlpPremiere.TabIndex = 16;
-            // 
-            // btnPremierePartner9
-            // 
-            this.btnPremierePartner9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremierePartner9.BackColor = System.Drawing.Color.White;
-            this.btnPremierePartner9.BackgroundImage = global::Display_test.Properties.Resources.penske;
-            this.btnPremierePartner9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPremierePartner9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremierePartner9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremierePartner9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremierePartner9.Location = new System.Drawing.Point(785, 479);
-            this.btnPremierePartner9.Name = "btnPremierePartner9";
-            this.btnPremierePartner9.Size = new System.Drawing.Size(297, 164);
-            this.btnPremierePartner9.TabIndex = 46;
-            this.btnPremierePartner9.TabStop = false;
-            this.btnPremierePartner9.UseVisualStyleBackColor = false;
-            this.btnPremierePartner9.Click += new System.EventHandler(this.partnerButton_Click);
-            // 
-            // btnPremierePartner8
-            // 
-            this.btnPremierePartner8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremierePartner8.BackColor = System.Drawing.Color.White;
-            this.btnPremierePartner8.BackgroundImage = global::Display_test.Properties.Resources.ritehite;
-            this.btnPremierePartner8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPremierePartner8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremierePartner8.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremierePartner8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremierePartner8.Location = new System.Drawing.Point(482, 479);
-            this.btnPremierePartner8.Name = "btnPremierePartner8";
-            this.btnPremierePartner8.Size = new System.Drawing.Size(297, 164);
-            this.btnPremierePartner8.TabIndex = 45;
-            this.btnPremierePartner8.TabStop = false;
-            this.btnPremierePartner8.UseVisualStyleBackColor = false;
-            this.btnPremierePartner8.Click += new System.EventHandler(this.partnerButton_Click);
-            // 
-            // btnPremierePartner7
-            // 
-            this.btnPremierePartner7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremierePartner7.BackColor = System.Drawing.Color.White;
-            this.btnPremierePartner7.BackgroundImage = global::Display_test.Properties.Resources.smucker;
-            this.btnPremierePartner7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPremierePartner7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremierePartner7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremierePartner7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremierePartner7.Location = new System.Drawing.Point(179, 479);
-            this.btnPremierePartner7.Name = "btnPremierePartner7";
-            this.btnPremierePartner7.Size = new System.Drawing.Size(297, 164);
-            this.btnPremierePartner7.TabIndex = 44;
-            this.btnPremierePartner7.TabStop = false;
-            this.btnPremierePartner7.UseVisualStyleBackColor = false;
-            this.btnPremierePartner7.Click += new System.EventHandler(this.partnerButton_Click);
-            // 
-            // btnPremierePartner6
-            // 
-            this.btnPremierePartner6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremierePartner6.BackColor = System.Drawing.Color.White;
-            this.btnPremierePartner6.BackgroundImage = global::Display_test.Properties.Resources.aircontrol;
-            this.btnPremierePartner6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPremierePartner6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremierePartner6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremierePartner6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremierePartner6.Location = new System.Drawing.Point(785, 309);
-            this.btnPremierePartner6.Name = "btnPremierePartner6";
-            this.btnPremierePartner6.Size = new System.Drawing.Size(297, 164);
-            this.btnPremierePartner6.TabIndex = 43;
-            this.btnPremierePartner6.TabStop = false;
-            this.btnPremierePartner6.UseVisualStyleBackColor = false;
-            this.btnPremierePartner6.Click += new System.EventHandler(this.partnerButton_Click);
-            // 
-            // btnPremierePartner5
-            // 
-            this.btnPremierePartner5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremierePartner5.BackColor = System.Drawing.Color.White;
-            this.btnPremierePartner5.BackgroundImage = global::Display_test.Properties.Resources.hyland_logo;
-            this.btnPremierePartner5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPremierePartner5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremierePartner5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremierePartner5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremierePartner5.Location = new System.Drawing.Point(482, 309);
-            this.btnPremierePartner5.Name = "btnPremierePartner5";
-            this.btnPremierePartner5.Size = new System.Drawing.Size(297, 164);
-            this.btnPremierePartner5.TabIndex = 42;
-            this.btnPremierePartner5.TabStop = false;
-            this.btnPremierePartner5.UseVisualStyleBackColor = false;
-            this.btnPremierePartner5.Click += new System.EventHandler(this.partnerButton_Click);
-            // 
-            // btnPremierePartner4
-            // 
-            this.btnPremierePartner4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremierePartner4.BackColor = System.Drawing.Color.White;
-            this.btnPremierePartner4.BackgroundImage = global::Display_test.Properties.Resources.mrisoftware;
-            this.btnPremierePartner4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPremierePartner4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremierePartner4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremierePartner4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremierePartner4.Location = new System.Drawing.Point(179, 309);
-            this.btnPremierePartner4.Name = "btnPremierePartner4";
-            this.btnPremierePartner4.Size = new System.Drawing.Size(297, 164);
-            this.btnPremierePartner4.TabIndex = 41;
-            this.btnPremierePartner4.TabStop = false;
-            this.btnPremierePartner4.UseVisualStyleBackColor = false;
-            this.btnPremierePartner4.Click += new System.EventHandler(this.partnerButton_Click);
-            // 
-            // btnPremierePartner3
-            // 
-            this.btnPremierePartner3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremierePartner3.BackColor = System.Drawing.Color.White;
-            this.btnPremierePartner3.BackgroundImage = global::Display_test.Properties.Resources.palmerholland_tp;
-            this.btnPremierePartner3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPremierePartner3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremierePartner3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremierePartner3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremierePartner3.Location = new System.Drawing.Point(785, 139);
-            this.btnPremierePartner3.Name = "btnPremierePartner3";
-            this.btnPremierePartner3.Size = new System.Drawing.Size(297, 164);
-            this.btnPremierePartner3.TabIndex = 40;
-            this.btnPremierePartner3.TabStop = false;
-            this.btnPremierePartner3.UseVisualStyleBackColor = false;
-            this.btnPremierePartner3.Click += new System.EventHandler(this.partnerButton_Click);
-            // 
-            // btnPremierePartner2
-            // 
-            this.btnPremierePartner2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremierePartner2.BackColor = System.Drawing.Color.White;
-            this.btnPremierePartner2.BackgroundImage = global::Display_test.Properties.Resources.parker;
-            this.btnPremierePartner2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPremierePartner2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremierePartner2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremierePartner2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremierePartner2.Location = new System.Drawing.Point(482, 139);
-            this.btnPremierePartner2.Name = "btnPremierePartner2";
-            this.btnPremierePartner2.Size = new System.Drawing.Size(297, 164);
-            this.btnPremierePartner2.TabIndex = 39;
-            this.btnPremierePartner2.TabStop = false;
-            this.btnPremierePartner2.UseVisualStyleBackColor = false;
-            this.btnPremierePartner2.Click += new System.EventHandler(this.partnerButton_Click);
-            // 
-            // btnPremierePartner1
-            // 
-            this.btnPremierePartner1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremierePartner1.BackColor = System.Drawing.Color.White;
-            this.btnPremierePartner1.BackgroundImage = global::Display_test.Properties.Resources.OhioCAT_whiteborder_tp;
-            this.btnPremierePartner1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPremierePartner1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremierePartner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremierePartner1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremierePartner1.Location = new System.Drawing.Point(179, 139);
-            this.btnPremierePartner1.Name = "btnPremierePartner1";
-            this.btnPremierePartner1.Size = new System.Drawing.Size(297, 164);
-            this.btnPremierePartner1.TabIndex = 38;
-            this.btnPremierePartner1.TabStop = false;
-            this.btnPremierePartner1.UseVisualStyleBackColor = false;
-            this.btnPremierePartner1.Click += new System.EventHandler(this.partnerButton_Click);
-            // 
-            // lblPremiere
-            // 
-            this.lblPremiere.BackColor = System.Drawing.Color.Transparent;
-            this.tlpPremiere.SetColumnSpan(this.lblPremiere, 3);
-            this.lblPremiere.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPremiere.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold);
-            this.lblPremiere.Location = new System.Drawing.Point(179, 0);
-            this.lblPremiere.Name = "lblPremiere";
-            this.lblPremiere.Size = new System.Drawing.Size(903, 136);
-            this.lblPremiere.TabIndex = 0;
-            this.lblPremiere.Text = "Premiere Corporate Partners";
-            this.lblPremiere.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnPartnerBack
             // 
             this.btnPartnerBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -524,62 +395,6 @@ namespace Display_test
             this.btnPartnerBack.TabIndex = 18;
             this.btnPartnerBack.UseVisualStyleBackColor = false;
             this.btnPartnerBack.Click += new System.EventHandler(this.btnPartnerBack_Click);
-            // 
-            // tlpPartnerMenu
-            // 
-            this.tlpPartnerMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tlpPartnerMenu.BackgroundImage = global::Display_test.Properties.Resources.fishernewbg;
-            this.tlpPartnerMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tlpPartnerMenu.ColumnCount = 5;
-            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
-            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPartnerMenu.Controls.Add(this.btnAdvisory, 3, 1);
-            this.tlpPartnerMenu.Controls.Add(this.btnPremiere, 1, 1);
-            this.tlpPartnerMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpPartnerMenu.Location = new System.Drawing.Point(0, 0);
-            this.tlpPartnerMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.tlpPartnerMenu.Name = "tlpPartnerMenu";
-            this.tlpPartnerMenu.RowCount = 3;
-            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
-            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42F));
-            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
-            this.tlpPartnerMenu.Size = new System.Drawing.Size(1264, 681);
-            this.tlpPartnerMenu.TabIndex = 20;
-            // 
-            // btnAdvisory
-            // 
-            this.btnAdvisory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnAdvisory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdvisory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisory.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisory.Location = new System.Drawing.Point(709, 200);
-            this.btnAdvisory.Name = "btnAdvisory";
-            this.btnAdvisory.Size = new System.Drawing.Size(297, 280);
-            this.btnAdvisory.TabIndex = 36;
-            this.btnAdvisory.Text = "Advisory Level Corporate Partners";
-            this.btnAdvisory.UseVisualStyleBackColor = false;
-            this.btnAdvisory.Click += new System.EventHandler(this.btnAdvisory_Click);
-            // 
-            // btnPremiere
-            // 
-            this.btnPremiere.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremiere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnPremiere.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPremiere.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremiere.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremiere.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremiere.Location = new System.Drawing.Point(255, 200);
-            this.btnPremiere.Name = "btnPremiere";
-            this.btnPremiere.Size = new System.Drawing.Size(297, 280);
-            this.btnPremiere.TabIndex = 35;
-            this.btnPremiere.Text = "Premiere Partners";
-            this.btnPremiere.UseVisualStyleBackColor = false;
-            this.btnPremiere.Click += new System.EventHandler(this.btnPremiere_Click);
             // 
             // tlpAdvisory
             // 
@@ -993,6 +808,206 @@ namespace Display_test
             this.btnAdvisoryPartner1.UseVisualStyleBackColor = false;
             this.btnAdvisoryPartner1.Click += new System.EventHandler(this.partnerButton_Click);
             // 
+            // tlpPremiere
+            // 
+            this.tlpPremiere.BackgroundImage = global::Display_test.Properties.Resources.fisherpartnerbg;
+            this.tlpPremiere.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tlpPremiere.ColumnCount = 5;
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpPremiere.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpPremiere.Controls.Add(this.btnPremierePartner9, 3, 3);
+            this.tlpPremiere.Controls.Add(this.btnPremierePartner8, 2, 3);
+            this.tlpPremiere.Controls.Add(this.btnPremierePartner7, 1, 3);
+            this.tlpPremiere.Controls.Add(this.btnPremierePartner6, 3, 2);
+            this.tlpPremiere.Controls.Add(this.btnPremierePartner5, 2, 2);
+            this.tlpPremiere.Controls.Add(this.btnPremierePartner4, 1, 2);
+            this.tlpPremiere.Controls.Add(this.btnPremierePartner3, 3, 1);
+            this.tlpPremiere.Controls.Add(this.btnPremierePartner2, 2, 1);
+            this.tlpPremiere.Controls.Add(this.btnPremierePartner1, 1, 1);
+            this.tlpPremiere.Controls.Add(this.lblPremiere, 1, 0);
+            this.tlpPremiere.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpPremiere.Location = new System.Drawing.Point(0, 0);
+            this.tlpPremiere.Name = "tlpPremiere";
+            this.tlpPremiere.RowCount = 5;
+            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpPremiere.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpPremiere.Size = new System.Drawing.Size(1264, 681);
+            this.tlpPremiere.TabIndex = 16;
+            // 
+            // btnPremierePartner9
+            // 
+            this.btnPremierePartner9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremierePartner9.BackColor = System.Drawing.Color.White;
+            this.btnPremierePartner9.BackgroundImage = global::Display_test.Properties.Resources.penske;
+            this.btnPremierePartner9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPremierePartner9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremierePartner9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremierePartner9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremierePartner9.Location = new System.Drawing.Point(785, 479);
+            this.btnPremierePartner9.Name = "btnPremierePartner9";
+            this.btnPremierePartner9.Size = new System.Drawing.Size(297, 164);
+            this.btnPremierePartner9.TabIndex = 46;
+            this.btnPremierePartner9.TabStop = false;
+            this.btnPremierePartner9.UseVisualStyleBackColor = false;
+            this.btnPremierePartner9.Click += new System.EventHandler(this.partnerButton_Click);
+            // 
+            // btnPremierePartner8
+            // 
+            this.btnPremierePartner8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremierePartner8.BackColor = System.Drawing.Color.White;
+            this.btnPremierePartner8.BackgroundImage = global::Display_test.Properties.Resources.ritehite;
+            this.btnPremierePartner8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPremierePartner8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremierePartner8.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremierePartner8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremierePartner8.Location = new System.Drawing.Point(482, 479);
+            this.btnPremierePartner8.Name = "btnPremierePartner8";
+            this.btnPremierePartner8.Size = new System.Drawing.Size(297, 164);
+            this.btnPremierePartner8.TabIndex = 45;
+            this.btnPremierePartner8.TabStop = false;
+            this.btnPremierePartner8.UseVisualStyleBackColor = false;
+            this.btnPremierePartner8.Click += new System.EventHandler(this.partnerButton_Click);
+            // 
+            // btnPremierePartner7
+            // 
+            this.btnPremierePartner7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremierePartner7.BackColor = System.Drawing.Color.White;
+            this.btnPremierePartner7.BackgroundImage = global::Display_test.Properties.Resources.smucker;
+            this.btnPremierePartner7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPremierePartner7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremierePartner7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremierePartner7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremierePartner7.Location = new System.Drawing.Point(179, 479);
+            this.btnPremierePartner7.Name = "btnPremierePartner7";
+            this.btnPremierePartner7.Size = new System.Drawing.Size(297, 164);
+            this.btnPremierePartner7.TabIndex = 44;
+            this.btnPremierePartner7.TabStop = false;
+            this.btnPremierePartner7.UseVisualStyleBackColor = false;
+            this.btnPremierePartner7.Click += new System.EventHandler(this.partnerButton_Click);
+            // 
+            // btnPremierePartner6
+            // 
+            this.btnPremierePartner6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremierePartner6.BackColor = System.Drawing.Color.White;
+            this.btnPremierePartner6.BackgroundImage = global::Display_test.Properties.Resources.aircontrol;
+            this.btnPremierePartner6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPremierePartner6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremierePartner6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremierePartner6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremierePartner6.Location = new System.Drawing.Point(785, 309);
+            this.btnPremierePartner6.Name = "btnPremierePartner6";
+            this.btnPremierePartner6.Size = new System.Drawing.Size(297, 164);
+            this.btnPremierePartner6.TabIndex = 43;
+            this.btnPremierePartner6.TabStop = false;
+            this.btnPremierePartner6.UseVisualStyleBackColor = false;
+            this.btnPremierePartner6.Click += new System.EventHandler(this.partnerButton_Click);
+            // 
+            // btnPremierePartner5
+            // 
+            this.btnPremierePartner5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremierePartner5.BackColor = System.Drawing.Color.White;
+            this.btnPremierePartner5.BackgroundImage = global::Display_test.Properties.Resources.hyland_logo;
+            this.btnPremierePartner5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPremierePartner5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremierePartner5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremierePartner5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremierePartner5.Location = new System.Drawing.Point(482, 309);
+            this.btnPremierePartner5.Name = "btnPremierePartner5";
+            this.btnPremierePartner5.Size = new System.Drawing.Size(297, 164);
+            this.btnPremierePartner5.TabIndex = 42;
+            this.btnPremierePartner5.TabStop = false;
+            this.btnPremierePartner5.UseVisualStyleBackColor = false;
+            this.btnPremierePartner5.Click += new System.EventHandler(this.partnerButton_Click);
+            // 
+            // btnPremierePartner4
+            // 
+            this.btnPremierePartner4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremierePartner4.BackColor = System.Drawing.Color.White;
+            this.btnPremierePartner4.BackgroundImage = global::Display_test.Properties.Resources.mrisoftware;
+            this.btnPremierePartner4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPremierePartner4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremierePartner4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremierePartner4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremierePartner4.Location = new System.Drawing.Point(179, 309);
+            this.btnPremierePartner4.Name = "btnPremierePartner4";
+            this.btnPremierePartner4.Size = new System.Drawing.Size(297, 164);
+            this.btnPremierePartner4.TabIndex = 41;
+            this.btnPremierePartner4.TabStop = false;
+            this.btnPremierePartner4.UseVisualStyleBackColor = false;
+            this.btnPremierePartner4.Click += new System.EventHandler(this.partnerButton_Click);
+            // 
+            // btnPremierePartner3
+            // 
+            this.btnPremierePartner3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremierePartner3.BackColor = System.Drawing.Color.White;
+            this.btnPremierePartner3.BackgroundImage = global::Display_test.Properties.Resources.palmerholland_tp;
+            this.btnPremierePartner3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPremierePartner3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremierePartner3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremierePartner3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremierePartner3.Location = new System.Drawing.Point(785, 139);
+            this.btnPremierePartner3.Name = "btnPremierePartner3";
+            this.btnPremierePartner3.Size = new System.Drawing.Size(297, 164);
+            this.btnPremierePartner3.TabIndex = 40;
+            this.btnPremierePartner3.TabStop = false;
+            this.btnPremierePartner3.UseVisualStyleBackColor = false;
+            this.btnPremierePartner3.Click += new System.EventHandler(this.partnerButton_Click);
+            // 
+            // btnPremierePartner2
+            // 
+            this.btnPremierePartner2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremierePartner2.BackColor = System.Drawing.Color.White;
+            this.btnPremierePartner2.BackgroundImage = global::Display_test.Properties.Resources.parker;
+            this.btnPremierePartner2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPremierePartner2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremierePartner2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremierePartner2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremierePartner2.Location = new System.Drawing.Point(482, 139);
+            this.btnPremierePartner2.Name = "btnPremierePartner2";
+            this.btnPremierePartner2.Size = new System.Drawing.Size(297, 164);
+            this.btnPremierePartner2.TabIndex = 39;
+            this.btnPremierePartner2.TabStop = false;
+            this.btnPremierePartner2.UseVisualStyleBackColor = false;
+            this.btnPremierePartner2.Click += new System.EventHandler(this.partnerButton_Click);
+            // 
+            // btnPremierePartner1
+            // 
+            this.btnPremierePartner1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremierePartner1.BackColor = System.Drawing.Color.White;
+            this.btnPremierePartner1.BackgroundImage = global::Display_test.Properties.Resources.OhioCAT_whiteborder_tp;
+            this.btnPremierePartner1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPremierePartner1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremierePartner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremierePartner1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremierePartner1.Location = new System.Drawing.Point(179, 139);
+            this.btnPremierePartner1.Name = "btnPremierePartner1";
+            this.btnPremierePartner1.Size = new System.Drawing.Size(297, 164);
+            this.btnPremierePartner1.TabIndex = 38;
+            this.btnPremierePartner1.TabStop = false;
+            this.btnPremierePartner1.UseVisualStyleBackColor = false;
+            this.btnPremierePartner1.Click += new System.EventHandler(this.partnerButton_Click);
+            // 
+            // lblPremiere
+            // 
+            this.lblPremiere.BackColor = System.Drawing.Color.Transparent;
+            this.tlpPremiere.SetColumnSpan(this.lblPremiere, 3);
+            this.lblPremiere.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPremiere.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold);
+            this.lblPremiere.Location = new System.Drawing.Point(179, 0);
+            this.lblPremiere.Name = "lblPremiere";
+            this.lblPremiere.Size = new System.Drawing.Size(903, 136);
+            this.lblPremiere.TabIndex = 0;
+            this.lblPremiere.Text = "Premiere Corporate Partners";
+            this.lblPremiere.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1007,9 +1022,9 @@ namespace Display_test
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.tlpMain);
             this.Controls.Add(this.btnPartnerBack);
-            this.Controls.Add(this.tlpPartnerMenu);
             this.Controls.Add(this.tlpAdvisory);
             this.Controls.Add(this.tlpPremiere);
+            this.Controls.Add(this.tlpPartnerMenu);
             this.MaximumSize = new System.Drawing.Size(3840, 2160);
             this.MinimumSize = new System.Drawing.Size(960, 171);
             this.Name = "Form1";
@@ -1026,14 +1041,14 @@ namespace Display_test
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.activity_event);
             this.Resize += new System.EventHandler(this.autoScale);
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
+            this.tlpPartnerMenu.ResumeLayout(false);
             this.tlpMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).EndInit();
             this.tlpTouch.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picTouch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
-            this.tlpPremiere.ResumeLayout(false);
-            this.tlpPartnerMenu.ResumeLayout(false);
             this.tlpAdvisory.ResumeLayout(false);
+            this.tlpPremiere.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1113,6 +1128,7 @@ namespace Display_test
         private Button btnAdvisoryPartner20;
         private Button btnAdvisoryPartner4;
         private Label lblAdvisory;
+        private Label lblPartnerMenu;
         //private PictureBox pictureBox1;
     }
 }

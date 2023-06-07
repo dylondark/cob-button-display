@@ -68,6 +68,7 @@ namespace Display_test
             picTouch.Margin = new Padding((int)(Math.Ceiling(scaleFactor * resFactor)));
             lblPremiere.Font = labelFont;
             lblAdvisory.Font = labelFont;
+            lblPartnerMenu.Font = labelFont;
 
             Padding buttonMargin = new Padding((int)(Math.Ceiling(scaleFactor * 0.2f * resFactor)));
             btnPrograms.Margin = buttonMargin;
