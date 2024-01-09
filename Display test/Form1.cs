@@ -504,7 +504,6 @@ namespace Display_test
                     showWebPage("https://www.mrisoftware.com/");
                     break;
                 case "btnPremierePartner5":
-                    showWebPage("https://www.hyland.com/en");
                     break;
                 case "btnPremierePartner6":
                     showWebPage("https://www.aircontrolproducts.com/");

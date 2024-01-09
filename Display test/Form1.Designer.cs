@@ -914,7 +914,6 @@ namespace Display_test
             // 
             this.btnPremierePartner5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnPremierePartner5.BackColor = System.Drawing.Color.White;
-            this.btnPremierePartner5.BackgroundImage = global::Display_test.Properties.Resources.hyland_logo;
             this.btnPremierePartner5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPremierePartner5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPremierePartner5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
