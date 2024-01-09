@@ -33,10 +33,6 @@ namespace Display_test
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblDebug = new System.Windows.Forms.Label();
-            this.tlpPartnerMenu = new System.Windows.Forms.TableLayoutPanel();
-            this.lblPartnerMenu = new System.Windows.Forms.Label();
-            this.btnAdvisory = new System.Windows.Forms.Button();
-            this.btnPremiere = new System.Windows.Forms.Button();
             this.btnMove = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
@@ -84,7 +80,10 @@ namespace Display_test
             this.btnPremierePartner2 = new System.Windows.Forms.Button();
             this.btnPremierePartner1 = new System.Windows.Forms.Button();
             this.lblPremiere = new System.Windows.Forms.Label();
-            this.tlpPartnerMenu.SuspendLayout();
+            this.tlpPartnerMenu = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPartnerMenu = new System.Windows.Forms.Label();
+            this.btnAdvisory = new System.Windows.Forms.Button();
+            this.btnPremiere = new System.Windows.Forms.Button();
             this.tlpMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).BeginInit();
             this.tlpTouch.SuspendLayout();
@@ -92,6 +91,7 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).BeginInit();
             this.tlpAdvisory.SuspendLayout();
             this.tlpPremiere.SuspendLayout();
+            this.tlpPartnerMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -115,76 +115,6 @@ namespace Display_test
             this.lblDebug.TabIndex = 13;
             this.lblDebug.Text = "Debug";
             this.lblDebug.Visible = false;
-            // 
-            // tlpPartnerMenu
-            // 
-            this.tlpPartnerMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tlpPartnerMenu.BackgroundImage = global::Display_test.Properties.Resources.fishernewbg;
-            this.tlpPartnerMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tlpPartnerMenu.ColumnCount = 5;
-            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
-            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
-            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPartnerMenu.Controls.Add(this.lblPartnerMenu, 1, 0);
-            this.tlpPartnerMenu.Controls.Add(this.btnAdvisory, 3, 1);
-            this.tlpPartnerMenu.Controls.Add(this.btnPremiere, 1, 1);
-            this.tlpPartnerMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpPartnerMenu.Location = new System.Drawing.Point(0, 0);
-            this.tlpPartnerMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.tlpPartnerMenu.Name = "tlpPartnerMenu";
-            this.tlpPartnerMenu.RowCount = 3;
-            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
-            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42F));
-            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
-            this.tlpPartnerMenu.Size = new System.Drawing.Size(1264, 681);
-            this.tlpPartnerMenu.TabIndex = 20;
-            // 
-            // lblPartnerMenu
-            // 
-            this.lblPartnerMenu.BackColor = System.Drawing.Color.Transparent;
-            this.tlpPartnerMenu.SetColumnSpan(this.lblPartnerMenu, 3);
-            this.lblPartnerMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPartnerMenu.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold);
-            this.lblPartnerMenu.Location = new System.Drawing.Point(255, 0);
-            this.lblPartnerMenu.Name = "lblPartnerMenu";
-            this.lblPartnerMenu.Size = new System.Drawing.Size(751, 197);
-            this.lblPartnerMenu.TabIndex = 37;
-            this.lblPartnerMenu.Text = "Corporate Partners";
-            this.lblPartnerMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAdvisory
-            // 
-            this.btnAdvisory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdvisory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnAdvisory.BackgroundImage = global::Display_test.Properties.Resources.advisorybutton;
-            this.btnAdvisory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdvisory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdvisory.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvisory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnAdvisory.Location = new System.Drawing.Point(709, 200);
-            this.btnAdvisory.Name = "btnAdvisory";
-            this.btnAdvisory.Size = new System.Drawing.Size(297, 280);
-            this.btnAdvisory.TabIndex = 36;
-            this.btnAdvisory.UseVisualStyleBackColor = false;
-            this.btnAdvisory.Click += new System.EventHandler(this.btnAdvisory_Click);
-            // 
-            // btnPremiere
-            // 
-            this.btnPremiere.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPremiere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
-            this.btnPremiere.BackgroundImage = global::Display_test.Properties.Resources.premierebutton;
-            this.btnPremiere.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPremiere.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPremiere.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPremiere.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
-            this.btnPremiere.Location = new System.Drawing.Point(255, 200);
-            this.btnPremiere.Name = "btnPremiere";
-            this.btnPremiere.Size = new System.Drawing.Size(297, 280);
-            this.btnPremiere.TabIndex = 35;
-            this.btnPremiere.UseVisualStyleBackColor = false;
-            this.btnPremiere.Click += new System.EventHandler(this.btnPremiere_Click);
             // 
             // btnMove
             // 
@@ -478,6 +408,7 @@ namespace Display_test
             // 
             this.btnAdvisoryPartner21.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAdvisoryPartner21.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner21.BackgroundImage = global::Display_test.Properties.Resources.leaffilter;
             this.btnAdvisoryPartner21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAdvisoryPartner21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdvisoryPartner21.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -488,6 +419,7 @@ namespace Display_test
             this.btnAdvisoryPartner21.TabIndex = 57;
             this.btnAdvisoryPartner21.TabStop = false;
             this.btnAdvisoryPartner21.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner21.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner14
             // 
@@ -612,6 +544,7 @@ namespace Display_test
             // 
             this.btnAdvisoryPartner19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAdvisoryPartner19.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner19.BackgroundImage = global::Display_test.Properties.Resources.brightedge;
             this.btnAdvisoryPartner19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAdvisoryPartner19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdvisoryPartner19.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -622,11 +555,13 @@ namespace Display_test
             this.btnAdvisoryPartner19.TabIndex = 49;
             this.btnAdvisoryPartner19.TabStop = false;
             this.btnAdvisoryPartner19.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner19.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner20
             // 
             this.btnAdvisoryPartner20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAdvisoryPartner20.BackColor = System.Drawing.Color.White;
+            this.btnAdvisoryPartner20.BackgroundImage = global::Display_test.Properties.Resources.goodyear;
             this.btnAdvisoryPartner20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAdvisoryPartner20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdvisoryPartner20.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -637,6 +572,7 @@ namespace Display_test
             this.btnAdvisoryPartner20.TabIndex = 48;
             this.btnAdvisoryPartner20.TabStop = false;
             this.btnAdvisoryPartner20.UseVisualStyleBackColor = false;
+            this.btnAdvisoryPartner20.Click += new System.EventHandler(this.partnerButton_Click);
             // 
             // btnAdvisoryPartner4
             // 
@@ -1007,6 +943,76 @@ namespace Display_test
             this.lblPremiere.Text = "Premiere Corporate Partners";
             this.lblPremiere.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tlpPartnerMenu
+            // 
+            this.tlpPartnerMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tlpPartnerMenu.BackgroundImage = global::Display_test.Properties.Resources.fishernewbg;
+            this.tlpPartnerMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tlpPartnerMenu.ColumnCount = 5;
+            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24F));
+            this.tlpPartnerMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpPartnerMenu.Controls.Add(this.lblPartnerMenu, 1, 0);
+            this.tlpPartnerMenu.Controls.Add(this.btnAdvisory, 3, 1);
+            this.tlpPartnerMenu.Controls.Add(this.btnPremiere, 1, 1);
+            this.tlpPartnerMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpPartnerMenu.Location = new System.Drawing.Point(0, 0);
+            this.tlpPartnerMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.tlpPartnerMenu.Name = "tlpPartnerMenu";
+            this.tlpPartnerMenu.RowCount = 3;
+            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
+            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42F));
+            this.tlpPartnerMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29F));
+            this.tlpPartnerMenu.Size = new System.Drawing.Size(1264, 681);
+            this.tlpPartnerMenu.TabIndex = 20;
+            // 
+            // lblPartnerMenu
+            // 
+            this.lblPartnerMenu.BackColor = System.Drawing.Color.Transparent;
+            this.tlpPartnerMenu.SetColumnSpan(this.lblPartnerMenu, 3);
+            this.lblPartnerMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPartnerMenu.Font = new System.Drawing.Font("Calibri", 36F, System.Drawing.FontStyle.Bold);
+            this.lblPartnerMenu.Location = new System.Drawing.Point(255, 0);
+            this.lblPartnerMenu.Name = "lblPartnerMenu";
+            this.lblPartnerMenu.Size = new System.Drawing.Size(751, 197);
+            this.lblPartnerMenu.TabIndex = 37;
+            this.lblPartnerMenu.Text = "Corporate Partners";
+            this.lblPartnerMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAdvisory
+            // 
+            this.btnAdvisory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdvisory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnAdvisory.BackgroundImage = global::Display_test.Properties.Resources.advisorybutton;
+            this.btnAdvisory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdvisory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdvisory.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvisory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnAdvisory.Location = new System.Drawing.Point(709, 200);
+            this.btnAdvisory.Name = "btnAdvisory";
+            this.btnAdvisory.Size = new System.Drawing.Size(297, 280);
+            this.btnAdvisory.TabIndex = 36;
+            this.btnAdvisory.UseVisualStyleBackColor = false;
+            this.btnAdvisory.Click += new System.EventHandler(this.btnAdvisory_Click);
+            // 
+            // btnPremiere
+            // 
+            this.btnPremiere.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPremiere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(153)))), ((int)(((byte)(104)))));
+            this.btnPremiere.BackgroundImage = global::Display_test.Properties.Resources.premierebutton;
+            this.btnPremiere.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPremiere.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPremiere.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremiere.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(30)))), ((int)(((byte)(66)))));
+            this.btnPremiere.Location = new System.Drawing.Point(255, 200);
+            this.btnPremiere.Name = "btnPremiere";
+            this.btnPremiere.Size = new System.Drawing.Size(297, 280);
+            this.btnPremiere.TabIndex = 35;
+            this.btnPremiere.UseVisualStyleBackColor = false;
+            this.btnPremiere.Click += new System.EventHandler(this.btnPremiere_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1040,7 +1046,6 @@ namespace Display_test
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.activity_event);
             this.Resize += new System.EventHandler(this.autoScale);
             this.ImeModeChanged += new System.EventHandler(this.activity_event);
-            this.tlpPartnerMenu.ResumeLayout(false);
             this.tlpMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picFisher)).EndInit();
             this.tlpTouch.ResumeLayout(false);
@@ -1048,6 +1053,7 @@ namespace Display_test
             ((System.ComponentModel.ISupportInitialize)(this.picCOB)).EndInit();
             this.tlpAdvisory.ResumeLayout(false);
             this.tlpPremiere.ResumeLayout(false);
+            this.tlpPartnerMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

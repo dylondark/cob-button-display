@@ -491,6 +491,15 @@ namespace Display_test
                 case "btnAdvisoryPartner18":
                     showWebPage("https://svn.com/");
                     break;
+                case "btnAdvisoryPartner19":
+                    showWebPage("https://www.brightedge.com/");
+                    break;
+                case "btnAdvisoryPartner20":
+                    showWebPage("https://www.goodyear.com/");
+                    break;
+                case "btnAdvisoryPartner21":
+                    showWebPage("https://www.leaffilter.com/");
+                    break;
                 case "btnPremierePartner1":
                     showWebPage("https://www.ohiocat.com/");
                     break;
