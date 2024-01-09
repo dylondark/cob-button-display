@@ -438,7 +438,7 @@ namespace Display_test
             switch (((Button)sender).Name)
             {
                 case "btnAdvisoryPartner1":
-                    showWebPage("https://www.accurategroup.com/");
+                    showWebPage("https://www.hyland.com/en");
                     break;
                 case "btnAdvisoryPartner2":
                     showWebPage("https://www.cintas.com/");

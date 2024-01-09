@@ -795,7 +795,7 @@ namespace Display_test
             // 
             this.btnAdvisoryPartner1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAdvisoryPartner1.BackColor = System.Drawing.Color.White;
-            this.btnAdvisoryPartner1.BackgroundImage = global::Display_test.Properties.Resources.accurategroup;
+            this.btnAdvisoryPartner1.BackgroundImage = global::Display_test.Properties.Resources.hyland_logo;
             this.btnAdvisoryPartner1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAdvisoryPartner1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAdvisoryPartner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
